@@ -1,4 +1,5 @@
 # Components
+- Logo
 - Jumbotron
 - Masthead
 - Blockquote

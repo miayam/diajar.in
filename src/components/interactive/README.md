@@ -1,2 +1,3 @@
 # Components
 - Quiz
+- Search
