@@ -1,0 +1,52 @@
+import { defineCollection, z } from "astro:content";
+
+import { glob } from "astro/loaders";
+import { reference } from "astro:content";
+
+const authors = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/data/authors" }),
+  schema: z.object({
+    name: z.string(),
+    email: z.string().email(),
+    bio: z.string().optional(),
+  }),
+});
+
+const articles = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/data/articles" }),
+  schema: z.object({
+    title: z.string(),
+    publishDate: z.coerce.date(),
+    updateDate: z.coerce.date().optional(),
+    author: reference("authors"),
+    tags: z.array(reference("tags")),
+    threads: z.array(reference("threads")),
+    featuredImage: z.string().optional(),
+    draft: z.boolean(),
+    readingTime: z.string().optional(),
+    excerpt: z.string().optional(),
+  }),
+});
+
+const threads = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/data/threads" }),
+  schema: z.object({
+    name: z.string(),
+    label: z.string(),
+  }),
+});
+
+const tags = defineCollection({
+  loader: glob({ pattern: "**/*.mdx", base: "./src/data/tags" }),
+  schema: z.object({
+    name: z.string(),
+    label: z.string(),
+  }),
+});
+
+export const collections = {
+  authors,
+  articles,
+  threads,
+  tags,
+};
