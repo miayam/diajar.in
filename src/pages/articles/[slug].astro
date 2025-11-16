@@ -1,0 +1,135 @@
+---
+import type { GetStaticPaths } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
+
+export const getStaticPaths = (async () => {
+    const articles = await getCollection("articles", ({ data }) => {
+        return data.draft !== true; // Filter out drafts
+    });
+
+    return articles.map((article) => ({
+        params: { slug: article.id },
+        props: { article },
+    }));
+}) satisfies GetStaticPaths;
+
+type Props = {
+    article: CollectionEntry<"articles">;
+};
+
+const { article } = Astro.props;
+
+// Load referenced data
+const author = await getEntry(article.data.author);
+const tags = await Promise.all(article.data.tags.map((tag) => getEntry(tag)));
+const threads = await Promise.all(
+    article.data.threads.map((thread) => getEntry(thread)),
+);
+
+const { Content } = await render(author);
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{article.data.title}</title>
+        {
+            article.data.excerpt && (
+                <meta name="description" content={article.data.excerpt} />
+            )
+        }
+        {
+            article.data.featuredImage && (
+                <meta
+                    property="og:image"
+                    content={article.data.featuredImage}
+                />
+            )
+        }
+    </head>
+    <body>
+        <article>
+            <header>
+                {
+                    article.data.featuredImage && (
+                        <img
+                            src={article.data.featuredImage}
+                            alt={article.data.title}
+                        />
+                    )
+                }
+                <h1>{article.data.title}</h1>
+
+                <div>
+                    <time datetime={article.data.publishDate.toISOString()}>
+                        Published: {
+                            article.data.publishDate.toLocaleDateString()
+                        }
+                    </time>
+                    {
+                        article.data.updateDate && (
+                            <time
+                                datetime={article.data.updateDate.toISOString()}
+                            >
+                                Updated:{" "}
+                                {article.data.updateDate.toLocaleDateString()}
+                            </time>
+                        )
+                    }
+                    {
+                        article.data.readingTime && (
+                            <span>{article.data.readingTime}</span>
+                        )
+                    }
+                </div>
+
+                {
+                    author && (
+                        <div>
+                            <p>By {author.data.name}</p>
+                            {author.data.bio && <p>{author.data.bio}</p>}
+                        </div>
+                    )
+                }
+
+                {
+                    tags.length > 0 && (
+                        <div>
+                            <span>Tags:</span>
+                            {tags.map(
+                                (tag) =>
+                                    tag && (
+                                        <a href={`/tags/${tag.id}`}>
+                                            {tag.data.label}
+                                        </a>
+                                    ),
+                            )}
+                        </div>
+                    )
+                }
+
+                {
+                    threads.length > 0 && (
+                        <div>
+                            <span>Threads:</span>
+                            {threads.map(
+                                (thread) =>
+                                    thread && (
+                                        <a href={`/threads/${thread.id}`}>
+                                            {thread.data.label}
+                                        </a>
+                                    ),
+                            )}
+                        </div>
+                    )
+                }
+            </header>
+
+            <Content />
+        </article>
+
+        <a href="/articles">← Back to articles</a>
+    </body>
+</html>
