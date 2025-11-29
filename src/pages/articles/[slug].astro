@@ -52,15 +52,7 @@ const { Content } = await render(article);
     <body>
         <article>
             <header>
-                {
-                    article.data.featuredImage && (
-                        <img
-                            src={article.data.featuredImage}
-                            alt={article.data.title}
-                        />
-                    )
-                }
-                <h1>{article.data.title}</h1>
+                <h1 class="text-lg font-bold">{article.data.title}</h1>
 
                 <div>
                     <time datetime={article.data.publishDate.toISOString()}>
