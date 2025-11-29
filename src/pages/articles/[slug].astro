@@ -27,7 +27,7 @@ const threads = await Promise.all(
     article.data.threads.map((thread) => getEntry(thread)),
 );
 
-const { Content } = await render(author);
+const { Content } = await render(article);
 ---
 
 <html lang="en">
@@ -126,7 +126,6 @@ const { Content } = await render(author);
                     )
                 }
             </header>
-
             <Content />
         </article>
 
