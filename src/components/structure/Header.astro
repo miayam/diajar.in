@@ -1,0 +1,59 @@
+---
+interface Props {
+    currentPath?: string;
+}
+
+const { currentPath = "" } = Astro.props;
+
+const menuItems = [
+    { label: "Artikel", href: "/articles" },
+    { label: "Utas", href: "/threads" },
+    { label: "Tentang", href: "/about" },
+];
+
+const isActive = (href: string) => {
+    return currentPath.startsWith(href);
+};
+import { Image } from "astro:assets";
+---
+
+<header
+    class="grid grid-cols-[1fr_min(54rem,100%)_1fr] border-b border-gray-200"
+>
+    <div
+        class="col-start-2 grid grid-cols-[1fr_auto_1fr] gap-8 items-center px-4"
+    >
+        <a href="/" class="flex items-center gap-2 justify-self-start">
+            <div class="w-9 h-9 rounded-full">
+                <img
+                    src="/logo.svg"
+                    alt="Logo"
+                    class="w-full h-full rounded-full object-cover"
+                />
+            </div>
+            <span class="font-bold text-lg">Diajar</span>
+        </a>
+
+        <div class="search">
+            <!-- Search field placeholder -->
+        </div>
+
+        <nav class="flex justify-self-end">
+            {
+                menuItems.map((item) => (
+                    <a
+                        href={item.href}
+                        class:list={[
+                            "border-b-2 py-4 transition-colors min-w-[5rem] text-center",
+                            isActive(item.href)
+                                ? "border-black font-medium"
+                                : "border-transparent",
+                        ]}
+                    >
+                        {item.label}
+                    </a>
+                ))
+            }
+        </nav>
+    </div>
+</header>

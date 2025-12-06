@@ -2,6 +2,7 @@
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
+import Layout from "../../templates/Layout.astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allArticles = await getCollection("articles", ({ data }) => {
@@ -23,42 +24,31 @@ type Props = {
 const { page } = Astro.props;
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Articles - Page {page.currentPage}</title>
-    </head>
-    <body>
-        <h1>Articles</h1>
+<Layout>
+    <h1>Articles</h1>
 
-        <ul>
-            {
-                page.data.map((article) => (
-                    <li>
-                        <a href={`/articles/${article.id}`}>
-                            <h2>{article.data.title}</h2>
-                            <time
-                                datetime={article.data.publishDate.toISOString()}
-                            >
-                                {article.data.publishDate.toLocaleDateString()}
-                            </time>
-                            {article.data.excerpt && (
-                                <p>{article.data.excerpt}</p>
-                            )}
-                            {article.data.readingTime && (
-                                <span>{article.data.readingTime}</span>
-                            )}
-                        </a>
-                    </li>
-                ))
-            }
-        </ul>
+    <ul>
+        {
+            page.data.map((article) => (
+                <li>
+                    <a href={`/articles/${article.id}`}>
+                        <h2>{article.data.title}</h2>
+                        <time datetime={article.data.publishDate.toISOString()}>
+                            {article.data.publishDate.toLocaleDateString()}
+                        </time>
+                        {article.data.excerpt && <p>{article.data.excerpt}</p>}
+                        {article.data.readingTime && (
+                            <span>{article.data.readingTime}</span>
+                        )}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 
-        <nav aria-label="Pagination">
-            {page.url.prev && <a href={page.url.prev}>← Previous</a>}
-            <span>Page {page.currentPage} of {page.lastPage}</span>
-            {page.url.next && <a href={page.url.next}>Next →</a>}
-        </nav>
-    </body>
-</html>
+    <nav aria-label="Pagination">
+        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+        <span>Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next && <a href={page.url.next}>Next →</a>}
+    </nav>
+</Layout>
