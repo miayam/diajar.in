@@ -1,0 +1,46 @@
+---
+import Layout from "../../templates/Layout.astro";
+import type { GetStaticPaths, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+
+export const getStaticPaths = (async ({ paginate }) => {
+    const allThreads = await getCollection("threads");
+
+    // Sort threads if needed (by name or any other criteria)
+    const sortedThreads = allThreads.sort((a, b) =>
+        a.data.label.localeCompare(b.data.label),
+    );
+
+    return paginate(sortedThreads, { pageSize: 2 });
+}) satisfies GetStaticPaths;
+
+type Props = {
+    page: Page<CollectionEntry<"threads">>;
+};
+
+const { page } = Astro.props;
+---
+
+<Layout title={`Threads - Page ${page.currentPage}`}>
+    <h1>Threads</h1>
+
+    <ul>
+        {
+            page.data.map((thread) => (
+                <li>
+                    <a href={`/threads/${thread.id}`}>
+                        <h2>{thread.data.label}</h2>
+                        <p>{thread.data.name}</p>
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+
+    <nav aria-label="Pagination">
+        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+        <span>Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next && <a href={page.url.next}>Next →</a>}
+    </nav>
+</Layout>

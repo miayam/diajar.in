@@ -6,19 +6,28 @@ interface Props {
 const { currentPath = "" } = Astro.props;
 
 const menuItems = [
-    { label: "Artikel", href: "/articles" },
+    { label: "Artikel", href: "/" },
     { label: "Utas", href: "/threads" },
     { label: "Tentang", href: "/about" },
 ];
 
 const isActive = (href: string) => {
+    if (href === "/") {
+        // Active for: /, /2, /wordpress, /wordpress/2
+        // Not active for: /threads, /about, /articles
+        return (
+            !currentPath.startsWith("/threads") &&
+            !currentPath.startsWith("/about") &&
+            !currentPath.startsWith("/articles")
+        );
+    }
     return currentPath.startsWith(href);
 };
 import { Image } from "astro:assets";
 ---
 
 <header
-    class="grid grid-cols-[1fr_min(54rem,100%)_1fr] border-b border-gray-200"
+    class="grid grid-cols-[1fr_min(54rem,100%)_1fr] border-b border-gray-300"
 >
     <div
         class="col-start-2 grid grid-cols-[1fr_auto_1fr] gap-8 items-center px-4"
@@ -44,7 +53,7 @@ import { Image } from "astro:assets";
                     <a
                         href={item.href}
                         class:list={[
-                            "border-b-2 py-4 transition-colors min-w-[5rem] text-center",
+                            "border-b-3 py-4 transition-colors min-w-[5rem] text-center",
                             isActive(item.href)
                                 ? "border-black font-medium"
                                 : "border-transparent",
