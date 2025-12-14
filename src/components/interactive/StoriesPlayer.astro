@@ -1,0 +1,318 @@
+---
+interface Slide {
+    text: string;
+}
+
+const slides: Slide[] = [
+    {
+        text: "Bersihkan hati dan luruskan niat",
+    },
+    {
+        text: "Kurangi distraksi dan berikan fokus penuh",
+    },
+    {
+        text: "Jangan tinggi hati dengan apa yang dipelajari",
+    },
+    {
+        text: "Hindari perdebatan yang tidak perlu",
+    },
+    {
+        text: "Belajarlah secara menyeluruh",
+    },
+    {
+        text: "Prioritaskan pada ilmu yang bermuara pada kebijaksanaan hakiki",
+    },
+    {
+        text: "Hiasi ilmu dengan akhlak terpuji",
+    },
+];
+
+const totalSlides = slides.length;
+---
+
+<div class="w-full pt-4 flex justify-center">
+    <div
+        id="storiesContainer"
+        class="relative w-full max-w-[600px] h-[400px] bg-white overflow-hidden flex cursor-pointer flex-col"
+    >
+        <!-- Progress indicators -->
+        <div id="progressContainer" class="flex gap-2.5 px-4 pt-4 pb-3 z-10">
+            {
+                slides.map((_, index) => (
+                    <div
+                        class="flex-1 h-1.5 bg-gray-300 rounded-lg overflow-hidden"
+                        data-index={index}
+                    >
+                        <div class="progress-fill h-full bg-gray-900 w-0 rounded-sm transition-[width] duration-100" />
+                    </div>
+                ))
+            }
+        </div>
+
+        <!-- Stories wrapper -->
+        <div id="storiesWrapper" class="flex-1 relative overflow-hidden">
+            <div class="flex pl-[12%] items-end gap-8">
+                <div class="flex gap-1 font-semibold items-center">
+                    <span class="text-[3.5rem]">7</span>
+                    <span class="w-10 text-[1rem]">Adab Pelajar</span>
+                </div>
+            </div>
+            {
+                slides.map((slide, index) => (
+                    <div
+                        class="story-slide absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-300"
+                        data-index={index}
+                    >
+                        <div class="md:text-2xl text-lg  relative font-normal w-3/4 gap-1 h-[40%] flex flex-col m-auto">
+                            <div class="flex justify-start absolute left-0">
+                                <span class="icon-left-quote text-5xl" />
+                            </div>
+                            <div class="w-[70%] px-4 text-center m-auto leading-tight">
+                                {slide.text}
+
+                                <div class="text-sm pt-5">
+                                    — dipetik dari Al-Ghozali
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end absolute right-0 bottom-0">
+                                <span class="icon-right-quote text-5xl" />
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+
+        <!-- Slide counter -->
+        <div
+            id="slideCounter"
+            class="absolute hidden bottom-12 right-5 text-gray-900 py-1.5 px-3 rounded-2xl text-sm font-medium"
+        >
+            1 / {totalSlides}
+        </div>
+    </div>
+</div>
+
+<style>
+    .progress-fill.completed {
+        width: 100%;
+        background: #121212;
+        transition: none;
+    }
+
+    .progress-fill.active {
+        background: #121212;
+        animation: progress-animation linear forwards;
+    }
+
+    @keyframes progress-animation {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    .story-slide.active {
+        opacity: 1;
+    }
+</style>
+
+<script>
+    class StoriesPlayer {
+        private container: HTMLElement;
+        private totalSlides: number;
+        private currentIndex: number;
+        private isPlaying: boolean;
+        private currentTimer: number | null;
+        private isPaused: boolean;
+        private pausedTime: number;
+        private startTime: number;
+        private duration: number;
+        private slides: NodeListOf<HTMLElement>;
+
+        constructor(container: HTMLElement, totalSlides: number) {
+            this.container = container;
+            this.totalSlides = totalSlides;
+            this.currentIndex = 0;
+            this.isPlaying = false;
+            this.currentTimer = null;
+            this.isPaused = false;
+            this.pausedTime = 0;
+            this.startTime = 0;
+            this.duration = 5;
+            this.slides = container.querySelectorAll(".story-slide");
+
+            this.init();
+        }
+
+        private init(): void {
+            this.showSlide(0);
+            this.startStory();
+            this.bindEvents();
+        }
+
+        private bindEvents(): void {
+            this.container.addEventListener("click", () => {
+                if (this.isPaused) {
+                    this.resume();
+                } else {
+                    this.pause();
+                }
+            });
+        }
+
+        private showSlide(index: number): void {
+            if (index < 0 || index >= this.totalSlides) return;
+
+            this.slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) {
+                    slide.classList.add("active");
+                }
+            });
+
+            this.currentIndex = index;
+            this.updateProgressBars();
+            this.updateSlideCounter();
+        }
+
+        private updateSlideCounter(): void {
+            const counter = this.container.querySelector("#slideCounter");
+            if (counter) {
+                counter.textContent = `${this.currentIndex + 1} / ${this.totalSlides}`;
+            }
+        }
+
+        private updateProgressBars(): void {
+            const progressBars =
+                this.container.querySelectorAll<HTMLElement>("[data-index]");
+            progressBars.forEach((bar, index) => {
+                const fill = bar.querySelector<HTMLElement>(".progress-fill");
+                if (!fill) return;
+
+                fill.classList.remove("active");
+                fill.style.animationDuration = "";
+
+                if (index < this.currentIndex) {
+                    fill.classList.add("completed");
+                    fill.style.width = "100%";
+                    fill.style.background = "#121212";
+                } else if (index === this.currentIndex) {
+                    fill.classList.remove("completed");
+                    fill.style.width = "0%";
+                    fill.style.background = "#121212";
+                } else {
+                    fill.classList.remove("completed");
+                    fill.style.width = "0%";
+                    fill.style.background = "transparent";
+                }
+            });
+        }
+
+        private startStory(): void {
+            if (this.currentIndex >= this.totalSlides) {
+                this.complete();
+                return;
+            }
+
+            this.isPlaying = true;
+            this.isPaused = false;
+            this.startTime = Date.now();
+
+            const progressFill = this.container.querySelector<HTMLElement>(
+                `[data-index="${this.currentIndex}"] .progress-fill`,
+            );
+            if (progressFill) {
+                progressFill.style.animationDuration = `${this.duration}s`;
+                progressFill.classList.add("active");
+            }
+
+            this.currentTimer = window.setTimeout(() => {
+                this.nextStory();
+            }, this.duration * 1000);
+        }
+
+        private nextStory(): void {
+            if (this.currentTimer) {
+                clearTimeout(this.currentTimer);
+                this.currentTimer = null;
+            }
+
+            if (this.currentIndex < this.totalSlides - 1) {
+                this.showSlide(this.currentIndex + 1);
+                this.startStory();
+            } else {
+                this.complete();
+            }
+        }
+
+        private pause(): void {
+            if (!this.isPlaying || this.isPaused) return;
+
+            this.isPaused = true;
+            this.pausedTime = Date.now() - this.startTime;
+
+            if (this.currentTimer) {
+                clearTimeout(this.currentTimer);
+                this.currentTimer = null;
+            }
+
+            const progressFill = this.container.querySelector<HTMLElement>(
+                `[data-index="${this.currentIndex}"] .progress-fill`,
+            );
+            if (progressFill) {
+                progressFill.style.animationPlayState = "paused";
+            }
+        }
+
+        private resume(): void {
+            if (!this.isPaused) return;
+
+            this.isPaused = false;
+            const remainingTime = this.duration * 1000 - this.pausedTime;
+
+            const progressFill = this.container.querySelector<HTMLElement>(
+                `[data-index="${this.currentIndex}"] .progress-fill`,
+            );
+            if (progressFill) {
+                progressFill.style.animationPlayState = "running";
+            }
+
+            this.currentTimer = window.setTimeout(() => {
+                this.nextStory();
+            }, remainingTime);
+        }
+
+        private complete(): void {
+            this.isPlaying = false;
+
+            const progressBars =
+                this.container.querySelectorAll<HTMLElement>("[data-index]");
+            progressBars.forEach((bar) => {
+                const fill = bar.querySelector<HTMLElement>(".progress-fill");
+                if (!fill) return;
+
+                fill.classList.remove("active", "completed");
+                fill.style.width = "0%";
+                fill.style.animationDuration = "";
+                fill.style.animationPlayState = "running";
+            });
+
+            this.showSlide(0);
+
+            setTimeout(() => {
+                this.startStory();
+            }, 800);
+        }
+    }
+
+    // Initialize
+    const container = document.getElementById("storiesContainer");
+    if (container) {
+        const totalSlides = container.querySelectorAll(".story-slide").length;
+        new StoriesPlayer(container, totalSlides);
+    }
+</script>

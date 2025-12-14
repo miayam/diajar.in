@@ -1,5 +1,5 @@
 ---
-import Layout from "../../templates/Layout.astro";
+import Default from "@/templates/Default.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
@@ -22,7 +22,7 @@ type Props = {
 const { page } = Astro.props;
 ---
 
-<Layout title={`Threads - Page ${page.currentPage}`}>
+<Default title={`Threads - Page ${page.currentPage}`}>
     <h1>Threads</h1>
 
     <ul>
@@ -43,4 +43,4 @@ const { page } = Astro.props;
         <span>Page {page.currentPage} of {page.lastPage}</span>
         {page.url.next && <a href={page.url.next}>Next →</a>}
     </nav>
-</Layout>
+</Default>

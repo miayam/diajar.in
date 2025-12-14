@@ -3,7 +3,8 @@ import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
-import Layout from "../../../templates/Layout.astro";
+import Default from "@/templates/Default.astro";
+import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allTags = await getCollection("tags");
@@ -39,7 +40,8 @@ const { page, tag } = Astro.props;
 const { Content } = await render(tag);
 ---
 
-<Layout title={`${tag.data.label} - Page ${page.currentPage}`}>
+<Default title={`${tag.data.label} - Page ${page.currentPage}`}>
+    <StoriesPlayer />
     <h1>{tag.data.label}</h1>
     <Content />
     <p>Articles in this tags</p>
@@ -65,4 +67,4 @@ const { Content } = await render(tag);
         <span>Page {page.currentPage} of {page.lastPage}</span>
         {page.url.next && <a href={page.url.next}>Next →</a>}
     </nav>
-</Layout>
+</Default>

@@ -27,11 +27,9 @@ import { Image } from "astro:assets";
 ---
 
 <header
-    class="grid grid-cols-[1fr_min(54rem,100%)_1fr] border-b border-gray-300"
+    class="grid grid-cols-[1fr_min(40rem,100%)_1fr] border-b border-gray-300"
 >
-    <div
-        class="col-start-2 grid grid-cols-[1fr_auto_1fr] gap-8 items-center px-4"
-    >
+    <div class="col-start-2 grid grid-cols-2 gap-8 items-center px-4">
         <a href="/" class="flex items-center gap-2 justify-self-start">
             <div class="w-9 h-9 rounded-full">
                 <img
@@ -42,10 +40,6 @@ import { Image } from "astro:assets";
             </div>
             <span class="font-bold text-lg">Diajar</span>
         </a>
-
-        <div class="search">
-            <!-- Search field placeholder -->
-        </div>
 
         <nav class="flex justify-self-end">
             {
