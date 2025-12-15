@@ -41,6 +41,7 @@ const { Content } = await render(tag);
 ---
 
 <Default title={`${tag.data.label} - Page ${page.currentPage}`}>
+    <link rel="stylesheet" href="/style.css" slot="icons" />
     <StoriesPlayer />
     <h1>{tag.data.label}</h1>
     <Content />
