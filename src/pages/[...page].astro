@@ -1,6 +1,7 @@
 ---
 import Default from "@/templates/Default.astro";
 import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
+import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
@@ -22,6 +23,17 @@ type Props = {
 };
 
 const { page } = Astro.props;
+
+const menuItems = [
+    { label: "Semua", href: "/" },
+    { label: "Gagasan", href: "/contact" },
+    { label: "Pustaka", href: "/articles" },
+    { label: "Rupa & Rasa", href: "/about" },
+    { label: "Perkakas", href: "/threads" },
+    { label: "Lain-lain", href: "/threads" },
+];
+
+const currentPath = Astro.url.pathname;
 ---
 
 <Default
@@ -31,9 +43,10 @@ const { page } = Astro.props;
 >
     <link rel="stylesheet" href="/style.css" slot="icons" />
     <StoriesPlayer />
+    <PriorityMenu items={menuItems} currentPath={currentPath} />
     <h1>Articles</h1>
 
-    <ul>
+    <ul class="flex flex-col w-30">
         {
             page.data.map((article) => (
                 <li>

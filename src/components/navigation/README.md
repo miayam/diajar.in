@@ -1,5 +1,6 @@
 # Components
 - Iterator
+- Menu
 - Pagination
 - NavLink
 - BackLink

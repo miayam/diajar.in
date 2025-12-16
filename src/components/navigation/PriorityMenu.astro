@@ -1,0 +1,305 @@
+---
+interface MenuItem {
+    label: string;
+    href: string;
+}
+
+interface Props {
+    items: MenuItem[];
+    currentPath?: string;
+}
+
+const { items, currentPath = "" } = Astro.props;
+---
+
+<nav class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full">
+    <div class="col-start-2 px-4">
+        <div class="border-b border-gray-300">
+            <div
+                id="priorityNav"
+                class="relative flex items-center"
+                data-current-path={currentPath}
+            >
+                <div id="visibleItems" class="flex flex-1 overflow-hidden">
+                    {
+                        items.map((item) => (
+                            <a
+                                href={item.href}
+                                class="menu-item whitespace-nowrap px-3 py-4 border-b-3 border-transparent transition-colors flex-1 text-center"
+                                data-href={item.href}
+                            >
+                                {item.label}
+                            </a>
+                        ))
+                    }
+                </div>
+
+                <button
+                    id="moreBtn"
+                    class="more-btn hidden w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center hover:bg-gray-100 transition-colors flex-shrink-0"
+                    aria-label="More menu items"
+                    aria-expanded="false"
+                >
+                    <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                    >
+                        <circle cx="3" cy="8" r="1.5"></circle>
+                        <circle cx="8" cy="8" r="1.5"></circle>
+                        <circle cx="13" cy="8" r="1.5"></circle>
+                    </svg>
+                </button>
+
+                <div
+                    id="dropdown"
+                    class="dropdown hidden absolute top-full right-4 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 min-w-[200px] z-50"
+                >
+                    <div
+                        class="dropdown-scroll max-h-[10rem] overflow-y-auto relative"
+                    >
+                        <div
+                            id="hiddenItems"
+                            class="py-2 flex flex-col gap-2 px-4"
+                        >
+                            <!-- Hidden items will be inserted here -->
+                        </div>
+                        <div
+                            id="scrollFade"
+                            class="scroll-fade absolute bottom-0 left-0 right-0 h-16 pointer-events-none bg-gradient-to-t from-white to-transparent"
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<style>
+    .menu-item.active {
+        border-bottom-color: #000;
+        font-weight: 500;
+    }
+
+    .more-btn.active {
+        background: #000;
+        color: white;
+    }
+
+    .dropdown-item {
+        display: block;
+        padding: 0.75rem 1rem;
+        color: #374151;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+
+    .dropdown-item:hover {
+        background: #f3f4f6;
+    }
+
+    .dropdown-item.active {
+        background: #e5e7eb;
+        font-weight: 500;
+    }
+
+    .scroll-fade.hidden {
+        opacity: 0;
+    }
+
+    .scroll-fade {
+        transition: opacity 0.2s;
+    }
+</style>
+
+<script>
+    class PriorityNav {
+        private nav: HTMLElement;
+        private visibleContainer: HTMLElement;
+        private hiddenContainer: HTMLElement;
+        private moreBtn: HTMLElement;
+        private dropdown: HTMLElement;
+        private scrollFade: HTMLElement;
+        private allItems: HTMLElement[];
+        private currentPath: string;
+        private resizeObserver?: ResizeObserver;
+
+        constructor(navElement: HTMLElement) {
+            this.nav = navElement;
+            this.visibleContainer = navElement.querySelector("#visibleItems")!;
+            this.hiddenContainer = navElement.querySelector("#hiddenItems")!;
+            this.moreBtn = navElement.querySelector("#moreBtn")!;
+            this.dropdown = navElement.querySelector("#dropdown")!;
+            this.scrollFade = navElement.querySelector("#scrollFade")!;
+            this.currentPath = navElement.dataset.currentPath || "";
+            this.allItems = Array.from(
+                this.visibleContainer.querySelectorAll(".menu-item"),
+            );
+
+            this.init();
+        }
+
+        private init(): void {
+            this.setupEventListeners();
+            this.updateActiveStates();
+            this.calculatePriority();
+
+            // Setup ResizeObserver for responsive behavior
+            this.resizeObserver = new ResizeObserver(() => {
+                this.calculatePriority();
+            });
+            this.resizeObserver.observe(this.nav);
+        }
+
+        private setupEventListeners(): void {
+            // Toggle dropdown
+            this.moreBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                this.toggleDropdown();
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener("click", (e) => {
+                if (
+                    !this.dropdown.contains(e.target as Node) &&
+                    e.target !== this.moreBtn
+                ) {
+                    this.closeDropdown();
+                }
+            });
+
+            // Handle scroll fade effect
+            const scrollContainer =
+                this.dropdown.querySelector(".dropdown-scroll")!;
+            scrollContainer.addEventListener("scroll", () => {
+                this.updateScrollFade();
+            });
+        }
+
+        private updateActiveStates(): void {
+            this.allItems.forEach((item) => {
+                const href = item.dataset.href || "";
+                if (this.isActive(href)) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
+            });
+        }
+
+        private isActive(href: string): boolean {
+            if (href === "/") {
+                return (
+                    !this.currentPath.startsWith("/threads") &&
+                    !this.currentPath.startsWith("/about")
+                );
+            }
+            return this.currentPath.startsWith(href);
+        }
+
+        private calculatePriority(): void {
+            // Reset - show all items and clear dropdown
+            this.allItems.forEach((item) => {
+                item.style.display = "";
+            });
+            this.hiddenContainer.innerHTML = "";
+
+            const containerWidth = this.visibleContainer.offsetWidth;
+            const moreBtnWidth = 40; // Width of more button + some margin
+            const availableWidth = containerWidth * 0.9 - moreBtnWidth;
+            let totalWidth = 0;
+            const hiddenItems: HTMLElement[] = [];
+
+            // Calculate which items fit
+            this.allItems.forEach((item) => {
+                const itemWidth = item.offsetWidth;
+                totalWidth += itemWidth;
+
+                if (totalWidth > availableWidth) {
+                    hiddenItems.push(item);
+                }
+            });
+
+            // Move overflow items to dropdown
+            if (hiddenItems.length > 0) {
+                hiddenItems.forEach((item) => {
+                    // Hide from visible container
+                    item.style.display = "none";
+
+                    // Create dropdown item
+                    const dropdownItem = document.createElement("a");
+                    dropdownItem.href = item.getAttribute("href") || "";
+                    dropdownItem.textContent = item.textContent;
+                    dropdownItem.className = "dropdown-item";
+                    dropdownItem.dataset.href = item.dataset.href;
+
+                    // Check if active
+                    if (item.classList.contains("active")) {
+                        dropdownItem.classList.add("active");
+                    }
+
+                    this.hiddenContainer.appendChild(dropdownItem);
+                });
+                this.moreBtn.classList.remove("hidden");
+                this.updateScrollFade();
+            } else {
+                this.moreBtn.classList.add("hidden");
+                this.closeDropdown();
+            }
+        }
+
+        private toggleDropdown(): void {
+            const isOpen = !this.dropdown.classList.contains("hidden");
+            if (isOpen) {
+                this.closeDropdown();
+            } else {
+                this.openDropdown();
+            }
+        }
+
+        private openDropdown(): void {
+            this.dropdown.classList.remove("hidden");
+            this.moreBtn.classList.add("active");
+            this.moreBtn.setAttribute("aria-expanded", "true");
+            this.updateScrollFade();
+        }
+
+        private closeDropdown(): void {
+            this.dropdown.classList.add("hidden");
+            this.moreBtn.classList.remove("active");
+            this.moreBtn.setAttribute("aria-expanded", "false");
+        }
+
+        private updateScrollFade(): void {
+            const scrollContainer = this.dropdown.querySelector(
+                ".dropdown-scroll",
+            ) as HTMLElement;
+            if (!scrollContainer) return;
+
+            const isAtBottom =
+                Math.abs(
+                    scrollContainer.scrollHeight -
+                        scrollContainer.scrollTop -
+                        scrollContainer.clientHeight,
+                ) < 1;
+
+            if (isAtBottom) {
+                this.scrollFade.classList.add("hidden");
+            } else {
+                this.scrollFade.classList.remove("hidden");
+            }
+        }
+
+        public destroy(): void {
+            this.resizeObserver?.disconnect();
+        }
+    }
+
+    // Initialize
+    const navElement = document.getElementById("priorityNav");
+    if (navElement) {
+        new PriorityNav(navElement as HTMLElement);
+    }
+</script>

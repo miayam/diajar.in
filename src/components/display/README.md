@@ -1,6 +1,5 @@
 # Components
 - Logo
-- Jumbotron
 - Masthead
 - Blockquote
 - DefaultCard
