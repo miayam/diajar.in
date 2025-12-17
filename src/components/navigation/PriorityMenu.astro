@@ -193,7 +193,8 @@ const { items, currentPath = "" } = Astro.props;
             if (href === "/") {
                 return (
                     !this.currentPath.startsWith("/threads") &&
-                    !this.currentPath.startsWith("/about")
+                    !this.currentPath.startsWith("/about") &&
+                    !this.currentPath.startsWith("/tags")
                 );
             }
             return this.currentPath.startsWith(href);

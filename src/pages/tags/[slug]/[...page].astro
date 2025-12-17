@@ -5,6 +5,7 @@ import { render } from "astro:content";
 import { getCollection } from "astro:content";
 import Default from "@/templates/Default.astro";
 import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
+import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allTags = await getCollection("tags");
@@ -38,11 +39,23 @@ type Props = {
 
 const { page, tag } = Astro.props;
 const { Content } = await render(tag);
+
+const menuItems = [
+    { label: "Semua", href: "/" },
+    { label: "Gagasan", href: "/tags/gagasan" },
+    { label: "Pustaka", href: "/tags/pustaka" },
+    { label: "Rupa & Rasa", href: "/tags/rupa-rasa" },
+    { label: "Perkakas", href: "/tags/perkakas" },
+    { label: "Lain-lain", href: "/threads" },
+];
+
+const currentPath = Astro.url.pathname;
 ---
 
 <Default title={`${tag.data.label} - Page ${page.currentPage}`}>
     <link rel="stylesheet" href="/style.css" slot="icons" />
     <StoriesPlayer />
+    <PriorityMenu items={menuItems} currentPath={currentPath} />
     <h1>{tag.data.label}</h1>
     <Content />
     <p>Articles in this tags</p>
