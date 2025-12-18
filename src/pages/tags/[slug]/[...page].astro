@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
+import DefaultCard from "@/components/display/DefaultCard.astro";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
 import Default from "@/templates/Default.astro";
@@ -56,25 +57,17 @@ const currentPath = Astro.url.pathname;
     <link rel="stylesheet" href="/style.css" slot="icons" />
     <StoriesPlayer />
     <PriorityMenu items={menuItems} currentPath={currentPath} />
-    <h1>{tag.data.label}</h1>
-    <Content />
-    <p>Articles in this tags</p>
-
-    <ul>
-        {
-            page.data.map((article) => (
-                <li>
-                    <a href={`/articles/${article.id}`}>
-                        <h2>{article.data.title}</h2>
-                        <time datetime={article.data.publishDate.toISOString()}>
-                            {article.data.publishDate.toLocaleDateString()}
-                        </time>
-                        {article.data.excerpt && <p>{article.data.excerpt}</p>}
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+    <div class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full my-4">
+        <ul class="col-start-2 flex flex-col gap-4 px-4">
+            {
+                page.data.map((article) => (
+                    <li>
+                        <DefaultCard article={article} />
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
 
     <nav aria-label="Pagination">
         {page.url.prev && <a href={page.url.prev}>← Previous</a>}

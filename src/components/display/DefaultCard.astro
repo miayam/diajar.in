@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    article: CollectionEntry<"articles">;
+}
+
+const { article } = Astro.props;
+---
+
+<a
+    href={`/articles/${article.id}`}
+    class="flex flex-col gap-2 border rounded-md border-gray-300 py-2"
+>
+    <div class="flex gap-2 px-4 items-center">
+        <h2 class="font-semibold text-lg flex-1 line-clamp-2">
+            {article.data.title}
+        </h2>
+        <time
+            datetime={article.data.publishDate.toISOString()}
+            class="text-sm whitespace-nowrap"
+        >
+            — {
+                article.data.publishDate.toLocaleDateString("id-ID", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                })
+            }
+        </time>
+    </div>
+    <hr class="border-gray-300 border-dashed" />
+    <p class="line-clamp-2 flex-1 px-4 text">
+        {article.data.excerpt}
+    </p>
+</a>
