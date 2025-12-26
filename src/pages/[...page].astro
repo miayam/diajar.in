@@ -1,5 +1,6 @@
 ---
 import Default from "@/templates/Default.astro";
+import { menuItems } from "@/utils";
 import DefaultCard from "@/components/display/DefaultCard.astro";
 import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
 import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
@@ -24,15 +25,6 @@ type Props = {
 };
 
 const { page } = Astro.props;
-
-const menuItems = [
-    { label: "Semua", href: "/" },
-    { label: "Gagasan", href: "/tags/gagasan" },
-    { label: "Pustaka", href: "/tags/pustaka" },
-    { label: "Rupa & Rasa", href: "/tags/rupa-rasa" },
-    { label: "Perkakas", href: "/tags/perkakas" },
-    { label: "Lain-lain", href: "/threads" },
-];
 
 const currentPath = Astro.url.pathname;
 ---

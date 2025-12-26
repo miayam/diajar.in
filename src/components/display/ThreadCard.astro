@@ -1,0 +1,41 @@
+---
+import { Markdown } from "@astropub/md";
+
+interface Props {
+    title: string;
+    description: string;
+    articleCount: number;
+    href: string;
+}
+
+const { title, description, articleCount, href } = Astro.props;
+---
+
+<a
+    href={href}
+    class="card-stack flex flex-col cursor-pointer h-full w-full bg-gray-900 border border-black p-6 text-white rounded-md transition-all duration-300"
+>
+    <div class="text-xl font-bold mb-2">
+        {title}
+    </div>
+    <div
+        class="flex-1 text-gray-300 text-sm leading-relaxed mb-4 line-clamp-5 text-wrap"
+    >
+        <Markdown.Inline of={description} />
+    </div>
+    <div class="flex justify-end gap-2.5 text-xs text-gray-300 mt-auto">
+        <span>{articleCount} Artikel</span>
+    </div>
+</a>
+
+<style>
+    .card-stack {
+        box-shadow:
+            4px 4px 0 -2px white,
+            8px 8px 0 -2px #1a1a1a;
+    }
+
+    .card-stack:hover {
+        transform: translateY(-2px);
+    }
+</style>

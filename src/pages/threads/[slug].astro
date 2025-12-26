@@ -2,6 +2,7 @@
 import Default from "@/templates/Default.astro";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
 import { getCollection, getEntry } from "astro:content";
 
 export const getStaticPaths = (async () => {
@@ -34,11 +35,13 @@ type Props = {
 };
 
 const { thread, articles } = Astro.props;
+const { Content } = await render(thread);
 ---
 
 <Default title={thread.data.label}>
     <h1>{thread.data.label}</h1>
     <p>{thread.data.name}</p>
+    <p><Content /></p>
 
     <h2>Articles in this thread</h2>
     <ul>

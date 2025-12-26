@@ -9,7 +9,7 @@ export default defineConfig({
       getCSS: () => `
           *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
           ::before,::after{--un-content:''}
-          html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"}
+          html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;"}
           body{margin:0;line-height:inherit}
           hr{height:0;color:inherit;border-top-width:1px}
           abbr:where([title]){text-decoration:underline dotted}

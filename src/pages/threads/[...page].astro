@@ -1,42 +1,67 @@
 ---
 import Default from "@/templates/Default.astro";
+import ThreadCard from "@/components/display/ThreadCard.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allThreads = await getCollection("threads");
+    const allArticles = await getCollection("articles", (entry) => {
+        return entry.data.draft !== true;
+    });
 
     // Sort threads if needed (by name or any other criteria)
-    const sortedThreads = allThreads.sort((a, b) =>
-        a.data.label.localeCompare(b.data.label),
-    );
+    const sortedThreads = allThreads
+        .sort((a, b) => a.data.label.localeCompare(b.data.label))
+        .map((thread) => {
+            const count = allArticles.filter((article) =>
+                article.data.threads.some((t) => t.id === thread.id),
+            ).length;
+            return {
+                thread,
+                articleCount: count,
+            };
+        });
 
     return paginate(sortedThreads, { pageSize: 2 });
 }) satisfies GetStaticPaths;
 
+type ThreadWithCount = {
+    thread: CollectionEntry<"threads">;
+    articleCount: number;
+};
+
 type Props = {
-    page: Page<CollectionEntry<"threads">>;
+    page: Page<ThreadWithCount>;
 };
 
 const { page } = Astro.props;
 ---
 
 <Default title={`Threads - Page ${page.currentPage}`}>
-    <h1>Threads</h1>
-
-    <ul>
-        {
-            page.data.map((thread) => (
-                <li>
-                    <a href={`/threads/${thread.id}`}>
-                        <h2>{thread.data.label}</h2>
-                        <p>{thread.data.name}</p>
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+    <div
+        class="grid
+            grid-cols-[1fr_min(60rem,100%)_1fr]
+            w-full my-8"
+    >
+        <ul class="col-start-2 grid grid-cols-3 gap-8 px-4">
+            {
+                page.data.map(({ thread, articleCount }) => (
+                    <>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                    </>
+                ))
+            }
+        </ul>
+    </div>
 
     <nav aria-label="Pagination">
         {page.url.prev && <a href={page.url.prev}>← Previous</a>}

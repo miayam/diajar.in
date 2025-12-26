@@ -7,6 +7,7 @@ import { getCollection } from "astro:content";
 import Default from "@/templates/Default.astro";
 import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
 import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
+import { menuItems } from "@/utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const allTags = await getCollection("tags");
@@ -40,16 +41,6 @@ type Props = {
 
 const { page, tag } = Astro.props;
 const { Content } = await render(tag);
-
-const menuItems = [
-    { label: "Semua", href: "/" },
-    { label: "Gagasan", href: "/tags/gagasan" },
-    { label: "Pustaka", href: "/tags/pustaka" },
-    { label: "Rupa & Rasa", href: "/tags/rupa-rasa" },
-    { label: "Perkakas", href: "/tags/perkakas" },
-    { label: "Lain-lain", href: "/threads" },
-];
-
 const currentPath = Astro.url.pathname;
 ---
 
@@ -58,6 +49,15 @@ const currentPath = Astro.url.pathname;
     <StoriesPlayer />
     <PriorityMenu items={menuItems} currentPath={currentPath} />
     <div class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full my-4">
+        <div class="col-start-2 mx-4 px-1">
+            <Content />
+        </div>
+    </div>
+    <div
+        class="grid
+            grid-cols-[1fr_min(40rem,100%)_1fr]
+            w-full my-4"
+    >
         <ul class="col-start-2 flex flex-col gap-4 px-4">
             {
                 page.data.map((article) => (
