@@ -119,9 +119,9 @@ const { items, currentPath = "" } = Astro.props;
         private nav: HTMLElement;
         private visibleContainer: HTMLElement;
         private hiddenContainer: HTMLElement;
+        private hiddenItems: HTMLElement[];
         private moreBtn: HTMLElement;
         private dropdown: HTMLElement;
-        private scrollFade: HTMLElement;
         private allItems: HTMLElement[];
         private currentPath: string;
         private resizeObserver?: ResizeObserver;
@@ -132,7 +132,6 @@ const { items, currentPath = "" } = Astro.props;
             this.hiddenContainer = navElement.querySelector("#hiddenItems")!;
             this.moreBtn = navElement.querySelector("#moreBtn")!;
             this.dropdown = navElement.querySelector("#dropdown")!;
-            this.scrollFade = navElement.querySelector("#scrollFade")!;
             this.currentPath = navElement.dataset.currentPath || "";
             this.allItems = Array.from(
                 this.visibleContainer.querySelectorAll(".menu-item"),
@@ -143,8 +142,8 @@ const { items, currentPath = "" } = Astro.props;
 
         private init(): void {
             this.setupEventListeners();
-            this.updateActiveStates();
             this.calculatePriority();
+            this.updateActiveStates();
 
             // Setup ResizeObserver for responsive behavior
             this.resizeObserver = new ResizeObserver(() => {
@@ -173,9 +172,7 @@ const { items, currentPath = "" } = Astro.props;
             // Handle scroll fade effect
             const scrollContainer =
                 this.dropdown.querySelector(".dropdown-scroll")!;
-            scrollContainer.addEventListener("scroll", () => {
-                this.updateScrollFade();
-            });
+            scrollContainer.addEventListener("scroll", () => {});
         }
 
         private updateActiveStates(): void {
@@ -187,6 +184,14 @@ const { items, currentPath = "" } = Astro.props;
                     item.classList.remove("active");
                 }
             });
+
+            const insideHiddenContainer = this.hiddenItems.some((item) => {
+                return this.currentPath.startsWith(item.getAttribute("href")!);
+            });
+
+            if (insideHiddenContainer) {
+                this.openDropdown();
+            }
         }
 
         private isActive(href: string): boolean {
@@ -211,7 +216,8 @@ const { items, currentPath = "" } = Astro.props;
             const moreBtnWidth = 40; // Width of more button + some margin
             const availableWidth = containerWidth * 0.9 - moreBtnWidth;
             let totalWidth = 0;
-            const hiddenItems: HTMLElement[] = [];
+
+            this.hiddenItems = [];
 
             // Calculate which items fit
             this.allItems.forEach((item) => {
@@ -219,13 +225,13 @@ const { items, currentPath = "" } = Astro.props;
                 totalWidth += itemWidth;
 
                 if (totalWidth > availableWidth) {
-                    hiddenItems.push(item);
+                    this.hiddenItems.push(item);
                 }
             });
 
             // Move overflow items to dropdown
-            if (hiddenItems.length > 0) {
-                hiddenItems.forEach((item) => {
+            if (this.hiddenItems.length > 0) {
+                this.hiddenItems.forEach((item) => {
                     // Hide from visible container
                     item.style.display = "none";
 
@@ -246,7 +252,6 @@ const { items, currentPath = "" } = Astro.props;
                     this.hiddenContainer.appendChild(dropdownItem);
                 });
                 this.moreBtn.classList.remove("hidden");
-                this.updateScrollFade();
             } else {
                 this.moreBtn.classList.add("hidden");
                 this.closeDropdown();
@@ -266,33 +271,12 @@ const { items, currentPath = "" } = Astro.props;
             this.dropdown.classList.remove("hidden");
             this.moreBtn.classList.add("active");
             this.moreBtn.setAttribute("aria-expanded", "true");
-            this.updateScrollFade();
         }
 
         private closeDropdown(): void {
             this.dropdown.classList.add("hidden");
             this.moreBtn.classList.remove("active");
             this.moreBtn.setAttribute("aria-expanded", "false");
-        }
-
-        private updateScrollFade(): void {
-            const scrollContainer = this.dropdown.querySelector(
-                ".dropdown-scroll",
-            ) as HTMLElement;
-            if (!scrollContainer) return;
-
-            const isAtBottom =
-                Math.abs(
-                    scrollContainer.scrollHeight -
-                        scrollContainer.scrollTop -
-                        scrollContainer.clientHeight,
-                ) < 1;
-
-            if (isAtBottom) {
-                this.scrollFade.classList.add("hidden");
-            } else {
-                this.scrollFade.classList.remove("hidden");
-            }
         }
 
         public destroy(): void {
@@ -305,4 +289,23 @@ const { items, currentPath = "" } = Astro.props;
     if (navElement) {
         new PriorityNav(navElement as HTMLElement);
     }
+
+    document.addEventListener("astro:after-swap", () => {
+        const lastY = sessionStorage.getItem("lastY");
+
+        window.scrollTo({
+            top: Number(lastY || 0),
+            left: 0,
+            behavior: "instant",
+        });
+
+        const navElement = document.getElementById("priorityNav");
+        if (navElement) {
+            new PriorityNav(navElement as HTMLElement);
+        }
+    });
+
+    document.addEventListener("scroll", () => {
+        sessionStorage.setItem("lastY", String(window.scrollY));
+    });
 </script>

@@ -1,5 +1,5 @@
 ---
-import Thread from "@/templates/Thread.astro";
+import ThreadList from "@/templates/ThreadList.astro";
 import ThreadCard from "@/components/display/ThreadCard.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
@@ -39,7 +39,7 @@ type Props = {
 const { page } = Astro.props;
 ---
 
-<Thread title={`Threads - Page ${page.currentPage}`}>
+<ThreadList title={`Threads - Page ${page.currentPage}`}>
     <ul
         class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4"
     >
@@ -64,4 +64,4 @@ const { page } = Astro.props;
         <span>Page {page.currentPage} of {page.lastPage}</span>
         {page.url.next && <a href={page.url.next}>Next →</a>}
     </nav>
-</Thread>
+</ThreadList>

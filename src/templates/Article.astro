@@ -1,0 +1,29 @@
+---
+interface Props {
+    title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title || "Diajar.in"}</title>
+    </head>
+    <body>
+        <main>
+            <div
+                class="grid
+                    grid-cols-[1fr_min(40rem,100%)_1fr]
+                    w-full my-8"
+            >
+                <div class="col-start-2 px-4">
+                    <slot />
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
