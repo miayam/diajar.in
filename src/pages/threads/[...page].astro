@@ -1,5 +1,5 @@
 ---
-import Default from "@/templates/Default.astro";
+import Thread from "@/templates/Thread.astro";
 import ThreadCard from "@/components/display/ThreadCard.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
@@ -39,16 +39,115 @@ type Props = {
 const { page } = Astro.props;
 ---
 
-<Default title={`Threads - Page ${page.currentPage}`}>
+<Thread title={`Threads - Page ${page.currentPage}`}>
     <div
         class="grid
             grid-cols-[1fr_min(60rem,100%)_1fr]
             w-full my-8"
     >
-        <ul class="col-start-2 grid grid-cols-3 gap-8 px-4">
+        <ul
+            class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4"
+        >
             {
                 page.data.map(({ thread, articleCount }) => (
                     <>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
+                        <li>
+                            <ThreadCard
+                                href={`/threads/${thread.id}`}
+                                title={thread.data.name}
+                                articleCount={articleCount}
+                                description={thread.body || "Deskripsi.."}
+                            />
+                        </li>
                         <li>
                             <ThreadCard
                                 href={`/threads/${thread.id}`}
@@ -68,4 +167,4 @@ const { page } = Astro.props;
         <span>Page {page.currentPage} of {page.lastPage}</span>
         {page.url.next && <a href={page.url.next}>Next →</a>}
     </nav>
-</Default>
+</Thread>

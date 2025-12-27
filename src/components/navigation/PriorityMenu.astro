@@ -36,7 +36,7 @@ const { items, currentPath = "" } = Astro.props;
 
                 <button
                     id="moreBtn"
-                    class="more-btn hidden w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center hover:bg-gray-100 transition-colors flex-shrink-0"
+                    class="more-btn hidden w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center hover:bg-gray-300 transition-colors flex-shrink-0"
                     aria-label="More menu items"
                     aria-expanded="false"
                 >
@@ -54,14 +54,14 @@ const { items, currentPath = "" } = Astro.props;
 
                 <div
                     id="dropdown"
-                    class="dropdown hidden absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 min-w-[200px] z-50"
+                    class="dropdown hidden absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 min-w-[200px] z-50 overflow-hidden"
                 >
                     <div
                         class="dropdown-scroll max-h-[10rem] overflow-y-auto relative"
                     >
                         <div
                             id="hiddenItems"
-                            class="py-2 flex flex-col gap-2 px-4"
+                            class="flex flex-col overflow-hidden"
                         >
                             <!-- Hidden items will be inserted here -->
                         </div>
@@ -233,12 +233,14 @@ const { items, currentPath = "" } = Astro.props;
                     const dropdownItem = document.createElement("a");
                     dropdownItem.href = item.getAttribute("href") || "";
                     dropdownItem.textContent = item.textContent;
-                    dropdownItem.className = "dropdown-item";
+                    dropdownItem.className = "dropdown-item px-4 py-2";
                     dropdownItem.dataset.href = item.dataset.href;
 
                     // Check if active
                     if (item.classList.contains("active")) {
                         dropdownItem.classList.add("active");
+                        dropdownItem.classList.add("bg-black");
+                        dropdownItem.classList.add("text-white");
                     }
 
                     this.hiddenContainer.appendChild(dropdownItem);

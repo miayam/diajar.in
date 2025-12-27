@@ -34,9 +34,6 @@ const currentPath = Astro.url.pathname;
         ? "Home"
         : `Articles - Page ${page.currentPage}`}
 >
-    <link rel="stylesheet" href="/style.css" slot="icons" />
-    <StoriesPlayer />
-    <PriorityMenu items={menuItems} currentPath={currentPath} />
     <div class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full my-4">
         <ul class="col-start-2 flex flex-col gap-4 px-4">
             {
