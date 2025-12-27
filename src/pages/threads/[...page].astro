@@ -59,112 +59,15 @@ const { page } = Astro.props;
                                 description={thread.body || "Deskripsi.."}
                             />
                         </li>
-
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
                     </>
                 ))
             }
         </ul>
-    </div>
 
-    <nav aria-label="Pagination">
-        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
-        <span>Page {page.currentPage} of {page.lastPage}</span>
-        {page.url.next && <a href={page.url.next}>Next →</a>}
-    </nav>
+        <nav aria-label="Pagination" class="col-start-2 p-4">
+            {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+            <span>Page {page.currentPage} of {page.lastPage}</span>
+            {page.url.next && <a href={page.url.next}>Next →</a>}
+        </nav>
+    </div>
 </Thread>
