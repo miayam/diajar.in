@@ -25,7 +25,13 @@ const currentPath = Astro.url.pathname;
         <main>
             <StoriesPlayer />
             <PriorityMenu items={menuItems} currentPath={currentPath} />
-            <slot />
+            <div
+                class="grid
+                    grid-cols-[1fr_min(40rem,100%)_1fr]
+                    w-full my-4"
+            >
+                <slot />
+            </div>
         </main>
     </body>
 </html>

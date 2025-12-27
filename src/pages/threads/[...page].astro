@@ -40,34 +40,28 @@ const { page } = Astro.props;
 ---
 
 <Thread title={`Threads - Page ${page.currentPage}`}>
-    <div
-        class="grid
-            grid-cols-[1fr_min(60rem,100%)_1fr]
-            w-full my-8"
+    <ul
+        class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4"
     >
-        <ul
-            class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4"
-        >
-            {
-                page.data.map(({ thread, articleCount }) => (
-                    <>
-                        <li>
-                            <ThreadCard
-                                href={`/threads/${thread.id}`}
-                                title={thread.data.name}
-                                articleCount={articleCount}
-                                description={thread.body || "Deskripsi.."}
-                            />
-                        </li>
-                    </>
-                ))
-            }
-        </ul>
+        {
+            page.data.map(({ thread, articleCount }) => (
+                <>
+                    <li>
+                        <ThreadCard
+                            href={`/threads/${thread.id}`}
+                            title={thread.data.name}
+                            articleCount={articleCount}
+                            description={thread.body || "Deskripsi.."}
+                        />
+                    </li>
+                </>
+            ))
+        }
+    </ul>
 
-        <nav aria-label="Pagination" class="col-start-2 p-4">
-            {page.url.prev && <a href={page.url.prev}>← Previous</a>}
-            <span>Page {page.currentPage} of {page.lastPage}</span>
-            {page.url.next && <a href={page.url.next}>Next →</a>}
-        </nav>
-    </div>
+    <nav aria-label="Pagination" class="col-start-2 p-4">
+        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+        <span>Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next && <a href={page.url.next}>Next →</a>}
+    </nav>
 </Thread>

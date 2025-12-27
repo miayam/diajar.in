@@ -1,4 +1,4 @@
 ---
-layout: '@/templates/Default.astro'
+layout: '@/templates/About.astro'
 ---
 Sok tahu!

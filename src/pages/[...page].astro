@@ -34,20 +34,18 @@ const currentPath = Astro.url.pathname;
         ? "Home"
         : `Articles - Page ${page.currentPage}`}
 >
-    <div class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full my-4">
-        <ul class="col-start-2 flex flex-col gap-4 px-4">
-            {
-                page.data.map((article) => (
-                    <li>
-                        <DefaultCard article={article} />
-                    </li>
-                ))
-            }
-        </ul>
-        <nav aria-label="Pagination" class="col-start-2 p-4">
-            {page.url.prev && <a href={page.url.prev}>← Previous</a>}
-            <span>Page {page.currentPage} of {page.lastPage}</span>
-            {page.url.next && <a href={page.url.next}>Next →</a>}
-        </nav>
-    </div>
+    <ul class="col-start-2 flex flex-col gap-4 px-4">
+        {
+            page.data.map((article) => (
+                <li>
+                    <DefaultCard article={article} />
+                </li>
+            ))
+        }
+    </ul>
+    <nav aria-label="Pagination" class="col-start-2 p-4">
+        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+        <span>Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next && <a href={page.url.next}>Next →</a>}
+    </nav>
 </Default>
