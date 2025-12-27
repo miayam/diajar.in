@@ -132,6 +132,7 @@ const { items, currentPath = "" } = Astro.props;
             this.hiddenContainer = navElement.querySelector("#hiddenItems")!;
             this.moreBtn = navElement.querySelector("#moreBtn")!;
             this.dropdown = navElement.querySelector("#dropdown")!;
+            this.hiddenItems = [];
             this.currentPath = navElement.dataset.currentPath || "";
             this.allItems = Array.from(
                 this.visibleContainer.querySelectorAll(".menu-item"),
