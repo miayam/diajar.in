@@ -13,7 +13,7 @@ const { items, currentPath = "" } = Astro.props;
 ---
 
 <nav
-    class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full sticky top-[142.5px] bg-white"
+    class="grid z-2 grid-cols-[1fr_min(40rem,100%)_1fr] w-full sticky top-[142.5px] bg-white"
 >
     <div class="col-start-2 px-4">
         <div class="border-b border-gray-300">
@@ -297,7 +297,7 @@ const { items, currentPath = "" } = Astro.props;
         const lastY = sessionStorage.getItem("lastY");
 
         window.scrollTo({
-            top: Number(lastY || 0),
+            top: Number(lastY || 0) >= 420 ? 420 : Number(lastY || 0),
             left: 0,
             behavior: "instant",
         });
