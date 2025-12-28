@@ -12,7 +12,9 @@ interface Props {
 const { items, currentPath = "" } = Astro.props;
 ---
 
-<nav class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full">
+<nav
+    class="grid grid-cols-[1fr_min(40rem,100%)_1fr] w-full sticky top-[142.5px] bg-white"
+>
     <div class="col-start-2 px-4">
         <div class="border-b border-gray-300">
             <div

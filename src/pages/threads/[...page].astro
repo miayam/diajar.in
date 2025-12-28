@@ -45,16 +45,14 @@ const { page } = Astro.props;
     >
         {
             page.data.map(({ thread, articleCount }) => (
-                <>
-                    <li>
-                        <ThreadCard
-                            href={`/threads/${thread.id}`}
-                            title={thread.data.name}
-                            articleCount={articleCount}
-                            description={thread.body || "Deskripsi.."}
-                        />
-                    </li>
-                </>
+                <li>
+                    <ThreadCard
+                        href={`/threads/${thread.id}`}
+                        title={thread.data.name}
+                        articleCount={articleCount}
+                        description={thread.body || "Deskripsi.."}
+                    />
+                </li>
             ))
         }
     </ul>
