@@ -13,7 +13,7 @@ const { title, description, articleCount, href } = Astro.props;
 
 <a
     href={href}
-    class="card-stack flex flex-col cursor-pointer h-full w-full bg-gray-900 border border-black p-6 text-white rounded-md transition-all duration-300"
+    class="card-stack flex flex-col cursor-pointer h-full w-full bg-black border border-black p-6 text-white rounded-md"
 >
     <div class="text-xl font-bold mb-2">
         {title}
@@ -23,8 +23,9 @@ const { title, description, articleCount, href } = Astro.props;
     >
         <Markdown.Inline of={description} />
     </div>
-    <div class="flex justify-end gap-2.5 text-xs text-gray-300 mt-auto">
-        <span>{articleCount} Artikel</span>
+    <div class="flex justify-end items-center gap-1.5 mt-auto">
+        <span class="icon-book-open text-md font-bold"></span>
+        <span class="text-xs">{articleCount} Artikel</span>
     </div>
 </a>
 
@@ -32,6 +33,6 @@ const { title, description, articleCount, href } = Astro.props;
     .card-stack {
         box-shadow:
             4px 4px 0 -2px white,
-            8px 8px 0 -2px #1a1a1a;
+            8px 8px 0 -2px black;
     }
 </style>
