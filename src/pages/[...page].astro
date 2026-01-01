@@ -1,9 +1,6 @@
 ---
 import Default from "@/templates/Default.astro";
-import { menuItems } from "@/utils";
 import DefaultCard from "@/components/display/DefaultCard.astro";
-import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
-import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
@@ -25,8 +22,6 @@ type Props = {
 };
 
 const { page } = Astro.props;
-
-const currentPath = Astro.url.pathname;
 ---
 
 <Default
@@ -43,6 +38,7 @@ const currentPath = Astro.url.pathname;
             ))
         }
     </ul>
+
     <nav aria-label="Pagination" class="col-start-2 p-4">
         {page.url.prev && <a href={page.url.prev}>← Previous</a>}
         <span>Page {page.currentPage} of {page.lastPage}</span>

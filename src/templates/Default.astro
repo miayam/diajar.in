@@ -2,6 +2,7 @@
 import { ClientRouter } from "astro:transitions";
 import Header from "@/components/structure/Header.astro";
 import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
+import SkeletonCard from "@/components/indicators/SkeletonCard.astro";
 import Search from "@/components/interactive/Search.astro";
 import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
 import { menuItems } from "@/utils";
@@ -28,7 +29,7 @@ const currentPath = Astro.url.pathname;
         <main class="pt-[60px]">
             <StoriesPlayer />
             <div
-                class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky top-[70px]"
+                class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky top-[60px]"
             >
                 <Search />
             </div>
@@ -39,9 +40,31 @@ const currentPath = Astro.url.pathname;
                     grid-cols-[1fr_min(40rem,100%)_1fr]
                     w-full my-4"
                 >
+                    <ul
+                        id="shimmer"
+                        class="col-start-2 flex flex-col gap-4 px-4 hidden"
+                    >
+                        {
+                            Array.from(new Array(9)).map(() => (
+                                <li>
+                                    <SkeletonCard />
+                                </li>
+                            ))
+                        }
+                    </ul>
                     <slot />
                 </div>
             </div>
         </main>
     </body>
 </html>
+
+<script is:inline>
+    document.addEventListener("astro:before-preparation", () => {
+        document.querySelector("#shimmer").classList.remove("hidden");
+    });
+
+    document.addEventListener("astro:after-preparation", () => {
+        document.querySelector("#shimmer").classList.add("hidden");
+    });
+</script>
