@@ -65,7 +65,7 @@ const totalSlides = slides.length;
         <!-- Slide counter -->
         <div
             id="slideCounter"
-            class="absolute hidden bottom-12 right-5 text-gray-900 py-1.5 px-3 rounded-2xl text-sm font-medium"
+            class="absolute bottom-4 right-5 text-gray-900 py-1.5 px-3 rounded-2xl text-sm font-medium"
         >
             1 / {totalSlides}
         </div>
@@ -75,12 +75,12 @@ const totalSlides = slides.length;
 <style>
     .progress-fill.completed {
         width: 100%;
-        background: #121212;
+        background: var(--text-gray-900);
         transition: none;
     }
 
     .progress-fill.active {
-        background: #121212;
+        background: var(--text-gray-900);
         animation: progress-animation linear forwards;
     }
 
@@ -111,15 +111,20 @@ const totalSlides = slides.length;
         private duration: number;
         private slides: NodeListOf<HTMLElement>;
 
-        constructor(container: HTMLElement, totalSlides: number) {
+        constructor(
+            container: HTMLElement,
+            totalSlides: number,
+            startTime: number = 0,
+            currentIndex: number = 0,
+        ) {
             this.container = container;
             this.totalSlides = totalSlides;
-            this.currentIndex = 0;
+            this.startTime = startTime;
+            this.currentIndex = currentIndex;
             this.isPlaying = false;
             this.currentTimer = null;
             this.isPaused = false;
             this.pausedTime = 0;
-            this.startTime = 0;
             this.duration = 5;
             this.slides = container.querySelectorAll(".story-slide");
 
@@ -177,11 +182,11 @@ const totalSlides = slides.length;
                 if (index < this.currentIndex) {
                     fill.classList.add("completed");
                     fill.style.width = "100%";
-                    fill.style.background = "#121212";
+                    fill.style.background = "var(--colors-gray-900)";
                 } else if (index === this.currentIndex) {
                     fill.classList.remove("completed");
                     fill.style.width = "0%";
-                    fill.style.background = "#121212";
+                    fill.style.background = "var(--colors-gray-900)";
                 } else {
                     fill.classList.remove("completed");
                     fill.style.width = "0%";
