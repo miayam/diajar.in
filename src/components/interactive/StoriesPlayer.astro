@@ -1,39 +1,12 @@
 ---
-interface Slide {
-    text: string;
-}
-
-const slides: Slide[] = [
-    {
-        text: "Bersihkan hati dan luruskan niat",
-    },
-    {
-        text: "Kurangi distraksi dan berikan fokus penuh",
-    },
-    {
-        text: "Jangan tinggi hati dengan apa yang dipelajari",
-    },
-    {
-        text: "Hindari perdebatan yang tidak perlu",
-    },
-    {
-        text: "Belajarlah secara menyeluruh",
-    },
-    {
-        text: "Prioritaskan pada ilmu yang bermuara pada kebijaksanaan hakiki",
-    },
-    {
-        text: "Hiasi ilmu dengan akhlak terpuji",
-    },
-];
-
+import { slides } from "@/utils";
 const totalSlides = slides.length;
 ---
 
 <div class="w-full pt-4 flex justify-center">
     <div
         id="storiesContainer"
-        class="relative w-full max-w-[40rem] px-4 h-[400px] bg-white overflow-hidden flex cursor-pointer flex-col"
+        class="relative w-full max-w-[40rem] px-4 h-[25rem] bg-white overflow-hidden flex cursor-pointer flex-col"
     >
         <!-- Progress indicators -->
         <div id="progressContainer" class="flex gap-2.5 pt-4 pb-3 z-10">

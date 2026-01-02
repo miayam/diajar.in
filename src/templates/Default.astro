@@ -24,7 +24,7 @@ const currentPath = Astro.url.pathname;
         <link rel="stylesheet" href="/style.css" />
         <ClientRouter />
     </head>
-    <body transition:animate="none">
+    <body transition:animate="none" class="text-gray-900">
         <Header currentPath={currentPath} />
         <main class="pt-[60px]">
             <StoriesPlayer />

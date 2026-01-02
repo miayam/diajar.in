@@ -16,7 +16,7 @@ const currentPath = Astro.url.pathname;
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title || "Diajar.in"}</title>
     </head>
-    <body>
+    <body transition:animate="none" class="text-gray-900">
         <Header currentPath={currentPath} />
         <main class="pt-[60px]">
             <div
