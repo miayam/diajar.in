@@ -38,7 +38,7 @@ const totalSlides = slides.length;
             {
                 slides.map((slide, index) => (
                     <div
-                        class="story-slide absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-300"
+                        class="story-slide absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500"
                         data-index={index}
                     >
                         <div class="md:text-2xl text-lg  relative font-normal w-3/4 gap-1 h-[40%] flex flex-col m-auto">
@@ -73,10 +73,10 @@ const totalSlides = slides.length;
 
     .progress-fill.active {
         background: var(--text-gray-900);
-        animation: progress-animation linear forwards;
+        animation: progress linear forwards;
     }
 
-    @keyframes progress-animation {
+    @keyframes progress {
         from {
             width: 0%;
         }
@@ -103,20 +103,15 @@ const totalSlides = slides.length;
         private duration: number;
         private slides: NodeListOf<HTMLElement>;
 
-        constructor(
-            container: HTMLElement,
-            totalSlides: number,
-            startTime: number = 0,
-            currentIndex: number = 0,
-        ) {
+        constructor(container: HTMLElement, totalSlides: number) {
             this.container = container;
             this.totalSlides = totalSlides;
-            this.startTime = startTime;
-            this.currentIndex = currentIndex;
+            this.currentIndex = 0;
             this.isPlaying = false;
             this.currentTimer = null;
             this.isPaused = false;
             this.pausedTime = 0;
+            this.startTime = 0;
             this.duration = 5;
             this.slides = container.querySelectorAll(".story-slide");
 
@@ -170,15 +165,16 @@ const totalSlides = slides.length;
 
                 fill.classList.remove("active");
                 fill.style.animationDuration = "";
+                fill.style.animationDelay = "";
 
                 if (index < this.currentIndex) {
                     fill.classList.add("completed");
                     fill.style.width = "100%";
-                    fill.style.background = "var(--colors-gray-900)";
+                    fill.style.background = "#121212";
                 } else if (index === this.currentIndex) {
                     fill.classList.remove("completed");
                     fill.style.width = "0%";
-                    fill.style.background = "var(--colors-gray-900)";
+                    fill.style.background = "#121212";
                 } else {
                     fill.classList.remove("completed");
                     fill.style.width = "0%";
@@ -210,6 +206,32 @@ const totalSlides = slides.length;
             }, this.duration * 1000);
         }
 
+        private resumeStoryWithDelay(elapsedTime: number): void {
+            if (this.currentIndex >= this.totalSlides) {
+                this.complete();
+                return;
+            }
+
+            this.isPlaying = true;
+            this.isPaused = false;
+            this.startTime = Date.now();
+
+            const progressFill = this.container.querySelector<HTMLElement>(
+                `[data-index="${this.currentIndex}"] .progress-fill`,
+            );
+            if (progressFill) {
+                progressFill.style.animationDuration = `${this.duration}s`;
+                // Use negative delay to start animation partway through
+                progressFill.style.animationDelay = `-${elapsedTime / 1000}s`;
+                progressFill.classList.add("active");
+            }
+
+            const remainingTime = this.duration * 1000 - elapsedTime;
+            this.currentTimer = window.setTimeout(() => {
+                this.nextStory();
+            }, remainingTime);
+        }
+
         private nextStory(): void {
             if (this.currentTimer) {
                 clearTimeout(this.currentTimer);
@@ -224,7 +246,7 @@ const totalSlides = slides.length;
             }
         }
 
-        private pause(): void {
+        public pause(): void {
             if (!this.isPlaying || this.isPaused) return;
 
             this.isPaused = true;
@@ -243,7 +265,7 @@ const totalSlides = slides.length;
             }
         }
 
-        private resume(): void {
+        public resume(): void {
             if (!this.isPaused) return;
 
             this.isPaused = false;
@@ -261,6 +283,42 @@ const totalSlides = slides.length;
             }, remainingTime);
         }
 
+        public pauseForNavigation(): void {
+            this.isPaused = true;
+            this.pausedTime = Date.now() - this.startTime;
+
+            if (this.currentTimer) {
+                clearTimeout(this.currentTimer);
+                this.currentTimer = null;
+            }
+
+            // Store state in sessionStorage
+            sessionStorage.setItem(
+                "story-current-index",
+                this.currentIndex.toString(),
+            );
+            sessionStorage.setItem(
+                "story-elapsed-time",
+                this.pausedTime.toString(),
+            );
+
+            const progressFill = this.container.querySelector<HTMLElement>(
+                `[data-index="${this.currentIndex}"] .progress-fill`,
+            );
+            if (progressFill) {
+                progressFill.style.animationPlayState = "paused";
+            }
+        }
+
+        public resumeFromNavigation(
+            storedIndex: number,
+            elapsedTime: number,
+        ): void {
+            this.currentIndex = storedIndex;
+            this.showSlide(storedIndex);
+            this.resumeStoryWithDelay(elapsedTime);
+        }
+
         private complete(): void {
             this.isPlaying = false;
 
@@ -273,6 +331,7 @@ const totalSlides = slides.length;
                 fill.classList.remove("active", "completed");
                 fill.style.width = "0%";
                 fill.style.animationDuration = "";
+                fill.style.animationDelay = "";
                 fill.style.animationPlayState = "running";
             });
 
@@ -284,19 +343,43 @@ const totalSlides = slides.length;
         }
     }
 
+    // Store instance globally
+    let storiesPlayerInstance: StoriesPlayer | null = null;
+
     // Initialize
     const container = document.getElementById("storiesContainer");
     if (container) {
         const totalSlides = container.querySelectorAll(".story-slide").length;
-        new StoriesPlayer(container, totalSlides);
+        storiesPlayerInstance = new StoriesPlayer(container, totalSlides);
     }
 
+    // Pause before navigation
+    document.addEventListener("astro:before-preparation", () => {
+        if (storiesPlayerInstance) {
+            storiesPlayerInstance.pauseForNavigation();
+        }
+    });
+
+    // Resume after navigation
     document.addEventListener("astro:after-swap", () => {
         const container = document.getElementById("storiesContainer");
         if (container) {
+            const storedIndex = parseInt(
+                sessionStorage.getItem("story-current-index") || "0",
+                10,
+            );
+            const elapsedTime = parseInt(
+                sessionStorage.getItem("story-elapsed-time") || "0",
+                10,
+            );
+
             const totalSlides =
                 container.querySelectorAll(".story-slide").length;
-            new StoriesPlayer(container, totalSlides);
+            storiesPlayerInstance = new StoriesPlayer(container, totalSlides);
+            storiesPlayerInstance.resumeFromNavigation(
+                storedIndex,
+                elapsedTime,
+            );
         }
     });
 </script>
