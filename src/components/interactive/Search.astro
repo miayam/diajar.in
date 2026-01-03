@@ -1,12 +1,13 @@
 ---
 interface Props {
     placeholder?: string;
+    className?: string;
 }
 
-const { placeholder } = Astro.props;
+const { placeholder, className } = Astro.props;
 ---
 
-<div class="w-full col-start-2 sticky bg-white pt-2">
+<div class={`w-full col-start-2 sticky bg-white pt-2 ${className}`}>
     <div class="relative p-2">
         <div class="w-50 h-13 border border-6 border-white m-auto">
             <button
@@ -14,7 +15,7 @@ const { placeholder } = Astro.props;
                 class="h-full justify-center gap-1 text-center px-2 flex items-center w-full border border-black rounded-md bg-gray-900 text-white"
             >
                 <span class="icon-search text-lg"></span>
-                {placeholder || "Cari artikel..."}
+                {placeholder || "Cari Artikel"}
             </button>
         </div>
         <span
