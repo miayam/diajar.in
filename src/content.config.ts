@@ -4,7 +4,7 @@ import { glob } from "astro/loaders";
 import { reference } from "astro:content";
 
 const authors = defineCollection({
-  loader: glob({ pattern: "**/*.json", base: "./src/data/authors" }),
+  loader: glob({ pattern: "**/*.(md|mdx|json)", base: "./src/data/authors" }),
   schema: z.object({
     name: z.string(),
     email: z.string().email(),
@@ -13,7 +13,7 @@ const authors = defineCollection({
 });
 
 const articles = defineCollection({
-  loader: glob({ pattern: "**/*.mdx", base: "./src/data/articles" }),
+  loader: glob({ pattern: "**/*.(md|mdx|json)", base: "./src/data/articles" }),
   schema: z.object({
     title: z.string(),
     publishDate: z.coerce.date(),
@@ -29,7 +29,7 @@ const articles = defineCollection({
 });
 
 const threads = defineCollection({
-  loader: glob({ pattern: "**/*.mdx", base: "./src/data/threads" }),
+  loader: glob({ pattern: "**/*.(md|mdx|json)", base: "./src/data/threads" }),
   schema: z.object({
     name: z.string(),
     label: z.string(),
@@ -37,7 +37,7 @@ const threads = defineCollection({
 });
 
 const tags = defineCollection({
-  loader: glob({ pattern: "**/*.mdx", base: "./src/data/tags" }),
+  loader: glob({ pattern: "**/*.(md|mdx|json)", base: "./src/data/tags" }),
   schema: z.object({
     name: z.string(),
     label: z.string(),
