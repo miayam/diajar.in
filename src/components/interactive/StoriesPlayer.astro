@@ -89,14 +89,12 @@ const totalSlides = slides.length;
         opacity: 1;
     }
 </style>
-
 <script>
     class StoriesPlayer {
         private container: HTMLElement;
         private totalSlides: number;
         private currentIndex: number;
         private isPlaying: boolean;
-        private currentTimer: number | null;
         private isPaused: boolean;
         private pausedTime: number;
         private startTime: number;
@@ -108,7 +106,6 @@ const totalSlides = slides.length;
             this.totalSlides = totalSlides;
             this.currentIndex = 0;
             this.isPlaying = false;
-            this.currentTimer = null;
             this.isPaused = false;
             this.pausedTime = 0;
             this.startTime = 0;
@@ -166,6 +163,10 @@ const totalSlides = slides.length;
                 fill.classList.remove("active");
                 fill.style.animationDuration = "";
                 fill.style.animationDelay = "";
+                fill.removeEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
 
                 if (index < this.currentIndex) {
                     fill.classList.add("completed");
@@ -183,6 +184,12 @@ const totalSlides = slides.length;
             });
         }
 
+        private handleAnimationEnd = (): void => {
+            if (!this.isPaused) {
+                this.nextStory();
+            }
+        };
+
         private startStory(): void {
             if (this.currentIndex >= this.totalSlides) {
                 this.complete();
@@ -197,13 +204,17 @@ const totalSlides = slides.length;
                 `[data-index="${this.currentIndex}"] .progress-fill`,
             );
             if (progressFill) {
+                progressFill.removeEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
                 progressFill.style.animationDuration = `${this.duration}s`;
                 progressFill.classList.add("active");
+                progressFill.addEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
             }
-
-            this.currentTimer = window.setTimeout(() => {
-                this.nextStory();
-            }, this.duration * 1000);
         }
 
         private resumeStoryWithDelay(elapsedTime: number): void {
@@ -214,30 +225,28 @@ const totalSlides = slides.length;
 
             this.isPlaying = true;
             this.isPaused = false;
-            this.startTime = Date.now();
+            this.startTime = Date.now() - elapsedTime;
 
             const progressFill = this.container.querySelector<HTMLElement>(
                 `[data-index="${this.currentIndex}"] .progress-fill`,
             );
             if (progressFill) {
+                progressFill.removeEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
                 progressFill.style.animationDuration = `${this.duration}s`;
                 // Use negative delay to start animation partway through
                 progressFill.style.animationDelay = `-${elapsedTime / 1000}s`;
                 progressFill.classList.add("active");
+                progressFill.addEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
             }
-
-            const remainingTime = this.duration * 1000 - elapsedTime;
-            this.currentTimer = window.setTimeout(() => {
-                this.nextStory();
-            }, remainingTime);
         }
 
         private nextStory(): void {
-            if (this.currentTimer) {
-                clearTimeout(this.currentTimer);
-                this.currentTimer = null;
-            }
-
             if (this.currentIndex < this.totalSlides - 1) {
                 this.showSlide(this.currentIndex + 1);
                 this.startStory();
@@ -252,11 +261,6 @@ const totalSlides = slides.length;
             this.isPaused = true;
             this.pausedTime = Date.now() - this.startTime;
 
-            if (this.currentTimer) {
-                clearTimeout(this.currentTimer);
-                this.currentTimer = null;
-            }
-
             const progressFill = this.container.querySelector<HTMLElement>(
                 `[data-index="${this.currentIndex}"] .progress-fill`,
             );
@@ -269,7 +273,6 @@ const totalSlides = slides.length;
             if (!this.isPaused) return;
 
             this.isPaused = false;
-            const remainingTime = this.duration * 1000 - this.pausedTime;
 
             const progressFill = this.container.querySelector<HTMLElement>(
                 `[data-index="${this.currentIndex}"] .progress-fill`,
@@ -278,19 +281,12 @@ const totalSlides = slides.length;
                 progressFill.style.animationPlayState = "running";
             }
 
-            this.currentTimer = window.setTimeout(() => {
-                this.nextStory();
-            }, remainingTime);
+            this.startTime = Date.now() - this.pausedTime;
         }
 
         public pauseForNavigation(): void {
             this.isPaused = true;
             this.pausedTime = Date.now() - this.startTime;
-
-            if (this.currentTimer) {
-                clearTimeout(this.currentTimer);
-                this.currentTimer = null;
-            }
 
             // Store state in sessionStorage
             sessionStorage.setItem(
@@ -307,6 +303,10 @@ const totalSlides = slides.length;
             );
             if (progressFill) {
                 progressFill.style.animationPlayState = "paused";
+                progressFill.removeEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
             }
         }
 
@@ -333,13 +333,21 @@ const totalSlides = slides.length;
                 fill.style.animationDuration = "";
                 fill.style.animationDelay = "";
                 fill.style.animationPlayState = "running";
+                fill.removeEventListener(
+                    "animationend",
+                    this.handleAnimationEnd,
+                );
             });
 
+            this.currentIndex = 0;
             this.showSlide(0);
 
-            setTimeout(() => {
-                this.startStory();
-            }, 800);
+            // Use requestAnimationFrame to ensure DOM updates, then restart
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    this.startStory();
+                });
+            });
         }
     }
 
