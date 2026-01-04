@@ -253,8 +253,19 @@ const { currentPage, lastPage, urlPattern, maxVisible = 7 } = Astro.props;
         private createEllipsis(): HTMLElement {
             const ellipsisContainer = document.createElement("div");
             ellipsisContainer.className =
-                "ellipsis relative py-2 px-4 flex justify-center items-center";
-            ellipsisContainer.textContent = "...";
+                "ellipsis relative py-2 px-4 flex cursor-pointer justify-center items-center";
+            ellipsisContainer.innerHTML = `
+              <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+              >
+                  <circle cx="3" cy="8" r="1.5"></circle>
+                  <circle cx="8" cy="8" r="1.5"></circle>
+                  <circle cx="13" cy="8" r="1.5"></circle>
+              </svg>
+            `;
 
             let dropdown: HTMLElement | null = null;
 
@@ -296,14 +307,14 @@ const { currentPage, lastPage, urlPattern, maxVisible = 7 } = Astro.props;
         private createDropdown(): HTMLElement {
             const dropdown = document.createElement("div");
             dropdown.className =
-                "ellipsis-dropdown absolute border border-gray-300 shadow-[0_10px_15px_-3px_border-gray-900] z-50 min-w-[200px] mt-2 p-2 rounded-lg border-solid left-0 top-full";
+                "ellipsis-dropdown absolute border border-gray-300 z-50 min-w-[200px] mt-2 p-2 rounded-md border-solid left-0 top-full";
 
             // Input for jumping to page
             const input = document.createElement("input");
             input.type = "text";
             input.placeholder = `Go to page (1-${this.lastPage})`;
             input.className =
-                "w-full border border-gray-300 rounded p-2 border-solid focus:border-gray-900 focus:border-2 [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none focus:outline-none";
+                "w-full border border-gray-300 p-2 border-solid focus:border-gray-900 focus:border-2 [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none focus:outline-none";
 
             input.addEventListener("keydown", (e) => {
                 if (e.key === "Enter") {
