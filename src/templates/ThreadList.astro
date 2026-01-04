@@ -1,5 +1,7 @@
 ---
+import { ClientRouter } from "astro:transitions";
 import Header from "@/components/structure/Header.astro";
+import SkeletonCard from "@/components/indicators/SkeletonCard.astro";
 import Search from "@/components/interactive/Search.astro";
 
 interface Props {
@@ -17,6 +19,7 @@ const currentPath = Astro.url.pathname;
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title || "Diajar.in"}</title>
         <link rel="stylesheet" href="/style.css" />
+        <ClientRouter />
     </head>
     <body transition:animate="none" class="text-gray-900">
         <Header currentPath={currentPath} />
@@ -31,8 +34,30 @@ const currentPath = Astro.url.pathname;
                     grid-cols-[1fr_min(60rem,100%)_1fr]
                     w-full"
             >
+                <ul
+                    id="shimmer"
+                    class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4 gap-4 hidden"
+                >
+                    {
+                        Array.from(new Array(9)).map(() => (
+                            <li>
+                                <SkeletonCard />
+                            </li>
+                        ))
+                    }
+                </ul>
                 <slot />
             </div>
         </main>
     </body>
 </html>
+
+<script is:inline>
+    document.addEventListener("astro:before-preparation", () => {
+        document.querySelector("#shimmer").classList.remove("hidden");
+    });
+
+    document.addEventListener("astro:after-preparation", () => {
+        document.querySelector("#shimmer").classList.add("hidden");
+    });
+</script>

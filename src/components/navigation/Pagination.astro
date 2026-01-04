@@ -4,92 +4,21 @@ interface Props {
     lastPage: number;
     urlPattern: string; // e.g., "/articles" or "/tags/javascript"
     maxVisible?: number; // Maximum items to show (default: 7)
+    className?: string;
 }
 
-const { currentPage, lastPage, urlPattern, maxVisible = 7 } = Astro.props;
+const {
+    currentPage,
+    lastPage,
+    urlPattern,
+    maxVisible = 7,
+    className,
+} = Astro.props;
 ---
-
-<style>
-    .page-item {
-        padding: 0.5rem 0.75rem;
-        border: 1px solid #d1d5db;
-        border-radius: 0.25rem;
-        transition: background-color 0.2s;
-        cursor: pointer;
-        text-decoration: none;
-        color: #374151;
-    }
-
-    .page-item:hover {
-        background-color: #f3f4f6;
-    }
-
-    .page-item.active {
-        background-color: #111827;
-        color: white;
-        border-color: #111827;
-        font-weight: bold;
-    }
-
-    .ellipsis {
-        padding: 0.5rem 0.75rem;
-        border: 1px solid #d1d5db;
-        border-radius: 0.25rem;
-        cursor: pointer;
-        position: relative;
-        background: white;
-    }
-
-    .ellipsis:hover {
-        background-color: #f3f4f6;
-    }
-
-    .ellipsis-dropdown {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        margin-top: 0.5rem;
-        background: white;
-        border: 1px solid #d1d5db;
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        padding: 0.5rem;
-        z-index: 50;
-        min-width: 200px;
-    }
-
-    .ellipsis-dropdown input {
-        width: 100%;
-        padding: 0.5rem;
-        border: 1px solid #d1d5db;
-        border-radius: 0.25rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .ellipsis-dropdown input:focus {
-        outline: none;
-        border-color: #111827;
-    }
-
-    .page-list-item {
-        padding: 0.5rem;
-        cursor: pointer;
-        border-radius: 0.25rem;
-    }
-
-    .page-list-item:hover {
-        background-color: #f3f4f6;
-    }
-
-    .page-list-item.current {
-        background-color: #111827;
-        color: white;
-    }
-</style>
 
 <nav
     id="pagination"
-    class="flex items-center justify-center gap-2 my-8"
+    class={`flex items-center justify-center gap-2 my-8 ${className}`}
     data-current={currentPage}
     data-last={lastPage}
     data-url-pattern={urlPattern}

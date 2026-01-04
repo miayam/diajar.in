@@ -1,6 +1,7 @@
 ---
 import ThreadList from "@/templates/ThreadList.astro";
 import ThreadCard from "@/components/display/ThreadCard.astro";
+import Pagination from "@/components/navigation/Pagination.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
@@ -24,7 +25,7 @@ export const getStaticPaths = (async ({ paginate }) => {
             };
         });
 
-    return paginate(sortedThreads, { pageSize: 2 });
+    return paginate(sortedThreads, { pageSize: 9 });
 }) satisfies GetStaticPaths;
 
 type ThreadWithCount = {
@@ -57,9 +58,10 @@ const { page } = Astro.props;
         }
     </ul>
 
-    <nav aria-label="Pagination" class="col-start-2 p-4">
-        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
-        <span>Page {page.currentPage} of {page.lastPage}</span>
-        {page.url.next && <a href={page.url.next}>Next →</a>}
-    </nav>
+    <Pagination
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+        urlPattern="/threads"
+        className="col-start-2"
+    />
 </ThreadList>
