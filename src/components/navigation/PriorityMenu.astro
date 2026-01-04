@@ -7,15 +7,14 @@ interface MenuItem {
 interface Props {
     items: MenuItem[];
     currentPath?: string;
+    className?: string;
 }
 
-const { items, currentPath = "" } = Astro.props;
+const { items, currentPath = "", className } = Astro.props;
 ---
 
-<nav
-    class="grid z-2 grid-cols-[1fr_min(40rem,100%)_1fr] w-full sticky top-[131px] bg-white"
->
-    <div class="col-start-2 px-4">
+<nav class={`z-2 w-full bg-white ${className}`}>
+    <div class="px-4">
         <div class="border-b border-gray-300">
             <div
                 id="priorityNav"

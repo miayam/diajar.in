@@ -29,11 +29,19 @@ const currentPath = Astro.url.pathname;
         <main class="pt-[60px]">
             <StoriesPlayer />
             <div
-                class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky top-[59px]"
+                class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky md:top-[59px] top-[55px]"
             >
-                <Search />
+                <Search className="col-start-2" />
             </div>
-            <PriorityMenu items={menuItems} currentPath={currentPath} />
+            <div
+                class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky top-[131px]"
+            >
+                <PriorityMenu
+                    items={menuItems}
+                    currentPath={currentPath}
+                    className="col-start-2"
+                />
+            </div>
             <div class="min-h-[48rem] h-auto">
                 <div
                     class="grid
