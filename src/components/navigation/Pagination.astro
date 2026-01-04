@@ -102,7 +102,7 @@ const { currentPage, lastPage, urlPattern, maxVisible = 7 } = Astro.props;
             <a
                 href={
                     currentPage === 2
-                        ? urlPattern
+                        ? `${urlPattern}/`
                         : `${urlPattern}/${currentPage - 1}`
                 }
                 class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
