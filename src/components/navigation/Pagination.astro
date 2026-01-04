@@ -1,0 +1,341 @@
+---
+interface Props {
+    currentPage: number;
+    lastPage: number;
+    urlPattern: string; // e.g., "/articles" or "/tags/javascript"
+    maxVisible?: number; // Maximum items to show (default: 7)
+}
+
+const { currentPage, lastPage, urlPattern, maxVisible = 7 } = Astro.props;
+---
+
+<style>
+    .page-item {
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.25rem;
+        transition: background-color 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+        color: #374151;
+    }
+
+    .page-item:hover {
+        background-color: #f3f4f6;
+    }
+
+    .page-item.active {
+        background-color: #111827;
+        color: white;
+        border-color: #111827;
+        font-weight: bold;
+    }
+
+    .ellipsis {
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        position: relative;
+        background: white;
+    }
+
+    .ellipsis:hover {
+        background-color: #f3f4f6;
+    }
+
+    .ellipsis-dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0.5rem;
+        background: white;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        z-index: 50;
+        min-width: 200px;
+    }
+
+    .ellipsis-dropdown input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ellipsis-dropdown input:focus {
+        outline: none;
+        border-color: #111827;
+    }
+
+    .page-list-item {
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+    }
+
+    .page-list-item:hover {
+        background-color: #f3f4f6;
+    }
+
+    .page-list-item.current {
+        background-color: #111827;
+        color: white;
+    }
+</style>
+
+<nav
+    id="pagination"
+    class="flex items-center justify-center gap-2 my-8"
+    data-current={currentPage}
+    data-last={lastPage}
+    data-url-pattern={urlPattern}
+    data-max-visible={maxVisible}
+    aria-label="Pagination"
+>
+    <!-- Previous button -->
+    {
+        currentPage > 1 ? (
+            <a
+                href={
+                    currentPage === 2
+                        ? urlPattern
+                        : `${urlPattern}/${currentPage - 1}`
+                }
+                class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
+                aria-label="Previous page"
+            >
+                <span class="icon-chevron-left text-lg" />
+            </a>
+        ) : (
+            <button
+                disabled
+                class="px-3 py-2 h-10 w-10 flex items-center justify-center  rounded border border-gray-200 text-gray-400 cursor-not-allowed"
+            >
+                <span class="icon-chevron-left text-lg" />
+            </button>
+        )
+    }
+
+    <!-- Page numbers will be inserted here by JS -->
+    <div id="pageNumbers" class="flex items-center gap-2"></div>
+
+    <!-- Next button -->
+    {
+        currentPage < lastPage ? (
+            <a
+                href={`${urlPattern}/${currentPage + 1}`}
+                class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
+                aria-label="Next page"
+            >
+                <span class="icon-chevron-right text-lg" />
+            </a>
+        ) : (
+            <button
+                disabled
+                class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded border border-gray-200 text-gray-400 cursor-not-allowed"
+            >
+                <span class="icon-chevron-right text-lg" />
+            </button>
+        )
+    }
+</nav>
+
+<script>
+    class Pagination {
+        private container: HTMLElement;
+        private pageNumbersContainer: HTMLElement;
+        private currentPage: number;
+        private lastPage: number;
+        private urlPattern: string;
+        private maxVisible: number;
+
+        constructor(container: HTMLElement) {
+            this.container = container;
+            this.pageNumbersContainer =
+                container.querySelector("#pageNumbers")!;
+            this.currentPage = parseInt(container.dataset.current || "1");
+            this.lastPage = parseInt(container.dataset.last || "1");
+            this.urlPattern = container.dataset.urlPattern || "";
+            this.maxVisible = parseInt(container.dataset.maxVisible || "7");
+
+            this.init();
+        }
+
+        private init(): void {
+            this.renderPageNumbers();
+        }
+
+        private getPageUrl(page: number | ""): string {
+            console.log(page, "woi");
+            if (page === 1) {
+                return `${this.urlPattern}/`;
+            }
+            return `${this.urlPattern}/${page}`;
+        }
+
+        private renderPageNumbers(): void {
+            this.pageNumbersContainer.innerHTML = "";
+            const pages = this.calculatePages();
+
+            pages.forEach((item) => {
+                if (typeof item === "number") {
+                    const pageLink = document.createElement("a");
+                    pageLink.href = this.getPageUrl(item);
+                    pageLink.textContent = item.toString();
+                    pageLink.className =
+                        "page-item border border-gray-300 rounded min-w-10 h-10 px-1 py-2 items-center flex justify-center";
+                    if (item === this.currentPage) {
+                        pageLink.classList.add("active");
+                        pageLink.classList.add("font-semibold");
+                        pageLink.classList.add("border-gray-900");
+                        pageLink.classList.add("border-2");
+                        pageLink.setAttribute("aria-current", "page");
+                    }
+                    this.pageNumbersContainer.appendChild(pageLink);
+                } else if (item === "ellipsis") {
+                    const ellipsis = this.createEllipsis();
+                    this.pageNumbersContainer.appendChild(ellipsis);
+                }
+            });
+        }
+
+        private calculatePages(): (number | "ellipsis")[] {
+            if (this.lastPage <= this.maxVisible) {
+                // Show all pages if total is less than max
+                return Array.from({ length: this.lastPage }, (_, i) => i + 1);
+            }
+
+            const pages: (number | "ellipsis")[] = [];
+            const sidePages = Math.floor((this.maxVisible - 3) / 2); // -3 for first, last, and one ellipsis
+
+            // Always show first page
+            pages.push(1);
+
+            if (this.currentPage <= sidePages + 2) {
+                // Near start
+                for (let i = 2; i <= this.maxVisible - 2; i++) {
+                    pages.push(i);
+                }
+                pages.push("ellipsis");
+            } else if (this.currentPage >= this.lastPage - sidePages - 1) {
+                // Near end
+                pages.push("ellipsis");
+                for (
+                    let i = this.lastPage - this.maxVisible + 3;
+                    i < this.lastPage;
+                    i++
+                ) {
+                    pages.push(i);
+                }
+            } else {
+                // In middle
+                pages.push("ellipsis");
+                for (
+                    let i = this.currentPage - sidePages;
+                    i <= this.currentPage + sidePages;
+                    i++
+                ) {
+                    pages.push(i);
+                }
+                pages.push("ellipsis");
+            }
+
+            // Always show last page
+            pages.push(this.lastPage);
+
+            return pages;
+        }
+
+        private createEllipsis(): HTMLElement {
+            const ellipsisContainer = document.createElement("div");
+            ellipsisContainer.className =
+                "ellipsis relative py-2 px-4 flex justify-center items-center";
+            ellipsisContainer.textContent = "...";
+
+            let dropdown: HTMLElement | null = null;
+
+            ellipsisContainer.addEventListener("click", (e) => {
+                e.stopPropagation();
+
+                // Close any existing dropdowns
+                document
+                    .querySelectorAll(".ellipsis-dropdown")
+                    .forEach((d) => d.remove());
+
+                if (dropdown) {
+                    dropdown.remove();
+                    dropdown = null;
+                    return;
+                }
+
+                dropdown = this.createDropdown();
+                ellipsisContainer.appendChild(dropdown);
+
+                // Focus input
+                const input = dropdown.querySelector(
+                    "input",
+                ) as HTMLInputElement;
+                input?.focus();
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener("click", (e) => {
+                if (dropdown && !ellipsisContainer.contains(e.target as Node)) {
+                    dropdown.remove();
+                    dropdown = null;
+                }
+            });
+
+            return ellipsisContainer;
+        }
+
+        private createDropdown(): HTMLElement {
+            const dropdown = document.createElement("div");
+            dropdown.className =
+                "ellipsis-dropdown absolute border border-gray-300 shadow-[0_10px_15px_-3px_border-gray-900] z-50 min-w-[200px] mt-2 p-2 rounded-lg border-solid left-0 top-full";
+
+            // Input for jumping to page
+            const input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = `Go to page (1-${this.lastPage})`;
+            input.className =
+                "coy w-full border border-gray-300 rounded p-2 border-solid focus:border-gray-900 focus:border-2 [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none focus:outline-none";
+
+            input.addEventListener("keydown", (e) => {
+                console.log("coy", e);
+                if (e.key === "Enter") {
+                    const page = parseInt(input.value);
+                    if (page >= 1 && page <= this.lastPage) {
+                        window.location.href = this.getPageUrl(page);
+                    } else {
+                        input.classList.add("border-red-500!");
+                        setTimeout(
+                            () => input.classList.remove("border-red-500!"),
+                            1000,
+                        );
+                    }
+                }
+            });
+
+            dropdown.appendChild(input);
+            return dropdown;
+        }
+    }
+
+    // Initialize
+    const paginationElement = document.getElementById("pagination");
+    if (paginationElement) {
+        new Pagination(paginationElement);
+    }
+
+    document.addEventListener("astro:after-swap", () => {
+        const paginationElement = document.getElementById("pagination");
+        if (paginationElement) {
+            new Pagination(paginationElement);
+        }
+    });
+</script>
