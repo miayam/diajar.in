@@ -6,7 +6,7 @@ const totalSlides = slides.length;
 <div class="w-full pt-4 flex justify-center">
     <div
         id="storiesContainer"
-        class="relative w-full max-w-[40rem] px-4 h-[25rem] bg-white overflow-hidden flex flex-col"
+        class="relative w-full max-w-[40rem] px-4 h-[23rem] bg-white overflow-hidden flex flex-col"
     >
         <!-- Progress indicators -->
         <div id="progressContainer" class="flex gap-2.5 pt-4 pb-3 z-10">
@@ -25,11 +25,11 @@ const totalSlides = slides.length;
         <!-- Stories wrapper -->
         <div
             id="storiesWrapper"
-            class="flex-1 relative mt-[2.75rem] overflow-hidden"
+            class="flex-1 relative mt-[3rem] overflow-hidden"
         >
-            <div class="flex pl-[11%] items-end gap-8 m-auto">
+            <div class="flex md:pl-[14.3%] pl-[9%] items-end gap-8 m-auto">
                 <div class="flex gap-1 font-semibold items-center">
-                    <span class="md:text-[3.5rem] text-[2.8rem]">7</span>
+                    <span class="md:text-[3rem] text-[2.8rem]">7</span>
                     <span
                         class="w-10 leading-tight md:text-[1rem] text-[0.9rem]"
                         >Adab Pelajar</span
@@ -42,21 +42,21 @@ const totalSlides = slides.length;
                         class="story-slide absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500"
                         data-index={index}
                     >
-                        <div class="relative font-normal w-[77%] gap-1 h-[45%] flex flex-col m-auto">
-                            <div class="flex justify-start absolute left-0 top-4">
+                        <div class="relative font-base md:w-[70%] w-[80%] gap-1 h-[45%] flex flex-col m-auto">
+                            <div class="flex justify-start absolute left-0 md:top-2">
                                 <span class="icon-left-quote md:text-5xl text-3xl" />
                             </div>
-                            <div class="md:w-[70%] w-[90%] px-4 text-center m-auto leading-tight">
+                            <div class="md:w-[77%] w-[90%] px-4 text-center m-auto leading-tight">
                                 <div class="font-semibold text-mono md:text-2xl text-xl leading-tight px-4">
                                     {slide.text}
                                 </div>
 
-                                <div class="text-sm pt-5">
+                                <div class="text-sm font-italic mt-3 p-0.5">
                                     — dipetik dari Al-Ghazali
                                 </div>
                             </div>
 
-                            <div class="flex justify-end absolute right-0 bottom-8">
+                            <div class="flex justify-end absolute right-0 md:bottom-12 bottom-12">
                                 <span class="icon-right-quote md:text-5xl text-3xl" />
                             </div>
                         </div>
