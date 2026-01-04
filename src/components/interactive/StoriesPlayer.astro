@@ -6,14 +6,14 @@ const totalSlides = slides.length;
 <div class="w-full pt-4 flex justify-center">
     <div
         id="storiesContainer"
-        class="relative w-full max-w-[40rem] px-4 h-[25rem] bg-white overflow-hidden flex cursor-pointer flex-col"
+        class="relative w-full max-w-[40rem] px-4 h-[25rem] bg-white overflow-hidden flex flex-col"
     >
         <!-- Progress indicators -->
         <div id="progressContainer" class="flex gap-2.5 pt-4 pb-3 z-10">
             {
                 slides.map((_, index) => (
                     <div
-                        class="flex-1 h-1.5 bg-gray-300 rounded-lg overflow-hidden"
+                        class="flex-1 md:h-1.2 h-1 bg-gray-300 rounded-lg overflow-hidden"
                         data-index={index}
                     >
                         <div class="progress-fill h-full bg-gray-900 w-0 rounded-sm transition-[width] duration-100" />
@@ -25,12 +25,13 @@ const totalSlides = slides.length;
         <!-- Stories wrapper -->
         <div
             id="storiesWrapper"
-            class="flex-1 relative mt-[2.7rem] overflow-hidden"
+            class="flex-1 relative mt-[2.75rem] overflow-hidden"
         >
-            <div class="flex pl-[12%] items-end gap-8 m-auto">
+            <div class="flex pl-[11%] items-end gap-8 m-auto">
                 <div class="flex gap-1 font-semibold items-center">
-                    <span class="text-[3.5rem]">7</span>
-                    <span class="w-10 leading-tight text-[1rem]"
+                    <span class="md:text-[3.5rem] text-[2.8rem]">7</span>
+                    <span
+                        class="w-10 leading-tight md:text-[1rem] text-[0.9rem]"
                         >Adab Pelajar</span
                     >
                 </div>
@@ -41,20 +42,22 @@ const totalSlides = slides.length;
                         class="story-slide absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500"
                         data-index={index}
                     >
-                        <div class="md:text-2xl text-lg  relative font-normal w-3/4 gap-1 h-[40%] flex flex-col m-auto">
-                            <div class="flex justify-start absolute left-0">
-                                <span class="icon-left-quote text-5xl" />
+                        <div class="relative font-normal w-[77%] gap-1 h-[45%] flex flex-col m-auto">
+                            <div class="flex justify-start absolute left-0 top-4">
+                                <span class="icon-left-quote md:text-5xl text-3xl" />
                             </div>
-                            <div class="w-[70%] px-4 text-center m-auto leading-tight">
-                                <div class="font-semibold">{slide.text}</div>
+                            <div class="md:w-[70%] w-[90%] px-4 text-center m-auto leading-tight">
+                                <div class="font-semibold text-mono md:text-2xl text-xl leading-tight px-4">
+                                    {slide.text}
+                                </div>
 
                                 <div class="text-sm pt-5">
                                     — dipetik dari Al-Ghazali
                                 </div>
                             </div>
 
-                            <div class="flex justify-end absolute right-0 bottom-0">
-                                <span class="icon-right-quote text-5xl" />
+                            <div class="flex justify-end absolute right-0 bottom-8">
+                                <span class="icon-right-quote md:text-5xl text-3xl" />
                             </div>
                         </div>
                     </div>
@@ -111,24 +114,11 @@ const totalSlides = slides.length;
             this.startTime = 0;
             this.duration = 5;
             this.slides = container.querySelectorAll(".story-slide");
-
-            this.init();
         }
 
-        private init(): void {
+        public init(): void {
             this.showSlide(0);
             this.startStory();
-            this.bindEvents();
-        }
-
-        private bindEvents(): void {
-            this.container.addEventListener("click", () => {
-                if (this.isPaused) {
-                    this.resume();
-                } else {
-                    this.pause();
-                }
-            });
         }
 
         private showSlide(index: number): void {
@@ -143,19 +133,12 @@ const totalSlides = slides.length;
 
             this.currentIndex = index;
             this.updateProgressBars();
-            this.updateSlideCounter();
-        }
-
-        private updateSlideCounter(): void {
-            const counter = this.container.querySelector("#slideCounter");
-            if (counter) {
-                counter.textContent = `${this.currentIndex + 1} / ${this.totalSlides}`;
-            }
         }
 
         private updateProgressBars(): void {
             const progressBars =
                 this.container.querySelectorAll<HTMLElement>("[data-index]");
+
             progressBars.forEach((bar, index) => {
                 const fill = bar.querySelector<HTMLElement>(".progress-fill");
                 if (!fill) return;
@@ -359,6 +342,7 @@ const totalSlides = slides.length;
     if (container) {
         const totalSlides = container.querySelectorAll(".story-slide").length;
         storiesPlayerInstance = new StoriesPlayer(container, totalSlides);
+        storiesPlayerInstance.init();
     }
 
     // Pause before navigation

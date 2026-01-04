@@ -30,7 +30,7 @@ import { Image } from "astro:assets";
     class="grid grid-cols-[1fr_min(40rem,100%)_1fr] border-b border-gray-300 fixed w-full overflow-hidden z-99 bg-white"
 >
     <div class="col-start-2 flex justify-between items-center px-4">
-        <a href="/" class="flex items-center gap-2 justify-self-start">
+        <a href="/" class="flex items-center gap-1.5 justify-self-start">
             <div class="w-9 h-9 rounded-full">
                 <img
                     src="/logo.svg"
@@ -38,7 +38,7 @@ import { Image } from "astro:assets";
                     class="w-full h-full rounded-full object-cover"
                 />
             </div>
-            <h1 class="font-bold text-lg">Diajar</h1>
+            <h1 class="font-extrabold text-lg">Diajar</h1>
         </a>
 
         <nav class="flex justify-self-end">
@@ -47,7 +47,7 @@ import { Image } from "astro:assets";
                     <a
                         href={item.href}
                         class:list={[
-                            "border-b-3 py-4 transition-colors min-w-[5rem] text-center",
+                            "md:border-b-3 border-b-2 py-4 transition-colors md:text-base text-sm min-w-[5rem] text-center",
                             isActive(item.href)
                                 ? "border-black font-medium"
                                 : "border-transparent",

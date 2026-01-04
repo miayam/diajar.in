@@ -19,7 +19,7 @@ export const slides: Slide[] = [
     text: "Kurangi distraksi dan berikan fokus penuh",
   },
   {
-    text: "Jangan tinggi hati dengan apa yang dipelajari",
+    text: "Jangan bangga dengan apa yang dipelajari",
   },
   {
     text: "Hindari perdebatan yang tidak perlu",
