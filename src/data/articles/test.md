@@ -8,6 +8,80 @@ draft: false
 readingTime: "5 min read"
 excerpt: "Learn the basics of web development"
 ---
+**Diajar** adalah tempat belajar mandiri seputar web, desain, dan irisannya.
+
+**Diajar** diambil dari kata bahasa Sunda yang berarti *belajar*, tapi dalam bahasa Indonesia merupakan bentuk pasif dari *mengajar*. Jadi, selain *belajar*, saya juga *diajar*.
+
+Blog ini saya buat untuk mengurai catatan menjadi bacaan ringan dengan gaya bahasa khas *mamang-mamang* yang biasa nongkrong di depan gang.
+
+Semoga usaha ini dapat memunculkan kembali budaya *ngulik* dan gairah kepakaran yang sudah lama hilang. Mari meriahkan khazanah web dan desain di Indonesia!
+
+---
+
+## Redaksi
+
+Pengelola blog ini adalah seorang praktisi web. Pernah mengerjakan proyek mulai dari kripto, platform edukasi, bursa saham, *ERP*, sampai properti. Baca selengkapnya di [LinkedIn](https://linkedin.com/in/miayam).
+
+***All this text is important***
+
+* Siapa
+* Apa
+* Kenapa
+
+1. Saha sia?
+2. Maneh saha?
+
+## Table Example
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| Tables | Support for markdown tables | ✅ Active |
+| Lists | Ordered and unordered lists | ✅ Active |
+| Code | Inline and block code | ✅ Active |
+| Links | [Hyperlinks](https://example.com) | ✅ Active |
+| Images | Image embedding | 🚧 In Progress |
+
+## Accordion/Details Example
+
+<details>
+<summary>Click to expand: What is Astro?</summary>
+
+Astro is a modern web framework for building fast, content-focused websites. It allows you to use your favorite UI components and delivers zero JavaScript by default.
+
+Key features:
+- Component Islands
+- Server-first API design
+- Zero JS by default
+- UI-agnostic
+
+</details>
+
+<details>
+<summary>Click to expand: Code Example</summary>
+
+Here's a simple code example:
+```javascript
+function hello() {
+  console.log("Hello, World!");
+}
+```
+
+</details>
+
+<details>
+<summary>Click to expand: Another Table Inside</summary>
+
+You can even nest tables inside:
+
+| Column A | Column B |
+|----------|----------|
+| Data 1   | Data 2   |
+| Data 3   | Data 4   |
+
+</details>
+
+Kunjungi profil [GitHub-nya](https://github.com/miayam). Bila ada pertanyaan, silakan [kirim ke sini](mailto:muhammaddeni90@gmail.com).
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 
 Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.

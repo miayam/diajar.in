@@ -3,6 +3,8 @@ interface Props {
     title?: string;
 }
 
+import "@/styles/content.css";
+
 const { title } = Astro.props;
 ---
 
@@ -18,7 +20,7 @@ const { title } = Astro.props;
             <div
                 class="grid
                     grid-cols-[1fr_min(40rem,100%)_1fr]
-                    w-full my-8"
+                    w-full my-8 content"
             >
                 <div class="col-start-2 px-4">
                     <slot />
