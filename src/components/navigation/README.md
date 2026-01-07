@@ -1,8 +1,7 @@
 # Components
 - Iterator
-- Menu
+- PriorityMenu
 - Pagination
-- NavLink
 - BackLink
 - TableOfContents
 - ShareButtons

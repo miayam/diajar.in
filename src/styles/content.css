@@ -1,64 +1,3 @@
-/*
-.content {
-    h4,
-    h2,
-    h1 {
-        font-size: var(--text-2xl-fontSize);
-        line-height: var(--text-2xl-lineHeight);
-    }
-
-    h3 {
-        font-size: var(--text-lg-fontSize);
-        line-height: var(--text-lg-lineHeight);
-    }
-
-    h2 + p,
-    h3 + p {
-        margin-top: 0.625rem;
-    }
-
-    p + p {
-        margin-top: 0.5rem;
-    }
-
-    hr {
-        margin: 1rem 0;
-        border-color: var(--colors-gray-300);
-    }
-
-    a {
-        text-decoration: var(--colors-gray-900);
-        text-decoration-style: dotted;
-        font-weight: 500;
-        font-style: italic;
-        text-decoration-line: underline;
-        padding-bottom: 4px;
-        text-decoration-thickness: 2px;
-    }
-
-    a,
-    code {
-        word-wrap: break-word;
-    }
-
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Courier New", Courier, monospace;
-        font-weight: bold;
-    }
-
-    ol {
-        list-style: decimal inside;
-    }
-
-    ul {
-        list-style: disc inside;
-    }
-}
-*/
-
 /* Markdown content styles - Undo UnoCSS/Tailwind reset */
 .content {
     line-height: 1.6;
@@ -111,8 +50,9 @@
 /* Links */
 .content a {
     text-decoration: var(--colors-gray-900);
-    text-decoration-style: dotted;
-    font-weight: 500;
+    text-decoration-style: dashed;
+    font-style: italic;
+    font-weight: 400;
     text-decoration-line: underline;
     line-height: 1.5;
     text-decoration-thickness: 1px;

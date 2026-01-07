@@ -1,5 +1,3 @@
 # Components
-- Skeletons
-  - DefaultCard
-  - ThreadCard
-  - ArticleView
+- SkeletonCard
+- SkeletonArticle

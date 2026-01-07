@@ -15,6 +15,6 @@ Semoga usaha ini dapat memunculkan kembali budaya *ngulik* dan gairah kepakaran 
 
 ## Redaksi
 
-Pengelola blog ini adalah seorang praktisi web. Pernah mengerjakan proyek mulai dari kripto, platform edukasi, bursa saham, *ERP*, sampai properti. Baca selengkapnya di [LinkedIn](https://linkedin.com/in/miayam).
+Pengelola blog ini adalah seorang praktisi web. Pernah mengerjakan beberapa proyek mulai dari kripto, platform edukasi, bursa saham, *ERP*, sampai properti. Baca selengkapnya di [LinkedIn](https://linkedin.com/in/miayam).
 
 Kunjungi profil [GitHub-nya](https://github.com/miayam). Bila ada pertanyaan, silakan [kirim ke sini](mailto:muhammaddeni90@gmail.com).

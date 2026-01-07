@@ -1,4 +1,3 @@
 # Components
-- Quiz
 - Search
 - StoriesPlayer

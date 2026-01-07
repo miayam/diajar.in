@@ -1,3 +1,2 @@
 # Components
 - Header
-- Footer
