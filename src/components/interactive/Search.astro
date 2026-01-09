@@ -2,9 +2,10 @@
 interface Props {
     placeholder?: string;
     className?: string;
+    type: "articles" | "threads"; // Specify which search type
 }
 
-const { placeholder, className } = Astro.props;
+const { placeholder, className, type } = Astro.props;
 ---
 
 <div class={`w-full col-start-2 -z-1 bg-white pt-2 ${className}`}>
@@ -12,6 +13,7 @@ const { placeholder, className } = Astro.props;
         <div class="w-50 h-13 z-2 border border-6 border-white m-auto">
             <button
                 type="button"
+                id="searchTrigger"
                 class="h-full md:text-base text-sm justify-center gap-1 text-center px-2 flex items-center w-full cursor-pointer border border-black rounded-md bg-gray-900 text-white"
             >
                 <span class="icon-search text-lg"></span>
@@ -23,3 +25,292 @@ const { placeholder, className } = Astro.props;
         ></span>
     </div>
 </div>
+
+<style>
+    .highlight {
+        background-color: white;
+        color: black;
+        padding: 0 0.25rem;
+        font-weight: 500;
+    }
+</style>
+
+<script>
+    import Fuse from "fuse.js";
+
+    interface ArticleIndex {
+        id: string;
+        content: string;
+        title: string;
+        tags: string[];
+    }
+
+    interface ThreadIndex {
+        id: string;
+        threadId: string;
+        content: string;
+        article: {
+            id: string;
+            content: string;
+        };
+    }
+
+    class SearchDialog {
+        private dialog: HTMLElement;
+        private searchInput: HTMLInputElement;
+        private resultsContainer: HTMLElement;
+        private emptyState: HTMLElement;
+        private loadingState: HTMLElement;
+        private fuse: Fuse<ArticleIndex | ThreadIndex> | null = null;
+        private searchType: "articles" | "threads";
+
+        constructor() {
+            this.dialog = document.getElementById("searchDialog")!;
+            this.searchInput = document.getElementById(
+                "searchInput",
+            ) as HTMLInputElement;
+            this.resultsContainer = document.getElementById("searchResults")!;
+            this.emptyState = document.getElementById("emptyState")!;
+            this.loadingState = document.getElementById("loadingState")!;
+            this.searchType = this.dialog.dataset.searchType as
+                | "articles"
+                | "threads";
+
+            this.init();
+        }
+
+        private async init() {
+            // Setup event listeners
+            document
+                .getElementById("searchTrigger")
+                ?.addEventListener("click", () => {
+                    this.open();
+                });
+
+            document
+                .getElementById("closeDialog")
+                ?.addEventListener("click", () => {
+                    this.close();
+                });
+
+            // Close on backdrop click
+            this.dialog.addEventListener("click", (e) => {
+                if (e.target === this.dialog) {
+                    this.close();
+                }
+            });
+
+            // Close on ESC key
+            document.addEventListener("keydown", (e) => {
+                if (
+                    e.key === "Escape" &&
+                    !this.dialog.classList.contains("hidden")
+                ) {
+                    this.close();
+                }
+            });
+
+            // Search as you type
+            this.searchInput.addEventListener("input", () => {
+                this.performSearch();
+            });
+
+            // Load search index
+            await this.loadIndex();
+        }
+
+        private async loadIndex() {
+            this.showLoading();
+
+            try {
+                const endpoint =
+                    this.searchType === "articles"
+                        ? "/search/articles.json"
+                        : "/search/threads.json";
+
+                const response = await fetch(endpoint);
+                const data = await response.json();
+
+                if (this.searchType === "articles") {
+                    this.fuse = new Fuse(data, {
+                        keys: ["title", "content", "tags"],
+                        threshold: 0.3,
+                        includeMatches: true,
+                    });
+                } else {
+                    this.fuse = new Fuse(data, {
+                        keys: ["content", "article.content"],
+                        threshold: 0.3,
+                        includeMatches: true,
+                    });
+                }
+
+                this.hideLoading();
+            } catch (error) {
+                console.error("Failed to load search index:", error);
+                this.hideLoading();
+            }
+        }
+
+        private open() {
+            this.dialog.classList.remove("hidden");
+            this.dialog.classList.add("flex");
+            this.searchInput.focus();
+            document.body.style.overflow = "hidden";
+        }
+
+        private close() {
+            this.dialog.classList.add("hidden");
+            this.dialog.classList.remove("flex");
+            this.searchInput.value = "";
+            this.resultsContainer.innerHTML = "";
+            this.emptyState.classList.add("hidden");
+            document.body.style.overflow = "";
+        }
+
+        private showLoading() {
+            this.loadingState.classList.remove("hidden");
+            this.resultsContainer.classList.add("hidden");
+            this.emptyState.classList.add("hidden");
+        }
+
+        private hideLoading() {
+            this.loadingState.classList.add("hidden");
+            this.resultsContainer.classList.remove("hidden");
+        }
+
+        private performSearch() {
+            const query = this.searchInput.value.trim();
+
+            if (!query || !this.fuse) {
+                this.resultsContainer.innerHTML = "";
+                this.emptyState.classList.add("hidden");
+                return;
+            }
+
+            const results = this.fuse.search(query);
+
+            if (results.length === 0) {
+                this.resultsContainer.innerHTML = "";
+                this.emptyState.classList.remove("hidden");
+                return;
+            }
+
+            this.emptyState.classList.add("hidden");
+            this.renderResults(results);
+        }
+
+        private renderResults(results: any[]) {
+            this.resultsContainer.innerHTML = "";
+
+            results.forEach((result) => {
+                const card =
+                    this.searchType === "articles"
+                        ? this.createArticleCard(result)
+                        : this.createThreadCard(result);
+
+                this.resultsContainer.appendChild(card);
+            });
+        }
+
+        private createArticleCard(result: any): HTMLElement {
+            const article = result.item as ArticleIndex;
+            const card = document.createElement("a");
+            card.href = `/articles/${article.id}`;
+            card.className =
+                "block p-4 border border-gray-300 rounded-md mb-3 hover:bg-gray-50 transition-colors";
+
+            const title = document.createElement("h3");
+            title.className = "font-bold text-lg mb-2";
+            title.textContent = article.title;
+
+            const content = document.createElement("p");
+            content.className = "text-sm text-gray-700";
+            content.innerHTML = this.getHighlightedText(result.matches);
+
+            card.appendChild(title);
+            card.appendChild(content);
+
+            return card;
+        }
+
+        private createThreadCard(result: any): HTMLElement {
+            const thread = result.item as ThreadIndex;
+            const card = document.createElement("a");
+            card.href = `/threads/${thread.threadId}/${thread.article.id}`;
+            card.className =
+                "block p-4 border border-gray-300 rounded-md mb-3 hover:bg-gray-50 transition-colors";
+
+            const titleRow = document.createElement("div");
+            titleRow.className = "flex items-center gap-2 mb-2";
+
+            const threadTitle = document.createElement("span");
+            threadTitle.className = "font-bold text-lg";
+            threadTitle.textContent = thread.threadId;
+
+            const chevron = document.createElement("span");
+            chevron.textContent = "›";
+            chevron.className = "text-gray-500";
+
+            const articleTitle = document.createElement("span");
+            articleTitle.className = "font-medium text-lg";
+            articleTitle.textContent = thread.article.id;
+
+            titleRow.appendChild(threadTitle);
+            titleRow.appendChild(chevron);
+            titleRow.appendChild(articleTitle);
+
+            const content = document.createElement("p");
+            content.className = "text-sm text-gray-700";
+            content.innerHTML = this.getHighlightedText(result.matches);
+
+            card.appendChild(titleRow);
+            card.appendChild(content);
+
+            return card;
+        }
+
+        private getHighlightedText(matches: any[]): string {
+            if (!matches || matches.length === 0) return "";
+
+            const match = matches[0];
+            if (!match.value) return "";
+
+            let text = match.value;
+            const maxLength = 200;
+
+            // Get excerpt around first match
+            if (match.indices && match.indices.length > 0) {
+                const [start] = match.indices[0];
+                const excerptStart = Math.max(0, start - 50);
+                const excerptEnd = Math.min(text.length, start + maxLength);
+                text =
+                    (excerptStart > 0 ? "..." : "") +
+                    text.substring(excerptStart, excerptEnd) +
+                    (excerptEnd < text.length ? "..." : "");
+            } else if (text.length > maxLength) {
+                text = text.substring(0, maxLength) + "...";
+            }
+
+            // Highlight matches
+            if (match.indices) {
+                let highlighted = "";
+                let lastIndex = 0;
+
+                match.indices.forEach(([start, end]: [number, number]) => {
+                    highlighted += text.substring(lastIndex, start);
+                    highlighted += `<span class="highlight">${text.substring(start, end + 1)}</span>`;
+                    lastIndex = end + 1;
+                });
+
+                highlighted += text.substring(lastIndex);
+                return highlighted;
+            }
+
+            return text;
+        }
+    }
+
+    // Initialize
+    new SearchDialog();
+</script>

@@ -11,7 +11,8 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.10",
     "@astropub/md": "^1.0.0",
-    "astro": "^5.15.4"
+    "astro": "^5.15.4",
+    "fuse.js": "^7.1.0"
   },
   "devDependencies": {
     "@unocss/preset-wind4": "^66.3.3",

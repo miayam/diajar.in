@@ -7,7 +7,7 @@ layout: '@/templates/About.astro'
 
 **Diajar** diambil dari kata bahasa Sunda yang berarti *belajar*, tapi dalam bahasa Indonesia merupakan bentuk pasif dari *mengajar*. Jadi, selain *belajar*, saya juga *diajar*.
 
-Blog ini saya buat untuk mengurai catatan menjadi bacaan ringan dengan gaya bahasa khas *mamang-mamang* yang biasa nongkrong di depan gang.
+Blog ini saya buat untuk mengurai catatan menjadi bacaan ringan dengan gaya bahasa khas *mamang-mamang* yang biasa *nongkrong* di depan gang.
 
 Semoga usaha ini dapat memunculkan kembali budaya *ngulik* dan gairah kepakaran yang sudah lama hilang. Mari meriahkan khazanah web dan desain di Indonesia!
 

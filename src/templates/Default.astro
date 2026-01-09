@@ -4,6 +4,7 @@ import Header from "@/components/structure/Header.astro";
 import StoriesPlayer from "@/components/interactive/StoriesPlayer.astro";
 import SkeletonCard from "@/components/indicators/SkeletonCard.astro";
 import Search from "@/components/interactive/Search.astro";
+import SearchDialog from "@/components/interactive/SearchDialog.astro";
 import PriorityMenu from "@/components/navigation/PriorityMenu.astro";
 import { menuItems } from "@/utils";
 
@@ -25,13 +26,14 @@ const currentPath = Astro.url.pathname;
         <ClientRouter />
     </head>
     <body transition:animate="none" class="text-gray-900">
+        <!-- Search Dialog -->
         <Header currentPath={currentPath} />
         <main class="pt-[60px]">
             <StoriesPlayer />
             <div
                 class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky md:top-[59px] top-[55px]"
             >
-                <Search className="col-start-2" />
+                <Search type="articles" className="col-start-2" />
             </div>
             <div
                 class="grid grid-cols-[1fr_min(40rem,100%)_1fr] sticky top-[131px]"
@@ -64,6 +66,7 @@ const currentPath = Astro.url.pathname;
                 </div>
             </div>
         </main>
+        <SearchDialog type="articles" />
     </body>
 </html>
 

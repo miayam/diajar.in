@@ -3,6 +3,7 @@ import { ClientRouter } from "astro:transitions";
 import Header from "@/components/structure/Header.astro";
 import SkeletonCard from "@/components/indicators/SkeletonCard.astro";
 import Search from "@/components/interactive/Search.astro";
+import SearchDialog from "@/components/interactive/SearchDialog.astro";
 
 interface Props {
     title?: string;
@@ -27,7 +28,11 @@ const currentPath = Astro.url.pathname;
             <div
                 class="grid grid-cols-[1fr_min(60rem,100%)_1fr] sticky top-[59px] bg-white"
             >
-                <Search placeholder="Cari Utas" className="col-start-2 pb-2" />
+                <Search
+                    type="threads"
+                    placeholder="Cari Utas"
+                    className="col-start-2 pb-2"
+                />
             </div>
             <div
                 class="grid
@@ -49,6 +54,7 @@ const currentPath = Astro.url.pathname;
                 <slot />
             </div>
         </main>
+        <SearchDialog type="threads" />
     </body>
 </html>
 
