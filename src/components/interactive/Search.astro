@@ -58,7 +58,7 @@ const { placeholder, className, type } = Astro.props;
                 class="w-5 h-5 cursor-pointer flex items-center justify-center rounded-full bg-red-500 flex-shrink-0 ml-4"
                 aria-label="Close"
             >
-                <span class="icon-x text-md text-gray-900 font-bold"></span>
+                <span class="icon-x text-sm text-gray-900 font-bold"></span>
             </button>
         </div>
 
@@ -202,15 +202,16 @@ const { placeholder, className, type } = Astro.props;
                         keys: ["title", "content"],
                         includeScore: true,
                         includeMatches: true,
-                        distance: 100000,
+                        distance: 1000000,
+                        threshold: 0.3,
                     });
                 } else {
                     this.fuse = new Fuse(data, {
-                        keys: ["content", "article.content"],
+                        keys: ["title", "content", "article.content"],
                         includeScore: true,
                         includeMatches: true,
-                        useExtendedSearch: true,
-                        distance: 100000,
+                        distance: 1000000,
+                        threshold: 0.3,
                     });
                 }
 
@@ -306,27 +307,27 @@ const { placeholder, className, type } = Astro.props;
 
         private createThreadCard(result: any): HTMLElement {
             const thread = result.item as ThreadIndex;
-            const card = document.createElement("a");
-            card.href = `/threads/${thread.threadId}/${thread.article.id}`;
+            const card = document.createElement("div");
             card.className =
                 "block p-4 border border-gray-700 rounded-md mb-3 hover:bg-gray-800 transition-colors";
 
             const titleRow = document.createElement("div");
-            titleRow.className = "flex items-center gap-2 mb-2";
+            titleRow.className = "flex items-center gap-1 mb-2";
 
-            const threadTitle = document.createElement("span");
+            const threadTitle = document.createElement("a");
             threadTitle.className =
-                "font-bold text-md text-white max-w-[60%] text-ellipsis";
+                "font-bold text-md text-white max-w-[60%] text-ellipsis hover:underline";
+            threadTitle.href = `/threads/${thread.threadId}`;
             threadTitle.textContent = thread.title;
 
             const chevron = document.createElement("span");
-            // chevron.textContent = "›";
             chevron.className = "text-white text-lg icon-chevron-right";
 
-            const articleTitle = document.createElement("span");
+            const articleTitle = document.createElement("a");
             articleTitle.className =
-                "font-medium text-md text-white flex-1 line-clamp-1";
+                "font-medium text-md text-white flex-1 line-clamp-1 hover:underline";
             articleTitle.textContent = thread.article.title;
+            articleTitle.href = `/threads/${thread.threadId}/${thread.article.id}`;
 
             titleRow.appendChild(threadTitle);
             titleRow.appendChild(chevron);
@@ -336,8 +337,12 @@ const { placeholder, className, type } = Astro.props;
             content.className = "text-sm text-gray-300";
             content.innerHTML = this.getHighlightedText(result.matches);
 
+            const wrapper = document.createElement("a");
+            wrapper.href = `/threads/${thread.threadId}`;
+            wrapper.appendChild(content);
+
             card.appendChild(titleRow);
-            card.appendChild(content);
+            card.appendChild(wrapper);
 
             return card;
         }
