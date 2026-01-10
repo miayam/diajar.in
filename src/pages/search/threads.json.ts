@@ -20,9 +20,11 @@ export const GET: APIRoute = async () => {
       threadsIndex.push({
         id: `${thread.id}_${article.id}`,
         threadId: thread.id,
+        title: thread.data.name,
         content: stripMarkdown(thread.body || ""),
         article: {
           id: article.id,
+          title: article.data.title,
           content: stripMarkdown(article.body || ""),
         },
       });
