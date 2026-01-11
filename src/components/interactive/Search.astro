@@ -118,7 +118,7 @@ const { placeholder, className, type } = Astro.props;
         };
     }
 
-    class SearchDialog {
+    class Search {
         private dialog: HTMLDialogElement;
         private searchInput: HTMLInputElement;
         private resultsContainer: HTMLElement;
@@ -409,9 +409,9 @@ const { placeholder, className, type } = Astro.props;
         }
     }
 
-    new SearchDialog();
+    new Search();
 
     document.addEventListener("astro:after-swap", () => {
-        new SearchDialog();
+        new Search();
     });
 </script>

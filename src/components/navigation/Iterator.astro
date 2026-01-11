@@ -43,7 +43,7 @@ const { currentArticleId } = Astro.props;
 </nav>
 
 <script>
-    class ArticleIterator {
+    class Iterator {
         private iterator: HTMLElement;
         private currentArticleId: string = "";
         private threadId: string | null = null;
@@ -126,9 +126,9 @@ const { currentArticleId } = Astro.props;
     }
 
     // Initialize
-    new ArticleIterator();
+    new Iterator();
 
     document.addEventListener("astro:after-swap", () => {
-        new ArticleIterator();
+        new Iterator();
     });
 </script>

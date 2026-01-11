@@ -120,7 +120,7 @@ const { items, currentPath = "", className } = Astro.props;
 <script>
     import feedLinks from "@/utils/feedLinks";
 
-    class PriorityNav {
+    class PriorityMenu {
         private nav: HTMLElement;
         private visibleContainer: HTMLElement;
         private hiddenContainer: HTMLElement;
@@ -300,7 +300,7 @@ const { items, currentPath = "", className } = Astro.props;
     // Initialize
     const navElement = document.getElementById("priorityNav");
     if (navElement) {
-        new PriorityNav(navElement as HTMLElement);
+        new PriorityMenu(navElement as HTMLElement);
     }
 
     document.addEventListener("astro:after-swap", () => {
@@ -314,7 +314,7 @@ const { items, currentPath = "", className } = Astro.props;
 
         const navElement = document.getElementById("priorityNav");
         if (navElement) {
-            new PriorityNav(navElement as HTMLElement);
+            new PriorityMenu(navElement as HTMLElement);
         }
     });
 
