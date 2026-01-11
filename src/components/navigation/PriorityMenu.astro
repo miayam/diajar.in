@@ -118,6 +118,8 @@ const { items, currentPath = "", className } = Astro.props;
 </style>
 
 <script>
+    import feedLinks from "@/utils/feedLinks";
+
     class PriorityNav {
         private nav: HTMLElement;
         private visibleContainer: HTMLElement;
@@ -266,12 +268,7 @@ const { items, currentPath = "", className } = Astro.props;
         }
 
         private setupFeedLinks(): void {
-            const feedLinks = document.querySelectorAll("[data-is-feed-link]");
-            feedLinks.forEach((feedLink) => {
-                feedLink?.addEventListener("click", () => {
-                    localStorage.setItem("cameFromFeed", "true");
-                });
-            });
+            feedLinks();
         }
 
         private toggleDropdown(): void {

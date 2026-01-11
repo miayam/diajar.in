@@ -11,6 +11,7 @@ const { article } = Astro.props;
 <a
     href={`/articles/${article.id}`}
     class="flex flex-col gap-2 border rounded-md border-gray-300 py-2"
+    data-is-feed-link
 >
     <div class="flex gap-2 px-4 items-center">
         <h2 class="font-semibold text-lg flex-1 line-clamp-2">
@@ -34,3 +35,10 @@ const { article } = Astro.props;
         {article.data.excerpt}
     </p>
 </a>
+
+<script>
+    import feedLinks from "@/utils/feedLinks";
+
+    feedLinks();
+    document.addEventListener("astro:after-swap", feedLinks);
+</script>

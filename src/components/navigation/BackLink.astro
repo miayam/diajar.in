@@ -1,0 +1,19 @@
+<a href="/" data-back-to-blog>Kembali</a>
+
+<script>
+    function initialize() {
+        const backButton = document.querySelector("[data-back-to-blog]");
+        const fromFeed = localStorage.getItem("cameFromFeed");
+        localStorage.removeItem("cameFromFeed");
+
+        backButton?.addEventListener("click", (e) => {
+            if (fromFeed && history.length > 1) {
+                e.preventDefault();
+                history.back();
+            }
+        });
+    }
+
+    initialize();
+    document.addEventListener("astro:after-swap", initialize);
+</script>

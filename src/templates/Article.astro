@@ -4,6 +4,7 @@ interface Props {
 }
 
 import "@/styles/content.css";
+import BackLink from "@/components/navigation/BackLink.astro";
 
 const { title } = Astro.props;
 ---
@@ -20,9 +21,12 @@ const { title } = Astro.props;
             <div
                 class="grid
                     grid-cols-[1fr_min(40rem,100%)_1fr]
-                    w-full my-8 content"
+                    w-full my-8"
             >
                 <div class="col-start-2 px-4">
+                    <BackLink />
+                </div>
+                <div class="col-start-2 px-4 content">
                     <slot />
                 </div>
             </div>

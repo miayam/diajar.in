@@ -74,6 +74,8 @@ const {
 </nav>
 
 <script>
+    import feedLinks from "@/utils/feedLinks";
+
     class Pagination {
         private container: HTMLElement;
         private pageNumbersContainer: HTMLElement;
@@ -235,12 +237,7 @@ const {
         }
 
         private setupFeedLinks(): void {
-            const feedLinks = document.querySelectorAll("[data-is-feed-link]");
-            feedLinks.forEach((feedLink) => {
-                feedLink?.addEventListener("click", () => {
-                    localStorage.setItem("cameFromFeed", "true");
-                });
-            });
+            feedLinks();
         }
 
         private createDropdown(): HTMLElement {
