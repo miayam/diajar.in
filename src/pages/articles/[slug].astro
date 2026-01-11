@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import Article from "@/templates/Article.astro";
+import ArticleView from "@/components/display/ArticleView.astro";
 import { getCollection, getEntry, render } from "astro:content";
 import { markdown } from "@astropub/md";
 
@@ -23,12 +24,7 @@ type Props = {
 const { article } = Astro.props;
 
 // Load referenced data
-const author = await getEntry(article.data.author);
 const tags = await Promise.all(article.data.tags.map((tag) => getEntry(tag)));
-const threads = await Promise.all(
-    article.data.threads.map((thread) => getEntry(thread)),
-);
-
 const { Content } = await render(article);
 ---
 
@@ -48,43 +44,7 @@ const { Content } = await render(article);
         ) : null
     }
 
-    <article>
-        <div class="border-b border-b-gray-300 pb-2">
-            <h1 class="text-lg font-bold flex-1 mb-1! mt-0!">
-                {article.data.title}
-            </h1>
-            <time
-                datetime={article.data.publishDate.toISOString()}
-                class="text-sm"
-            >
-                {
-                    new Date(article.data.publishDate).toLocaleDateString(
-                        "id-ID",
-                        {
-                            weekday: "long",
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                        },
-                    )
-                }
-            </time>
-        </div>
-
-        {
-            tags.length > 0 && (
-                <div class="flex flex-wrap gap-2 py-4 text-sm">
-                    <strong>Kategori:</strong>
-                    {tags.map(
-                        (tag) =>
-                            tag && (
-                                <a href={`/tags/${tag.id}`}>{tag.data.label}</a>
-                            ),
-                    )}
-                </div>
-            )
-        }
-
+    <ArticleView article={article} tags={tags}>
         <Content />
-    </article>
+    </ArticleView>
 </Article>
