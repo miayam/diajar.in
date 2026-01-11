@@ -15,16 +15,23 @@ const { title } = Astro.props;
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title || "Diajar.in"}</title>
+        <link rel="stylesheet" href="/style.css" />
     </head>
     <body transition:animate="none" class="text-gray-900">
         <main>
+            <slot name="featured-image" />
             <div
                 class="grid
                     grid-cols-[1fr_min(40rem,100%)_1fr]
+                    grid-rows-auto
                     w-full my-8"
             >
-                <div class="col-start-2 px-4">
-                    <BackLink />
+                <div
+                    class="col-start-2 md:col-start-1 pr-6 flex flex-col relative items-start md:items-end"
+                >
+                    <BackLink
+                        className="md:sticky md:top-8 fixed top-4 left-4"
+                    />
                 </div>
                 <div class="col-start-2 px-4 content">
                     <slot />

@@ -2,11 +2,12 @@
 title: "Morbi Tristique Senectus et Netus Id semper risus in hendrerit gravida rutrum"
 publishDate: 2024-01-15
 author: "admin"
-tags: ["gagasan"]
+tags: ["gagasan", "rupa-rasa"]
 threads: ["belajar-cara-belajar"]
-featuredImage: "/images/post-1.jpg"
 draft: false
 readingTime: "5 min read"
+featuredImage: "/media/peter-olexa.jpg"
+featuredImageCaption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 excerpt: "Learn the basics of web development Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac."
 ---
 

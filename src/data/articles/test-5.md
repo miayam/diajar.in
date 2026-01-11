@@ -7,6 +7,8 @@ threads: []
 draft: false
 readingTime: "5 min read"
 excerpt: "Learn the basics of web development"
+featuredImage: "/media/peter-olexa.jpg"
+featuredImageCaption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 ## Table Example

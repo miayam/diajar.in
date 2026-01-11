@@ -12,6 +12,7 @@ const { article } = Astro.props;
     href={`/articles/${article.id}`}
     class="flex flex-col gap-2 border rounded-md border-gray-300 py-2"
     data-is-feed-link
+    data-astro-reload
 >
     <div class="flex gap-2 px-4 items-center">
         <h2 class="font-semibold text-lg flex-1 line-clamp-2">

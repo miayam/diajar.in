@@ -2,11 +2,13 @@
 title: "My First Post"
 publishDate: 2024-01-15
 author: "admin"
-tags: ['rupa-rasa']
+tags: ['kiat']
 threads: []
 draft: false
 readingTime: "5 min read"
 excerpt: "Learn the basics of web development"
+featuredImage: "/media/hunza-valley.jpeg"
+featuredImageCaption: By <a href="//commons.wikimedia.org/w/index.php?title=User:Alllexxxis&amp;action=edit&amp;redlink=1" class="new" title="User:Alllexxxis (page does not exist)">Alllexxxis</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=64390789">Link</a>
 ---
 
 ## Table Example

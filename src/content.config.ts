@@ -22,6 +22,7 @@ const articles = defineCollection({
     tags: z.array(reference("tags")),
     threads: z.array(reference("threads")),
     featuredImage: z.string().optional(),
+    featuredImageCaption: z.string().optional(),
     draft: z.boolean(),
     readingTime: z.string().optional(),
     excerpt: z.string().optional(),

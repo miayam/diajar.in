@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import Article from "@/templates/Article.astro";
 import { getCollection, getEntry, render } from "astro:content";
+import { markdown } from "@astropub/md";
 
 export const getStaticPaths = (async () => {
     const articles = await getCollection("articles", ({ data }) => {
@@ -32,70 +33,58 @@ const { Content } = await render(article);
 ---
 
 <Article title={article.data.title}>
+    {
+        article.data.featuredImage ? (
+            <figure slot="featured-image" class="flex max-h-80 relative">
+                <img
+                    src={article.data.featuredImage}
+                    alt={article.data.title}
+                    class="object-cover w-full"
+                />
+                <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
+                    {markdown(article.data.featuredImageCaption || "")}
+                </figcaption>
+            </figure>
+        ) : null
+    }
+
     <article>
-        <header>
-            <h1 class="text-lg font-bold">{article.data.title}</h1>
-
-            <div>
-                <time datetime={article.data.publishDate.toISOString()}>
-                    Published: {article.data.publishDate.toLocaleDateString()}
-                </time>
+        <div class="border-b border-b-gray-300 pb-2">
+            <h1 class="text-lg font-bold flex-1 mb-1! mt-0!">
+                {article.data.title}
+            </h1>
+            <time
+                datetime={article.data.publishDate.toISOString()}
+                class="text-sm"
+            >
                 {
-                    article.data.updateDate && (
-                        <time datetime={article.data.updateDate.toISOString()}>
-                            Updated:{" "}
-                            {article.data.updateDate.toLocaleDateString()}
-                        </time>
+                    new Date(article.data.publishDate).toLocaleDateString(
+                        "id-ID",
+                        {
+                            weekday: "long",
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                        },
                     )
                 }
-                {
-                    article.data.readingTime && (
-                        <span>{article.data.readingTime}</span>
-                    )
-                }
-            </div>
+            </time>
+        </div>
 
-            {
-                author && (
-                    <div>
-                        <p>By {author.data.name}</p>
-                        {author.data.bio && <p>{author.data.bio}</p>}
-                    </div>
-                )
-            }
+        {
+            tags.length > 0 && (
+                <div class="flex flex-wrap gap-2 py-4 text-sm">
+                    <strong>Kategori:</strong>
+                    {tags.map(
+                        (tag) =>
+                            tag && (
+                                <a href={`/tags/${tag.id}`}>{tag.data.label}</a>
+                            ),
+                    )}
+                </div>
+            )
+        }
 
-            {
-                tags.length > 0 && (
-                    <div>
-                        <span>Tags:</span>
-                        {tags.map(
-                            (tag) =>
-                                tag && (
-                                    <a href={`/tags/${tag.id}`}>
-                                        {tag.data.label}
-                                    </a>
-                                ),
-                        )}
-                    </div>
-                )
-            }
-
-            {
-                threads.length > 0 && (
-                    <div>
-                        <span>Threads:</span>
-                        {threads.map(
-                            (thread) =>
-                                thread && (
-                                    <a href={`/threads/${thread.id}`}>
-                                        {thread.data.label}
-                                    </a>
-                                ),
-                        )}
-                    </div>
-                )
-            }
-        </header>
         <Content />
     </article>
 </Article>
