@@ -28,6 +28,7 @@ const { items, currentPath = "", className } = Astro.props;
                                 href={item.href}
                                 class="menu-item whitespace-nowrap px-3 py-4 md:text-base text-sm text-sm border-b-2 md:border-b-3 border-transparent transition-colors flex-1 text-center"
                                 data-href={item.href}
+                                data-is-feed-link
                             >
                                 {item.label}
                             </a>
@@ -147,6 +148,7 @@ const { items, currentPath = "", className } = Astro.props;
             this.setupEventListeners();
             this.calculatePriority();
             this.updateActiveStates();
+            this.setupFeedLinks();
 
             // Setup ResizeObserver for responsive behavior
             this.resizeObserver = new ResizeObserver(() => {
@@ -241,6 +243,7 @@ const { items, currentPath = "", className } = Astro.props;
                     // Create dropdown item
                     const dropdownItem = document.createElement("a");
                     dropdownItem.href = item.getAttribute("href") || "";
+                    dropdownItem.setAttribute("data-is-feed-link", "1");
                     dropdownItem.textContent = item.textContent;
                     dropdownItem.className =
                         "dropdown-item px-4 py-2 md:text-base text-sm";
@@ -260,6 +263,15 @@ const { items, currentPath = "", className } = Astro.props;
                 this.moreBtn.classList.add("hidden");
                 this.closeDropdown();
             }
+        }
+
+        private setupFeedLinks(): void {
+            const feedLinks = document.querySelectorAll("[data-is-feed-link]");
+            feedLinks.forEach((feedLink) => {
+                feedLink?.addEventListener("click", () => {
+                    localStorage.setItem("cameFromFeed", "true");
+                });
+            });
         }
 
         private toggleDropdown(): void {

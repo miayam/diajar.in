@@ -96,10 +96,10 @@ const {
 
         private init(): void {
             this.renderPageNumbers();
+            this.setupFeedLinks();
         }
 
         private getPageUrl(page: number | ""): string {
-            console.log(page, "woi");
             if (page === 1) {
                 return `${this.urlPattern}/`;
             }
@@ -115,6 +115,7 @@ const {
                     const pageLink = document.createElement("a");
                     pageLink.href = this.getPageUrl(item);
                     pageLink.textContent = item.toString();
+                    pageLink.setAttribute("data-is-feed-link", "1");
                     pageLink.className =
                         "page-item border border-gray-300 rounded min-w-10 h-10 px-1 py-2 items-center flex justify-center";
                     if (item === this.currentPage) {
@@ -233,6 +234,15 @@ const {
             return ellipsisContainer;
         }
 
+        private setupFeedLinks(): void {
+            const feedLinks = document.querySelectorAll("[data-is-feed-link]");
+            feedLinks.forEach((feedLink) => {
+                feedLink?.addEventListener("click", () => {
+                    localStorage.setItem("cameFromFeed", "true");
+                });
+            });
+        }
+
         private createDropdown(): HTMLElement {
             const dropdown = document.createElement("div");
             dropdown.className =
@@ -266,15 +276,13 @@ const {
     }
 
     // Initialize
-    const paginationElement = document.getElementById("pagination");
-    if (paginationElement) {
-        new Pagination(paginationElement);
-    }
-
-    document.addEventListener("astro:after-swap", () => {
+    function initialize() {
         const paginationElement = document.getElementById("pagination");
         if (paginationElement) {
             new Pagination(paginationElement);
         }
-    });
+    }
+
+    initialize();
+    document.addEventListener("astro:after-swap", initialize);
 </script>
