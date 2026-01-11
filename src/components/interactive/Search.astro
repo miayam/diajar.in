@@ -87,6 +87,7 @@ const { placeholder, className, type } = Astro.props;
 </style>
 
 <script>
+    import feedLinks from "@/utils/feedLinks";
     import Fuse from "fuse.js";
 
     interface ArticleIndex {
@@ -183,6 +184,9 @@ const { placeholder, className, type } = Astro.props;
 
             // Load search index
             await this.loadIndex();
+
+            // Setup feed links
+            this.setupFeedLinks();
         }
 
         private async loadIndex() {
@@ -288,6 +292,7 @@ const { placeholder, className, type } = Astro.props;
             const article = result.item as ArticleIndex;
             const card = document.createElement("a");
             card.href = `/articles/${article.id}`;
+            card.setAttribute("data-is-feed-link", "1");
             card.className =
                 "block p-4 border border-gray-700 rounded-md mb-3 hover:bg-gray-800 transition-colors";
 
@@ -315,6 +320,7 @@ const { placeholder, className, type } = Astro.props;
             titleRow.className = "flex items-center gap-1 mb-2";
 
             const threadTitle = document.createElement("a");
+            threadTitle.setAttribute("data-is-feed-link", "1");
             threadTitle.className =
                 "font-bold text-md text-white max-w-[60%] text-ellipsis hover:underline";
             threadTitle.href = `/threads/${thread.threadId}`;
@@ -324,6 +330,7 @@ const { placeholder, className, type } = Astro.props;
             chevron.className = "text-white text-lg icon-chevron-right";
 
             const articleTitle = document.createElement("a");
+            articleTitle.setAttribute("data-is-feed-link", "1");
             articleTitle.className =
                 "font-medium text-md text-white flex-1 line-clamp-1 hover:underline";
             articleTitle.textContent = thread.article.title;
@@ -345,6 +352,10 @@ const { placeholder, className, type } = Astro.props;
             card.appendChild(wrapper);
 
             return card;
+        }
+
+        private setupFeedLinks(): void {
+            feedLinks();
         }
 
         private getHighlightedText(matches: any[]): string {
