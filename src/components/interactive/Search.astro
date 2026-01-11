@@ -409,11 +409,9 @@ const { placeholder, className, type } = Astro.props;
         }
     }
 
-    // Initialize
     new SearchDialog();
 
     document.addEventListener("astro:after-swap", () => {
-        // Reinitialize
         new SearchDialog();
     });
 </script>
