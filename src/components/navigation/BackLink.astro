@@ -15,8 +15,19 @@ const { className } = Astro.props;
 </a>
 
 <script>
-    import feedLinks from "@/utils/feedLinks";
+    function initialize() {
+        const backButton = document.querySelector("[data-back-to-blog]");
+        const fromFeed = localStorage.getItem("cameFromFeed");
+        localStorage.removeItem("cameFromFeed");
 
-    feedLinks();
-    document.addEventListener("astro:after-swap", feedLinks);
+        backButton?.addEventListener("click", (e) => {
+            if (fromFeed && history.length > 1) {
+                e.preventDefault();
+                history.back();
+            }
+        });
+    }
+
+    initialize();
+    document.addEventListener("astro:after-swap", initialize);
 </script>
