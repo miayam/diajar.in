@@ -5,6 +5,7 @@ import Article from "@/templates/Article.astro";
 import ArticleView from "@/components/display/ArticleView.astro";
 import { getCollection, getEntry, render } from "astro:content";
 import { markdown } from "@astropub/md";
+import { Image } from "astro:assets";
 
 export const getStaticPaths = (async () => {
     const articles = await getCollection("articles", ({ data }) => {
@@ -32,7 +33,11 @@ const { Content } = await render(article);
     {
         article.data.featuredImage ? (
             <figure slot="featured-image" class="flex max-h-80 relative">
-                <img
+                <Image
+                    width={200}
+                    height={200}
+                    decoding="async"
+                    loading="eager"
                     src={article.data.featuredImage}
                     alt={article.data.title}
                     class="object-cover w-full"
