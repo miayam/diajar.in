@@ -41,7 +41,9 @@ const { Content } = await render(article);
                     {markdown(article.data.featuredImageCaption || "")}
                 </figcaption>
             </figure>
-        ) : null
+        ) : (
+            <div class="md:h-0 h-8" />
+        )
     }
 
     <ArticleView article={article} tags={tags}>

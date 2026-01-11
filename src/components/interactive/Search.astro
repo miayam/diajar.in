@@ -36,10 +36,13 @@ const { placeholder, className, type } = Astro.props;
 <!-- Search Dialog -->
 <dialog
     id="searchDialog"
-    class="bg-gray-900 flex-col overflow-hidden text-white w-full max-w-2xl max-h-[50vh] rounded-lg shadow-2xl flex-col backdrop:bg-gray-300 backdrop:bg-opacity-50 m-auto"
+    class="backdrop:bg-gray-300 backdrop:bg-opacity-50 w-[90%] rounded-lg mx-auto mt-[25vh] max-w-2xl max-h-[50vh]"
     data-search-type={type}
 >
-    <div class="flex-1">
+    <div
+        class="flex-1
+    bg-gray-900 flex-col overflow-hidden text-white w-full max-w-2xl max-h-[50vh] rounded-lg shadow-2xl flex-col"
+    >
         <!-- Header with close button -->
         <div
             class="flex items-center justify-between p-4 border-b border-gray-700"
