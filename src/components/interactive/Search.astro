@@ -74,7 +74,13 @@ const { placeholder, className, type } = Astro.props;
 
         <!-- Empty state -->
         <div id="emptyState" class="hidden p-8 text-center text-gray-400">
-            <p>Tidak ada hasil ditemukan</p>
+            <p>
+                {
+                    type === "articles"
+                        ? "Artikel tidak ditemukan"
+                        : "Utas tidak ditemukan"
+                }
+            </p>
         </div>
     </div>
 </dialog>
