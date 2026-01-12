@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import Article from "@/templates/Article.astro";
 import ArticleView from "@/components/display/ArticleView.astro";
+import Iterator from "@/components/navigation/Iterator.astro";
 import { getCollection, getEntry, render } from "astro:content";
 import { markdown } from "@astropub/md";
 import { Image } from "astro:assets";
@@ -54,4 +55,5 @@ const { Content } = await render(article);
     <ArticleView article={article} tags={tags}>
         <Content />
     </ArticleView>
+    <Iterator currentArticleId={article.id} />
 </Article>
