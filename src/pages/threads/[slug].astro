@@ -1,5 +1,5 @@
 ---
-import Article from "@/templates/Article.astro";
+import Thread from "@/templates/Thread.astro";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
@@ -38,7 +38,7 @@ const { thread, articles } = Astro.props;
 const { Content } = await render(thread);
 ---
 
-<Article title={thread.data.label}>
+<Thread title={thread.data.label}>
     <h1>{thread.data.label}</h1>
     <p>{thread.data.name}</p>
     <p><Content /></p>
@@ -59,6 +59,4 @@ const { Content } = await render(thread);
             ))
         }
     </ul>
-
-    <a href="/threads">← Back to threads</a>
-</Article>
+</Thread>

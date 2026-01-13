@@ -1,0 +1,135 @@
+---
+interface Props {
+    threadId: string;
+}
+
+const { threadId } = Astro.props;
+---
+
+<aside
+    id="tocContainer"
+    class="sticky top-4 border border-gray-300 rounded-md overflow-hidden"
+    data-thread-id={threadId}
+>
+    <!-- Fixed Header -->
+    <div class="p-4 border-b border-gray-300 bg-white">
+        <a
+            href="/threads"
+            class="text-sm text-gray-600 hover:text-gray-900 mb-2 block"
+        >
+            ← Kembali ke Threads
+        </a>
+        <h3 class="font-bold">Daftar Isi</h3>
+    </div>
+
+    <!-- Scrollable List -->
+    <ul id="tocList" class="max-h-[60vh] overflow-y-auto p-4 space-y-2">
+        <!-- Items will be inserted here -->
+    </ul>
+</aside>
+
+<script>
+    class TableOfContents {
+        private container: HTMLElement;
+        private list: HTMLElement;
+        private threadId: string = "";
+        private currentUrl: string = "";
+
+        constructor() {
+            this.container = document.getElementById("tocContainer")!;
+            this.list = document.getElementById("tocList")!;
+
+            if (!this.container || !this.list) return;
+
+            this.threadId = this.container.dataset.threadId || "";
+            this.currentUrl = window.location.pathname;
+
+            this.init();
+        }
+
+        private async init() {
+            try {
+                const response = await fetch(`/threads/${this.threadId}.json`);
+
+                if (!response.ok) {
+                    this.container.style.display = "none";
+                    return;
+                }
+
+                const data = await response.json();
+                this.renderList(data.articles);
+            } catch (error) {
+                console.error("Failed to load TOC:", error);
+                this.container.style.display = "none";
+            }
+        }
+
+        private renderList(articles: any[]) {
+            this.list.innerHTML = "";
+
+            articles.forEach((article, index) => {
+                const li = document.createElement("li");
+                const link = document.createElement("a");
+                const isActive = this.currentUrl.startsWith(
+                    `/articles/${article.id}`,
+                );
+
+                link.href = `/articles/${article.id}?thread=${this.threadId}`;
+                link.className =
+                    "flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors";
+
+                if (isActive) {
+                    link.classList.add("font-bold");
+                }
+
+                // Number circle
+                const circle = document.createElement("span");
+                circle.className = `flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm ${
+                    isActive
+                        ? "bg-gray-900 text-white"
+                        : "bg-white text-gray-900"
+                }`;
+                circle.textContent = (index + 1).toString();
+
+                // Title
+                const title = document.createElement("span");
+                title.textContent = article.title;
+                title.className = "flex-1 line-clamp-2";
+
+                link.appendChild(circle);
+                link.appendChild(title);
+                li.appendChild(link);
+                this.list.appendChild(li);
+
+                // Scroll to active item
+                if (isActive) {
+                    requestAnimationFrame(() => {
+                        li.scrollIntoView({
+                            behavior: "smooth",
+                            block: "center",
+                        });
+                    });
+                }
+            });
+        }
+    }
+
+    // Initialize
+    function initialize() {
+        const tocContainer = document.getElementById("tocContainer");
+        if (tocContainer) {
+            const threadId = new URLSearchParams(window.location.search).get(
+                "thread",
+            );
+            if (threadId) {
+                tocContainer.dataset.threadId = threadId;
+                new TableOfContents();
+            } else {
+                tocContainer.style.display = "none";
+            }
+        }
+    }
+
+    initialize();
+    document.addEventListener("astro:after-swap", initialize);
+</script>
