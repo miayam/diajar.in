@@ -5,8 +5,6 @@ author: "admin"
 tags: ["pustaka"]
 threads: ["belajar-cara-belajar"]
 draft: false
-readingTime: "5 min read"
-excerpt: "Learn the basics of web development"
 ---
 
 ## Table Example

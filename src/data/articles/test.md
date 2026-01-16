@@ -6,9 +6,7 @@ tags: ['rupa-rasa']
 threads: []
 draft: false
 featuredImage: "/media/peter-olexa.jpg"
-featuredImageCaption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-readingTime: "5 min read"
-excerpt: "Learn the basics of web development"
+caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 **Diajar** adalah tempat belajar mandiri seputar web, desain, dan irisannya.
 

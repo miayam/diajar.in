@@ -18,7 +18,7 @@ const { placeholder, className, type } = Astro.props;
             >
                 <div class="flex items-center gap-1">
                     <span class="icon-search text-lg"></span>
-                    {placeholder || "Cari Artikel"}
+                    {placeholder || "Cari artikel..."}
                 </div>
 
                 <div class="flex items-center gap-0.5">
@@ -193,9 +193,6 @@ const { placeholder, className, type } = Astro.props;
 
             // Load search index
             await this.loadIndex();
-
-            // Setup feed links
-            this.setupFeedLinks();
         }
 
         private async loadIndex() {
@@ -294,6 +291,7 @@ const { placeholder, className, type } = Astro.props;
                         : this.createThreadCard(result);
 
                 this.resultsContainer.appendChild(card);
+                this.setupFeedLinks();
             });
         }
 

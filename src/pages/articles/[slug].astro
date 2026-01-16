@@ -44,7 +44,7 @@ const { Content } = await render(article);
                     class="object-cover w-full"
                 />
                 <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
-                    {markdown(article.data.featuredImageCaption || "")}
+                    {markdown(article.data.caption || "")}
                 </figcaption>
             </figure>
         ) : (

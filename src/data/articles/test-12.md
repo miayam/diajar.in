@@ -5,8 +5,6 @@ author: "admin"
 tags: ['rupa-rasa']
 threads: []
 draft: false
-readingTime: "5 min read"
-excerpt: "Learn the basics of web development"
 featuredImage: "/media/peter-olexa.jpg"
 ---
 

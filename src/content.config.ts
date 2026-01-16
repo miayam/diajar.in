@@ -9,6 +9,7 @@ const authors = defineCollection({
     name: z.string(),
     email: z.string().email(),
     bio: z.string().optional(),
+    picture: z.string().optional(),
   }),
 });
 
@@ -22,9 +23,8 @@ const articles = defineCollection({
     tags: z.array(reference("tags")),
     threads: z.array(reference("threads")),
     featuredImage: z.string().optional(),
-    featuredImageCaption: z.string().optional(),
+    caption: z.string().optional(),
     draft: z.boolean(),
-    readingTime: z.string().optional(),
     excerpt: z.string().optional(),
   }),
 });
@@ -34,6 +34,7 @@ const threads = defineCollection({
   schema: z.object({
     name: z.string(),
     label: z.string(),
+    image: z.string().optional(),
   }),
 });
 
@@ -42,6 +43,7 @@ const tags = defineCollection({
   schema: z.object({
     name: z.string(),
     label: z.string(),
+    image: z.string().optional(),
   }),
 });
 
