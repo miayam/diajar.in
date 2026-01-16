@@ -341,7 +341,7 @@ const { placeholder, className, type } = Astro.props;
             articleTitle.className =
                 "font-medium text-md text-white flex-1 line-clamp-1 hover:underline";
             articleTitle.textContent = thread.article.title;
-            articleTitle.href = `/threads/${thread.threadId}/${thread.article.id}`;
+            articleTitle.href = `/articles/${thread.article.id}?thread=${thread.threadId}`;
 
             titleRow.appendChild(threadTitle);
             titleRow.appendChild(chevron);
