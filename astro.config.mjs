@@ -14,4 +14,5 @@ export default defineConfig({
     "/threads/[...slug]/1": "/threads/[...slug]/",
     "/tags/[...slug]/1": "/tags/[...slug]/",
   },
+  site: "https://diajar.in",
 });

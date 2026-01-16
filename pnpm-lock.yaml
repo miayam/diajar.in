@@ -20,6 +20,9 @@ importers:
       fuse.js:
         specifier: ^7.1.0
         version: 7.1.0
+      shareon:
+        specifier: ^2.7.0
+        version: 2.7.0
     devDependencies:
       '@unocss/preset-wind4':
         specifier: ^66.3.3
@@ -1578,6 +1581,9 @@ packages:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
+
+  shareon@2.7.0:
+    resolution: {integrity: sha512-h2aeW0C7ejvA0CspqAGAUQ0IfkNDkAHPexsC93Db/DSarDh2qMAK2nTCdhfUt9TbRs82KLyCpFnlLpi/mO3P3w==}
 
   sharp@0.34.5:
     resolution: {integrity: sha512-Ou9I5Ft9WNcCbXrU9cMgPBcCK8LiwLqcbywW3t4oDV37n1pzpuNLsYiAV8eODnjbtQlSDwZ2cUEeQz4E54Hltg==}
@@ -4027,6 +4033,8 @@ snapshots:
 
   semver@7.7.3:
     optional: true
+
+  shareon@2.7.0: {}
 
   sharp@0.34.5:
     dependencies:

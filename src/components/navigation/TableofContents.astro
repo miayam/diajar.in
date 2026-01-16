@@ -10,7 +10,7 @@ const { articles, thread } = Astro.props;
 
 <aside
     id="tocContainer"
-    class="sticky top-[84px] border border-gray-300 rounded-md overflow-hidden md:w-80 mb-4"
+    class="sticky top-[74px] border border-gray-300 rounded-md overflow-hidden md:w-80 mb-8"
 >
     <!-- Fixed Header -->
     <div class="px-6 py-2 border-b border-gray-300 bg-white">
@@ -18,7 +18,7 @@ const { articles, thread } = Astro.props;
     </div>
 
     <!-- Scrollable List -->
-    <ul id="tocList" class="max-h-96 overflow-y-auto p-4 space-y-2">
+    <ul id="tocList" class="max-h-40 md:max-h-96 overflow-y-auto p-4 space-y-2">
         <!-- Items will be inserted here -->
         <li>
             <a

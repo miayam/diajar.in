@@ -1,0 +1,30 @@
+---
+interface Props {
+    title: string;
+    text: string;
+    url: string;
+}
+
+const { url, title, text } = Astro.props;
+---
+
+<div class="shareon" data-url={url}>
+    <button class="copy-url"></button>
+    <button class="linkedin" data-title={title}></button>
+    <button class="telegram" data-text={text}></button>
+    <button class="whatsapp" data-text={text}></button>
+    <button
+        class="twitter"
+        data-title={title}
+        data-via="@___miayam___"
+        data-text={text}></button>
+    <button class="facebook" data-title={title}></button>
+    <button class="email" data-title={title}></button>
+</div>
+
+<script>
+    import { init } from "shareon";
+    import "shareon/css"; // most bundlers will transpile this CSS
+
+    init();
+</script>

@@ -2,12 +2,14 @@
 import Article from "@/templates/Article.astro";
 import ThreadView from "@/components/display/ThreadView.astro";
 import TableOfContents from "@/components/navigation/TableofContents.astro";
+import ShareButtons from "@/components/navigation/ShareButtons.astro";
 import BackLink from "@/components/navigation/BackLink.astro";
 import Masthead from "@/components/display/Masthead.astro";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
+import stripMarkdown from "@/utils/stripMarkdown";
 
 export const getStaticPaths = (async () => {
     const threads = await getCollection("threads");
@@ -73,6 +75,14 @@ const { Content } = await render(thread);
     <ThreadView thread={thread}>
         <Content />
     </ThreadView>
+
+    <ShareButtons
+        slot="share"
+        url={`${Astro.site}threads/${thread.id}`}
+        text={stripMarkdown(thread.body || "").substring(0, 140)}
+        title={thread.data.name}
+    />
+
     {
         articles.length > 0 ? (
             <nav

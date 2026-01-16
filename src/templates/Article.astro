@@ -30,8 +30,19 @@ const { title } = Astro.props;
                     <slot name="back-link" />
                     <slot name="table-of-contents" />
                 </div>
+
                 <div class="col-start-2 px-4">
                     <slot />
+                </div>
+
+                <div
+                    class="col-start-2 flex w-full md:col-start-3 pl-4 pr-6 md:pb-4 flex-col relative items-start"
+                >
+                    <div
+                        class="w-auto m-auto md:m-0 md:w-20 sticky px-2 py-1 top-8 flex justify-center flex-wrap"
+                    >
+                        <slot name="share" />
+                    </div>
                 </div>
             </div>
         </main>
