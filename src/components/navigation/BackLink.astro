@@ -1,24 +1,37 @@
 ---
 interface Props {
+    href?: string;
     className?: string;
 }
-const { className } = Astro.props;
+const { className, href = "/" } = Astro.props;
 ---
 
-<a
-    href="/"
-    data-back-to-blog
-    class={`flex gap-2 bg-gray-900 items-center text-white w-auto py-1 px-4 rounded ${className}`}
->
-    <span class="icon-chevron-left text-lg"></span>
-    Kembali
-</a>
+<div class={`flex w-full items-start md:max-w-80 z-2 ${className}`}>
+    <a
+        href={href}
+        data-back-to-blog
+        class={`flex gap-2 items-center text-gray-900 w-auto py-1 font-semibold`}
+    >
+        <span class="icon-chevron-left text-lg font-bold"></span>
+        <slot />
+    </a>
+</div>
 
 <script>
     function initialize() {
-        const backButton = document.querySelector("[data-back-to-blog]");
+        const threadId = new URLSearchParams(window.location.search).get(
+            "thread",
+        );
+
+        const backButton = document.querySelector<HTMLAnchorElement>(
+            "[data-back-to-blog]",
+        );
         const fromFeed = localStorage.getItem("cameFromFeed");
         localStorage.removeItem("cameFromFeed");
+
+        if (threadId && backButton) {
+            backButton.href = "/threads";
+        }
 
         backButton?.addEventListener("click", (e) => {
             if (fromFeed && history.length > 1) {

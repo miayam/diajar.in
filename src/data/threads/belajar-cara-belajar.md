@@ -1,6 +1,8 @@
 ---
 name: "Belajar Cara Belajar"
 label: "@belajar-cara-belajar"
+featuredImage: "/media/peter-olexa.jpg"
+caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 Bagi pengembang web, belajar adalah kebutuhan dasar. Setiap tahun, ada saja pustaka populer, perkakas baru, teknik mutakhir, tren desain, dan perubahan paradigma. Untuk dapat beradaptasi, belajar secara efektif adalah keahlian yang wajib dimiliki.
 

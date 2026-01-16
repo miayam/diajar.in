@@ -1,29 +1,14 @@
----
-interface Props {
-    threadId: string;
-}
-
-const { threadId } = Astro.props;
----
-
 <aside
     id="tocContainer"
-    class="sticky top-4 border border-gray-300 rounded-md overflow-hidden"
-    data-thread-id={threadId}
+    class="sticky top-[84px] border border-gray-300 rounded-md overflow-hidden hidden md:w-80 mb-4"
 >
     <!-- Fixed Header -->
-    <div class="p-4 border-b border-gray-300 bg-white">
-        <a
-            href="/threads"
-            class="text-sm text-gray-600 hover:text-gray-900 mb-2 block"
-        >
-            ← Kembali ke Threads
-        </a>
+    <div class="px-6 py-2 border-b border-gray-300 bg-white">
         <h3 class="font-bold">Daftar Isi</h3>
     </div>
 
     <!-- Scrollable List -->
-    <ul id="tocList" class="max-h-[60vh] overflow-y-auto p-4 space-y-2">
+    <ul id="tocList" class="max-h-96 overflow-y-auto p-4 space-y-2">
         <!-- Items will be inserted here -->
     </ul>
 </aside>
@@ -41,8 +26,27 @@ const { threadId } = Astro.props;
 
             if (!this.container || !this.list) return;
 
-            this.threadId = this.container.dataset.threadId || "";
-            this.currentUrl = window.location.pathname;
+            const threadId = new URLSearchParams(window.location.search).get(
+                "thread",
+            );
+
+            const backButton = document.querySelector<HTMLAnchorElement>(
+                "[data-back-to-blog]",
+            );
+
+            if (threadId) {
+                this.threadId = threadId;
+                this.currentUrl = window.location.pathname;
+                this.container.classList.remove("hidden");
+                if (backButton) {
+                    backButton.innerHTML = `
+                      <span class="icon-chevron-left text-lg font-bold"></span>
+                      Utas
+                    `;
+                }
+            } else {
+                this.container.style.display = "none";
+            }
 
             this.init();
         }
@@ -66,14 +70,29 @@ const { threadId } = Astro.props;
 
         private renderList(articles: any[]) {
             this.list.innerHTML = "";
+            // create overview link
+            const li = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = `/threads/${this.threadId}`;
+            link.className =
+                "flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors";
+
+            const circle = document.createElement("span");
+            circle.className = `text-lg flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm bg-white text-gray-900`;
+            circle.textContent = "★";
+
+            const title = document.createElement("span");
+            title.textContent = "Mukadimah";
+
+            link.appendChild(circle);
+            link.appendChild(title);
+            li.appendChild(link);
+            this.list.appendChild(li);
 
             articles.forEach((article, index) => {
                 const li = document.createElement("li");
                 const link = document.createElement("a");
-                const isActive = this.currentUrl.startsWith(
-                    `/articles/${article.id}`,
-                );
-
+                const isActive = this.currentUrl === `/articles/${article.id}`;
                 link.href = `/articles/${article.id}?thread=${this.threadId}`;
                 link.className =
                     "flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors";
@@ -104,9 +123,11 @@ const { threadId } = Astro.props;
                 // Scroll to active item
                 if (isActive) {
                     requestAnimationFrame(() => {
-                        li.scrollIntoView({
-                            behavior: "smooth",
-                            block: "center",
+                        const elemTop = li.offsetTop;
+                        const elemBottom = elemTop - li.offsetHeight;
+
+                        this.list.scrollTo({
+                            top: elemBottom,
                         });
                     });
                 }
@@ -116,18 +137,7 @@ const { threadId } = Astro.props;
 
     // Initialize
     function initialize() {
-        const tocContainer = document.getElementById("tocContainer");
-        if (tocContainer) {
-            const threadId = new URLSearchParams(window.location.search).get(
-                "thread",
-            );
-            if (threadId) {
-                tocContainer.dataset.threadId = threadId;
-                new TableOfContents();
-            } else {
-                tocContainer.style.display = "none";
-            }
-        }
+        new TableOfContents();
     }
 
     initialize();

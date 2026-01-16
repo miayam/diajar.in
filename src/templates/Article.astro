@@ -4,8 +4,6 @@ interface Props {
 }
 
 import "@/styles/content.css";
-import BackLink from "@/components/navigation/BackLink.astro";
-
 const { title } = Astro.props;
 ---
 
@@ -17,7 +15,7 @@ const { title } = Astro.props;
         <title>{title || "Diajar.in"}</title>
         <link rel="stylesheet" href="/style.css" />
     </head>
-    <body transition:animate="none" class="text-gray-900">
+    <body class="text-gray-900">
         <main>
             <slot name="featured-image" />
             <div
@@ -29,9 +27,8 @@ const { title } = Astro.props;
                 <div
                     class="col-start-2 flex w-full md:col-start-1 pl-4 pr-6 md:pb-4 flex-col relative items-start md:items-end"
                 >
-                    <BackLink
-                        className="text-sm fixed top-4 md:text-base md:sticky md:top-8"
-                    />
+                    <slot name="back-link" />
+                    <slot name="table-of-contents" />
                 </div>
                 <div class="col-start-2 px-4">
                     <slot />

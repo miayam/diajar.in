@@ -3,7 +3,7 @@ title: "My First Post"
 publishDate: 2024-01-15
 author: "admin"
 tags: ['rupa-rasa']
-threads: []
+threads: ["belajar-cara-belajar"]
 draft: false
 featuredImage: "/media/peter-olexa.jpg"
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

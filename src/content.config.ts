@@ -34,7 +34,8 @@ const threads = defineCollection({
   schema: z.object({
     name: z.string(),
     label: z.string(),
-    image: z.string().optional(),
+    featuredImage: z.string().optional(),
+    caption: z.string().optional(),
   }),
 });
 
@@ -43,7 +44,6 @@ const tags = defineCollection({
   schema: z.object({
     name: z.string(),
     label: z.string(),
-    image: z.string().optional(),
   }),
 });
 

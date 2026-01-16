@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import { markdown } from "@astropub/md";
+interface Props {
+    src: string;
+    alt: string;
+    caption?: string;
+}
+
+const { src, alt, caption } = Astro.props;
+---
+
+<figure class="flex h-80 bg-gray-300 relative">
+    <Image
+        width={200}
+        height={200}
+        decoding="async"
+        loading="eager"
+        src={src}
+        alt={alt}
+        class="object-cover w-full"
+    />
+    {
+        caption ? (
+            <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
+                {markdown(caption || "")}
+            </figcaption>
+        ) : null
+    }
+</figure>

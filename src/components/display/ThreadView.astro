@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    thread: CollectionEntry<"threads">;
+}
+
+const { thread } = Astro.props;
+---
+
+<article class="content">
+    <div class="border-b border-b-gray-300 pb-2 mb-4">
+        <h1 class="text-lg font-bold flex-1 mb-1! mt-0!">
+            {thread.data.name}
+        </h1>
+    </div>
+
+    <slot />
+</article>

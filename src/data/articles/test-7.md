@@ -3,7 +3,7 @@ title: "My First Post"
 publishDate: 2024-01-15
 author: "admin"
 tags: ['rupa-rasa']
-threads: []
+threads: ["belajar-cara-belajar"]
 draft: false
 readingTime: "5 min read"
 featuredImage: "/media/peter-olexa.jpg"

@@ -1,0 +1,56 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props {
+    articles: CollectionEntry<"articles">[];
+    thread: CollectionEntry<"threads">;
+}
+
+const { articles, thread } = Astro.props;
+---
+
+<aside
+    id="tocContainer"
+    class="sticky top-[84px] border border-gray-300 rounded-md overflow-hidden md:w-80 mb-4"
+>
+    <!-- Fixed Header -->
+    <div class="px-6 py-2 border-b border-gray-300 bg-white">
+        <h3 class="font-bold">Daftar Isi</h3>
+    </div>
+
+    <!-- Scrollable List -->
+    <ul id="tocList" class="max-h-96 overflow-y-auto p-4 space-y-2">
+        <!-- Items will be inserted here -->
+        <li>
+            <a
+                href={`/threads/${thread.id}`}
+                class="flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors font-bold"
+            >
+                <span
+                    class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm bg-gray-900 text-white"
+                >
+                    ★
+                </span>
+                Mukadimah
+            </a>
+        </li>
+        {
+            articles.map((item, index) => {
+                return (
+                    <li>
+                        <a
+                            href={`/articles/${item.id}?thread=${thread.id}`}
+                            class="flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors"
+                        >
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm bg-white text-gray-900">
+                                {index + 1}
+                            </span>
+                            <span class="flex-1 line-clamp-2">
+                                {item.data.title}
+                            </span>
+                        </a>
+                    </li>
+                );
+            })
+        }
+    </ul>
+</aside>

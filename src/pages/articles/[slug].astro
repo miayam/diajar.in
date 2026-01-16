@@ -2,11 +2,12 @@
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import Article from "@/templates/Article.astro";
+import Masthead from "@/components/display/Masthead.astro";
+import BackLink from "@/components/navigation/BackLink.astro";
 import ArticleView from "@/components/display/ArticleView.astro";
+import DynamicTableOfContents from "@/components/navigation/DynamicTableOfContents.astro";
 import Iterator from "@/components/navigation/Iterator.astro";
 import { getCollection, getEntry, render } from "astro:content";
-import { markdown } from "@astropub/md";
-import { Image } from "astro:assets";
 
 export const getStaticPaths = (async () => {
     const articles = await getCollection("articles", ({ data }) => {
@@ -33,27 +34,29 @@ const { Content } = await render(article);
 <Article title={article.data.title}>
     {
         article.data.featuredImage ? (
-            <figure slot="featured-image" class="flex max-h-80 relative">
-                <Image
-                    width={200}
-                    height={200}
-                    decoding="async"
-                    loading="eager"
-                    src={article.data.featuredImage}
-                    alt={article.data.title}
-                    class="object-cover w-full"
-                />
-                <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
-                    {markdown(article.data.caption || "")}
-                </figcaption>
-            </figure>
+            <Masthead
+                slot="featured-image"
+                src={article.data.featuredImage}
+                alt={article.data.title}
+                caption={article.data.caption}
+            />
         ) : (
-            <div class="md:h-0 h-8" />
+            <div slot="featured-image" class="md:h-0 h-8" />
         )
     }
+
+    <BackLink
+        slot="back-link"
+        className="text-sm fixed top-4 md:text-base md:sticky md:max-w-80 md:top-8 mb-4"
+    >
+        Kembali
+    </BackLink>
+
+    <DynamicTableOfContents slot="table-of-contents" />
 
     <ArticleView article={article} tags={tags}>
         <Content />
     </ArticleView>
+
     <Iterator currentArticleId={article.id} />
 </Article>

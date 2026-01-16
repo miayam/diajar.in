@@ -1,7 +1,8 @@
 # Components
-- Iterator
-- PriorityMenu
-- Pagination
 - BackLink
-- TableOfContents
+- DynamicTableOfContents
+- Iterator
+- Pagination
+- PriorityMenu
 - ShareButtons
+- TableOfContents

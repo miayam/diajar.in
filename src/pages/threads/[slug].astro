@@ -1,9 +1,13 @@
 ---
-import Thread from "@/templates/Thread.astro";
+import Article from "@/templates/Article.astro";
+import ThreadView from "@/components/display/ThreadView.astro";
+import TableOfContents from "@/components/navigation/TableofContents.astro";
+import BackLink from "@/components/navigation/BackLink.astro";
+import Masthead from "@/components/display/Masthead.astro";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
 export const getStaticPaths = (async () => {
     const threads = await getCollection("threads");
@@ -38,25 +42,54 @@ const { thread, articles } = Astro.props;
 const { Content } = await render(thread);
 ---
 
-<Thread title={thread.data.label}>
-    <h1>{thread.data.label}</h1>
-    <p>{thread.data.name}</p>
-    <p><Content /></p>
+<Article title={thread.data.label}>
+    {
+        thread.data.featuredImage ? (
+            <Masthead
+                slot="featured-image"
+                src={thread.data.featuredImage}
+                alt={thread.data.name}
+                caption={thread.data.caption}
+            />
+        ) : (
+            <div slot="featured-image" class="md:h-0 h-8" />
+        )
+    }
 
-    <h2>Articles in this thread</h2>
-    <ul>
-        {
-            articles.map((article) => (
-                <li>
-                    <a href={`/articles/${article.id}`}>
-                        <h3>{article.data.title}</h3>
-                        <time datetime={article.data.publishDate.toISOString()}>
-                            {article.data.publishDate.toLocaleDateString()}
-                        </time>
-                        {article.data.excerpt && <p>{article.data.excerpt}</p>}
+    <BackLink
+        slot="back-link"
+        href="/threads"
+        className="text-sm fixed top-4 md:text-base md:sticky md:max-w-80 md:top-8 mb-4"
+    >
+        Utas
+    </BackLink>
+
+    <TableOfContents
+        thread={thread}
+        articles={articles}
+        slot="table-of-contents"
+    />
+
+    <ThreadView thread={thread}>
+        <Content />
+    </ThreadView>
+    {
+        articles.length > 0 ? (
+            <nav
+                id="iterator"
+                class="flex items-center justify-between py-8 border-t border-gray-300 mt-8"
+            >
+                <div class="flex-1 flex justify-end">
+                    <a
+                        id="nextLink"
+                        href={`/articles/${articles[0].id}?thread=${thread.id}`}
+                        class="flex items-center gap-2 py-2 rounded-md font-semibold"
+                    >
+                        <div>Selanjutnya</div>
+                        <span class="icon-chevron-right text-lg font-bold" />
                     </a>
-                </li>
-            ))
-        }
-    </ul>
-</Thread>
+                </div>
+            </nav>
+        ) : null
+    }
+</Article>

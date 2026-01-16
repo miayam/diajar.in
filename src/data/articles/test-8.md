@@ -3,7 +3,7 @@ title: "My First Post"
 publishDate: 2024-01-15
 author: "admin"
 tags: ['kiat']
-threads: []
+threads: ["belajar-cara-belajar"]
 draft: false
 readingTime: "5 min read"
 featuredImage: "/media/hunza-valley.jpeg"

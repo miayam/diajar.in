@@ -1,3 +1,2 @@
 # Components
 - SkeletonCard
-- SkeletonArticle

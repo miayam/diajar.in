@@ -35,6 +35,8 @@ const { currentArticleId } = Astro.props;
 </nav>
 
 <script>
+    import type { CollectionEntry } from "astro:content";
+
     class Iterator {
         private iterator: HTMLElement;
         private currentArticleId: string = "";
@@ -63,7 +65,8 @@ const { currentArticleId } = Astro.props;
                     return;
                 }
 
-                const data = await response.json();
+                const data: { articles: CollectionEntry<"articles">[] } =
+                    await response.json();
                 const articles = data.articles;
 
                 // Find current article index
@@ -86,6 +89,11 @@ const { currentArticleId } = Astro.props;
                     this.setupNavButton("prev", prevArticle);
                 }
 
+                if (currentIndex === 0) {
+                    // Setup overview button
+                    this.setupOverviewButton();
+                }
+
                 // Setup next button
                 if (currentIndex < articles.length - 1) {
                     const nextArticle = articles[currentIndex + 1];
@@ -93,6 +101,18 @@ const { currentArticleId } = Astro.props;
                 }
             } catch (error) {
                 console.error("Failed to load thread navigation:", error);
+            }
+        }
+
+        private setupOverviewButton() {
+            const link = document.getElementById(
+                "prevLink",
+            ) as HTMLAnchorElement;
+
+            if (link) {
+                link.href = `/threads/${this.threadId}`;
+                link.classList.remove("hidden");
+                link.classList.add("inline-flex");
             }
         }
 
