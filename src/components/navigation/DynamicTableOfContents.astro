@@ -92,9 +92,10 @@
             articles.forEach((article, index) => {
                 const li = document.createElement("li");
                 const link = document.createElement("a");
-                const isActive = this.currentUrl === `/articles/${article.id}`;
+                const isActive =
+                    this.currentUrl === `/articles/${article.id}` ||
+                    this.currentUrl === `/articles/${article.id}/`;
 
-                console.log("current url", this.currentUrl);
                 link.href = `/articles/${article.id}?thread=${this.threadId}`;
                 link.className =
                     "flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors";
