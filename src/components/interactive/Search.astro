@@ -300,6 +300,7 @@ const { placeholder, className, type } = Astro.props;
             const card = document.createElement("a");
             card.href = `/articles/${article.id}`;
             card.setAttribute("data-is-feed-link", "1");
+            card.setAttribute("data-astro-reload", "1");
             card.className =
                 "block p-4 border border-gray-700 rounded-md mb-3 hover:bg-gray-800 transition-colors";
 
@@ -328,6 +329,7 @@ const { placeholder, className, type } = Astro.props;
 
             const threadTitle = document.createElement("a");
             threadTitle.setAttribute("data-is-feed-link", "1");
+            threadTitle.setAttribute("data-astro-reload", "1");
             threadTitle.className =
                 "font-bold text-md text-white max-w-[60%] text-ellipsis hover:underline";
             threadTitle.href = `/threads/${thread.threadId}`;
@@ -338,6 +340,7 @@ const { placeholder, className, type } = Astro.props;
 
             const articleTitle = document.createElement("a");
             articleTitle.setAttribute("data-is-feed-link", "1");
+            articleTitle.setAttribute("data-astro-reload", "1");
             articleTitle.className =
                 "font-medium text-md text-white flex-1 line-clamp-1 hover:underline";
             articleTitle.textContent = thread.article.title;
@@ -353,6 +356,7 @@ const { placeholder, className, type } = Astro.props;
 
             const wrapper = document.createElement("a");
             wrapper.href = `/threads/${thread.threadId}`;
+            wrapper.setAttribute("data-astro-reload", "1");
             wrapper.appendChild(content);
 
             card.appendChild(titleRow);
@@ -391,7 +395,6 @@ const { placeholder, className, type } = Astro.props;
             if (match.indices) {
                 let highlighted = "";
                 let lastIndex = 0;
-                console.log(match);
 
                 match.indices.forEach(([start, end]: [number, number]) => {
                     highlighted += text.substring(lastIndex, start);
