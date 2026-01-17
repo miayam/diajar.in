@@ -5,6 +5,9 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeExternalLinks from "rehype-external-links";
 import mdx from "@astrojs/mdx";
+import { loadEnv } from "vite";
+
+const { SITE } = loadEnv(process?.env?.NODE_ENV || "", process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +15,7 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true,
   },
-  site: "https://diajar.in",
+  site: SITE,
   markdown: {
     rehypePlugins: [
       rehypeSlug,
