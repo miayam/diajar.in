@@ -1,3 +1,0 @@
-# Components
-- Search
-- StoriesPlayer

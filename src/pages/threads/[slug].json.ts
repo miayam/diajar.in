@@ -30,13 +30,12 @@ export const GET: APIRoute = async ({ params }) => {
   // Get articles for this thread (same logic as your page)
   const threadArticles = allArticles
     .filter((article) => article.data.threads.some((t) => t.id === thread.id))
-    .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+    .sort((a, b) => a.data.publishDate.valueOf() - b.data.publishDate.valueOf())
     .map((article) => ({
       id: article.id,
       title: article.data.title,
       publishDate: article.data.publishDate.toISOString(),
       excerpt: article.data.excerpt,
-      readingTime: article.data.readingTime,
       tags: article.data.tags.map((tag) => tag.id),
     }));
 

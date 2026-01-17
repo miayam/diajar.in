@@ -14,7 +14,17 @@
     margin-bottom: 1rem;
     font-weight: 600;
     line-height: 1.25;
-    font-family: "Courier New", Courier, monospace;
+    font-weight: bolder;
+}
+
+.content h1 a,
+.content h2 a,
+.content h3 a,
+.content h4 a,
+.content h5 a,
+.content h6 a {
+    font-weight: 600;
+    text-decoration-line: none;
 }
 
 .content h1 {
@@ -50,12 +60,14 @@
 /* Links */
 .content a {
     text-decoration: var(--colors-gray-900);
-    text-decoration-style: dashed;
-    font-style: italic;
     font-weight: 400;
     text-decoration-line: underline;
     line-height: 1.5;
     text-decoration-thickness: 1px;
+}
+
+.content ul.contains-task-list {
+    list-style-type: none;
 }
 
 /* Lists */

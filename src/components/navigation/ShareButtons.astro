@@ -26,5 +26,20 @@ const { url, title, text } = Astro.props;
     import { init } from "shareon";
     import "shareon/css"; // most bundlers will transpile this CSS
 
+    const threadId = new URLSearchParams(window.location.search).get("thread");
+
+    if (threadId) {
+        const shareButtonsWrapper =
+            document.querySelector<HTMLDivElement>(".shareon");
+        if (shareButtonsWrapper) {
+            const currentPathname =
+                shareButtonsWrapper.getAttribute("data-url");
+            shareButtonsWrapper.setAttribute(
+                "data-url",
+                `${currentPathname}?thread=${threadId}`,
+            );
+        }
+    }
+
     init();
 </script>

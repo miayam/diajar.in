@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content";
 import type { APIRoute } from "astro";
-import stripMarkdown from "@/utils/stripMarkdown";
+import createExcerpt from "@/utils/createExcerpt";
 
 export const GET: APIRoute = async () => {
   const articles = await getCollection("articles", (entry) => {
@@ -21,11 +21,11 @@ export const GET: APIRoute = async () => {
         id: `${thread.id}_${article.id}`,
         threadId: thread.id,
         title: thread.data.name,
-        content: stripMarkdown(thread.body || ""),
+        content: createExcerpt(thread.body || ""),
         article: {
           id: article.id,
           title: article.data.title,
-          content: stripMarkdown(article.body || ""),
+          content: createExcerpt(article.body || ""),
         },
       });
     }

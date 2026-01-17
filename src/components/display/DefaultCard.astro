@@ -1,5 +1,5 @@
 ---
-import stripMarkdown from "@/utils/stripMarkdown";
+import createExcerpt from "@/utils/createExcerpt";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
@@ -34,7 +34,7 @@ const { article } = Astro.props;
     </div>
     <hr class="border-gray-300 border-dashed" />
     <p class="line-clamp-2 flex-1 px-4 text">
-        {stripMarkdown(article.body || "").substring(0, 300)}
+        {createExcerpt(article.body || "").substring(0, 300)}
     </p>
 </a>
 

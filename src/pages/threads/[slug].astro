@@ -9,7 +9,7 @@ import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
-import stripMarkdown from "@/utils/stripMarkdown";
+import createExcerpt from "@/utils/createExcerpt";
 
 export const getStaticPaths = (async () => {
     const threads = await getCollection("threads");
@@ -25,7 +25,7 @@ export const getStaticPaths = (async () => {
             )
             .sort(
                 (a, b) =>
-                    b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+                    a.data.publishDate.valueOf() - b.data.publishDate.valueOf(),
             );
 
         return {
@@ -79,7 +79,7 @@ const { Content } = await render(thread);
     <ShareButtons
         slot="share"
         url={`${Astro.site}threads/${thread.id}`}
-        text={stripMarkdown(thread.body || "").substring(0, 140)}
+        text={createExcerpt(thread.body || "").substring(0, 140)}
         title={thread.data.name}
     />
 

@@ -7,9 +7,9 @@ import BackLink from "@/components/navigation/BackLink.astro";
 import ArticleView from "@/components/display/ArticleView.astro";
 import DynamicTableOfContents from "@/components/navigation/DynamicTableOfContents.astro";
 import Iterator from "@/components/navigation/Iterator.astro";
-import stripMarkdown from "@/utils/stripMarkdown";
 import ShareButtons from "@/components/navigation/ShareButtons.astro";
 import { getCollection, getEntry, render } from "astro:content";
+import createExcerpt from "@/utils/createExcerpt";
 
 export const getStaticPaths = (async () => {
     const articles = await getCollection("articles", ({ data }) => {
@@ -63,7 +63,7 @@ const { Content } = await render(article);
     <ShareButtons
         slot="share"
         url={`${Astro.site}articles/${article.id}`}
-        text={stripMarkdown(article.body || "").substring(0, 140)}
+        text={createExcerpt(article.body || "").substring(0, 140)}
         title={article.data.title}
     />
 
