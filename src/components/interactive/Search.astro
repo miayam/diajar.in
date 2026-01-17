@@ -23,7 +23,7 @@ const { placeholder, className, type } = Astro.props;
 
                 <div class="flex items-center gap-0.5">
                     <span class="icon-command text-sm"></span>
-                    F
+                    K
                 </div>
             </button>
         </div>
@@ -166,7 +166,7 @@ const { placeholder, className, type } = Astro.props;
             });
 
             document.addEventListener("keydown", (event) => {
-                if (event.key === "f" && (event.metaKey || event.ctrlKey)) {
+                if (event.key === "k" && (event.metaKey || event.ctrlKey)) {
                     this.open();
                 }
 
@@ -176,7 +176,7 @@ const { placeholder, className, type } = Astro.props;
             });
 
             window.onkeydown = function (event) {
-                if (event.ctrlKey && event.key == "f") {
+                if (event.ctrlKey && event.key == "k") {
                     event.preventDefault();
                 }
             };
@@ -214,6 +214,7 @@ const { placeholder, className, type } = Astro.props;
                         includeMatches: true,
                         distance: 1000000,
                         threshold: 0.3,
+                        minMatchCharLength: 4,
                     });
                 } else {
                     this.fuse = new Fuse(data, {
@@ -222,6 +223,7 @@ const { placeholder, className, type } = Astro.props;
                         includeMatches: true,
                         distance: 1000000,
                         threshold: 0.3,
+                        minMatchCharLength: 4,
                     });
                 }
 
