@@ -15,6 +15,7 @@ const { title, description, articleCount, href } = Astro.props;
     href={href}
     class="card-stack flex flex-col cursor-pointer h-full w-full bg-gray-900 border border-black p-6 text-white rounded-md"
     data-is-feed-link
+    data-astro-reload
 >
     <div class="text-xl font-bold mb-2">
         {title}
