@@ -5,11 +5,11 @@ author: "admin"
 tags: ['gagasan']
 threads: ["belajar-cara-belajar"]
 draft: false
-featuredImage: "/media/peter-olexa.jpg"
+featuredImage: "../../media/peter-olexa.jpg"
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
-![Tom and Jerry](/media/tom-and-jerry.png)
+![Tom and Jerry](../../media/tom-and-jerry.png)
 
 Seperti biasa adegan dimulai dengan Tom mengejar Jerry. Jerry pun berhasil kabur ke lubangnya. Tom termenung sejenak dan *ting!* lampu menyala di atas kepalanya ketika siasat licik terbesit di benaknya. Begitulah gambaran cara kerja otak di kartun *Tom & Jerry*. Agak absurd, namun ilustrasi tersebut tidak sepenuhnya keliru.
 

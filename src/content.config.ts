@@ -15,28 +15,30 @@ const authors = defineCollection({
 
 const articles = defineCollection({
   loader: glob({ pattern: "**/*.(md|mdx|json)", base: "./src/data/articles" }),
-  schema: z.object({
-    title: z.string(),
-    publishDate: z.coerce.date(),
-    updateDate: z.coerce.date().optional(),
-    author: reference("authors"),
-    tags: z.array(reference("tags")),
-    threads: z.array(reference("threads")),
-    featuredImage: z.string().optional(),
-    caption: z.string().optional(),
-    draft: z.boolean(),
-    excerpt: z.string().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      publishDate: z.coerce.date(),
+      updateDate: z.coerce.date().optional(),
+      author: reference("authors"),
+      tags: z.array(reference("tags")),
+      threads: z.array(reference("threads")),
+      featuredImage: image().optional(),
+      caption: z.string().optional(),
+      draft: z.boolean(),
+      excerpt: z.string().optional(),
+    }),
 });
 
 const threads = defineCollection({
   loader: glob({ pattern: "**/*.(md|mdx|json)", base: "./src/data/threads" }),
-  schema: z.object({
-    name: z.string(),
-    label: z.string(),
-    featuredImage: z.string().optional(),
-    caption: z.string().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      label: z.string(),
+      featuredImage: image().optional(),
+      caption: z.string().optional(),
+    }),
 });
 
 const tags = defineCollection({
