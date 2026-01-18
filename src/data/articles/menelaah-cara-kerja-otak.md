@@ -27,6 +27,6 @@ Repetisi (mengulang pelajaran) ibarat menambah voltase pada rangkaian listrik. S
 
 Semua perumpamaan di atas adalah penyederhanaan konsep untuk membantu proses belajar. Menurut Prof. Barbara Oakley, metafora adalah salah satu cara belajar yang efektif.
 
-Intinya, otak kita *teh* sebenarnya canggih, tapi cara belajar kita masih primitif. Di artikel yang lain, kita akan *ngeroso* (mendalami) lebih *jero* (dalam) supaya trik dan tip yang dijabarkan meresap sampai ke sumsum tulang.
+Intinya, otak kita *teh* sebenarnya canggih, tapi cara belajar kita masih primitif. Di artikel yang lain, kita akan *ngeroso* (mendalami) lebih *jero* (dalam) supaya trik dan tip yang dijabarkan meresap ke sumsum tulang.
 
 Ingat, [ilmu dan informasi itu dua hal yang berbeda](/articles/mukadimah?thread=belajar-cara-belajar#ilmu-dan-informasi-itu-dua-hal-yang-berbeda).
