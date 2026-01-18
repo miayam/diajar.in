@@ -20,7 +20,9 @@ const { title } = Astro.props;
             <slot name="featured-image" />
             <div
                 class="grid
-                    grid-cols-[1fr_min(40rem,100%)_1fr]
+                    grid-cols-1
+                    md:grid-cols-[1fr_min(30rem,100%)]
+                    lg:grid-cols-[1fr_min(40rem,100%)_1fr]
                     grid-rows-auto
                     w-full my-8"
             >
@@ -36,10 +38,10 @@ const { title } = Astro.props;
                 </div>
 
                 <div
-                    class="col-start-2 flex w-full md:col-start-3 pl-4 pr-6 md:pb-4 flex-col relative items-start"
+                    class="col-start-2 flex w-full lg:col-start-3 pl-4 pr-6 md:pb-4 flex-col relative items-start"
                 >
                     <div
-                        class="w-auto m-auto md:m-0 md:w-20 sticky px-2 py-1 top-8 flex justify-center flex-wrap"
+                        class="w-auto m-auto lg:m-0 lg:w-20 sticky px-2 py-1 top-8 flex justify-center flex-wrap"
                     >
                         <slot name="share" />
                     </div>
