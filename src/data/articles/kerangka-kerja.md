@@ -156,7 +156,7 @@ Buat label untuk menandakan tugas yang siap diproses selanjutnya atau ditunda. C
 `postponed`:
 - [ ] Tonton *Memulai Dropshipping di Tahun 2026* `Projects/Bisnis` `low` `@anywhere` `postponed`
 
-Label-label di atas insyallah membantu kita menata hidup. Anda tidak lagi bingung besok mau *ngapain*.
+Label-label di atas insyallah membantu Anda menata hidup. Anda tidak lagi bingung besok mau *ngapain*.
 
 ## Menyelesaikan Tugas
 Tugas-tugas yang berceceran kini sudah rapi (meskipun tetap menumpuk). Nah, sekarang tinggal dikerjakan. Sebelum mengerjakan, jangan lupa berdoa karena tidak ada daya dan upaya melainkan atas izin-Nya.
