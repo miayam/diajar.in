@@ -41,6 +41,9 @@ importers:
       shareon:
         specifier: ^2.7.0
         version: 2.7.0
+      sharp:
+        specifier: ^0.34.5
+        version: 0.34.5
     devDependencies:
       '@unocss/preset-wind4':
         specifier: ^66.3.3
@@ -4567,8 +4570,7 @@ snapshots:
     dependencies:
       react: 19.2.3
 
-  '@img/colour@1.0.0':
-    optional: true
+  '@img/colour@1.0.0': {}
 
   '@img/sharp-darwin-arm64@0.34.5':
     optionalDependencies:
@@ -6118,8 +6120,7 @@ snapshots:
     dependencies:
       repeat-string: 1.6.1
 
-  detect-libc@2.1.2:
-    optional: true
+  detect-libc@2.1.2: {}
 
   deterministic-object-hash@2.0.2:
     dependencies:
@@ -8439,8 +8440,7 @@ snapshots:
 
   semver@7.7.2: {}
 
-  semver@7.7.3:
-    optional: true
+  semver@7.7.3: {}
 
   set-function-length@1.2.2:
     dependencies:
@@ -8483,7 +8483,6 @@ snapshots:
       '@img/sharp-win32-arm64': 0.34.5
       '@img/sharp-win32-ia32': 0.34.5
       '@img/sharp-win32-x64': 0.34.5
-    optional: true
 
   shiki@3.15.0:
     dependencies:

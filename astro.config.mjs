@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, sharpImageService } from "astro/config";
 import UnoCSS from "unocss/astro";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -16,6 +16,7 @@ export default defineConfig({
     prefetchAll: true,
   },
   site: SITE,
+  image: { service: sharpImageService() },
   markdown: {
     rehypePlugins: [
       rehypeSlug,
