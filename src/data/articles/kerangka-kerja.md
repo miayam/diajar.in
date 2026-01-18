@@ -122,7 +122,7 @@ Buat label untuk menentukan skala prioritas. Contoh:
 Buat label untuk menandakan tugas yang belum bisa dikerjakan karena bergantung pada pihak lain. Contoh:
 
 `waiting`:
-- [ ] *Review kerjaan* si Fulan, tapi *kerjaan* Si Fulan belum selesai
+- [ ] *Review kerjaan* si Fulan, tapi *kerjaan* si Fulan belum selesai
 
 Buat label untuk menandakan tugas yang siap diproses selanjutnya atau ditunda. Contoh:
 
@@ -156,9 +156,11 @@ Buat label untuk menandakan tugas yang siap diproses selanjutnya atau ditunda. C
 `postponed`:
 - [ ] Tonton *Memulai Dropshipping di Tahun 2026* `Projects/Bisnis` `low` `@anywhere` `postponed`
 
-Label-label di atas insyallah membantu kita menata hidup. Sepulang kerja, Anda tidak lagi bingung besok mau *ngapain*.
+Label-label di atas insyallah membantu kita menata hidup. Anda tidak lagi bingung besok mau *ngapain*.
 
 ## Menyelesaikan Tugas
-Tugas-tugas yang berceceran kini sudah rapi meskipun masih tetap menumpuk. Nah, sekarang tinggal dikerjakan. Sebelum mengerjakan, jangan lupa berdoa karena tidak ada daya dan upaya melainkan atas izin-Nya. Bila daftar `now` sudah habis, ambil tugas dari daftar `next`, kemudian ubah labelnya menjadi `now`. Jika *kerjaan* si Fulan sudah selesai dan siap *direview*, ubah label `waiting` menjadi `next`. Jika sudah punya waktu luang untuk memulai bisnis, ubah label `postponed` menjadi `next`.
+Tugas-tugas yang berceceran kini sudah rapi (meskipun tetap menumpuk). Nah, sekarang tinggal dikerjakan. Sebelum mengerjakan, jangan lupa berdoa karena tidak ada daya dan upaya melainkan atas izin-Nya.
+
+Bila daftar `now` sudah habis, ambil tugas dari daftar `next`, kemudian ubah labelnya menjadi `now`. Jika *kerjaan* si Fulan sudah selesai dan siap *direview*, ubah label `waiting` menjadi `next`. Jika sudah punya waktu luang untuk memulai bisnis, ubah label `postponed` menjadi `next`.
 
 Peringatan: ini hanya contoh kerangka kerja. Bisa diubah sesuai kebutuhan Anda.
