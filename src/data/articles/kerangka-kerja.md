@@ -156,10 +156,10 @@ Buat label untuk menandakan tugas yang siap diproses selanjutnya atau ditunda. C
 `postponed`:
 - [ ] Tonton *Memulai Dropshipping di Tahun 2026* `Projects/Bisnis` `low` `@anywhere` `postponed`
 
-Label-label di atas diharapkan dapat membantu Anda memantau progres—proyek mana saja yang belum, sudah, sedang, atau akan dikerjakan. Setidaknya Anda tidak lagi bingung besok mau *ngapain*.
+Label-label di atas diharapkan dapat membantu Anda memantau progres—proyek mana saja yang belum, sudah, sedang, atau akan dikerjakan. Setidaknya Anda tidak lagi bingung mau *ngapain*.
 
 ## Menyelesaikan Tugas
-Tugas-tugas yang berceceran kini sudah rapi. Nah, sekarang tinggal dikerjakan. Sebelum mengerjakan tugas, jangan lupa berdoa karena tidak ada daya dan upaya melainkan atas izin-Nya.
+Tugas-tugas yang berceceran kini sudah rapi. Nah, sekarang tinggal dikerjakan. Sebelum mengerjakan tugas, jangan lupa berdoa.
 
 Bila daftar `now` sudah habis, ambil tugas dari daftar `next`, kemudian ubah labelnya menjadi `now`. Jika *kerjaan* si Fulan sudah selesai dan siap *direview*, ubah label `waiting` menjadi `next`. Jika sudah punya waktu luang untuk memulai bisnis, ubah label `postponed` menjadi `next`.
 
