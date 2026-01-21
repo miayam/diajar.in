@@ -19,14 +19,12 @@ const articles = defineCollection({
     z.object({
       title: z.string(),
       publishDate: z.coerce.date(),
-      updateDate: z.coerce.date().optional(),
       author: reference("authors"),
       tags: z.array(reference("tags")),
       threads: z.array(reference("threads")),
       featuredImage: image().optional(),
       caption: z.string().optional(),
       draft: z.boolean(),
-      excerpt: z.string().optional(),
     }),
 });
 

@@ -1,0 +1,123 @@
+backend:
+  name: github
+  repo: miayam/diajar.in
+  skip_ci: true
+
+media_folder: /src/media
+public_folder: /media
+
+collections:
+  - name: articles
+    label: Articles
+    identifier_field: title
+    folder: src/data/articles
+    create: true
+    fields:
+      - { label: Title, name: title, widget: text, required: true }
+      - {
+          label: Publish Date,
+          name: publishDate,
+          widget: datetime,
+          required: true,
+        }
+      - {
+          label: Body,
+          name: body,
+          widget: richtext,
+          buttons:
+            [
+              numbered-list,
+              bold,
+              italic,
+              strikethrough,
+              code,
+              link,
+              heading-one,
+              youtube,
+              note,
+            ],
+          required: true,
+        }
+      - {
+          label: Author,
+          name: author,
+          widget: relation,
+          collection: authors,
+          multiple: false,
+          search_fields: ["name"],
+          display_fields: ["name"],
+          required: true,
+        }
+      - {
+          label: Tags,
+          name: tags,
+          widget: relation,
+          collection: tags,
+          multiple: true,
+          search_fields: ["name"],
+          display_fields: ["name"],
+          required: false,
+        }
+      - {
+          label: Threads,
+          name: threads,
+          widget: relation,
+          collection: threads,
+          multiple: true,
+          search_fields: ["name"],
+          display_fields: ["name"],
+          required: false,
+        }
+      - {
+          label: Fetured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+      - {
+          label: Draft,
+          name: draft,
+          widget: boolean,
+          default: true,
+          required: true,
+        }
+  - name: authors
+    label: Author
+    folder: src/data/authors
+    identifier_field: name
+    fields:
+      - { label: Name, name: name, widget: string, required: true }
+      - { label: Email, name: email, widget: string, required: true }
+      - { label: Bio, name: bio, widget: markdown, required: false }
+      - { label: Picture, name: picture, widget: image, required: false }
+  - name: tags
+    label: Tags
+    folder: src/data/tags
+    identifier_field: name
+    create: true
+    fields:
+      - { label: Name, name: name, widget: string, required: true }
+      - { label: Label, name: label, widget: string, required: true }
+  - name: threads
+    label: Threads
+    folder: src/data/threads
+    identifier_field: name
+    create: true
+    fields:
+      - { label: Name, name: name, widget: string, required: true }
+      - { label: Label, name: label, widget: string, required: true }
+      - {
+          label: Featured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+      - { label: Caption, name: caption, widget: markdown, required: false }
+  - name: pages
+    label: Pages
+    files:
+      - name: about
+        label: About Page
+        file: src/pages/about.md
+        fields:
+          - { name: body, label: Body, widget: markdown }
