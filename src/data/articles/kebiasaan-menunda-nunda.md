@@ -1,18 +1,19 @@
 ---
-title: "Kebiasaan Menunda-nunda"
+title: Kebiasaan Menunda-nunda
 publishDate: 2026-01-18
-author: "admin"
-tags: ['gagasan']
-threads: ["belajar-cara-belajar"]
+author: admin
+tags:
+  - gagasan
+threads:
+  - belajar-cara-belajar
+featuredImage: ../../media/peter-olexa.jpg
 draft: false
-featuredImage: "../../media/peter-olexa.jpg"
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
-
 Salah satu cita-cita saya yang belum tercapai adalah menjadi orang yang disiplin.
 
-Saya tahu teknik Pomodoro, tapi belum bisa mepraktikkannya dengan baik. Teknik ini dirancang Francesco Cirilo untuk mengatasi kebiasaan menunda-nunda.
+Saya tahu teknik Pomodoro, tapi belum bisa mempraktikkannya dengan baik. Teknik ini dirancang Francesco Cirilo untuk mengatasi kebiasaan menunda-nunda.
 
 Prosedurnya: pasang alarm 25 menit. Fokus selama itu. Jika alarm berbunyi, istirahat 5 menit, kemudian ulangi lagi. Buka aplikasi https://pomofocus.io/
 
