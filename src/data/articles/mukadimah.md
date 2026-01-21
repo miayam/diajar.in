@@ -1,6 +1,6 @@
 ---
 title: Mukadimah
-publishDate: 2026-01-16
+publishDate: 2026-01-16T08:00:00
 author: admin
 tags:
   - gagasan
@@ -10,6 +10,7 @@ featuredImage: ../../media/peter-olexa.jpg
 draft: false
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
+
 Kenapa harus belajar?
 
 >_"Ilmu adalah kehormatan dan itu saja sudah cukup jadi alasan untuk meraihnya. Kebodohan adalah kehinaan dan itu saja sudah cukup jadi alasan untuk menjauhinya."—Ibn Hazm_
