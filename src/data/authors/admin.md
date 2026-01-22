@@ -1,5 +1,6 @@
 ---
-name: "Muhamad Deni Ramdan"
-email: "muhammaddeni90@gmail.com"
-bio: "Pengelola https://diajar.in"
+name: Muhamad Deni Ramdan
+email: muhammaddeni90@gmail.com
+bio: Pengelola https://diajar.in
+picture: ''
 ---
