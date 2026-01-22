@@ -10,6 +10,7 @@ featuredImage: ../../media/peter-olexa.jpg
 draft: false
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
+
 Pernahkan saat di perjalanan pulang tiba-tiba teringat berbagai macam hal yang seharusnya Anda lakukan? Buku yang dibeli minggu kemarin belum disentuh sama sekali. Kursus yang dibeli di _Udemy_ sudah tidak menarik lagi. Rambut belum dicukur, motor belum diservis, baju kotor belum dicuci, semuanya menumpuk tak terkendali. Anda frustasi lalu berkata dalam hati, "Ah, _gimana_ nanti!"
 
 _GTD_ (_Getting Things Done_) adalah kerangka kerja untuk mengatasi hal tersebut—dengan sedikit modifikasi. Bisa dipelajari [di sini](https://hamberg.no/gtd).
@@ -26,7 +27,7 @@ _GTD_ dirancang untuk mengelola tugas-tugas berdasarkan:
 
 ## Membuat Tugas
 
-Pertama-tama, Anda harus meluapkan semua yang terlintas di kepala. Buka kalender, _diary_, _bookmark_, _playlist_, apa pun yang dapat mendorong Anda berbuat sesuatu. Contoh: ketika Anda buka kalender, ternyata besok Pak Bos ulang tahun. Tidak penting. Cukup ucapkan selamat. Ketika Anda buka _bookmark_, ada banyak artikel menarik yang menanti untuk dikunjungi. Ketika Anda melirik ke rak buku, ada komik, biografi, novel, semua berderet tak tersentuh. Ketika Anda buka _diary_, ternyata Anda tertarik memulai usaha _dropshiping_, bisnis cuci sepatu, dan lain-lain. Ketika Anda buka _playlist_, ada beragam _podcast_ untuk meningkatkan kemampuan bahasa Inggris. Ada juga kursus gratis mulai dari Harvard sampai MIT. Banyak sekali.
+Pertama-tama, Anda harus meluapkan semua yang terlintas di kepala. Buka kalender, _diary_, _bookmark_, _playlist,_ apa pun yang dapat mendorong Anda berbuat sesuatu. Contoh: ketika Anda buka kalender, ternyata besok Pak Bos ulang tahun. Tidak penting. Cukup ucapkan selamat. Ketika Anda buka _bookmark_, ada banyak artikel menarik yang menanti untuk dikunjungi. Ketika Anda melirik ke rak buku, ada komik, biografi, novel, semua berderet tak tersentuh. Ketika Anda buka _diary_, ternyata Anda tertarik memulai usaha _dropshiping_, bisnis cuci sepatu, dan lain-lain. Ketika Anda buka _playlist_, ada beragam _podcast_ untuk meningkatkan kemampuan bahasa Inggris. Ada juga kursus gratis mulai dari Harvard sampai MIT. Banyak sekali.
 
 Sekarang tuliskan semua yang **mungkin** bisa Anda lakukan. Misal:
 
@@ -82,7 +83,7 @@ Buat label untuk mengelompokkan tugas-tugas yang saling berkaitan berdasarkan te
 
 `Projects/Build Product XYZ`:
 
-- [ ] _Review kerjaan_ si Fulan
+- [ ] _Review_ _kerjaan_ si Fulan
 
 `Projects/Chores`:
 
