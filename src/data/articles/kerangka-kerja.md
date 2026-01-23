@@ -33,7 +33,7 @@ Sekarang tuliskan semua yang **mungkin** bisa Anda lakukan. Misal:
 
 - [ ] Angkat jemuran
 - [ ] Ambil cucian di _laundry_
-- [ ] _Review_ _kerjaan_ si Fulan
+- [ ] _Review  kerjaan_ si Fulan
 - [ ] Buat ucapan selamat untuk Pak Bos dengan _ChatGPT_
 - [ ] Belajar cara memasang tabung gas
 - [ ] Tonton _Tutorial Mengganti Kanvas Kopling_
@@ -48,7 +48,7 @@ Ambil daftar di atas sebagai contoh:
 
 - [ ] Angkat jemuran
 - [ ] Ambil cucian di _laundry_
-- [ ] _Review_ _kerjaan_ si Fulan
+- [ ] _Review kerjaan_ si Fulan
 - [ ] Buat ucapan selamat untuk Pak Bos dengan _ChatGPT_
 - [ ] Belajar cara memasang tabung gas
 - [ ] Tonton _Tutorial Mengganti Kanvas Kopling_
@@ -57,7 +57,7 @@ Ambil daftar di atas sebagai contoh:
 - [ ] Baca _Hukum Menggambar dalam Islam_
 - [ ] Tonton _Memulai Dropshipping di Tahun 2026_
 
-Gunakan aplikasi seperti _Todoist_, _Notion_, atau _Logseq_ untuk mempermudah Anda memfilter tugas berdasarkan label. Saya pribadi menggunakan _Logseq_.
+Gunakan aplikasi seperti _Todoist_,_ Notion_, atau _Logseq_ untuk mempermudah Anda memfilter tugas berdasarkan label. Saya pribadi menggunakan _Logseq_.
 
 Mari proses daftar di atas satu per satu dengan bertanya: apakah tugas ini bisa dikerjakan segera dan diselesaikan dengan cepat? Jika iya, labeli tugas dengan `now`.
 
@@ -71,7 +71,7 @@ Contoh daftar `now`:
 
 Daftar yang tersisa:
 
-- [ ] _Review_ _kerjaan_ si Fulan
+- [ ] _Review  kerjaan_ si Fulan
 - [ ] Belajar cara memasang tabung gas
 - [ ] Tonton _Tutorial Mengganti Kanvas Kopling_
 - [ ] Tonton _Pengantar Kalkulus dari MIT_
@@ -83,7 +83,7 @@ Buat label untuk mengelompokkan tugas-tugas yang saling berkaitan berdasarkan te
 
 `Projects/Build Product XYZ`:
 
-- [ ] _Review_ _kerjaan_ si Fulan
+- [ ] _Review kerjaan_ si Fulan
 
 `Projects/Chores`:
 
