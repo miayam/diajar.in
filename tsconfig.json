@@ -4,6 +4,7 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["WebWorker"],
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],

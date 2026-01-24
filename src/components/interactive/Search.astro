@@ -99,7 +99,6 @@ const { placeholder, className, type } = Astro.props;
     import feedLinks from "@/utils/feedLinks";
     import type { FuseResult } from "fuse.js";
     import debounce from "lodash.debounce";
-    import "@astropub/worker/polyfill";
 
     const worker = new Worker("../../scripts/fuseWorker.mjs", {
         type: "module",
