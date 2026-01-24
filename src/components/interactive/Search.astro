@@ -6,7 +6,6 @@ interface Props {
 }
 
 const { placeholder, className, type } = Astro.props;
-const worker = new Worker("./fuseWorker.js", { type: "module" });
 ---
 
 <div class={`w-full col-start-2 -z-1 bg-white pt-2 ${className}`}>
