@@ -88,7 +88,7 @@ const { placeholder, className, type } = Astro.props;
     </div>
 </dialog>
 
-<style>
+<style is:inline>
     /* Ensure dialog is hidden by default */
     dialog:not([open]) {
         display: none;
@@ -97,7 +97,12 @@ const { placeholder, className, type } = Astro.props;
 
 <script>
     import feedLinks from "@/utils/feedLinks";
-    import Fuse from "fuse.js";
+    import type { FuseResult } from "fuse.js";
+    import debounce from "lodash.debounce";
+
+    const worker = new Worker("../../scripts/fuseWorker.mjs", {
+        type: "module",
+    });
 
     interface ArticleIndex {
         id: string;
@@ -124,7 +129,6 @@ const { placeholder, className, type } = Astro.props;
         private resultsContainer: HTMLElement;
         private emptyState: HTMLElement;
         private loadingState: HTMLElement;
-        private fuse: Fuse<ArticleIndex | ThreadIndex> | null = null;
         private searchType: "articles" | "threads";
 
         constructor() {
@@ -187,9 +191,12 @@ const { placeholder, className, type } = Astro.props;
             });
 
             // Search as you type
-            this.searchInput.addEventListener("input", () => {
-                this.performSearch();
-            });
+            this.searchInput.addEventListener(
+                "input",
+                debounce(() => {
+                    this.performSearch();
+                }, 300),
+            );
 
             // Load search index
             await this.loadIndex();
@@ -199,35 +206,17 @@ const { placeholder, className, type } = Astro.props;
             this.showLoading();
 
             try {
-                const endpoint =
-                    this.searchType === "articles"
-                        ? "/search/articles.json"
-                        : "/search/threads.json";
+                worker.postMessage({
+                    type: "init",
+                    searchType: this.searchType,
+                });
 
-                const response = await fetch(endpoint);
-                const data = await response.json();
-
-                if (this.searchType === "articles") {
-                    this.fuse = new Fuse(data, {
-                        keys: ["title", "content"],
-                        includeScore: true,
-                        includeMatches: true,
-                        distance: 1000000,
-                        threshold: 0.3,
-                        minMatchCharLength: 4,
-                    });
-                } else {
-                    this.fuse = new Fuse(data, {
-                        keys: ["title", "content", "article.content"],
-                        includeScore: true,
-                        includeMatches: true,
-                        distance: 1000000,
-                        threshold: 0.3,
-                        minMatchCharLength: 4,
-                    });
-                }
-
-                this.hideLoading();
+                worker.addEventListener("message", (event) => {
+                    if (event.data.type === "init-success") {
+                        console.log(event.data.type);
+                        this.hideLoading();
+                    }
+                });
             } catch (error) {
                 console.error("Failed to load search index:", error);
                 this.hideLoading();
@@ -262,25 +251,33 @@ const { placeholder, className, type } = Astro.props;
 
         private performSearch() {
             const query = this.searchInput.value.trim();
+            worker.postMessage({ type: "search", query });
 
-            if (!query || !this.fuse) {
+            if (!query) {
                 this.resultsContainer.innerHTML = "";
                 this.emptyState.classList.add("hidden");
                 return;
             }
 
-            const results = this.fuse.search(`${query}`);
+            worker.addEventListener("message", (event) => {
+                if (event.data.type === "search-success") {
+                    const results = event.data.data as FuseResult<
+                        ArticleIndex | ThreadIndex
+                    >[];
 
-            if (results.length === 0) {
-                this.resultsContainer.innerHTML = "";
-                this.emptyState.classList.remove("hidden");
-                this.resultsContainer.classList.add("hidden");
-                return;
-            }
+                    if (results.length === 0) {
+                        this.resultsContainer.innerHTML = "";
+                        this.emptyState.classList.remove("hidden");
+                        this.resultsContainer.classList.add("hidden");
+                        return;
+                    }
 
-            this.resultsContainer.classList.remove("hidden");
-            this.emptyState.classList.add("hidden");
-            this.renderResults(results);
+                    this.resultsContainer.classList.remove("hidden");
+                    this.emptyState.classList.add("hidden");
+                    this.renderResults(results);
+                    console.log(event.data.type);
+                }
+            });
         }
 
         private renderResults(results: any[]) {

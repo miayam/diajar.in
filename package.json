@@ -11,10 +11,11 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.10",
     "@astropub/md": "^1.0.0",
+    "@astropub/worker": "^0.2.0",
     "astro": "^5.15.4",
-    "decap-cms-app": "^3.10.0",
     "fuse.js": "^7.1.0",
     "html-to-text": "^9.0.5",
+    "lodash.debounce": "^4.0.8",
     "markdown-it": "^14.1.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-external-links": "^3.0.0",
