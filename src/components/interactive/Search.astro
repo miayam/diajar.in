@@ -100,7 +100,7 @@ const { placeholder, className, type } = Astro.props;
     import type { FuseResult } from "fuse.js";
     import debounce from "lodash.debounce";
 
-    const worker = new Worker("../../scripts/fuseWorker.mjs", {
+    const worker = new Worker("../../scripts/fuseWorker.js", {
         type: "module",
     });
 
