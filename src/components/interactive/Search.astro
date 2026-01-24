@@ -99,7 +99,8 @@ const { placeholder, className, type } = Astro.props;
     import feedLinks from "@/utils/feedLinks";
     import type { FuseResult } from "fuse.js";
     import debounce from "lodash.debounce";
-    const worker = new Worker("./fuseWorker.js", { type: "module" });
+    import Worker from "@/scripts/fuseWorker.mjs?worker";
+    const worker = new Worker();
 
     interface ArticleIndex {
         id: string;

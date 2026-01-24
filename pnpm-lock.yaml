@@ -14,9 +14,6 @@ importers:
       '@astropub/md':
         specifier: ^1.0.0
         version: 1.0.0(@astrojs/markdown-remark@6.3.8)
-      '@astropub/worker':
-        specifier: ^0.2.0
-        version: 0.2.0
       astro:
         specifier: ^5.15.4
         version: 5.15.4(@types/node@24.0.13)(jiti@2.4.2)(rollup@4.44.2)(typescript@5.8.3)
@@ -97,9 +94,6 @@ packages:
     resolution: {integrity: sha512-++urcyulQogbLAF0VC2rEp6qLUfnRX9iaDREAkN1su9fF8V84DVaMHbQXn7qqQ27wYT5AVVeoK+4+vggYYVbQg==}
     peerDependencies:
       '@astrojs/markdown-remark': ^5
-
-  '@astropub/worker@0.2.0':
-    resolution: {integrity: sha512-DkvD+H3N3n9XqRV66Jh3nYq0fPkfPwlbuOcKmLgSINms0z5VcHALVUmneceMJ1ni/MexkqffezWtGgKAiglYbw==}
 
   '@babel/helper-string-parser@7.27.1':
     resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
@@ -2358,8 +2352,6 @@ snapshots:
   '@astropub/md@1.0.0(@astrojs/markdown-remark@6.3.8)':
     dependencies:
       '@astrojs/markdown-remark': 6.3.8
-
-  '@astropub/worker@0.2.0': {}
 
   '@babel/helper-string-parser@7.27.1': {}
 

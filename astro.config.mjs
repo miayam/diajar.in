@@ -5,14 +5,13 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeExternalLinks from "rehype-external-links";
 import mdx from "@astrojs/mdx";
-import worker from "@astropub/worker";
 import { loadEnv } from "vite";
 
 const { SITE } = loadEnv(process?.env?.NODE_ENV || "", process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [UnoCSS(), mdx(), worker()],
+  integrations: [UnoCSS(), mdx()],
   prefetch: {
     prefetchAll: true,
   },

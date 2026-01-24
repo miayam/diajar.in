@@ -11,7 +11,6 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.10",
     "@astropub/md": "^1.0.0",
-    "@astropub/worker": "^0.2.0",
     "astro": "^5.15.4",
     "fuse.js": "^7.1.0",
     "html-to-text": "^9.0.5",

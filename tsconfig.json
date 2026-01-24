@@ -10,7 +10,8 @@
       "@components/*": ["src/components/*"],
       "@templates/*": ["src/templates/*"],
       "@assets/*": ["src/assets/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@scripts/*": ["src/scripts/*"]
     }
   }
 }
