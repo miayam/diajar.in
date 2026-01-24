@@ -27,7 +27,7 @@ _GTD_ dirancang untuk mengelola tugas-tugas berdasarkan:
 
 ## Membuat Tugas
 
-Pertama-tama, Anda harus meluapkan semua yang terlintas di kepala. Buka kalender, _diary_, _bookmark_, _playlist,_ apa pun yang dapat mendorong Anda berbuat sesuatu. Contoh: ketika Anda buka kalender, ternyata besok Pak Bos ulang tahun. Tidak penting. Cukup ucapkan selamat. Ketika Anda buka _bookmark_, ada banyak artikel menarik yang menanti untuk dikunjungi. Ketika Anda melirik ke rak buku, ada komik, biografi, novel, semua berderet tak tersentuh. Ketika Anda buka _diary_, ternyata Anda tertarik memulai usaha _dropshiping_, bisnis cuci sepatu, dan lain-lain. Ketika Anda buka _playlist_, ada beragam _podcast_ untuk meningkatkan kemampuan bahasa Inggris. Ada juga kursus gratis mulai dari Harvard sampai MIT. Banyak sekali.
+Pertama-tama, Anda harus meluapkan semua yang terlintas di kepala. Buka kalender, _diary, bookmark, playlist_,  apa pun yang dapat mendorong Anda berbuat sesuatu. Contoh: ketika Anda buka kalender, ternyata besok Pak Bos ulang tahun. Tidak penting. Cukup ucapkan selamat. Ketika Anda buka _bookmark_, ada banyak artikel menarik yang menanti untuk dikunjungi. Ketika Anda melirik ke rak buku, ada komik, biografi, novel, semua berderet tak tersentuh. Ketika Anda buka _diary_, ternyata Anda tertarik memulai usaha _dropshiping_, bisnis cuci sepatu, dan lain-lain. Ketika Anda buka _playlist_, ada beragam _podcast_ untuk meningkatkan kemampuan bahasa Inggris. Ada juga kursus gratis mulai dari Harvard sampai MIT. Banyak sekali.
 
 Sekarang tuliskan semua yang **mungkin** bisa Anda lakukan. Misal:
 
@@ -57,7 +57,7 @@ Ambil daftar di atas sebagai contoh:
 - [ ] Baca _Hukum Menggambar dalam Islam_
 - [ ] Tonton _Memulai Dropshipping di Tahun 2026_
 
-Gunakan aplikasi seperti _Todoist_,_ Notion_, atau _Logseq_ untuk mempermudah Anda memfilter tugas berdasarkan label. Saya pribadi menggunakan _Logseq_.
+Gunakan aplikasi seperti _Todoist, Notion,_ atau _Logseq_ untuk mempermudah Anda memfilter tugas berdasarkan label. Saya pribadi menggunakan _Logseq_.
 
 Mari proses daftar di atas satu per satu dengan bertanya: apakah tugas ini bisa dikerjakan segera dan diselesaikan dengan cepat? Jika iya, labeli tugas dengan `now`.
 
