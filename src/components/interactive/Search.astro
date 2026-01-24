@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { placeholder, className, type } = Astro.props;
+const worker = new Worker("./fuseWorker.js", { type: "module" });
 ---
 
 <div class={`w-full col-start-2 -z-1 bg-white pt-2 ${className}`}>
@@ -99,10 +100,7 @@ const { placeholder, className, type } = Astro.props;
     import feedLinks from "@/utils/feedLinks";
     import type { FuseResult } from "fuse.js";
     import debounce from "lodash.debounce";
-
-    const worker = new Worker("./fuseWorker.js", {
-        type: "module",
-    });
+    const worker = new Worker("./fuseWorker.js", { type: "module" });
 
     interface ArticleIndex {
         id: string;
