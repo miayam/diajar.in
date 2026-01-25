@@ -13,6 +13,12 @@ collections:
     folder: src/data/articles
     create: true
     fields:
+      - {
+          label: Fetured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
       - { label: Title, name: title, widget: text, required: true }
       - {
           label: Publish Date,
@@ -68,12 +74,7 @@ collections:
           display_fields: ["name"],
           required: false,
         }
-      - {
-          label: Fetured Image,
-          name: featuredImage,
-          widget: image,
-          required: false,
-        }
+
       - {
           label: Draft,
           name: draft,
@@ -106,6 +107,16 @@ collections:
     fields:
       - { label: Name, name: name, widget: string, required: true }
       - { label: Label, name: label, widget: string, required: true }
+      - {
+          label: Author,
+          name: author,
+          widget: relation,
+          collection: authors,
+          multiple: false,
+          search_fields: ["name"],
+          display_fields: ["name"],
+          required: true,
+        }
       - {
           label: Featured Image,
           name: featuredImage,

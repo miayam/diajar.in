@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import Article from "@/templates/Article.astro";
 import Masthead from "@/components/display/Masthead.astro";
+import MetaTags from "@/components/structure/MetaTags.astro";
 import BackLink from "@/components/navigation/BackLink.astro";
 import ArticleView from "@/components/display/ArticleView.astro";
 import DynamicTableOfContents from "@/components/navigation/DynamicTableOfContents.astro";
@@ -10,30 +11,51 @@ import Iterator from "@/components/navigation/Iterator.astro";
 import ShareButtons from "@/components/navigation/ShareButtons.astro";
 import { getCollection, getEntry, render } from "astro:content";
 import createExcerpt from "@/utils/createExcerpt";
+import { getImage } from "astro:assets";
 
 export const getStaticPaths = (async () => {
     const articles = await getCollection("articles", ({ data }) => {
         return data.draft !== true; // Filter out drafts
     });
+    const authors = await getCollection("authors");
 
-    return articles.map((article) => ({
-        params: { slug: article.id },
-        props: { article },
-    }));
+    return articles.map((article) => {
+        const author = authors.filter(
+            (item) => item.id == article.data.author.id,
+        )[0];
+        return {
+            params: { slug: article.id },
+            props: { article, author },
+        };
+    });
 }) satisfies GetStaticPaths;
 
 type Props = {
     article: CollectionEntry<"articles">;
+    author: CollectionEntry<"authors">;
 };
 
-const { article } = Astro.props;
+const { article, author } = Astro.props;
 
 // Load referenced data
 const tags = await Promise.all(article.data.tags.map((tag) => getEntry(tag)));
 const { Content } = await render(article);
+const image = article.data.featuredImage
+    ? await getImage({ src: article.data.featuredImage })
+    : { src: "/logo.svg" };
 ---
 
 <Article title={`Diajar: ${article.data.title}`}>
+    <MetaTags
+        slot="meta-tags"
+        title={`Diajar: ${article.data.title}`}
+        description={`${createExcerpt(article.body || "")
+            .substring(0, 150)
+            .trim()}...`}
+        url={`${Astro.site}articles/${article.id}`}
+        author={author.data.name}
+        image={image.src}
+    />
     {
         article.data.featuredImage ? (
             <Masthead

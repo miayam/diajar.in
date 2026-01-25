@@ -1,5 +1,6 @@
 ---
 name: "Belajar Cara Belajar"
+author: "admin"
 label: "@belajar-cara-belajar"
 featuredImage: "../../media/peter-olexa.jpg"
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

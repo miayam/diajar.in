@@ -2,6 +2,7 @@
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import DefaultCard from "@/components/display/DefaultCard.astro";
+import MetaTags from "@/components/structure/MetaTags.astro";
 import Pagination from "@/components/navigation/Pagination.astro";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
@@ -42,8 +43,15 @@ const { Content } = await render(tag);
 ---
 
 <Default
-    title={`Diajar Artikel: ${tag.data.name} | Halaman ${page.currentPage}`}
+    title={`Diajar Artikel | ${tag.data.name} | Halaman ${page.currentPage}`}
 >
+    <MetaTags
+        slot="meta-tags"
+        title={`Diajar Artikel | ${tag.data.name} | Halaman ${page.currentPage}`}
+        author="Muhamad Deni Ramdan"
+        description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
+        url={`${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`}
+    />
     <div class="col-start-2 px-4 pb-4">
         <Content />
     </div>

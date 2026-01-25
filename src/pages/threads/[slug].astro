@@ -5,17 +5,20 @@ import TableOfContents from "@/components/navigation/TableofContents.astro";
 import ShareButtons from "@/components/navigation/ShareButtons.astro";
 import BackLink from "@/components/navigation/BackLink.astro";
 import Masthead from "@/components/display/Masthead.astro";
+import MetaTags from "@/components/structure/MetaTags.astro";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
 import createExcerpt from "@/utils/createExcerpt";
+import { getImage } from "astro:assets";
 
 export const getStaticPaths = (async () => {
     const threads = await getCollection("threads");
     const allArticles = await getCollection("articles", (entry) => {
         return entry.data.draft !== true;
     });
+    const authors = await getCollection("authors");
 
     return threads.map((thread) => {
         // Get articles for this thread
@@ -27,24 +30,41 @@ export const getStaticPaths = (async () => {
                 (a, b) =>
                     a.data.publishDate.valueOf() - b.data.publishDate.valueOf(),
             );
+        const author = authors.filter(
+            (item) => item.id === thread.data.author.id,
+        )[0];
 
         return {
             params: { slug: thread.id },
-            props: { thread, articles: threadArticles },
+            props: { thread, author, articles: threadArticles },
         };
     });
 }) satisfies GetStaticPaths;
 
 type Props = {
     thread: CollectionEntry<"threads">;
+    author: CollectionEntry<"authors">;
     articles: CollectionEntry<"articles">[];
 };
 
-const { thread, articles } = Astro.props;
+const { thread, author, articles } = Astro.props;
 const { Content } = await render(thread);
+const image = thread.data.featuredImage
+    ? await getImage({ src: thread.data.featuredImage })
+    : { src: "/logo.svg" };
 ---
 
 <Article title={`Diajar: ${thread.data.name}`}>
+    <MetaTags
+        slot="meta-tags"
+        title={`Diajar: ${thread.data.name}`}
+        description={`${createExcerpt(thread.body || "")
+            .substring(0, 150)
+            .trim()}...`}
+        url={`${Astro.site}threads/${thread.id}`}
+        author={author.data.name}
+        image={image.src}
+    />
     {
         thread.data.featuredImage ? (
             <Masthead

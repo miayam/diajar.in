@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/structure/Header.astro";
 import Favicon from "@/components/structure/Favicon.astro";
+import MetaTags from "@/components/structure/MetaTags.astro";
 import "@/styles/content.css";
 
 interface Props {
@@ -17,6 +18,12 @@ const currentPath = Astro.url.pathname;
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title || "Diajar"}</title>
+        <MetaTags
+            author="Muhamad Deni Ramdan"
+            description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
+            title={title || "Diajar"}
+            url={`${Astro.site}about`}
+        />
         <Favicon />
     </head>
     <body transition:animate="none" class="text-gray-900">

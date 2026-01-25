@@ -1,6 +1,7 @@
 ---
 import Default from "@/templates/Default.astro";
 import DefaultCard from "@/components/display/DefaultCard.astro";
+import MetaTags from "@/components/structure/MetaTags.astro";
 import Pagination from "@/components/navigation/Pagination.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
@@ -26,6 +27,13 @@ const { page } = Astro.props;
 ---
 
 <Default title={`Diajar Artikel | Halaman ${page.currentPage}`}>
+    <MetaTags
+        slot="meta-tags"
+        title={`Diajar Artikel | Halaman ${page.currentPage}`}
+        author="Muhamad Deni Ramdan"
+        description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
+        url={`${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`}
+    />
     <ul class="col-start-2 flex flex-col gap-4 px-4">
         {
             page.data.map((article) => (

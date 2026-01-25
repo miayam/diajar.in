@@ -34,6 +34,7 @@ const threads = defineCollection({
     z.object({
       name: z.string(),
       label: z.string(),
+      author: reference("authors"),
       featuredImage: image().optional(),
       caption: z.string().optional(),
     }),
