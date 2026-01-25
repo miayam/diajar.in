@@ -3,38 +3,85 @@ import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import DefaultCard from "@/components/display/DefaultCard.astro";
 import MetaTags from "@/components/structure/MetaTags.astro";
+import SchemaOrg from "@/components/structure/SchemaOrg.astro";
 import Pagination from "@/components/navigation/Pagination.astro";
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
+import { getImage } from "astro:assets";
 import Default from "@/templates/Default.astro";
+import createExcerpt from "@/utils/createExcerpt";
 
 export const getStaticPaths = (async ({ paginate }) => {
+    const authors = await getCollection("authors");
     const allTags = await getCollection("tags");
     const allArticles = await getCollection("articles", (entry) => {
         return entry.data.draft !== true;
     });
 
     // Generate paginated paths for each thread
-    return allTags.flatMap((tag) => {
-        // Filter articles that belong to this thread
-        const tagArticles = allArticles
-            .filter((article) => article.data.tags.some((t) => t.id === tag.id))
-            .sort(
-                (a, b) =>
-                    b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+    const data = await Promise.all(
+        allTags.map(async (tag) => {
+            // Filter articles that belong to this thread
+            const tagArticles = await Promise.all(
+                allArticles
+                    .filter((article) =>
+                        article.data.tags.some((t) => t.id === tag.id),
+                    )
+                    .sort(
+                        (a, b) =>
+                            b.data.publishDate.valueOf() -
+                            a.data.publishDate.valueOf(),
+                    )
+                    .map(async (article) => {
+                        const adjustedArticle: CollectionEntry<"articles"> = {
+                            ...JSON.parse(JSON.stringify(article)), // deep copy
+                            data: {
+                                ...article.data,
+                                featuredImage: article.data.featuredImage
+                                    ? {
+                                          ...article.data.featuredImage,
+                                          src: (
+                                              await getImage({
+                                                  src: article.data
+                                                      .featuredImage,
+                                              })
+                                          ).src,
+                                      }
+                                    : undefined,
+                            },
+                        };
+
+                        const author = authors.filter(
+                            (item) => item.id == article.data.author.id,
+                        )[0];
+
+                        return {
+                            article: adjustedArticle,
+                            author,
+                        };
+                    }),
             );
 
-        // Create paginated routes for this thread
-        return paginate(tagArticles, {
-            params: { slug: tag.id },
+            return { articles: tagArticles, tag };
+        }),
+    );
+
+    return data.flatMap((datum) => {
+        return paginate(datum.articles, {
+            params: { slug: datum.tag.id },
             pageSize: 9,
-            props: { tag },
+            props: { tag: datum.tag },
         });
     });
 }) satisfies GetStaticPaths;
 
+type Data = {
+    article: CollectionEntry<"articles">;
+    author: CollectionEntry<"authors">;
+};
+
 type Props = {
-    page: Page<CollectionEntry<"articles">>;
+    page: Page<Data>;
     tag: CollectionEntry<"tags">;
 };
 
@@ -45,22 +92,60 @@ const { Content } = await render(tag);
 <Default
     title={`Diajar Artikel | ${tag.data.name} | Halaman ${page.currentPage}`}
 >
+    <SchemaOrg
+        slot="schema"
+        data={{
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "@id": `${Astro.site}tags/${tag.id}/${page.currentPage === 1 ? "" : page.currentPage}`,
+            url: `${Astro.site}tags/${tag.id}/${page.currentPage === 1 ? "" : page.currentPage}`,
+            description:
+                "Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya.",
+            publisher: {
+                "@type": "Person",
+                name: "Muhamad Deni Ramdan",
+                email: "muhammaddeni90@gmail.com",
+            },
+            blogPost: page.data.map((datum) => ({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                headline: `Diajar: ${datum.article.data.title}`,
+                description: `${createExcerpt(datum.article.body || "")
+                    .substring(0, 150)
+                    .trim()}...`,
+                datePublished: datum.article.data.publishDate?.toISOString(),
+                image: {
+                    "@type": "ImageObject",
+                    "@id": `${new URL(datum.article.data.featuredImage?.src || "/logo.svg", Astro.site)}`,
+                    url: `${new URL(datum.article.data.featuredImage?.src || "/logo.svg", Astro.site)}`,
+                },
+                author: {
+                    "@type": "Person",
+                    name: datum.author.data.name,
+                    email: datum.author.data.name,
+                },
+                url: `${Astro.site}articles/${datum.article.id}`,
+            })),
+        }}
+    />
+
     <MetaTags
         slot="meta-tags"
         title={`Diajar Artikel | ${tag.data.name} | Halaman ${page.currentPage}`}
         author="Muhamad Deni Ramdan"
         description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
-        url={`${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`}
+        url={`${Astro.site}tags/${tag.id}/${page.currentPage === 1 ? "" : page.currentPage}`}
     />
+
     <div class="col-start-2 px-4 pb-4">
         <Content />
     </div>
 
     <ul class="col-start-2 flex flex-col gap-4 px-4">
         {
-            page.data.map((article) => (
+            page.data.map((datum) => (
                 <li>
-                    <DefaultCard article={article} />
+                    <DefaultCard article={datum.article} />
                 </li>
             ))
         }

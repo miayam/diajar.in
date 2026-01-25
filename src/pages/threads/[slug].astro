@@ -4,6 +4,7 @@ import ThreadView from "@/components/display/ThreadView.astro";
 import TableOfContents from "@/components/navigation/TableofContents.astro";
 import ShareButtons from "@/components/navigation/ShareButtons.astro";
 import BackLink from "@/components/navigation/BackLink.astro";
+import SchemaOrg from "@/components/structure/SchemaOrg.astro";
 import Masthead from "@/components/display/Masthead.astro";
 import MetaTags from "@/components/structure/MetaTags.astro";
 import type { GetStaticPaths } from "astro";
@@ -49,12 +50,34 @@ type Props = {
 
 const { thread, author, articles } = Astro.props;
 const { Content } = await render(thread);
-const image = thread.data.featuredImage
+const featuredImage = thread.data.featuredImage
     ? await getImage({ src: thread.data.featuredImage })
-    : { src: "/logo.svg" };
+    : null;
 ---
 
 <Article title={`Diajar: ${thread.data.name}`}>
+    <SchemaOrg
+        data={{
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: `Diajar: ${thread.data.name}`,
+            description: `${createExcerpt(thread.body || "")
+                .substring(0, 150)
+                .trim()}...`,
+            image: {
+                "@type": "ImageObject",
+                "@id": `${new URL(featuredImage?.src || "/logo.svg", Astro.site)}`,
+                url: `${new URL(featuredImage?.src || "/logo.svg", Astro.site)}`,
+            },
+            author: {
+                "@type": "Person",
+                name: author.data.name,
+                email: author.data.email,
+            },
+            url: `${Astro.site}threads/${thread.id}`,
+        }}
+    />
+
     <MetaTags
         slot="meta-tags"
         title={`Diajar: ${thread.data.name}`}
@@ -63,8 +86,9 @@ const image = thread.data.featuredImage
             .trim()}...`}
         url={`${Astro.site}threads/${thread.id}`}
         author={author.data.name}
-        image={image.src}
+        image={`${new URL(featuredImage?.src || "/logo.svg", Astro.site)}`}
     />
+
     {
         thread.data.featuredImage ? (
             <Masthead

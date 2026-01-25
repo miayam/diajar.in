@@ -24,6 +24,7 @@ const currentPath = Astro.url.pathname;
         <title>{title || "Diajar"}</title>
         <link rel="stylesheet" href="/style.css" />
         <slot name="meta-tags" />
+        <slot name="schema" />
         <Favicon />
         <ClientRouter />
     </head>

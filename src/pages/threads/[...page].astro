@@ -2,35 +2,67 @@
 import ThreadList from "@/templates/ThreadList.astro";
 import ThreadCard from "@/components/display/ThreadCard.astro";
 import MetaTags from "@/components/structure/MetaTags.astro";
+import SchemaOrg from "@/components/structure/SchemaOrg.astro";
 import Pagination from "@/components/navigation/Pagination.astro";
 import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
+import createExcerpt from "@/utils/createExcerpt";
+import { getImage } from "astro:assets";
 
 export const getStaticPaths = (async ({ paginate }) => {
+    const authors = await getCollection("authors");
     const allThreads = await getCollection("threads");
     const allArticles = await getCollection("articles", (entry) => {
         return entry.data.draft !== true;
     });
 
     // Sort threads if needed (by name or any other criteria)
-    const sortedThreads = allThreads
-        .sort((a, b) => a.data.label.localeCompare(b.data.label))
-        .map((thread) => {
-            const count = allArticles.filter((article) =>
-                article.data.threads.some((t) => t.id === thread.id),
-            ).length;
-            return {
-                thread,
-                articleCount: count,
-            };
-        });
+    const sortedThreads = await Promise.all(
+        allThreads
+            .sort((a, b) => a.data.label.localeCompare(b.data.label))
+            .map(async (thread) => {
+                const count = allArticles.filter((article) =>
+                    article.data.threads.some((t) => t.id === thread.id),
+                ).length;
+
+                const author = authors.filter(
+                    (item) => item.id === thread.data.author.id,
+                )[0];
+
+                const adjustedThread: CollectionEntry<"threads"> = {
+                    ...JSON.parse(JSON.stringify(thread)), // deep copy
+                    data: {
+                        ...thread.data,
+                        featuredImage: thread.data.featuredImage
+                            ? {
+                                  ...thread.data.featuredImage,
+                                  src: thread.data.featuredImage
+                                      ? (
+                                            await getImage({
+                                                src: thread.data.featuredImage,
+                                            })
+                                        ).src
+                                      : undefined,
+                              }
+                            : undefined,
+                    },
+                };
+
+                return {
+                    thread: adjustedThread,
+                    author,
+                    articleCount: count,
+                };
+            }),
+    );
 
     return paginate(sortedThreads, { pageSize: 9 });
 }) satisfies GetStaticPaths;
 
 type ThreadWithCount = {
     thread: CollectionEntry<"threads">;
+    author: CollectionEntry<"authors">;
     articleCount: number;
 };
 
@@ -42,13 +74,49 @@ const { page } = Astro.props;
 ---
 
 <ThreadList title={`Diajar Utas | Halaman ${page.currentPage}`}>
+    <SchemaOrg
+        slot="schema"
+        data={{
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "@id": `${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`,
+            url: `${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`,
+            description:
+                "Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya.",
+            publisher: {
+                "@type": "Person",
+                name: "Muhamad Deni Ramdan",
+                email: "muhammaddeni90@gmail.com",
+            },
+            blogPost: page.data.map((datum) => ({
+                "@type": "BlogPosting",
+                headline: `Diajar: ${datum.thread.data.name}`,
+                description: `${createExcerpt(datum.thread.body || "")
+                    .substring(0, 150)
+                    .trim()}...`,
+                image: {
+                    "@type": "ImageObject",
+                    "@id": `${new URL(datum.thread.data.featuredImage?.src || "/logo.svg", Astro.site)}`,
+                    url: `${new URL(datum.thread.data.featuredImage?.src || "/logo.svg", Astro.site)}`,
+                },
+                author: {
+                    "@type": "Person",
+                    name: datum.author.data.name,
+                    email: datum.author.data.email,
+                },
+                url: `${Astro.site}threads/${datum.thread.id}`,
+            })),
+        }}
+    />
+
     <MetaTags
         slot="meta-tags"
         title={`Diajar Utas | Halaman ${page.currentPage}`}
         author="Muhamad Deni Ramdan"
         description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
-        url={`${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`}
+        url={`${Astro.site}threads/${page.currentPage === 1 ? "" : page.currentPage}`}
     />
+
     <ul
         class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4"
     >
