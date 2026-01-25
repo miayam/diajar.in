@@ -41,7 +41,9 @@ const { page, tag } = Astro.props;
 const { Content } = await render(tag);
 ---
 
-<Default title={`${tag.data.label} - Page ${page.currentPage}`}>
+<Default
+    title={`Diajar Artikel: ${tag.data.name} | Halaman ${page.currentPage}`}
+>
     <div class="col-start-2 px-4 pb-4">
         <Content />
     </div>

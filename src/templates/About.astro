@@ -1,5 +1,6 @@
 ---
 import Header from "@/components/structure/Header.astro";
+import Favicon from "@/components/structure/Favicon.astro";
 import "@/styles/content.css";
 
 interface Props {
@@ -15,7 +16,8 @@ const currentPath = Astro.url.pathname;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || "Diajar.in"}</title>
+        <title>{title || "Diajar"}</title>
+        <Favicon />
     </head>
     <body transition:animate="none" class="text-gray-900">
         <Header currentPath={currentPath} />

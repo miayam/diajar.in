@@ -2,7 +2,20 @@
 import { Image } from "astro:assets";
 import { markdown } from "@astropub/md";
 interface Props {
-    src: string;
+    src: {
+        src: string;
+        width: number;
+        height: number;
+        format:
+            | "png"
+            | "jpg"
+            | "jpeg"
+            | "tiff"
+            | "webp"
+            | "gif"
+            | "svg"
+            | "avif";
+    };
     alt: string;
     caption?: string;
 }
@@ -12,10 +25,11 @@ const { src, alt, caption } = Astro.props;
 
 <figure class="flex h-80 bg-gray-300 relative">
     <Image
-        width={1600}
-        height={320}
+        width={1200}
+        height={800}
         decoding="async"
         loading="eager"
+        layout="constrained"
         src={src}
         alt={alt}
         class="object-cover w-full"

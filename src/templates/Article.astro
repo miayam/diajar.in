@@ -1,9 +1,11 @@
 ---
+import Favicon from "@/components/structure/Favicon.astro";
+import "@/styles/content.css";
+
 interface Props {
     title?: string;
 }
 
-import "@/styles/content.css";
 const { title } = Astro.props;
 ---
 
@@ -12,8 +14,11 @@ const { title } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || "Diajar.in"}</title>
+        <title>{title || "Diajar"}</title>
         <link rel="stylesheet" href="/style.css" />
+
+        <link rel="icon" href="/favicons/favicon.ico" />
+        <Favicon />
     </head>
     <body class="text-gray-900">
         <main>

@@ -25,11 +25,7 @@ type Props = {
 const { page } = Astro.props;
 ---
 
-<Default
-    title={page.currentPage === 1
-        ? "Home"
-        : `Articles - Page ${page.currentPage}`}
->
+<Default title={`Diajar Artikel | Halaman ${page.currentPage}`}>
     <ul class="col-start-2 flex flex-col gap-4 px-4">
         {
             page.data.map((article) => (

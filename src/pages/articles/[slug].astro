@@ -33,7 +33,7 @@ const tags = await Promise.all(article.data.tags.map((tag) => getEntry(tag)));
 const { Content } = await render(article);
 ---
 
-<Article title={article.data.title}>
+<Article title={`Diajar: ${article.data.title}`}>
     {
         article.data.featuredImage ? (
             <Masthead

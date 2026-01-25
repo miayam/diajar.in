@@ -44,7 +44,7 @@ const { thread, articles } = Astro.props;
 const { Content } = await render(thread);
 ---
 
-<Article title={thread.data.label}>
+<Article title={`Diajar: ${thread.data.name}`}>
     {
         thread.data.featuredImage ? (
             <Masthead

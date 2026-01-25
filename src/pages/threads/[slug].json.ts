@@ -1,6 +1,7 @@
 // src/pages/threads/[slug].json.ts
 import { getCollection } from "astro:content";
 import type { APIRoute, GetStaticPaths } from "astro";
+import createExcerpt from "@/utils/createExcerpt";
 
 export const getStaticPaths = (async () => {
   const threads = await getCollection("threads");
@@ -35,7 +36,7 @@ export const GET: APIRoute = async ({ params }) => {
       id: article.id,
       title: article.data.title,
       publishDate: article.data.publishDate.toISOString(),
-      excerpt: article.data.excerpt,
+      excerpt: createExcerpt(article.body || "").substring(0, 300),
       tags: article.data.tags.map((tag) => tag.id),
     }));
 

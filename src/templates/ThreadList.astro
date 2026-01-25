@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import Header from "@/components/structure/Header.astro";
+import Favicon from "@/components/structure/Favicon.astro";
 import SkeletonCard from "@/components/indicators/SkeletonCard.astro";
 import Search from "@/components/interactive/Search.astro";
 
@@ -17,8 +18,9 @@ const currentPath = Astro.url.pathname;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || "Diajar.in"}</title>
+        <title>{title || "Diajar"}</title>
         <link rel="stylesheet" href="/style.css" />
+        <Favicon />
         <ClientRouter />
     </head>
     <body transition:animate="none" class="text-gray-900">
