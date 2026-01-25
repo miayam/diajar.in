@@ -60,14 +60,14 @@ export const getStaticPaths = (async ({ paginate }) => {
     return paginate(sortedThreads, { pageSize: 9 });
 }) satisfies GetStaticPaths;
 
-type ThreadWithCount = {
+type Data = {
     thread: CollectionEntry<"threads">;
     author: CollectionEntry<"authors">;
     articleCount: number;
 };
 
 type Props = {
-    page: Page<ThreadWithCount>;
+    page: Page<Data>;
 };
 
 const { page } = Astro.props;
