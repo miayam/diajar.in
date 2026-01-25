@@ -35,9 +35,6 @@ export const GET: APIRoute = async ({ params }) => {
     .map((article) => ({
       id: article.id,
       title: article.data.title,
-      publishDate: article.data.publishDate.toISOString(),
-      excerpt: createExcerpt(article.body || "").substring(0, 300),
-      tags: article.data.tags.map((tag) => tag.id),
     }));
 
   return new Response(
