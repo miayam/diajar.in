@@ -33,3 +33,6 @@ const { title, description, author, url, image } = Astro.props;
     property="twitter:image"
     content={image || `${new URL("/logo.svg", Astro.site)}`}
 />
+
+<!-- Sitemap -->
+<link rel="sitemap" href="/sitemap-index.xml" />
