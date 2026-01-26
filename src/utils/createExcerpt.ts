@@ -12,11 +12,14 @@ function createExcerpt(body: string): string {
   text = text.replace(/~~~[\s\S]*?~~~/g, "");
   text = text.replace(/`[^`]+`/g, "");
 
-  // Remove images: ![alt](url) - keep nothing
-  text = text.replace(/!\[([^\]]*)\]\([^\)]*\)/g, "");
+  // Remove images: ![alt](url) - keep nothing (handle URLs with parentheses)
+  text = text.replace(/!\[([^\]]*)\]\((?:[^()]*\([^()]*\)[^()]*|[^)]*)\)/g, "");
 
-  // Remove links but keep text: [text](url)
-  text = text.replace(/\[([^\]]+)\]\([^\)]*\)/g, "$1");
+  // Remove links but keep text: [text](url) (handle URLs with parentheses)
+  text = text.replace(
+    /\[([^\]]+)\]\((?:[^()]*\([^()]*\)[^()]*|[^)]*)\)/g,
+    "$1",
+  );
 
   // Remove reference-style links
   text = text.replace(/\[([^\]]+)\]\[[^\]]*\]/g, "$1");
