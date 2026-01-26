@@ -5,85 +5,57 @@ import DefaultCard from "@/components/display/DefaultCard.astro";
 import MetaTags from "@/components/structure/MetaTags.astro";
 import SchemaOrg from "@/components/structure/SchemaOrg.astro";
 import Pagination from "@/components/navigation/Pagination.astro";
-import { render } from "astro:content";
-import { getCollection } from "astro:content";
-import { getImage } from "astro:assets";
 import Default from "@/templates/Default.astro";
+import { render, getCollection } from "astro:content";
 import createExcerpt from "@/utils/createExcerpt";
+import { enrichArticleWithMetadata } from "@/utils";
 
-export const getStaticPaths = (async ({ paginate }) => {
-    const authors = await getCollection("authors");
-    const tags = await getCollection("tags");
-    const articles = await getCollection("articles", (entry) => {
-        return entry.data.draft !== true;
-    });
-
-    // Generate paginated paths for each thread
-    const data = await Promise.all(
-        tags.map(async (tag) => {
-            // Filter articles that belong to this thread
-            const tagArticles = await Promise.all(
-                articles
-                    .filter((article) =>
-                        article.data.tags.some((t) => t.id === tag.id),
-                    )
-                    .sort(
-                        (a, b) =>
-                            b.data.publishDate.valueOf() -
-                            a.data.publishDate.valueOf(),
-                    )
-                    .map(async (article) => {
-                        const adjustedArticle: CollectionEntry<"articles"> = {
-                            ...JSON.parse(JSON.stringify(article)), // deep copy
-                            data: {
-                                ...article.data,
-                                featuredImage: article.data.featuredImage
-                                    ? {
-                                          ...article.data.featuredImage,
-                                          src: (
-                                              await getImage({
-                                                  src: article.data
-                                                      .featuredImage,
-                                              })
-                                          ).src,
-                                      }
-                                    : undefined,
-                            },
-                        };
-
-                        const author = authors.filter(
-                            (item) => item.id == article.data.author.id,
-                        )[0];
-
-                        return {
-                            article: adjustedArticle,
-                            author,
-                        };
-                    }),
-            );
-
-            return { articles: tagArticles, tag };
-        }),
-    );
-
-    return data.flatMap((datum) => {
-        return paginate(datum.articles, {
-            params: { slug: datum.tag.id },
-            pageSize: 9,
-            props: { tag: datum.tag },
-        });
-    });
-}) satisfies GetStaticPaths;
-
-type Data = {
+type ArticleData = {
     article: CollectionEntry<"articles">;
     author: CollectionEntry<"authors">;
 };
 
 type Props = {
-    page: Page<Data>;
+    page: Page<ArticleData>;
     tag: CollectionEntry<"tags">;
 };
+
+export const getStaticPaths = (async ({ paginate }) => {
+    const [authors, tags, allArticles] = await Promise.all([
+        getCollection("authors"),
+        getCollection("tags"),
+        getCollection("articles", (entry) => entry.data.draft !== true),
+    ]);
+
+    const tagData = await Promise.all(
+        tags.map(async (tag) => {
+            const tagArticles = allArticles.filter((article) =>
+                article.data.tags.some((t) => t.id === tag.id),
+            );
+
+            const sortedArticles = tagArticles.sort(
+                (a, b) =>
+                    b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+            );
+
+            const enrichedArticles = await Promise.all(
+                sortedArticles.map((article) =>
+                    enrichArticleWithMetadata(article, authors),
+                ),
+            );
+
+            return { articles: enrichedArticles, tag };
+        }),
+    );
+
+    return tagData.flatMap((datum) =>
+        paginate(datum.articles, {
+            params: { slug: datum.tag.id },
+            pageSize: 9,
+            props: { tag: datum.tag },
+        }),
+    );
+}) satisfies GetStaticPaths;
 
 const { page, tag } = Astro.props;
 const { Content } = await render(tag);

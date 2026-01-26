@@ -8,67 +8,37 @@ import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import createExcerpt from "@/utils/createExcerpt";
-import { getImage } from "astro:assets";
+import { enrichThreadWithMetadata } from "@/utils";
 
-export const getStaticPaths = (async ({ paginate }) => {
-    const authors = await getCollection("authors");
-    const threads = await getCollection("threads");
-    const articles = await getCollection("articles", (entry) => {
-        return entry.data.draft !== true;
-    });
-
-    // Sort threads if needed (by name or any other criteria)
-    const sortedThreads = await Promise.all(
-        threads
-            .sort((a, b) => a.data.label.localeCompare(b.data.label))
-            .map(async (thread) => {
-                const count = articles.filter((article) =>
-                    article.data.threads.some((t) => t.id === thread.id),
-                ).length;
-
-                const author = authors.filter(
-                    (item) => item.id === thread.data.author.id,
-                )[0];
-
-                const adjustedThread: CollectionEntry<"threads"> = {
-                    ...JSON.parse(JSON.stringify(thread)), // deep copy
-                    data: {
-                        ...thread.data,
-                        featuredImage: thread.data.featuredImage
-                            ? {
-                                  ...thread.data.featuredImage,
-                                  src: thread.data.featuredImage
-                                      ? (
-                                            await getImage({
-                                                src: thread.data.featuredImage,
-                                            })
-                                        ).src
-                                      : undefined,
-                              }
-                            : undefined,
-                    },
-                };
-
-                return {
-                    thread: adjustedThread,
-                    author,
-                    articleCount: count,
-                };
-            }),
-    );
-
-    return paginate(sortedThreads, { pageSize: 9 });
-}) satisfies GetStaticPaths;
-
-type Data = {
+type ThreadData = {
     thread: CollectionEntry<"threads">;
     author: CollectionEntry<"authors">;
     articleCount: number;
 };
 
 type Props = {
-    page: Page<Data>;
+    page: Page<ThreadData>;
 };
+
+export const getStaticPaths = (async ({ paginate }) => {
+    const [authors, threads, allArticles] = await Promise.all([
+        getCollection("authors"),
+        getCollection("threads"),
+        getCollection("articles", (entry) => entry.data.draft !== true),
+    ]);
+
+    const sortedThreads = threads.sort((a, b) =>
+        a.data.label.localeCompare(b.data.label),
+    );
+
+    const enrichedThreads = await Promise.all(
+        sortedThreads.map((thread) =>
+            enrichThreadWithMetadata(thread, allArticles, authors),
+        ),
+    );
+
+    return paginate(enrichedThreads, { pageSize: 9 });
+}) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
 ---
