@@ -24,12 +24,12 @@ export const GET: APIRoute = async ({ params }) => {
     });
   }
 
-  const allArticles = await getCollection("articles", (entry) => {
+  const articles = await getCollection("articles", (entry) => {
     return entry.data.draft !== true;
   });
 
   // Get articles for this thread (same logic as your page)
-  const threadArticles = allArticles
+  const threadArticles = articles
     .filter((article) => article.data.threads.some((t) => t.id === thread.id))
     .sort((a, b) => a.data.publishDate.valueOf() - b.data.publishDate.valueOf())
     .map((article) => ({

@@ -21,7 +21,7 @@ const { title, description, author, url, image } = Astro.props;
 <meta property="og:url" content={url} />
 <meta
     property="og:image"
-    content={image || `${new URL("/logo.svg", Astro.site)}`}
+    content={image || `${new URL("/favicons/favicon-256x256.png", Astro.site)}`}
 />
 
 <!-- Twitter -->
@@ -31,7 +31,7 @@ const { title, description, author, url, image } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta
     property="twitter:image"
-    content={image || `${new URL("/logo.svg", Astro.site)}`}
+    content={image || `${new URL("/favicons/favicon-256x256.png", Astro.site)}`}
 />
 
 <!-- Sitemap -->

@@ -12,17 +12,17 @@ import { getImage } from "astro:assets";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const authors = await getCollection("authors");
-    const allThreads = await getCollection("threads");
-    const allArticles = await getCollection("articles", (entry) => {
+    const threads = await getCollection("threads");
+    const articles = await getCollection("articles", (entry) => {
         return entry.data.draft !== true;
     });
 
     // Sort threads if needed (by name or any other criteria)
     const sortedThreads = await Promise.all(
-        allThreads
+        threads
             .sort((a, b) => a.data.label.localeCompare(b.data.label))
             .map(async (thread) => {
-                const count = allArticles.filter((article) =>
+                const count = articles.filter((article) =>
                     article.data.threads.some((t) => t.id === thread.id),
                 ).length;
 

@@ -13,17 +13,17 @@ import createExcerpt from "@/utils/createExcerpt";
 
 export const getStaticPaths = (async ({ paginate }) => {
     const authors = await getCollection("authors");
-    const allTags = await getCollection("tags");
-    const allArticles = await getCollection("articles", (entry) => {
+    const tags = await getCollection("tags");
+    const articles = await getCollection("articles", (entry) => {
         return entry.data.draft !== true;
     });
 
     // Generate paginated paths for each thread
     const data = await Promise.all(
-        allTags.map(async (tag) => {
+        tags.map(async (tag) => {
             // Filter articles that belong to this thread
             const tagArticles = await Promise.all(
-                allArticles
+                articles
                     .filter((article) =>
                         article.data.tags.some((t) => t.id === tag.id),
                     )
