@@ -22,6 +22,10 @@ const currentPath = Astro.url.pathname;
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title || "Diajar"}</title>
+
+        <!-- Sitemap -->
+        <link rel="sitemap" href="/sitemap-index.xml" />
+
         <link rel="stylesheet" href="/style.css" />
         <slot name="meta-tags" />
         <slot name="schema" />

@@ -7,6 +7,7 @@ interface Props {
     image?: string;
 }
 
+import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
 const { title, description, author, url, image } = Astro.props;
 ---
 
@@ -34,5 +35,14 @@ const { title, description, author, url, image } = Astro.props;
     content={image || `${new URL("/favicons/favicon-256x256.png", Astro.site)}`}
 />
 
-<!-- Sitemap -->
-<link rel="sitemap" href="/sitemap-index.xml" />
+{
+    // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
+    // include google-site-verification tag in the heading
+    // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
+    PUBLIC_GOOGLE_SITE_VERIFICATION && (
+        <meta
+            name="google-site-verification"
+            content={PUBLIC_GOOGLE_SITE_VERIFICATION}
+        />
+    )
+}

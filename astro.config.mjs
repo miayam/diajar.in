@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, sharpImageService } from "astro/config";
+import { defineConfig, sharpImageService, envField } from "astro/config";
 import UnoCSS from "unocss/astro";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -17,6 +17,15 @@ export default defineConfig({
     prefetchAll: true,
   },
   site: SITE,
+  env: {
+    schema: {
+      PUBLIC_GOOGLE_SITE_VERIFICATION: envField.string({
+        access: "public",
+        context: "client",
+        optional: true,
+      }),
+    },
+  },
   image: { service: sharpImageService() },
   markdown: {
     rehypePlugins: [
