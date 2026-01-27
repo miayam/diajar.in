@@ -26,11 +26,11 @@ const currentPath = Astro.url.pathname;
         <!-- Sitemap -->
         <link rel="sitemap" href="/sitemap-index.xml" />
 
-        <link rel="stylesheet" href="/style.css" />
         <slot name="meta-tags" />
         <slot name="schema" />
         <Favicon />
         <ClientRouter />
+        <link rel="stylesheet" href="/style.css" />
     </head>
     <body transition:animate="none" class="text-gray-900">
         <!-- Search Dialog -->
