@@ -19,10 +19,10 @@ Pengantar:
 
 Masalah:
 
-- Merajut informasi menjadi ilmu ada kaitannya dengan kualitas tidur kita. 
+- Merajut informasi menjadi ilmu ada kaitannya dengan kualitas tidur kita.
 - Orang pintar bisa mendapat nilai bagus dengan sistem kebut semalam, sementara orang biasa yang belajar mati-matian belum tentu mendapat nilai bagus. Kenapa bisa begitu? Apakah salah bunda mengandung?
-- Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur tidak menjadi ilmu karena tujuannya sudah tercapai (mendapat nilai A),  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya melekat sampai hari ini. Hanya Allah yang tahu.
-- Kesenjangan ini adalah keniscayaan. 
+- Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur tidak menjadi ilmu karena tujuannya sudah tercapai—mendapat nilai A—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya melekat sampai hari ini. Hanya Allah yang tahu.
+- Kesenjangan ini adalah keniscayaan. Tidak perlu iri dan dengki.
 
 Solusi:
 
