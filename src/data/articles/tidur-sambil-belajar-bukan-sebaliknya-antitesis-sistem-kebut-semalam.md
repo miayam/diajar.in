@@ -19,7 +19,7 @@ Pengantar:
 
 Masalah:
 
--
+- Orang pintar bisa mendapat nilai bagus dengan sistem kebut semalam, lalu orang biasa seperti saya mengikutinya. Hasilnya, orang pintar dapat A dan saya dapat D. Kok bisa begitu? Apakah salah bunda mengandung?
 
 Solusi:
 
