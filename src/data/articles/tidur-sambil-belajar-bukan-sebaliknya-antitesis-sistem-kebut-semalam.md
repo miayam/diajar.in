@@ -1,5 +1,5 @@
 ---
-featuredImage: "../../media/peter-olexa.jpg"
+featuredImage: ../../media/peter-olexa.jpg
 title: 'Tidur Sambil Belajar (Bukan Sebaliknya): Antitesis Sistem Kebut Semalam'
 publishDate: 2026-01-31T17:35:00
 author: admin
@@ -24,7 +24,7 @@ Sebelum itu, saya ingin menyampaikan kalau otak pas-pasan dan tampang pas-pasan 
 
 Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
-Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (dendrit) tumbuh saat kita belajar, namun tumbuh lebih subur lagi saat kita tidur. Akar-akar ini seperti benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
+Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur lagi saat kita tidur. Akar-akar ini seperti benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
 Yang menarik, akar-akar yang menjalar ini akan rontok secara alami. Untuk menjaga akar-akar ini tetap tumbuh, kita harus belajar lagi, kemudian tidur lagi. Belajar lagi, tidur lagi.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu. Seperti orang yang tadinya _kagok_ memarkir mobil, kini bisa melakukannya otomatis tanpa berpikir.
 
@@ -38,7 +38,7 @@ Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain sepert
 
 Kesenjangan itu adalah keniscayaan. Tidak perlu iri dan dengki. Yang bisa kita lakukan adalah memaksimalkan potensi diri. Seperti _mamang-mamang_ yang terlihat menawan karena berdandan rapi, orang biasa juga bisa berprestasi secara akademik dengan cara belajar efektif.
 
-Demikian artikel ini. Semoga bermafaat. Mari kita rangkum:
+Demikian artikel ini. Semoga bermanfaat. Mari kita rangkum:
 
 - Tidur itu bagian penting dari proses belajar
 - Akar neuron tumbuh subur ketika kita tidur
