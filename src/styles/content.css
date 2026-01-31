@@ -204,6 +204,10 @@
     vertical-align: middle;
 }
 
+.content hr {
+    padding-bottom: 1rem;
+}
+
 /* Details/Summary */
 .content details {
     margin-bottom: 1rem;
