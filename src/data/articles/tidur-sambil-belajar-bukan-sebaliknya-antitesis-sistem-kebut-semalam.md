@@ -26,7 +26,7 @@ Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
 Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur lagi saat kita tidur. Akar-akar ini seperti benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
-Yang menarik, akar-akar yang menjalar ini akan rontok secara alami. Untuk menjaga akar-akar ini tetap tumbuh, kita harus belajar lagi, kemudian tidur lagi. Belajar lagi, tidur lagi.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu. 
+Yang menarik, akar-akar yang menjalar ini akan rontok secara alami. Untuk menjaga akar-akar ini tetap tumbuh, kita harus belajar lagi, kemudian tidur lagi. Belajar lagi, tidur lagi.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
 
 Jadi, selain tidur nyenyak, kita juga harus _murojaah_ (mengulang kembali) apa yang dipelajari.
 
