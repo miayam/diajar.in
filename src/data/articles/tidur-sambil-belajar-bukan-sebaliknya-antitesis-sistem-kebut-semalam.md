@@ -24,15 +24,15 @@ Sebelum itu, saya ingin menyampaikan kalau otak pas-pasan dan tampang pas-pasan 
 
 Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
-Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur lagi saat kita tidur. Akar-akar ini seperti benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
+Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur saat kita tidur. Akar-akar ini bagaikan benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
-Yang menarik, akar-akar yang menjalar ini akan rontok secara alami. Untuk menjaga akar-akar ini tetap tumbuh, kita harus belajar lagi, kemudian tidur lagi. Belajar lagi, tidur lagi.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
+Yang menarik, akar-akar yang menjalar ini akan rontok begitu saja secara alami. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari.  Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini istilahnya disebut _space repitition_. Seperti membangun tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Jika ingin lebih praktis, gunakan [Anki](https://apps.ankiweb.net/).
+Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini disebut _space repitition_. Layaknya membangun tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Jika ingin lebih praktis, gunakan [Anki](https://apps.ankiweb.net/).
 
-Belajar sudah. Tidur nyenyak sudah. Namun, kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok bisa begitu? Salah siapa? Salah bunda mengandung?
+Nah, belajar sudah. Tidur nyenyak juga sudah. Namun, kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok bisa begitu? Salah siapa? Salah bunda mengandung?
 
 Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur  setelah tujuannya sudah tercapai—_mendapat nilai A_—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya meresap sampai ke sumsum tulang.
 
