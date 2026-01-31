@@ -28,7 +28,7 @@ Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neur
 
 Yang menarik, akar-akar yang menjalar ini akan rontok secara alami. Untuk menjaga akar-akar ini tetap tumbuh, kita harus belajar lagi, kemudian tidur lagi. Belajar lagi, tidur lagi.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
 
-Jadi, selain tidur nyenyak, kita juga harus _murojaah_ (mengulang kembali) apa yang dipelajari.
+Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
 Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini istilahnya disebut _space repitition_. Seperti membangun tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Jika ingin lebih praktis, gunakan [Anki](https://apps.ankiweb.net/).
 
