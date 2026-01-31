@@ -26,11 +26,11 @@ Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
 Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur saat kita tidur. Akar-akar ini bagaikan benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
-Yang menarik, akar-akar yang menjalar ini akan rontok begitu saja secara alami. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari.  Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
+Yang menarik, akar-akar yang menjalar ini akan rontok begitu saja secara alami. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari di masa lalu. Berapa banyak dari kita yang masih ingat pelajaran di SMA?  Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini disebut _space repitition_. Layaknya membangun tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Jika ingin lebih praktis, gunakan [Anki](https://apps.ankiweb.net/).
+Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini disebut _space repitition_. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Gunakan [Anki](https://apps.ankiweb.net/) agar lebih praktis.
 
 Nah, belajar sudah. Tidur nyenyak juga sudah. Namun, kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok bisa begitu? Salah siapa? Salah bunda mengandung?
 
