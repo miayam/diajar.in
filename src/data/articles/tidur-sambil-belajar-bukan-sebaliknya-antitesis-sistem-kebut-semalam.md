@@ -14,7 +14,7 @@ Kemampuan manusia dalam mencerna informasi  itu beragam. Ibarat koneksi Internet
 
 Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak terbatas?
 
-Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimisasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat seperti _alaqoh_ (zigot) di rahim ibu.
+Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimisasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat seperti _j_anin di rahim ibu.
 
 Di artikel ini, saya akan membahas bagaimana merajut informasi menjadi ilmu saat kita tidur.
 
@@ -42,6 +42,6 @@ Demikian artikel ini. Semoga bermanfaat. Mari kita rangkum:
 
 - Tidur itu bagian penting dari proses belajar
 - Akar neuron tumbuh subur ketika kita tidur
-- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang.
-- Berikan jeda istirahat dalam repetisi seperti puasa Senin-Kamis.
-- Gunakan _Anki_ agar jadwal repetisi berjalan otomatis.
+- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang
+- Berikan jeda istirahat dalam repetisi seperti puasa Senin-Kamis
+- Gunakan _Anki_ agar jadwal repetisi berjalan otomatis
