@@ -34,11 +34,11 @@ Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. In
 
 Belajar sudah. Tidur nyenak sudah. Namun, kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok bisa begitu? Salah siapa? Salah bunda mengandung?
 
-Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur  karena tujuannya sudah tercapai—mendapat nilai A—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya meresap sampai ke sumsum tulang.
+Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur  setelah tujuannya sudah tercapai—_mendapat nilai A_—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya meresap sampai ke sumsum tulang.
 
 Kesenjangan itu adalah keniscayaan. Tidak perlu iri dan dengki. Yang bisa kita lakukan adalah memaksimalkan potensi diri. Seperti _mamang-mamang_ yang terlihat menawan karena berdandan rapi, orang biasa juga bisa berprestasi secara akademik dengan cara belajar efektif.
 
-Demikian artikel ini. Semoga bermanfaat. Mari kita rangkum:
+Demikian. Semoga bermanfaat. Mari kita rangkum:
 
 - Tidur itu bagian penting dari proses belajar
 - Akar neuron tumbuh subur ketika kita tidur
