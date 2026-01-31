@@ -1,4 +1,5 @@
 ---
+featuredImage: ../../media/peter-olexa.jpg
 title: Mukadimah
 publishDate: 2026-01-16T08:00:00
 author: admin
@@ -6,14 +7,13 @@ tags:
   - gagasan
 threads:
   - belajar-cara-belajar
-featuredImage: ../../media/peter-olexa.jpg
 draft: false
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 Kenapa harus belajar?
 
->_"Ilmu adalah kehormatan dan itu saja sudah cukup jadi alasan untuk meraihnya. Kebodohan adalah kehinaan dan itu saja sudah cukup jadi alasan untuk menjauhinya."—Ibn Hazm_
+>_"Ilmu adalah kemuliaan dan itu saja sudah cukup jadi alasan untuk meraihnya. Kebodohan adalah kehinaan dan itu saja sudah cukup jadi alasan untuk menjauhinya."—Ibn Hazm_
 
 Sebelum belajar cara belajar, alangkah baiknya kita cek realita terlebih dahulu:
 
