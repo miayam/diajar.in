@@ -36,7 +36,7 @@ Belajar sudah. Tidur nyenak sudah. Lalu, kenapa ada orang yang bisa mendapat nil
 
 Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur  karena tujuannya sudah tercapai—mendapat nilai A—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya meresap sampai ke sumsum tulang.
 
-Kesenjangan itu adalah keniscayaan. Tidak perlu iri dan dengki. Yang bisa kita lakukan adalah memaksimalkan potensi diri. Seperti _mamang-mamang_ yang terlihat menawan karena berdandan rapi, orang biasa bisa juga bisa berprestasi secara akademik dengan cara belajar efektif.
+Kesenjangan itu adalah keniscayaan. Tidak perlu iri dan dengki. Yang bisa kita lakukan adalah memaksimalkan potensi diri. Seperti _mamang-mamang_ yang terlihat menawan karena berdandan rapi, orang biasa juga bisa berprestasi secara akademik dengan cara belajar efektif.
 
 Demikian artikel ini. Semoga bermafaat. Mari kita rangkum:
 
