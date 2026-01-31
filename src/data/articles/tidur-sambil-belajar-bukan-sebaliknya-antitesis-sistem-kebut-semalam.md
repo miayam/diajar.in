@@ -7,12 +7,12 @@ tags:
   - gagasan
 threads:
   - belajar-cara-belajar
-draft: true
+draft: false
 ---
 
 Kemampuan manusia dalam mencerna informasi  itu beragam. Ibarat koneksi Internet, ada manusia yang bisa menerima data 1 _Terra_ per detik, ada juga yang hanya 1 _KB_. Semuanya sama-sama mulia di mata Allah, tapi yang paling mulia di antara mereka adalah yang paling berilmu.
 
-Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak terbatas? 
+Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak terbatas?
 
 Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimisasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat seperti _alaqoh_ (zigot) di rahim ibu.
 
@@ -20,15 +20,17 @@ Di artikel ini, saya akan membahas bagaimana merajut informasi menjadi ilmu saat
 
 Sebelum itu, saya ingin menyampaikan kalau otak pas-pasan dan tampang pas-pasan sama-sama butuh penerimaan diri. Sudah tahu kemampuan otak terbatas, tapi masih berlagak sok pintar. Sudah tahu tampang seperti _mamang-mamang_, tapi masih berlagak _super star_. Percaya diri itu boleh, yang tidak boleh itu membohongi diri sendiri.
 
+---
+
 Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
-Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (dendrit) tumbuh saat kita belajar, namun tumbuh lebih subur lagi saat kita tidur. Akar-akar ini seperti benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar. 
+Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (dendrit) tumbuh saat kita belajar, namun tumbuh lebih subur lagi saat kita tidur. Akar-akar ini seperti benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
 Yang menarik, akar-akar yang menjalar ini akan rontok secara alami. Untuk menjaga akar-akar ini tetap tumbuh, kita harus belajar lagi, kemudian tidur lagi. Belajar lagi, tidur lagi.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu. Seperti orang yang tadinya _kagok_ memarkir mobil, kini bisa melakukannya otomatis tanpa berpikir.  Itulah yang disebut ilmu.
 
 Jadi selain tidur nyenyak, kita juga harus _murojaah_ (mengulang kembali) apa-apa yang dipelajari. Tradisi Islam mengadopsi konsep ini berabad-abad silam dalam menghafal Alquran.
 
-Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini istilahnya disebut _space repitition_. Seperti membangun tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok di atasnya. Jika ingin lebih praktis, gunakan [Anki](https://apps.ankiweb.net/). 
+Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini istilahnya disebut _space repitition_. Seperti membangun tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok di atasnya. Jika ingin lebih praktis, gunakan [Anki](https://apps.ankiweb.net/).
 
 Belajar sudah, tidur nyenak sudah, lalu  kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok bisa begitu? Salah siapa? Salah bunda mengandung?
 
@@ -40,6 +42,6 @@ Demikian artikel ini. Semoga bermafaat. Mari kita rangkum:
 
 - Tidur itu bagian penting dari proses belajar
 - Akar neuron tumbuh subur ketika kita tidur
-- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang. 
+- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang.
 - Berikan jeda istirahat dalam repetisi seperti puasa Senin-Kamis.
 - Gunakan _Anki_ agar jadwal repetisi berjalan otomatis.
