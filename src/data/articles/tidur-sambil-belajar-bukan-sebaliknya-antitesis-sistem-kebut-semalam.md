@@ -12,9 +12,10 @@ draft: true
 
 Pengantar:
 
-- Kemampuan manusia dalam mencerna informasi  itu beragam. Ibarat koneksi Internet, ada manusia yang bisa menerima data 1 Terra per detik, ada juga yang hanya 1 KB. Semuanya sama-sama mulia di mata Allah, tapi yang paling mulia di antara mereka adalah yang berilmu.
+- Kemampuan manusia dalam mencerna informasi  itu beragam. Ibarat koneksi Internet, ada manusia yang bisa menerima data 1 Terra per detik, ada juga yang hanya 1 KB. Semuanya sama-sama mulia di mata Allah, tapi yang paling mulia di antara mereka adalah yang paling berilmu.
 - Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak  terbatas? Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dimaksimalkan. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat seperti _alaqoh_ (zigot) di rahim ibu.
-- Otak pas-pasan dan tampang pas-pasan sama-sama butuh penerimaan diri karena yang paling bahaya adalah sudah tahu kemampuan otak terbatas, tapi masih berlagak sok pintar. Sudah tahu tampang seperti mamang-mamang, tapi berlagak _super star_.
+- Di artikel ini, saya akan membahas bagaimana merajut informasi menjadi ilmu saat kita tidur.
+- Sebelum itu, saya ingin menyampkai kalau otak pas-pasan dan tampang pas-pasan sama-sama butuh penerimaan diri karena yang paling bahaya adalah sudah tahu kemampuan otak terbatas, tapi masih berlagak sok pintar. Sudah tahu tampang seperti mamang-mamang, tapi berlagak _super star_. Percaya diri boleh, membohongi diri sendiri jangan.
 
 Masalah:
 
