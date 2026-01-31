@@ -25,5 +25,5 @@ Solusi:
 
 - Tidur itu bagian penting dari proses belajar
 - Akar neuron tumbuh subur ketika kita belajar kemudian tidur
-- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang. Berikan jeda seperti puasa Senin-Kamis.
-- Gunakan Anki agar proses repetisi berjalan baik.
+- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang. Berikan jeda istirahat dalam proses mengulang pelajaran seperti puasa Senin-Kamis (selain Senin-Kamis, makan dan minum seperti biasa).
+- Gunakan Anki agar proses repetisi menjadi otomatis.
