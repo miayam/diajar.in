@@ -16,7 +16,7 @@ Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak terbatas?
 
 Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat sepert janin di rahim ibu.
 
-Di artikel ini, saya akan membahas bagaimana merekatkan informasi di memori saat kita tidur.
+Di artikel ini, saya akan membahas bagaimana informasi direkatkan di memori saat kita tidur.
 
 ---
 
