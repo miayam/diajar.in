@@ -28,7 +28,7 @@ Yang menarik, akar-akar yang menjalar ini akan rontok secara alami seperti rumpu
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari seperti puasa Senin-Kamis. Ini disebut _space repitition_. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Gunakan [Anki](https://apps.ankiweb.net/) agar lebih praktis.
+Jadwalkan repetisi dengan jeda waktu 1 atau 2 hari. Ini disebut _space repitition_. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Gunakan [Anki](https://apps.ankiweb.net/) agar lebih praktis.
 
 Nah, belajar sudah. Tidur nyenyak juga sudah. Namun, kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
