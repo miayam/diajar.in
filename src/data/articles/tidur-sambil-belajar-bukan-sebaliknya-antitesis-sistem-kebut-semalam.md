@@ -28,7 +28,7 @@ Yang menarik, akar-akar yang menjalar ini akan rontok secara alami seperti rumpu
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Jeda waktu ini memungkinkan akar-akar dendrit menjalar sambil merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
+Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar dendrit menjalar sambil merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
 
 Gunakan [Anki](https://apps.ankiweb.net/) untuk penjadwalan repetisi secara otomatis.
 
