@@ -28,9 +28,9 @@ Yang menarik, akar-akar yang menjalar ini akan rontok secara alami seperti rumpu
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Untuk mendapatkan siklus belajar-tidur yang optimal, beri jeda waktu 1 atau 2 hari di setiap repetisi. Jeda waktu ini memungkinkan akar-akar dendrit menjalar sambil merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. 
+Untuk mendapatkan siklus belajar-tidur yang optimal, beri jeda waktu 1 atau 2 hari di setiap repetisi. Jeda waktu ini memungkinkan akar-akar dendrit menjalar sambil merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_. 
 
-Gunakan [Anki](https://apps.ankiweb.net/) agar lebih praktis.
+Gunakan [Anki](https://apps.ankiweb.net/) untuk penjadwalan repetisi secara otomatis.
 
 Nah, belajar sudah. Tidur nyenyak juga sudah. Namun, kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
