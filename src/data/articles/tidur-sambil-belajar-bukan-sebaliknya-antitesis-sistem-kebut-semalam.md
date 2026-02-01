@@ -14,7 +14,7 @@ Kemampuan manusia dalam mencerna informasi  itu beragam. Ibarat koneksi Internet
 
 Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak terbatas?
 
-Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimisasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat sepert janin di rahim ibu.
+Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat sepert janin di rahim ibu.
 
 Di artikel ini, saya akan membahas bagaimana merajut informasi menjadi ilmu saat kita tidur.
 
