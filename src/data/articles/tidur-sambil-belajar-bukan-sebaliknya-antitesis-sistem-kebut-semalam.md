@@ -18,8 +18,6 @@ Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa diopti
 
 Di artikel ini, saya akan membahas bagaimana merajut informasi menjadi ilmu saat kita tidur.
 
-Sebelum itu, saya ingin menyampaikan kalau otak pas-pasan dan tampang pas-pasan sama-sama butuh penerimaan diri. Sudah tahu kemampuan otak terbatas, tapi masih berlagak sok pintar. Sudah tahu tampang seperti _mamang-mamang_, tapi masih berlagak _super star_. Percaya diri itu boleh, yang tidak boleh itu membohongi diri sendiri.
-
 ---
 
 Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
