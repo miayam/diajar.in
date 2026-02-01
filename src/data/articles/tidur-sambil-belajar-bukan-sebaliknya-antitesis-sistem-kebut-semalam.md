@@ -24,17 +24,15 @@ Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
 Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur saat kita tidur. Akar-akar ini bagaikan benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
-Yang menarik, akar-akar yang menjalar ini akan rontok secara alami seperti rumput yang disiangi. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari di masa lalu. Berapa banyak dari kita yang masih ingat pelajaran sekolah yang tidak ada hubungannya dengan pekerjaan kita?  Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
+Yang menarik, akar-akar yang menjalar ini akan rontok secara alami seperti rumput yang disiangi. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari di masa lalu. Berapa banyak dari kita yang masih ingat pelajaran sekolah dulu? 
+
+Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar dendrit menjalar sambil merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
+Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar dendrit menjalar sambil merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_. Gunakan [Anki](https://apps.ankiweb.net/) untuk penjadwalan repetisi secara otomatis.
 
-Gunakan [Anki](https://apps.ankiweb.net/) untuk penjadwalan repetisi secara otomatis.
-
----
-
-Belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
+Belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara itu,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
 Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur setelah tujuannya tercapai—_mendapat nilai A_—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya mendarah daging sampai terbawa mimpi.
 
