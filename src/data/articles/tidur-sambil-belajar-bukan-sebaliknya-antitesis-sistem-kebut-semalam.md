@@ -26,7 +26,7 @@ Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
 Seorang peneliti bernama Guang Yang memperlihatkan bahwa akar-akar pada sel neuron (_dendrit_) tumbuh saat kita belajar, namun tumbuh lebih subur saat kita tidur. Akar-akar ini bagaikan benang yang  _merajut_ sel-sel neuron. Jika kita ibaratkan proses belajar seperti menjahit, tidur membantu kita mengurai benang kusut dan merapikan jahitannya. Inilah yang dimaksud dengan tidur sambil belajar.
 
-Yang menarik, akar-akar yang menjalar ini akan rontok begitu saja secara alami. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari di masa lalu. Berapa banyak dari kita yang masih ingat pelajaran di SMA?  Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
+Yang menarik, akar-akar yang menjalar ini akan rontok secara alami seperti rumput yang disiangi. Fenomena ini menjelaskan kenapa kita lupa apa yang kita pelajari di masa lalu. Berapa banyak dari kita yang masih ingat pelajaran di SMA?  Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur yang berkesinambungan. Belajar, kemudian tidur.  Belajar lagi, tidur lagi. Begitu saja terus sampai informasi bertransformasi menjadi ilmu.
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
@@ -42,6 +42,6 @@ Demikian. Semoga bermanfaat. Mari kita rangkum:
 
 - Tidur itu bagian penting dari proses belajar
 - Akar neuron tumbuh subur ketika kita tidur
-- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak diulang
-- Berikan jeda istirahat dalam repetisi seperti puasa Senin-Kamis
+- Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak ada repetisi (mengulang pelajaran)
+- Berikan jeda istirahat selama repetisi seperti puasa Senin-Kamis
 - Gunakan _Anki_ agar jadwal repetisi berjalan otomatis
