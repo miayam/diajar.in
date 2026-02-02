@@ -12,7 +12,7 @@ draft: false
 
 Kemampuan manusia dalam mencerna informasi  itu beragam. Ibarat koneksi Internet, ada manusia yang bisa menerima data 1 _Terra_ per detik, ada juga yang hanya 1 _KB_. Semuanya sama-sama mulia di mata Allah, tapi yang paling mulia di antara mereka adalah yang paling berilmu.
 
-Lalu, bagaimana menjadi orang berilmu dengan kemampuan  otak terbatas?
+Lalu, bagaimana menjadi orang berilmu jika kemampuan  otak terbatas?
 
 Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa dioptimasi. Tidak apa-apa _goreng patut_ (tidak tampan), asalkan bersih, wangi, dan berakhlak baik. Tidak apa-apa _lemot_ (lamban), yang penting ilmu melekat seperti janin di rahim ibu.
 
