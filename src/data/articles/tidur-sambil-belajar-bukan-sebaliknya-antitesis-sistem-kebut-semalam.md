@@ -30,9 +30,9 @@ Untuk merawat akar-akar ini agar tetap subur, harus ada siklus belajar dan tidur
 
 Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajari.
 
-Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar dendrit menjalar dan merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
+Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar _dendrit_ menjalar dan merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
 
-Gunakan [Anki](https://apps.ankiweb.net/) untuk penjadwalan repetisi secara otomatis.
+Gunakan [Anki](https://apps.ankiweb.net/) untuk menjadwalkan repetisi secara otomatis.
 
 Belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara itu,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
