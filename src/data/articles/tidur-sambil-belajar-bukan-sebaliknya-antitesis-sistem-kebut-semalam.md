@@ -32,7 +32,7 @@ Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajar
 
 Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar _dendrit_ menjalar dan merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
 
-Gunakan [Anki](https://apps.ankiweb.net/) untuk menjadwalkan repetisi secara otomatis.
+Gunakan [_Anki_](https://apps.ankiweb.net/) untuk menjadwalkan repetisi secara otomatis.
 
 Nah, belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara itu,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
@@ -46,4 +46,4 @@ Demikian. Semoga bermanfaat. Mari kita rangkum:
 - Akar neuron tumbuh subur ketika kita tidur
 - Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak ada repetisi (mengulang pelajaran)
 - Berikan jeda istirahat selama repetisi
-- Gunakan _Anki_ agar jadwal repetisi berjalan otomatis
+- Gunakan [_Anki_](https://apps.ankiweb.net/) agar jadwal repetisi berjalan otomatis
