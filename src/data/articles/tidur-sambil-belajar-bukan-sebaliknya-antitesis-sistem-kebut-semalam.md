@@ -34,7 +34,9 @@ Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-ti
 
 Gunakan [Anki](https://apps.ankiweb.net/) untuk menjadwalkan repetisi secara otomatis.
 
-Belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara itu,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
+Demikian cara mengoptimalkan proses belajar dengan memadukan belajar dan istirahat cukup.
+
+Nah. Belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara itu,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
 Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur setelah tujuannya tercapai—_mendapat nilai A_—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya mendarah daging sampai terbawa mimpi.
 
