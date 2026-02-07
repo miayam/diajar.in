@@ -12,26 +12,23 @@ draft: true
 
 Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui cara efektif mencerna informasi.
 
-Lihat  saja fenomena di sekitar kita.
+Lihat  saja fenomena di sekitar kita:
+- Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
 
-Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat.
+- ODGJ yang hafal naskah proklamasi. Bagimana bisa?
 
-_ODGJ_ yang hafal naskah proklamasi. Bagimana bisa?
+ - Seorang pandir yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri.
 
-Seorang pandir yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri.
+- Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_.
 
-Bocah  pelosok mampu melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_.
+- Warna pada pelangi yang disingkat _mejikuhibiniu_.
 
-Warna pada pelangi yang disingkat _mejikuhibiniu_.
-
-8 arah mata angin yang dijadikan lagu.
+- 8 arah mata angin yang dijadikan lagu.
 
 Banyak sekali.
 
-Kita menyadari kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal.
+Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal.
 
-Kita sudah tahu kalau nada itu lebih mudah _dikunyah_ otak daripada daftar belanjaan yang diulang-ulang tapi masih saja lupa.
+Kita juga paham kalau  informasi yang melibatkan emosi sangat sulit dilupakan.
 
-Informasi yang melibatkan emosi lebih mudah dicerna.
-
-Gambar bergerak sangat mudah dicerna otak seperti adegan favorit yang masih terngiang-ngiang di kepala.
+Gambar bergerak seperti adegan favorit yang masih terngiang-ngiang di kepala.
