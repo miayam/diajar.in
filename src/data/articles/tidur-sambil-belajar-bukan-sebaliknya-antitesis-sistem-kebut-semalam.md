@@ -1,5 +1,5 @@
 ---
-featuredImage: /src/media/hunza-valley.jpeg
+featuredImage: /src/media/peter-olexa.jpg
 title: 'Tidur Sambil Belajar (Bukan Sebaliknya): Antitesis Sistem Kebut Semalam'
 publishDate: 2026-01-31T17:35:00
 author: admin
