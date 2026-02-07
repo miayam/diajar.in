@@ -4,7 +4,6 @@ backend:
   skip_ci: true
 
 media_folder: /src/media
-public_folder: /media
 
 collections:
   - name: articles
