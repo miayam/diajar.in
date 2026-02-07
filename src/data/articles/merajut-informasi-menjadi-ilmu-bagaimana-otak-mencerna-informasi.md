@@ -1,5 +1,5 @@
 ---
-featuredImage: ''
+featuredImage: /src/media/peter-olexa.jpg
 title: 'Merajut Informasi Menjadi Ilmu: Bagaimana Otak Mencerna Informasi?'
 publishDate: 2026-02-07T18:17:00
 author: admin
