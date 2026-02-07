@@ -1,5 +1,5 @@
 ---
-featuredImage: ../../media/peter-olexa.jpg
+featuredImage: /src/media/hunza-valley.jpeg
 title: 'Tidur Sambil Belajar (Bukan Sebaliknya): Antitesis Sistem Kebut Semalam'
 publishDate: 2026-01-31T17:35:00
 author: admin
@@ -18,7 +18,7 @@ Begini. Saya percaya, otak pas-pasan dan tampang pas-pasan sama-sama bisa diopti
 
 Di artikel ini saya akan membahas bagaimana informasi direkatkan di memori saat kita tidur.
 
----
+***
 
 Merajut informasi menjadi ilmu ternyata ada kaitannya dengan kualitas tidur.
 
