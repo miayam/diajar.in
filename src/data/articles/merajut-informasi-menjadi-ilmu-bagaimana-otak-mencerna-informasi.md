@@ -15,15 +15,12 @@ Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui cara efektif
 Lihat  saja fenomena di sekitar kita:
 
 - Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
-- ODGJ yang hafal naskah proklamasi. Bagimana bisa?
-- Seorang pandir yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri.
-- Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_.
+- ODGJ yang hafal naskah proklamasi. Bagaimana bisa? Apakah beliau dulunya anggota Paskibra. Kenapa masih hafal?
+- Seorang dungu yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri. Apakah rasa cinta meningkatkan skor _IQ_?
+- Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_. Apakah bocah itu peduli siapa mereka?
 - Warna pada pelangi yang disingkat _mejikuhibiniu_.
-- 8 arah mata angin yang dijadikan lagu.
 
-Banyak sekali.
-
-Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal.
+Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal. Efisiensi.
 
 Kita juga paham kalau  informasi yang melibatkan emosi sangat sulit dilupakan.
 
