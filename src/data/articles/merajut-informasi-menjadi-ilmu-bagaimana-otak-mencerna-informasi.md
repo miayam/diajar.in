@@ -12,7 +12,7 @@ draft: true
 
 Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui cara efektif mencerna informasi.
 
-Lihat  lebih dekat fenomena di sekitar kita.
+Lihat  saja fenomena di sekitar kita.
 
 Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat.
 
