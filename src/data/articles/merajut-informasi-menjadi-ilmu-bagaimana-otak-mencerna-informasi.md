@@ -1,6 +1,6 @@
 ---
 featuredImage: /src/media/peter-olexa.jpg
-title: 'Merajut Informasi Menjadi Ilmu: Bagaimana Otak Mencerna Informasi?'
+title: 'Merajut Informasi Menjadi Ilmu: Bagaimana Otak Mencerna Informasi?i'
 publishDate: 2026-02-07T18:17:00
 author: admin
 tags:
@@ -10,14 +10,14 @@ threads:
 draft: true
 ---
 
-Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui cara efektif mencerna informasi.
+Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui bagaimana cara otak mencerna informasi.
 
 Lihat  saja fenomena di sekitar kita:
 
 - Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
-- ODGJ yang hafal naskah proklamasi. Bagaimana bisa? Apakah beliau dulunya anggota Paskibra. Kenapa masih hafal?
-- Seorang dungu yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri. Apakah rasa cinta meningkatkan skor _IQ_?
-- Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_. Apakah bocah itu peduli siapa mereka?
+- ODGJ yang hafal naskah proklamasi. Bagaimana bisa? 
+- Seorang dungu yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri.
+- Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_.
 - Warna pada pelangi yang disingkat _mejikuhibiniu_.
 
 Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal. Efisiensi.
