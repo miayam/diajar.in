@@ -21,8 +21,8 @@ Lihat  saja fenomena di sekitar kita:
 - Warna pada pelangi yang disingkat _mejikuhibiniu_
 - Dan banyak lagi
 
-Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal. Efisiensi.
+Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal. 
 
-Kita juga paham kalau  informasi yang melibatkan emosi sangat sulit dilupakan.
+Iformasi yang melibatkan emosi sangat sulit dilupakan.
 
-Gambar bergerak seperti adegan favorit yang masih terngiang-ngiang di kepala.
+Gambar bergerak.
