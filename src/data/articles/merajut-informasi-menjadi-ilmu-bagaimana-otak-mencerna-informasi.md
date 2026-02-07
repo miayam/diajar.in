@@ -13,16 +13,12 @@ draft: true
 Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui cara efektif mencerna informasi.
 
 Lihat  saja fenomena di sekitar kita:
+
 - Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
-
 - ODGJ yang hafal naskah proklamasi. Bagimana bisa?
-
- - Seorang pandir yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri.
-
+- Seorang pandir yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri.
 - Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_.
-
 - Warna pada pelangi yang disingkat _mejikuhibiniu_.
-
 - 8 arah mata angin yang dijadikan lagu.
 
 Banyak sekali.
