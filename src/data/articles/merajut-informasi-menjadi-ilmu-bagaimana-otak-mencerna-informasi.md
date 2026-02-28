@@ -1,6 +1,6 @@
 ---
 featuredImage: /src/media/peter-olexa.jpg
-title: 'Merajut Informasi Menjadi Ilmu: Bagaimana Otak Mencerna Informasi?i'
+title: 'Merajut Informasi Menjadi Ilmu: Bagaimana Otak Mencerna Informasi?'
 publishDate: 2026-02-07T18:17:00
 author: admin
 tags:
@@ -21,7 +21,7 @@ Lihat  saja fenomena di sekitar kita:
 - Warna pada pelangi yang disingkat _mejikuhibiniu_
 - Dan banyak lagi
 
-Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal. 
+Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal.
 
 Iformasi yang melibatkan emosi sangat sulit dilupakan.
 
