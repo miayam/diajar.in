@@ -22,7 +22,7 @@ Miliarder di Indonesia hampir semuanya punya perusahaan air kemasan. Biaya pemil
 
 ### Kebudayaan
 
-Sikap apatis terhadap lingkungan sudah mendarah daging bahkan di perkotaan yang konon lebih beradab, \*open-minded\*, dan modern. Justru orang-orang yang mengeramatkan sungai, mengultuskan gunung, atau menyakralkan hutan mampu melestarikan alam sampai ribuan tahun.
+Sikap apatis terhadap lingkungan sudah mendarah daging bahkan di perkotaan yang konon lebih beradab, _open-minded_, dan modern. Justru orang-orang yang mengeramatkan sungai, mengultuskan gunung, atau menyakralkan hutan mampu melestarikan alam sampai ribuan tahun.
 
 ### Pendidikan
 
