@@ -123,6 +123,24 @@ collections:
           required: false,
         }
       - { label: Caption, name: caption, widget: markdown, required: false }
+      - {
+          label: Body,
+          name: body,
+          widget: richtext,
+          buttons:
+            [
+              numbered-list,
+              bold,
+              italic,
+              strikethrough,
+              code,
+              link,
+              heading-one,
+              youtube,
+              note,
+            ],
+          required: true,
+        }
   - name: pages
     label: Pages
     files:
