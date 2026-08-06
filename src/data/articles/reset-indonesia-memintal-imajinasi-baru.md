@@ -19,3 +19,5 @@ Perjalanan keliling Indonesia ini tidak hanya mengumpulkan permasalahan, juga me
 Ekspedisi ini bertujuan merekam imajinasi dan harapan warga tentang Indonesia, meneliti dan mencatat keragaman hayati, serta merangkai simpul-simpul komunitas sepanjang perjalanan.
 
 Ekspedisi ini menghasilkan 8 film dan 1 serial dokumenter yang bertemakan pertanian, perikanan, _fair trade_, kesehatan, energi, hak atas air, pendidikan, perburuhan, pengangguran, hak atas tanah dan perumahan, dan _fast fashion_ dalam industri tekstil.
+
+Ekspedisi ini didanai dari urunan warga. Dari warga untuk warga.
