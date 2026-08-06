@@ -1,5 +1,5 @@
 ---
-featuredImage: ''
+featuredImage: /src/media/1920px-Rinjani_Caldera.jpg
 title: 'Reset Indonesia: Memintal Imajinasi Baru'
 publishDate: 2026-08-06T19:03
 author: admin
