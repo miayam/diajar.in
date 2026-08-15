@@ -1,6 +1,6 @@
 ---
 featuredImage: /src/media/1920px-Rinjani_Caldera.jpg
-title: Fatamorgana Indonesia Emas
+title: 'Reset Indonesia: Fatamorgana Indonesia Emas'
 publishDate: 2026-08-15T09:02
 author: admin
 tags: []
