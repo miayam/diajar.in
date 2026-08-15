@@ -1,6 +1,6 @@
 ---
 featuredImage: /src/media/1920px-Rinjani_Caldera.jpg
-title: Generasi Cemas
+title: 'Reset Indonesia: Generasi Cemas'
 publishDate: 2026-08-15T09:03
 author: admin
 tags:
