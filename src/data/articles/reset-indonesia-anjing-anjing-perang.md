@@ -7,7 +7,7 @@ tags:
   - gagasan
 threads:
   - reset-indonesia
-draft: true
+draft: false
 ---
 
 Kekayaan sumber daya alam adalah kutukan. Selain menarik perhatian penjajah, juga menimbulkan perang saudara. Contoh terkecil adalah konflik yang melibatkan sesama warga dan aparat negara di Desa Pancer, Banyuwangi akibat rencana pertambangan emas di Gunung Salakan.
