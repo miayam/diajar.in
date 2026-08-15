@@ -1,6 +1,6 @@
 ---
 featuredImage: /src/media/1920px-Rinjani_Caldera.jpg
-title: Unhappy Mother of Industries
+title: 'Reset Indonesia: Unhappy Mother of Industries'
 publishDate: 2026-08-15T09:20
 author: admin
 tags:
