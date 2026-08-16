@@ -14,4 +14,6 @@ Teori _trickle-down effect_ atau "air menetes ke bawah" menjadi acuan haluan neg
 
 Berbagai kajian berkata sebaliknya. Ketika pendapatan si kaya naik 20%, ekonomi melambat. Ketika pendapatan si miskin naik 20%, ekonomi tumbuh. Menyejahterakan si miskin harusnya jadi prioritas utama pemerintah.
 
-Indonesia mengabaikan kajian tersebut dan tetap _kekeuh_ dengan teori "air menetes ke bawah" yang dipropagandakan antek-antek asing. Kini, ketimpangan ekonomi antara si kaya dan si miskin semakin melebar apa lagi ditambah dengan UU Cipta Kerja yang lebih memihak si kaya. Kuda makin buncit kekenyangan, sementara burung-burung gereja sekarat tinggal kulit dan tulang.
+Indonesia mengabaikan kajian tersebut dan tetap _kekeuh_ dengan teori "air menetes ke bawah" yang dipropagandakan antek-antek asing. Kini, ketimpangan ekonomi antara si kaya dan si miskin semakin melebar apa lagi ditambah dengan UU Cipta Kerja yang lebih memihak si kaya.
+
+Kuda makin buncit kekenyangan, sementara burung-burung gereja sekarat tinggal kulit dan tulang.
