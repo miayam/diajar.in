@@ -7,7 +7,7 @@ tags:
   - gagasan
 threads:
   - reset-indonesia
-draft: true
+draft: false
 ---
 
 Dari satu kegiatan budi daya kopi, muncul berbagai manfaat. Kopi yang kita seruput sebenarnya hanya 0.2% dari satu tubuh tanaman kopi, sisanya tidak terpakai. Padahal, kulit dan ampas kopi adalah medium yang baik untuk menumbuhkan jamur. Jamur punya nilai ekonomi yang bagus di pasaran. Ketika jamur dipanen, limbahnya bisa dijadikan pakan ternak. Kotoran ternak menghasilkan biogas pembangkit listrik dan bisa diolah menjadi pupuk penyubur tanaman kopi. Saat tanaman kopi berbuah, biji kopi siap dipanen kembali. Inilah ekonomi sirkular yang menggabungkan berbagai proses produksi dalam satu siklus sehingga tidak ada limbah yang tersisa. Sebuah kebermanfaatan maksimal.
