@@ -14,7 +14,7 @@ Di Jembaran, Bali, warga bertransaksi melalui aplikasi yang dibangun di atas tek
 
 Secara teori, jika setiap orang mampu memenuhi kebutuhan dasarnya, maka kemiskinan berhasil dientaskan. Jika kebutuhan dasarnya terpenuhi, manusia akan bekerja untuk sesuatu yang lebih besar sehingga memberi manfaat bagi orang-orang di sekitarnya.
 
-_UBI_ adalah alternatif dari bantuan langsung tunai—yang sifatnya lebih mirip sumbangan daripada tanggung jawab pemerintah memenuhi kebutuhan dasar rakyatnya. Hak rakyat atas kebutuhan dasar sudah sepatutnya tidak dijadikan komoditas politik yang diobral setiap pemilu. Tukang pos tidak melakukan selebrasi setelah mengantarkan surat karena itu memang sudah tugasnya.
+_UBI_ adalah alternatif dari bantuan langsung tunai. Bantuan langsung tunai itu sifatnya lebih mirip sumbangan daripada tanggung jawab pemerintah memenuhi kebutuhan dasar rakyatnya. Hak rakyat atas kebutuhan dasar sudah sepatutnya tidak dijadikan komoditas politik yang diobral setiap pemilu. Tukang pos tidak melakukan selebrasi setelah mengantarkan surat karena itu memang sudah tugasnya.
 
 _UBI_ ini bukan tanpa cela. Bisa saja jatah yang diberikan cuma-cuma itu dibelanjakan untuk hal yang tidak-tidak. Dengan teknologi _blockchain_, setiap transaksi disiarkan ke seluruh pengguna supaya warga bisa saling percaya. Kepercayaan adalah mata uang yang tak ternilai harganya.
 
