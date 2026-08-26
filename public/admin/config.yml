@@ -98,6 +98,24 @@ collections:
     fields:
       - { label: Name, name: name, widget: string, required: true }
       - { label: Label, name: label, widget: string, required: true }
+      - {
+          label: Body,
+          name: body,
+          widget: richtext,
+          buttons:
+            [
+              numbered-list,
+              bold,
+              italic,
+              strikethrough,
+              code,
+              link,
+              heading-one,
+              youtube,
+              note,
+            ],
+          required: true,
+        }
   - name: threads
     label: Threads
     folder: src/data/threads
