@@ -1,5 +1,6 @@
 ---
-name: "Gagasan"
-label: "#gagasan"
+name: Gagasan
+label: '#gagasan'
 ---
-Menelaah paradigma seputar web, desain, dan irisannya.
+
+Menelaah paradigma seputar web, desain, irisannya, dan yang lainnya.
