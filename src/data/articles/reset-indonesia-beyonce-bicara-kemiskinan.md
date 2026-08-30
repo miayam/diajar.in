@@ -10,7 +10,7 @@ threads:
 draft: false
 ---
 
-Pada tahun 2015, PBB menggelar hajatan di Central Park, New York yang dibintangi pesohor seperti Beyonce, One Direction, Pearl Jam, dan Cold Play. Pembangunan berkelanjutan adalah tema utama dari perhelatan yang dihadiri pemimpin-pemimpin dunia tersebut. Salah satu ambisi mereka adalah mengentaskan kemiskinan di tahun 2030.
+Pada tahun 2015, PBB menggelar hajatan di Central Park, New York, yang dibintangi pesohor seperti Beyonce, One Direction, Pearl Jam, dan Coldplay. Pembangunan berkelanjutan adalah tema utama dari perhelatan yang dihadiri pemimpin-pemimpin dunia tersebut. Salah satu ambisi mereka adalah mengentaskan kemiskinan di tahun 2030.
 
 Pembangunan berkelanjutan adalah pengakuan bahwa pertumbuhan ekonomi harus berkesinambungan dengan kelestarian alam dan lingkungan hidup sebab manusia bergantung padanya.
 
