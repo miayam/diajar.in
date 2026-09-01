@@ -6,6 +6,6 @@ featuredImage: /src/media/hunza-valley.jpeg
 caption: ''
 ---
 
-Kata-kata yang terlintas ini seperti pesan kaleng dari Yang Maha Esa. Saya yakin ini sudah pernah ditulis oleh seseorang—entah siapa dan di mana mereka.
+Kata-kata yang terlintas ini seperti bisikan gaib dari Yang Maha Esa. Saya yakin ini sudah pernah ditulis sebelumnya—kebetulan saja lewat di kepala.
 
-Ini hanya rangkuman dari kebijaksanaan yang saya rampok dari orang-orang di sekitar. Bagi yang kurang berkenan membaca tulisan saya, jangan marah, maafkanlah...
+Ini adalah rangkuman dari kebijaksanaan yang saya rampok dari orang-orang di sekitar. Mudah-mudahan berkenan di hati.
