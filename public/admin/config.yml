@@ -38,8 +38,8 @@ collections:
               code,
               link,
               heading-one,
-              youtube,
-              note,
+              quote,
+              bulleted-list
             ],
           required: true,
         }
@@ -111,8 +111,8 @@ collections:
               code,
               link,
               heading-one,
-              youtube,
-              note,
+              quote,
+              bulleted-list
             ],
           required: true,
         }
@@ -154,8 +154,8 @@ collections:
               code,
               link,
               heading-one,
-              youtube,
-              note,
+              quote,
+              bulleted-list
             ],
           required: true,
         }
