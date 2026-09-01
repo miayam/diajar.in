@@ -10,4 +10,4 @@ threads:
 draft: false
 ---
 
-Ide itu seperti buah di atas pohon. Kita hanya tinggal memetiknya saja. Buah itu kita dapatkan bukan karena kemahiran kita memanjat pohon, kadang buah jatuh di hadapan kita begitu saja. Meski demikian, usaha kita untuk menggapai buah tersebut akan mendapatkan ganjaran di sisi-Nya. Anda boleh mengatakan kalau Anda yang memetiknya, tapi jangan menuliskan nama Anda di kulit buah seolah Anda memilikinya. Ide itu untuk Anda, bukan milik Anda.
+Ide itu seperti buah di atas pohon. Kita hanya tinggal memetiknya saja. Buah itu kita dapatkan bukan karena kita mahir memanjat pohon, kadang buah jatuh di hadapan kita begitu saja. Meski demikian, usaha kita untuk meraih buah tersebut akan mendapatkan ganjaran di sisi-Nya. Anda boleh mengatakan kalau Anda yang memetiknya, tapi jangan menuliskan nama Anda di kulit buah seolah Anda memilikinya. Ide itu untuk Anda, bukan milik Anda.
