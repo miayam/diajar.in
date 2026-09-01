@@ -24,16 +24,16 @@ Aliansi Koperasi Internasional (_ICA_) secara rutin merilis daftar 300 koperasi 
 
 Berikut fakta-fakta menarik seputar 300 koperasi terbaik dunia:
 
-1. Lebih dari 50% koperasi bergerak di bidang pertanian, kehutanan, dan bisnis retail
-2. Dari ASEAN, Malaysia menyumbang 2 koperasi (Bank Kerja Sama Rakyat Malaysia, NTUC Income) dan Singapura 1 koperasi (FairPrice)
-3. Koperasi retail terbesar di dunia dipegang oleh Jerman dan Prancis yang masing-masing diwakili oleh REWE Group dan Groupe BPCE
-4. Sektor pertanian dipegang oleh Jepang dan Korea. Dari Jepang, Zen Noh dan Zenkyoren masuk 10 besar. Nonghyup dari Korea Selatan ada di peringkat 4
-5. Koperasi memainkan peran penting di Korea Selatan. Tidak hanya di sektor pertanian, model usaha koperasi juga ditemukan di sektor pendidikan
-6. Dalam urusan etika produksi, Fronterra—koperasi asal Selandia Baru—paling menonjol di antara yang lain. Mereka menganggap anggotanya orang-orang baik yang melakukan hal-hal baik. Fronterra menguasai 35% pangsa pasar susu dunia
-7. Denmark menyumbang 8 koperasi. Di sana, sekitar 90% pangsa pasar produk pertanian, peternakan, dan perikanan dikuasai oleh koperasi
-8. Koperasi kesehatan terbesar di dunia ada di Brasil, diwakili oleh Sistema Unimed yang beranggotakan 135.000 dokter dan perawat
-9. Menurut lembaga survei, Brasil adalah negara dengan budaya koperasi terbaik di dunia
-10. Di pedalaman Amerika Serikat, koperasi-koperasi energi bersaing dengan perusahaan-perusahaan besar
+- Lebih dari 50% koperasi bergerak di bidang pertanian, kehutanan, dan bisnis retail
+- Dari ASEAN, Malaysia menyumbang 2 koperasi (Bank Kerja Sama Rakyat Malaysia, NTUC Income) dan Singapura 1 koperasi (FairPrice)
+- Koperasi retail terbesar di dunia dipegang oleh Jerman dan Prancis yang masing-masing diwakili oleh REWE Group dan Groupe BPCE
+- Sektor pertanian dipegang oleh Jepang dan Korea. Dari Jepang, Zen Noh dan Zenkyoren masuk 10 besar. Nonghyup dari Korea Selatan ada di peringkat 4
+- Koperasi memainkan peran penting di Korea Selatan. Tidak hanya di sektor pertanian, model usaha koperasi juga ditemukan di sektor pendidikan
+- Dalam urusan etika produksi, Fronterra—koperasi asal Selandia Baru—paling menonjol di antara yang lain. Mereka menganggap anggotanya orang-orang baik yang melakukan hal-hal baik. Fronterra menguasai 35% pangsa pasar susu dunia
+- Denmark menyumbang 8 koperasi. Di sana, sekitar 90% pangsa pasar produk pertanian, peternakan, dan perikanan dikuasai oleh koperasi
+- Koperasi kesehatan terbesar di dunia ada di Brasil, diwakili oleh Sistema Unimed yang beranggotakan 135.000 dokter dan perawat
+- Menurut lembaga survei, Brasil adalah negara dengan budaya koperasi terbaik di dunia
+- Di pedalaman Amerika Serikat, koperasi-koperasi energi bersaing dengan perusahaan-perusahaan besar
 
 Koperasi bukan model usaha ecek-ecek. 12% penduduk dunia terlibat dalam koperasi dan 10% lapangan kerja diciptakan oleh koperasi.
 
