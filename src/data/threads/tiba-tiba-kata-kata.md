@@ -6,4 +6,4 @@ featuredImage: /src/media/hunza-valley.jpeg
 caption: ''
 ---
 
-Kata-kata yang terlintas secara tiba-tiba seperti pesan kaleng dari Yang Maha Kuasa.
+Kata-kata yang terlintas di kepala secara tiba-tiba layaknya pesan kaleng dari Yang Maha Kuasa.
