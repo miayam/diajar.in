@@ -10,4 +10,4 @@ threads:
 draft: false
 ---
 
-Hidup nista penuh kemaksiatan, namun keinginan selalu terwujud selama aku berpikir positif. Aku pikir ini manifestasi, ternyata [_istidraj_](https://rumaysho.com/10828-istidraj-jebakan-berupa-limpahan-rezeki-karena-bermaksiat.html).
+Hidup nista penuh kemaksiatan, namun semua impianku terwujud selama aku berpikir positif. Aku pikir ini manifestasi, ternyata [_istidraj_](https://rumaysho.com/10828-istidraj-jebakan-berupa-limpahan-rezeki-karena-bermaksiat.html).
