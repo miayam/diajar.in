@@ -5,8 +5,7 @@ publishDate: 2026-08-17T12:59
 author: admin
 tags:
   - gagasan
-threads:
-  - reset-indonesia
+thread: reset-indonesia
 draft: false
 ---
 

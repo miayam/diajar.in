@@ -21,7 +21,7 @@ const articles = defineCollection({
       publishDate: z.coerce.date(),
       author: reference("authors"),
       tags: z.array(reference("tags")),
-      threads: z.array(reference("threads")),
+      thread: reference("threads"),
       featuredImage: image().optional(),
       caption: z.string().optional(),
       draft: z.boolean(),

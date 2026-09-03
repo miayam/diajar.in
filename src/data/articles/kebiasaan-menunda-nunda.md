@@ -4,8 +4,7 @@ publishDate: 2026-01-18
 author: admin
 tags:
   - gagasan
-threads:
-  - belajar-cara-belajar
+thread: belajar-cara-belajar
 featuredImage: ../../media/peter-olexa.jpg
 draft: false
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

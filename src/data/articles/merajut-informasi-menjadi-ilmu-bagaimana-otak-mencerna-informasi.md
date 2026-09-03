@@ -5,8 +5,7 @@ publishDate: 2026-02-07T18:17:00
 author: admin
 tags:
   - gagasan
-threads:
-  - belajar-cara-belajar
+thread: belajar-cara-belajar
 draft: true
 ---
 

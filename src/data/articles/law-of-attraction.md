@@ -5,8 +5,7 @@ publishDate: 2026-09-02T20:22:00
 author: admin
 tags:
   - gagasan
-threads:
-  - tiba-tiba-kata-kata
+thread: tiba-tiba-kata-kata
 draft: false
 ---
 

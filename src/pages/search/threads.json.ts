@@ -13,7 +13,7 @@ export const GET: APIRoute = async () => {
 
   for (const thread of threads) {
     const threadArticles = articles.filter((article) =>
-      article.data.threads.some((t: any) => t.id === thread.id),
+      article.data.thread.id === thread.id,
     );
 
     for (const article of threadArticles) {

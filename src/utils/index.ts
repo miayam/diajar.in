@@ -53,7 +53,7 @@ export const enrichThreadWithMetadata = async (
   authors: CollectionEntry<"authors">[],
 ) => {
   const articleCount = articles.filter((article) =>
-    article.data.threads.some((t) => t.id === thread.id),
+    article.data.thread.id === thread.id,
   ).length;
 
   const author = authors.find((item) => item.id === thread.data.author.id);

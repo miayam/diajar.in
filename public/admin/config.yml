@@ -64,14 +64,14 @@ collections:
           required: false,
         }
       - {
-          label: Threads,
-          name: threads,
+          label: Thread,
+          name: thread,
           widget: relation,
           collection: threads,
           multiple: false,
           search_fields: ["name"],
           display_fields: ["name"],
-          required: false,
+          required: true,
         }
 
       - {

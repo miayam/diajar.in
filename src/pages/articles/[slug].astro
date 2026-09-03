@@ -104,7 +104,7 @@ const featuredImage = article.data.featuredImage
 
     <DynamicTableOfContents
         slot="table-of-contents"
-        threadId={article.data.threads[0].id}
+        threadId={article.data.thread.id}
     />
 
     <ArticleView article={article} tags={tags}>
@@ -118,8 +118,5 @@ const featuredImage = article.data.featuredImage
         title={article.data.title}
     />
 
-    <Iterator
-        currentArticleId={article.id}
-        threadId={article.data.threads[0].id}
-    />
+    <Iterator currentArticleId={article.id} threadId={article.data.thread.id} />
 </Article>
