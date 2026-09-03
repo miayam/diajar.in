@@ -23,13 +23,7 @@ const { className, href = "/" } = Astro.props;
             "[data-back-to-blog]",
         );
         const backToPage = localStorage.getItem("backToPage");
-
-        backButton?.addEventListener("click", (e) => {
-            if (backToPage && history.length > 1) {
-                e.preventDefault();
-                location.href = backToPage;
-            }
-        });
+        backButton.setAttribute("href", backToPage);
     }
 
     initialize();
