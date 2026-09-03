@@ -33,11 +33,7 @@ const { article, tags } = Astro.props;
                 {tags.map(
                     (tag) =>
                         tag && (
-                            <a
-                                data-is-feed-link
-                                data-astro-reload
-                                href={`/tags/${tag.id}`}
-                            >
+                            <a data-astro-reload href={`/tags/${tag.id}`}>
                                 {tag.data.label}
                             </a>
                         ),
@@ -47,10 +43,3 @@ const { article, tags } = Astro.props;
     }
     <slot />
 </article>
-
-<script>
-    import feedLinks from "@/utils/feedLinks";
-
-    feedLinks();
-    document.addEventListener("astro:after-swap", feedLinks);
-</script>

@@ -10,7 +10,7 @@ const { article } = Astro.props;
 ---
 
 <a
-    href={`/articles/${article.id}${article.data.threads.length > 0 ? `?thread=${article.data.threads[0].id}` : ""}`}
+    href={`/articles/${article.id}`}
     class="flex flex-col gap-2 border rounded-md border-gray-300 py-2"
     data-is-feed-link
     data-astro-reload

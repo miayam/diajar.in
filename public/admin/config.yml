@@ -68,7 +68,7 @@ collections:
           name: threads,
           widget: relation,
           collection: threads,
-          multiple: true,
+          multiple: false,
           search_fields: ["name"],
           display_fields: ["name"],
           required: false,

@@ -19,24 +19,15 @@ const { className, href = "/" } = Astro.props;
 
 <script>
     function initialize() {
-        const threadId = new URLSearchParams(window.location.search).get(
-            "thread",
-        );
-
         const backButton = document.querySelector<HTMLAnchorElement>(
             "[data-back-to-blog]",
         );
-        const fromFeed = localStorage.getItem("cameFromFeed");
-        localStorage.removeItem("cameFromFeed");
-
-        if (threadId && backButton) {
-            backButton.href = "/threads";
-        }
+        const backToPage = localStorage.getItem("backToPage");
 
         backButton?.addEventListener("click", (e) => {
-            if (fromFeed && history.length > 1) {
+            if (backToPage && history.length > 1) {
                 e.preventDefault();
-                history.back();
+                location.href = backToPage;
             }
         });
     }

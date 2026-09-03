@@ -1,5 +1,13 @@
+---
+interface Props {
+    threadId: string;
+}
+const { threadId } = Astro.props;
+---
+
 <aside
     id="tocContainer"
+    data-thread-id={threadId}
     class="sticky top-[74px] border border-gray-300 rounded-md overflow-hidden hidden w-auto md:w-auto lg:w-80 mb-8"
 >
     <!-- Fixed Header -->
@@ -26,9 +34,7 @@
 
             if (!this.container || !this.list) return;
 
-            const threadId = new URLSearchParams(window.location.search).get(
-                "thread",
-            );
+            const threadId = this.container.getAttribute("data-thread-id");
 
             const backButton = document.querySelector<HTMLAnchorElement>(
                 "[data-back-to-blog]",
@@ -41,7 +47,7 @@
                 if (backButton) {
                     backButton.innerHTML = `
                       <span class="icon-chevron-left text-lg font-bold"></span>
-                      Utas
+                      Kembali
                     `;
                 }
             } else {
@@ -96,7 +102,7 @@
                     this.currentUrl === `/articles/${article.id}` ||
                     this.currentUrl === `/articles/${article.id}/`;
 
-                link.href = `/articles/${article.id}?thread=${this.threadId}`;
+                link.href = `/articles/${article.id}`;
                 link.className =
                     "flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors";
 

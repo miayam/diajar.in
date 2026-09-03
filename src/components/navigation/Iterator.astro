@@ -1,14 +1,16 @@
 ---
 interface Props {
     currentArticleId: string;
+    threadId: string;
 }
 
-const { currentArticleId } = Astro.props;
+const { currentArticleId, threadId } = Astro.props;
 ---
 
 <nav
     id="iterator"
     class="hidden items-center justify-between py-8 border-t border-gray-300 mt-8"
+    data-thread-id={threadId}
     data-article-id={currentArticleId}
 >
     <div class="flex-1">
@@ -48,9 +50,7 @@ const { currentArticleId } = Astro.props;
 
             this.currentArticleId = this.iterator.dataset.articleId || "";
 
-            // Get thread from URL search params
-            const params = new URLSearchParams(window.location.search);
-            this.threadId = params.get("thread");
+            this.threadId = iterator.getAttribute("data-thread-id");
 
             if (this.threadId) {
                 this.init();

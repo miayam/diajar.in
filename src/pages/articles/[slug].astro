@@ -102,7 +102,10 @@ const featuredImage = article.data.featuredImage
         Kembali
     </BackLink>
 
-    <DynamicTableOfContents slot="table-of-contents" />
+    <DynamicTableOfContents
+        slot="table-of-contents"
+        threadId={article.data.threads[0].id}
+    />
 
     <ArticleView article={article} tags={tags}>
         <Content />
@@ -115,5 +118,8 @@ const featuredImage = article.data.featuredImage
         title={article.data.title}
     />
 
-    <Iterator currentArticleId={article.id} />
+    <Iterator
+        currentArticleId={article.id}
+        threadId={article.data.threads[0].id}
+    />
 </Article>
