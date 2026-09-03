@@ -9,4 +9,4 @@ thread: tiba-tiba-kata-kata
 draft: false
 ---
 
-Hidup nista bergelimang dosa, namun semua keinginanku terwujud karena aku selalu berpikir positif. Aku kira ini manifestasi, ternyata [_istidraj_](https://rumaysho.com/10828-istidraj-jebakan-berupa-limpahan-rezeki-karena-bermaksiat.html).
+Hidup nista bergelimang dosa, namun semua keinginanku terwujud karena aku rutin meditasi dan visualisasi. Aku kira ini manifestasi, ternyata [_istidraj_](https://rumaysho.com/10828-istidraj-jebakan-berupa-limpahan-rezeki-karena-bermaksiat.html).
