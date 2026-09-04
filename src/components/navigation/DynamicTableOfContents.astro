@@ -83,9 +83,12 @@ const { threadId } = Astro.props;
             link.className =
                 "flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors";
 
-            const circle = document.createElement("span");
-            circle.className = `text-lg flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm bg-white text-gray-900`;
-            circle.textContent = "★";
+            const circle = document.createElement("div");
+            circle.className =
+                "text-lg flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm bg-white text-gray-900";
+            const bookIcon = document.createElement("span");
+            bookIcon.className = "icon-book-open text-md";
+            circle.appendChild(bookIcon);
 
             const title = document.createElement("span");
             title.textContent = "Sekapur Sirih";

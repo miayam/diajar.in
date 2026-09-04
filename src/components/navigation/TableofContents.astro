@@ -25,11 +25,11 @@ const { articles, thread } = Astro.props;
                 href={`/threads/${thread.id}`}
                 class="flex items-center gap-3 py-2 px-2 rounded hover:bg-gray-100 transition-colors font-bold"
             >
-                <span
+                <div
                     class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center text-sm bg-gray-900 text-white"
                 >
-                    ★
-                </span>
+                    <span class="icon-book-open text-md"></span>
+                </div>
                 Sekapur Sirih
             </a>
         </li>

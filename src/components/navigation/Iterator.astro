@@ -122,7 +122,7 @@ const { currentArticleId, threadId } = Astro.props;
             ) as HTMLAnchorElement;
 
             if (link) {
-                link.href = `/articles/${article.id}?thread=${this.threadId}`;
+                link.href = `/articles/${article.id}`;
                 link.classList.remove("hidden");
                 link.classList.add("inline-flex");
             }
