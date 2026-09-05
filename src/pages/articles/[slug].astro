@@ -7,7 +7,7 @@ import MetaTags from "@/components/structure/MetaTags.astro";
 import SchemaOrg from "@/components/structure/SchemaOrg.astro";
 import BackLink from "@/components/navigation/BackLink.astro";
 import ArticleView from "@/components/display/ArticleView.astro";
-import DynamicTableOfContents from "@/components/navigation/DynamicTableOfContents.astro";
+import TableOfContents from "@/components/navigation/TableOfContents.astro";
 import Iterator from "@/components/navigation/Iterator.astro";
 import ShareButtons from "@/components/navigation/ShareButtons.astro";
 import { getCollection, getEntry, render } from "astro:content";
@@ -21,22 +21,37 @@ export const getStaticPaths = (async () => {
     const authors = await getCollection("authors");
 
     return articles.map((article) => {
+        const threadArticles = articles
+            .filter(
+                (threadArticle) =>
+                    threadArticle.data.thread.id === article.data.thread.id,
+            )
+            .sort(
+                (a, b) =>
+                    a.data.publishDate.valueOf() - b.data.publishDate.valueOf(),
+            )
+            .map((article) => ({
+                id: article.id,
+                title: article.data.title,
+            }));
         const author = authors.filter(
             (item) => item.id == article.data.author.id,
         )[0];
+
         return {
             params: { slug: article.id },
-            props: { article, author },
+            props: { article, author, threadArticles },
         };
     });
 }) satisfies GetStaticPaths;
 
 type Props = {
     article: CollectionEntry<"articles">;
+    threadArticles: Array<{ id: string; title: string }>;
     author: CollectionEntry<"authors">;
 };
 
-const { article, author } = Astro.props;
+const { article, author, threadArticles } = Astro.props;
 
 // Load referenced data
 const tags = await Promise.all(article.data.tags.map((tag) => getEntry(tag)));
@@ -102,9 +117,10 @@ const featuredImage = article.data.featuredImage
         Kembali
     </BackLink>
 
-    <DynamicTableOfContents
+    <TableOfContents
+        thread={article.data.thread}
+        articles={threadArticles}
         slot="table-of-contents"
-        threadId={article.data.thread.id}
     />
 
     <ArticleView article={article} tags={tags}>
