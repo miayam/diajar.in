@@ -8,7 +8,7 @@ interface Props {
 const { articles, thread } = Astro.props;
 const currentPath = Astro.url.pathname;
 const isActive = (href: string) => {
-    return href === currentPath;
+    return currentPath.startsWith(href);
 };
 ---
 
