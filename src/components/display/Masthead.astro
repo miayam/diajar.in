@@ -18,27 +18,38 @@ interface Props {
     };
     alt: string;
     caption?: string;
+    title: string;
 }
 
-const { src, alt, caption } = Astro.props;
+const { src, alt, caption, title } = Astro.props;
 ---
 
-<figure class="flex h-80 bg-gray-300 relative">
-    <Image
-        width={1200}
-        height={800}
-        decoding="async"
-        loading="eager"
-        layout="constrained"
-        src={src}
-        alt={alt}
-        class="object-cover w-full"
-    />
-    {
-        caption ? (
-            <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
-                {markdown(caption || "")}
-            </figcaption>
-        ) : null
-    }
-</figure>
+<div class="h-80 w-full relative">
+    <p class="py-2 px-4 max-w-1/2 text-center bg-gray-900 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-60 font-bold text-lg md:text-3xl">
+     💡 {title}
+    </p>
+    <figure class="flex h-full w-full bg-gray-900">
+        {
+            src ? (
+                <Image
+                    width={1200}
+                    height={320}
+                    decoding="async"
+                    loading="eager"
+                    layout="constrained"
+                    src={src}
+                    alt={alt}
+                    class="object-cover w-full"
+                />
+            ) : null
+        }
+
+        {
+            caption ? (
+                <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
+                    {markdown(caption || "")}
+                </figcaption>
+            ) : null
+        }
+    </figure>
+</div>

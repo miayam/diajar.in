@@ -19,6 +19,7 @@ export const getStaticPaths = (async () => {
         return data.draft !== true; // Filter out drafts
     });
     const authors = await getCollection("authors");
+    const threads = await getCollection("threads");
 
     return articles.map((article) => {
         const threadArticles = articles
@@ -38,20 +39,25 @@ export const getStaticPaths = (async () => {
             (item) => item.id == article.data.author.id,
         )[0];
 
+        const thread = threads.filter(
+          (item) => item.id == article.data.thread.id,
+        )[0];
+
         return {
             params: { slug: article.id },
-            props: { article, author, threadArticles },
+            props: { article, author, thread, threadArticles },
         };
     });
 }) satisfies GetStaticPaths;
 
 type Props = {
     article: CollectionEntry<"articles">;
+    thread: CollectionEntry<"threads">;
     threadArticles: Array<{ id: string; title: string }>;
     author: CollectionEntry<"authors">;
 };
 
-const { article, author, threadArticles } = Astro.props;
+const { article, author, thread, threadArticles } = Astro.props;
 
 // Load referenced data
 const tags = await Promise.all(article.data.tags.map((tag) => getEntry(tag)));
@@ -97,18 +103,13 @@ const featuredImage = article.data.featuredImage
         image={`${new URL(featuredImage?.src || "/logo.svg", Astro.site)}`}
     />
 
-    {
-        article.data.featuredImage ? (
-            <Masthead
-                slot="featured-image"
-                src={article.data.featuredImage}
-                alt={article.data.title}
-                caption={article.data.caption}
-            />
-        ) : (
-            <div slot="featured-image" class="md:h-0 h-8" />
-        )
-    }
+    <Masthead
+        slot="featured-image"
+        src={article.data.featuredImage}
+        alt={article.data.title}
+        caption={article.data.caption}
+        title={thread.data.name}
+    />
 
     <BackLink
         slot="back-link"

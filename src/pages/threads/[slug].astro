@@ -91,18 +91,14 @@ const threadArticles = articles.map((article) => ({
         image={`${new URL(featuredImage?.src || "/logo.svg", Astro.site)}`}
     />
 
-    {
-        thread.data.featuredImage ? (
-            <Masthead
-                slot="featured-image"
-                src={thread.data.featuredImage}
-                alt={thread.data.name}
-                caption={thread.data.caption}
-            />
-        ) : (
-            <div slot="featured-image" class="md:h-0 h-8" />
-        )
-    }
+
+    <Masthead
+        slot="featured-image"
+        src={thread.data.featuredImage}
+        alt={thread.data.name}
+        caption={thread.data.caption}
+        title={thread.data.name}
+    />
 
     <BackLink
         slot="back-link"
