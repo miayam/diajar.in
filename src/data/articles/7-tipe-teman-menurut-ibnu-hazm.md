@@ -1,6 +1,6 @@
 ---
 featuredImage: /src/media/hunza-valley.jpeg
-title: 7 Tipe Manusia Menurut Ibnu Hazm
+title: 7 Tipe Kolega Menurut Ibnu Hazm
 publishDate: 2026-09-06T14:19:00
 author: admin
 tags:
