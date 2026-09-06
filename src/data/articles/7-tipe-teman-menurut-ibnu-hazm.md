@@ -16,7 +16,7 @@ Teman yang mungkin Anda temui:
 3. Mereka yang memuji Anda di depan maupun di belakang (orang yang mencurigakan)
 4. Mereka yang menghina Anda di depan, tapi memuji Anda di belakang (orang goblok)
 5. Mereka yang tidak memuji maupun menghina Anda di depan (orang bijak)
-6. Mereka yang tidak memuji maupun menghina Anda di depan, tapi menghina Anda di belakang (pembenci yang jujur)
+6. Mereka yang tidak memuji maupun menghina Anda di depan, tapi menghina Anda di belakang (pembenci sejati)
 7. Mereka yang tidak memuji maupun menghina Anda di depan, tapi memuji Anda di belakang (orang baik)
 
 Dinukil dari buku beliau berjudul [_Budi Pekerti dan Jalan Hidup dalam Penyembuhan Jiwa_ _(الأخلاق والسير في مداواة النفوس)._](https://www.goodreads.com/book/show/137700365-morals-behaviours---al-akhlaq-wa-al-siyar-english)
