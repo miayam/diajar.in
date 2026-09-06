@@ -86,7 +86,7 @@ const { page } = Astro.props;
         url={`${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`}
     />
 
-    <ul class="col-start-2 flex flex-col gap-4 px-4">
+    <ul id="blog-list" class="col-start-2 flex flex-col gap-4 px-4">
         {
             page.data.map((datum) => (
                 <li>

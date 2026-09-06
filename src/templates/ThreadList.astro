@@ -67,9 +67,11 @@ const currentPath = Astro.url.pathname;
 <script is:inline>
     document.addEventListener("astro:before-preparation", () => {
         document.querySelector("#shimmer").classList.remove("hidden");
+        document.getElementById("thread-list").classList.add("hidden");
     });
 
     document.addEventListener("astro:after-preparation", () => {
         document.querySelector("#shimmer").classList.add("hidden");
+        document.getElementById("thread-list").classList.remove("hidden");
     });
 </script>
