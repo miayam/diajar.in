@@ -13,7 +13,7 @@ Teman yang mungkin Anda temui:
 
 1. Mereka yang memuji Anda di depan, tapi menghina Anda di belakang (pembenci yang munafik)
 2. Mereka yang menghina Anda di depan maupun di belakang (orang berengsek)
-3. Mereka yang memuji Anda di depan maupun di belakang (orang yang ingin mencurigakan)
+3. Mereka yang memuji Anda di depan maupun di belakang (orang yang mencurigakan)
 4. Mereka yang menghina Anda di depan, tapi memuji Anda di belakang (orang goblok)
 5. Mereka yang tidak memuji maupun menghina Anda di depan (orang bijak)
 6. Mereka yang tidak memuji maupun menghina Anda di depan, tapi menghina Anda di belakang (pembenci yang jujur)
