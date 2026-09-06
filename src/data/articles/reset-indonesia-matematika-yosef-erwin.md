@@ -13,7 +13,7 @@ Yosef Erwin adalah petani cerdas asal Desa Wae Sano, Flores. Pemerintah mengimin
 
 Pak Yosef punya hitung-hitungannya sendiri. Menurut beliau, taksiran harga tanahnya terlampau rendah—seharusnya bisa mencapai Rp26 miliar. Namun, meski dengan harga segitu, beliau tetap tidak akan melepasnya.
 
-Petugas lapangan hanya menaksir pohon-pohon besar seperti kopi, kakao, jeruk, alpukat, dan kemiri. Padahal, pohon kemiri hanya berbuah setelah 3 tahun tumbuh dan akan tetap berbuah sampai 50 tahun. Di bawah pohonnya yang rindang, tumbuh jamur yang bisa dimakan. Di sela-sela rerumputan, ada tanaman obat daun mencok yang biasa dikonsumsi ibu-ibu sehabis melahirkan. Ada juga kapulaga yang merupakan rempah termahal setelah vanili. Jika semuanya dihitung, jauh melampaui harga taksiran pemerintah.
+Petugas lapangan hanya menaksir pohon-pohon komersial seperti kopi, kakao, jeruk, alpukat, dan kemiri. Padahal, pohon kemiri hanya berbuah setelah 3 tahun tumbuh dan akan tetap berbuah sampai 50 tahun. Di bawah pohonnya yang rindang, tumbuh jamur yang bisa dimakan. Di sela-sela rerumputan, ada tanaman obat daun mencok yang biasa dikonsumsi ibu-ibu sehabis melahirkan. Ada juga kapulaga yang merupakan rempah termahal setelah vanili. Jika semuanya dihitung, jauh melampaui harga taksiran pemerintah.
 
 Selain potensi agribisnis yang hilang, pengeboran panas bumi juga berdampak pada kerusakan hutan. Tidak hanya itu, keragaman hayati yang kaya di Wae Sano juga ikut terancam.
 
