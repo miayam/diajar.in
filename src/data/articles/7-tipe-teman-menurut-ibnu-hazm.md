@@ -11,10 +11,10 @@ draft: false
 
 Teman yang mungkin Anda temui:
 
-1. Mereka yang memuji Anda di depan Anda, tapi menghina Anda di belakang Anda (pembenci yang munafik)
-2. Mereka yang menghina Anda di depan maupun di belakang Anda (orang berengsek)
-3. Mereka yang memuji Anda di depan maupun di belakang Anda (orang yang punya _kepentingan_ dengan Anda)
-4. Mereka yang menghina Anda di depan Anda, tapi memuji Anda di belakang Anda (orang goblok)
-5. Mereka yang tidak memuji maupun menghina Anda di depan Anda (orang bijak)
-6. Mereka yang tidak memuji maupun menghina Anda di depan Anda, tapi menghina Anda di belakang Anda (pembenci yang jujur)
-7. Mereka yang tidak memuji maupun menghina Anda di depan Anda, tapi memuji Anda di belakang Anda (orang baik)
+1. Mereka yang memuji Anda di depan, tapi menghina Anda di belakang (pembenci yang munafik)
+2. Mereka yang menghina Anda di depan maupun di belakang (orang berengsek)
+3. Mereka yang memuji Anda di depan maupun di belakang (orang yang punya _kepentingan_ dengan Anda)
+4. Mereka yang menghina Anda di depan, tapi memuji Anda di belakang (orang goblok)
+5. Mereka yang tidak memuji maupun menghina Anda di depan (orang bijak)
+6. Mereka yang tidak memuji maupun menghina Anda di depan, tapi menghina Anda di belakang (pembenci yang jujur)
+7. Mereka yang tidak memuji maupun menghina Anda di depan, tapi memuji Anda di belakang (orang baik)
