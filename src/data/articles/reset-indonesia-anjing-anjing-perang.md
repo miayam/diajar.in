@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Kekayaan sumber daya alam adalah kutukan. Selain menarik perhatian penjajah, juga menimbulkan perang saudara. Contoh terkecil adalah konflik yang melibatkan sesama warga dan aparat negara di Desa Pancer, Banyuwangi akibat rencana pertambangan emas di Gunung Salakan.
+Kekayaan sumber daya alam adalah kutukan. Selain menarik perhatian penjajah, juga menimbulkan perang saudara. Contoh terkecil adalah konflik yang melibatkan sesama warga dan aparat negara di Desa Pancer, Banyuwangi, akibat rencana pertambangan emas di Gunung Salakan.
 
 Sebagian besar warga menolak eksploitasi Gunung Salakan karena ekosistem di pesisir Teluk Pancer sudah rusak oleh pertambangan sebelumnya di Gunung Tumpang Pitu yang lokasinya tidak jauh dari Gunung Salakan. Hasil tangkapan ikan semakin sedikit dan sumber mata air tercemar lumpur.
 
