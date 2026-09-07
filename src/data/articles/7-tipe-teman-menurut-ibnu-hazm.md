@@ -19,4 +19,4 @@ Orang-orang yang mungkin Anda temui:
 6. Mereka yang tidak memuji maupun menghina Anda di depan, tapi menghina Anda di belakang (pembenci sejati)
 7. Mereka yang tidak memuji maupun menghina Anda di depan, tapi memuji Anda di belakang (orang baik)
 
-Dinukil dari buku beliau berjudul [_Budi Pekerti dan Jalan Hidup dalam Penyembuhan Jiwa_ _(الأخلاق والسير في مداواة النفوس)._](https://www.goodreads.com/book/show/137700365-morals-behaviours---al-akhlaq-wa-al-siyar-english)
+Dinukil dari buku beliau berjudul [_Budi Pekerti dan Jalan Hidup untuk Menyembuhkan Jiwa_ _(الأخلاق والسير في مداواة النفوس)._](https://www.goodreads.com/book/show/137700365-morals-behaviours---al-akhlaq-wa-al-siyar-english)
