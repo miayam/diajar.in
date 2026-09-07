@@ -135,5 +135,9 @@ const featuredImage = article.data.featuredImage
         title={article.data.title}
     />
 
-    <Iterator currentArticleId={article.id} threadId={article.data.thread.id} />
+    <Iterator
+      currentArticleId={article.id}
+      threadId={thread.id}
+      threadArticles={threadArticles}
+    />
 </Article>

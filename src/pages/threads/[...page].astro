@@ -55,8 +55,8 @@ const { page } = Astro.props;
                 "Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya.",
             publisher: {
                 "@type": "Person",
-                name: "Muhamad Deni Ramdan",
-                email: "muhammaddeni90@gmail.com",
+                name: page.data[0].author.data.name,
+                email: page.data[0].author.data.email,
             },
             blogPost: page.data.map((datum) => ({
                 "@type": "BlogPosting",
@@ -82,7 +82,7 @@ const { page } = Astro.props;
     <MetaTags
         slot="meta-tags"
         title={`Diajar Utas | Halaman ${page.currentPage}`}
-        author="Muhamad Deni Ramdan"
+        author="Muhammad Deni Ramadhan"
         description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
         url={`${Astro.site}threads/${page.currentPage === 1 ? "" : page.currentPage}`}
     />

@@ -2,137 +2,63 @@
 interface Props {
     currentArticleId: string;
     threadId: string;
+    threadArticles: Array<{ id: string; title: string }>;
 }
 
-const { currentArticleId, threadId } = Astro.props;
+const { currentArticleId, threadId, threadArticles } = Astro.props;
+
+const currentIndex = threadArticles.findIndex(
+    (article) => article.id === currentArticleId,
+);
+
+// If the current article isn't part of this thread, don't render anything
+const isInThread = currentIndex !== -1;
+
+const prevArticle =
+    isInThread && currentIndex > 0 ? threadArticles[currentIndex - 1] : null;
+const nextArticle =
+    isInThread && currentIndex < threadArticles.length - 1
+        ? threadArticles[currentIndex + 1]
+        : null;
+
+const isFirstArticle = isInThread && currentIndex === 0;
 ---
 
-<nav
-    id="iterator"
-    class="hidden items-center justify-between py-8 border-t border-gray-300 mt-8"
-    data-thread-id={threadId}
-    data-article-id={currentArticleId}
->
-    <div class="flex-1">
-        <a
-            id="prevLink"
-            href="#"
-            class="hidden items-center gap-2 py-2 font-semibold"
-        >
-            <span class="icon-chevron-left text-lg font-bold"></span>
-            <div>Sebelumnya</div>
-        </a>
-    </div>
+{
+    isInThread && (
+        <nav class="flex items-center justify-between py-8 border-t border-gray-300 mt-8">
+            <div class="flex-1">
+                {isFirstArticle && (
+                    <a
+                        href={`/threads/${threadId}`}
+                        class="inline-flex items-center gap-2 py-2 font-semibold"
+                    >
+                        <span class="icon-chevron-left text-lg font-bold" />
+                        <div>Sebelumnya</div>
+                    </a>
+                )}
+                {prevArticle && (
+                    <a
+                        href={`/articles/${prevArticle.id}`}
+                        class="inline-flex items-center gap-2 py-2 font-semibold"
+                    >
+                        <span class="icon-chevron-left text-lg font-bold" />
+                        <div>Sebelumnya</div>
+                    </a>
+                )}
+            </div>
 
-    <div class="flex-1 flex justify-end">
-        <a
-            id="nextLink"
-            href="#"
-            class="hidden items-center gap-2 py-2 rounded-md font-semibold"
-        >
-            <div>Selanjutnya</div>
-            <span class="icon-chevron-right text-lg font-bold"></span>
-        </a>
-    </div>
-</nav>
-
-<script>
-    import type { CollectionEntry } from "astro:content";
-
-    class Iterator {
-        private iterator: HTMLElement;
-        private currentArticleId: string = "";
-        private threadId: string | null = null;
-
-        constructor() {
-            this.iterator = document.getElementById("iterator")!;
-            if (!this.iterator) return;
-
-            this.currentArticleId = this.iterator.dataset.articleId || "";
-
-            this.threadId = iterator.getAttribute("data-thread-id");
-
-            if (this.threadId) {
-                this.init();
-            }
-        }
-
-        private async init() {
-            try {
-                const response = await fetch(`/threads/${this.threadId}.json`);
-
-                if (!response.ok) {
-                    return;
-                }
-
-                const data: { articles: CollectionEntry<"articles">[] } =
-                    await response.json();
-                const articles = data.articles;
-
-                // Find current article index
-                const currentIndex = articles.findIndex(
-                    (a: any) => a.id === this.currentArticleId,
-                );
-
-                if (currentIndex === -1) {
-                    // Current article not in this thread
-                    return;
-                }
-
-                // Show iterator
-                this.iterator.classList.remove("hidden");
-                this.iterator.classList.add("flex");
-
-                // Setup prev button
-                if (currentIndex > 0) {
-                    const prevArticle = articles[currentIndex - 1];
-                    this.setupNavButton("prev", prevArticle);
-                }
-
-                if (currentIndex === 0) {
-                    // Setup overview button
-                    this.setupOverviewButton();
-                }
-
-                // Setup next button
-                if (currentIndex < articles.length - 1) {
-                    const nextArticle = articles[currentIndex + 1];
-                    this.setupNavButton("next", nextArticle);
-                }
-            } catch (error) {
-                console.error("Failed to load thread navigation:", error);
-            }
-        }
-
-        private setupOverviewButton() {
-            const link = document.getElementById(
-                "prevLink",
-            ) as HTMLAnchorElement;
-
-            if (link) {
-                link.href = `/threads/${this.threadId}`;
-                link.classList.remove("hidden");
-                link.classList.add("inline-flex");
-            }
-        }
-
-        private setupNavButton(direction: "prev" | "next", article: any) {
-            const link = document.getElementById(
-                `${direction}Link`,
-            ) as HTMLAnchorElement;
-
-            if (link) {
-                link.href = `/articles/${article.id}`;
-                link.classList.remove("hidden");
-                link.classList.add("inline-flex");
-            }
-        }
-    }
-
-    // Initialize
-    new Iterator();
-
-    document.addEventListener("astro:after-swap", () => {
-        new Iterator();
-    });
-</script>
+            <div class="flex-1 flex justify-end">
+                {nextArticle && (
+                    <a
+                        href={`/articles/${nextArticle.id}`}
+                        class="inline-flex items-center gap-2 py-2 rounded-md font-semibold"
+                    >
+                        <div>Selanjutnya</div>
+                        <span class="icon-chevron-right text-lg font-bold" />
+                    </a>
+                )}
+            </div>
+        </nav>
+    )
+}
