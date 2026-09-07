@@ -27,4 +27,4 @@ Sikap apatis terhadap lingkungan sudah mendarah daging bahkan di perkotaan yang 
 
 Masyarakat Indonesia terbiasa membuang limbah domestik langsung ke sungai tanpa memikirkan konsekuensinya. Jika pendidikan kita baik, nalar masyarakat akan berfungsi sehingga tidak mungkin membuang sampah sembarangan.
 
-Seperti air keran yang tidak bisa diminum, keliling indonesia dengan mengendarai motor merambat ke berbagai aspek kehidupan yang memaksa penulis mempelajari hal-hal baru.
+Seperti air keran yang tidak bisa diminum, keliling indonesia dengan mengendarai motor merambat ke berbagai aspek kehidupan yang memaksa penulis buku Reset Indonesia mempelajari hal-hal baru.
