@@ -40,7 +40,7 @@ Ekspedisi Indonesia Baru juga dikelola oleh koperasi. Gagasan Bung Hatta diprakt
 
 Prinsip-prinsip koperasi sebenarnya termaktub secara tersirat dalam konstitusi. Tertulis, _"perekonomian disusun sebagai usaha bersama berdasar atas asas kekeluargaan."_
 
-Menurut keyakinan penulis, prinsip-prinsip koperasi bukan hanya sekadar slogan, melainkan sifat dasar manusia yang universal. Berbagai eksperimen dari ilmu psikologi, ekonomi, antropologi, sampai biologi, menunjukkan bahwa kolaborasilah yang punya peran penting dalam evolusi—bukan kompetisi.
+Menurut keyakinan penulis buku Reset Indonesia, prinsip-prinsip koperasi bukan hanya sekadar slogan, melainkan sifat dasar manusia yang universal. Berbagai eksperimen dari ilmu psikologi, ekonomi, antropologi, sampai biologi, menunjukkan bahwa kolaborasilah yang punya peran penting dalam evolusi—bukan kompetisi.
 
 Selama ini kita dicekoki dengan pandangan keliru bahwa kompetisi mempercepat kemajuan. Asumsi ini dipengaruhi oleh pemikiran Milton Friedman dan Richard Dawkins. Friedman bilang kalau kompetisi adalah prasyarat pertumbuhan ekonomi, sementara kata Dawkins, manusia terlahir egois.
 
