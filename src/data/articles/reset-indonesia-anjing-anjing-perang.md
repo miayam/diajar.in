@@ -13,7 +13,7 @@ Kekayaan sumber daya alam adalah kutukan. Selain menarik perhatian penjajah, jug
 
 Sebagian besar warga menolak eksploitasi Gunung Salakan karena ekosistem di pesisir Teluk Pancer sudah rusak oleh pertambangan sebelumnya di Gunung Tumpang Pitu yang lokasinya tidak jauh dari Gunung Salakan. Hasil tangkapan ikan semakin sedikit dan sumber mata air tercemar lumpur.
 
-Ekonomi ekstraktif menimbulkan konflik berkepanjangan di Liberia, Sierra Leone, Kongo, dan Rwanda.
+Ekonomi ekstraktif menimbulkan konflik berkepanjangan seperti di Liberia, Sierra Leone, Kongo, dan Rwanda.
 
 Menurut keyakinan penulis buku Reset Indonesia, konflik-konflik itu melibatkan perusahaan multinasional yang punya kepentingan.
 
