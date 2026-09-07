@@ -13,7 +13,7 @@ Kesepuhan Ciptagelar masih memegang erat adat istiadatnya. Kehidupan mereka sede
 
 PDB (Produk Domestik Bruto) dipakai mayoritas negara di dunia untuk mengukur pertumbuhan ekonomi, padahal pertumbuhan ekonomi tidak menggambarkan kemakmuran yang sesungguhnya. Kemakmuran seharusnya menciptakan kebahagiaan dan kebahagiaan tidak bisa diukur dengan harta benda semata. Ada faktor-faktor lain yang tidak dicakup PDB seperti rasa aman, ikatan komunal, kelestarian alam dan budaya, kepercayaan masyarakat kepada pemerintah, dan keadilan sosial. Jika dirangkum, faktor-faktor itu bisa disebut juga _kebahagiaan_.
 
-Di tingkat dunia, Finlandia dan Bhutan sering disebut sebagai negara paling bahagia di dunia. Mereka berbeda 180 derajat: yang satu sangat kaya, yang satu lagi amat miskin.
+Di tingkat dunia, Finlandia dan Bhutan sering disebut sebagai negara paling bahagia. Mereka berbeda 180 derajat: yang satu sangat kaya, yang satu lagi amat miskin.
 
 Bhutan bahkan punya ukuran sendiri: _GNH_ (_Gross National Hapiness_). Kebahagiaan jadi prioritas pembangunan yang termaktub dalam konstitusi. Bhutan mungkin tidak punya kemewahan negara-negara maju, tapi mereka satu-satunya negara dengan cakupan hutan sampai 70% luas wilayah. Mereka bukan hanya _carbon-neutral_, tapi _carbon-negative_. Mereka hidup makmur dengan cara mereka sendiri meski PDB-nya di bawah Indonesia.
 
