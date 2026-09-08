@@ -30,12 +30,8 @@ const { title } = Astro.props;
     <body transition:animate="none" class="text-gray-900">
         <main>
             <slot name="featured-image" />
-            <div
-                class="grid grid-cols-1 md:grid-cols-[20rem_min(30rem,100%)] lg:grid-cols-[1fr_min(40rem,100%)_1fr] grid-rows-auto w-full my-8"
-            >
-                <div
-                    class="col-start-2 flex w-full md:col-start-1 pl-4 pr-4 md:pr-6 md:pb-4 flex-col relative items-start md:items-end"
-                >
+            <div class="grid grid-cols-1 md:grid-cols-[20rem_min(30rem,100%)] lg:grid-cols-[1fr_min(40rem,100%)_1fr] grid-rows-auto w-full my-8">
+                <div class="col-start-2 flex w-full md:col-start-1 pl-4 pr-4 md:pr-6 md:pb-4 flex-col relative items-start md:items-end">
                     <slot name="back-link" />
                     <slot name="table-of-contents" />
                 </div>
@@ -45,12 +41,8 @@ const { title } = Astro.props;
                     <slot />
                 </div>
 
-                <div
-                    class="col-start-2 flex w-full lg:col-start-3 px-4 md:pb-4 flex-col relative items-start"
-                >
-                    <div
-                        class="w-auto m-auto lg:m-0 lg:w-20 sticky px-2 py-1 top-8 flex justify-center flex-wrap"
-                    >
+                <div class="col-start-2 flex w-full lg:col-start-3 px-4 md:pb-4 flex-col relative items-start">
+                    <div class="w-auto m-auto lg:m-0 lg:w-20 sticky px-2 py-1 top-8 flex justify-center flex-wrap">
                         <slot name="share" />
                     </div>
                 </div>
