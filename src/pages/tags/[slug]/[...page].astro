@@ -109,7 +109,7 @@ const { Content } = await render(tag);
         url={`${Astro.site}tags/${tag.id}/${page.currentPage === 1 ? "" : page.currentPage}`}
     />
 
-    <div class="col-start-2 px-4 pb-4">
+    <div class="col-start-2 px-4 pb-4" id="sub-title">
         <Content />
     </div>
 
