@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from "astro:transitions";
+import SkeletonArticle from "@/components/indicators/SkeletonArticle.astro";
 import Favicon from "@/components/structure/Favicon.astro";
 import "@/styles/content.css";
 
@@ -23,8 +25,9 @@ const { title } = Astro.props;
         <slot name="meta-tags" />
         <slot name="schema" />
         <Favicon />
+        <ClientRouter />
     </head>
-    <body class="text-gray-900">
+    <body transition:animate="none" class="text-gray-900">
         <main>
             <slot name="featured-image" />
             <div
@@ -43,6 +46,7 @@ const { title } = Astro.props;
                 </div>
 
                 <div class="col-start-2 px-4">
+                    <SkeletonArticle />
                     <slot />
                 </div>
 
@@ -59,3 +63,15 @@ const { title } = Astro.props;
         </main>
     </body>
 </html>
+
+<script is:inline>
+    document.addEventListener("astro:before-preparation", () => {
+        document.getElementById("article-skeleton").classList.remove("hidden");
+        document.getElementById("article").classList.add("hidden");
+    });
+
+    document.addEventListener("astro:after-preparation", () => {
+        document.getElementById("article-skeleton").classList.add("hidden");
+        document.getElementById("article").classList.remove("hidden");
+    });
+</script>

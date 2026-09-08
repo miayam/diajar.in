@@ -40,7 +40,7 @@ export const getStaticPaths = (async () => {
         )[0];
 
         const thread = threads.filter(
-          (item) => item.id == article.data.thread.id,
+            (item) => item.id == article.data.thread.id,
         )[0];
 
         return {
@@ -136,8 +136,8 @@ const featuredImage = article.data.featuredImage
     />
 
     <Iterator
-      currentArticleId={article.id}
-      threadId={thread.id}
-      threadArticles={threadArticles}
+        currentArticleId={article.id}
+        threadId={thread.id}
+        threadArticles={threadArticles}
     />
 </Article>
