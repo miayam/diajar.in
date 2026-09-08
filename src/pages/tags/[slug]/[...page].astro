@@ -104,12 +104,12 @@ const { Content } = await render(tag);
     <MetaTags
         slot="meta-tags"
         title={`Diajar Artikel | ${tag.data.name} | Halaman ${page.currentPage}`}
-        author="Muhammad Deni Ramadhan"
+        author="Muhamad Deni Ramdan"
         description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
         url={`${Astro.site}tags/${tag.id}/${page.currentPage === 1 ? "" : page.currentPage}`}
     />
 
-    <div id="sub-title" class="col-start-2 px-4 pb-4">
+    <div class="col-start-2 px-4 pb-4">
         <Content />
     </div>
 

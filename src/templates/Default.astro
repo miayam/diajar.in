@@ -80,12 +80,10 @@ const currentPath = Astro.url.pathname;
     document.addEventListener("astro:before-preparation", () => {
         document.getElementById("shimmer").classList.remove("hidden");
         document.getElementById("blog-list").classList.add("hidden");
-        document.getElementById("sub-title").classList.add("hidden");
     });
 
     document.addEventListener("astro:after-preparation", () => {
         document.getElementById("shimmer").classList.add("hidden");
         document.getElementById("blog-list").classList.remove("hidden");
-        document.getElementById("sub-title").classList.remove("hidden");
     });
 </script>
