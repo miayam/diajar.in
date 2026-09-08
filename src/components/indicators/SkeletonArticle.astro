@@ -7,7 +7,7 @@ const { count = 5 } = Astro.props;
 const iterations = Array.from({ length: count });
 ---
 
-<div class="m-skeletonArticles" id="article-skeleton">
+<div class="m-skeletonArticles hidden" id="article-skeleton">
     <div class="m-skeletonArticle__bar m-skeletonArticle__bar--title m-skeletonArticle__bar--w80 mb-4" />
     {iterations.map((_, index) => (
         <div class="m-skeletonArticle">
