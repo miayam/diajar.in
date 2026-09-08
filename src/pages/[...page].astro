@@ -81,7 +81,7 @@ const { page } = Astro.props;
     <MetaTags
         slot="meta-tags"
         title={`Diajar Artikel | Halaman ${page.currentPage}`}
-        author={page.data[0].author.data.name}
+        author="Muhammad Deni Ramadhan"
         description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
         url={`${Astro.site}${page.currentPage === 1 ? "" : page.currentPage}`}
     />
