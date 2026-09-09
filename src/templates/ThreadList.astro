@@ -32,9 +32,7 @@ const currentPath = Astro.url.pathname;
     <body transition:animate="none" class="text-gray-900">
         <Header currentPath={currentPath} />
         <main class="pt-[60px]">
-            <div
-                class="grid grid-cols-[1fr_min(60rem,100%)_1fr] sticky md:top-[59px] top-[54px] bg-white"
-            >
+            <div class="grid grid-cols-[1fr_min(60rem,100%)_1fr] sticky md:top-[59px] top-[54px] bg-white">
                 <Search
                     type="threads"
                     placeholder="Cari utas..."
@@ -50,13 +48,11 @@ const currentPath = Astro.url.pathname;
                     id="shimmer"
                     class="col-start-2 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4 gap-4 hidden"
                 >
-                    {
-                        Array.from(new Array(9)).map(() => (
-                            <li>
-                                <SkeletonCard />
-                            </li>
-                        ))
-                    }
+                    {Array.from(new Array(9)).map(() => (
+                        <li>
+                            <SkeletonCard />
+                        </li>
+                    ))}
                 </ul>
                 <slot />
             </div>
@@ -66,12 +62,12 @@ const currentPath = Astro.url.pathname;
 
 <script is:inline>
     document.addEventListener("astro:before-preparation", () => {
-        document.querySelector("#shimmer").classList.remove("hidden");
+        document.getElementById("shimmer").classList.remove("hidden");
         document.getElementById("thread-list").classList.add("hidden");
     });
 
     document.addEventListener("astro:after-preparation", () => {
-        document.querySelector("#shimmer").classList.add("hidden");
+        document.getElementById("shimmer").classList.add("hidden");
         document.getElementById("thread-list").classList.remove("hidden");
     });
 </script>

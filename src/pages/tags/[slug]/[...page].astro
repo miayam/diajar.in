@@ -104,7 +104,7 @@ const { Content } = await render(tag);
     <MetaTags
         slot="meta-tags"
         title={`Diajar Artikel | ${tag.data.name} | Halaman ${page.currentPage}`}
-        author="Muhamad Deni Ramdan"
+        author="Muhammad Deni Ramadhan"
         description="Diajar adalah tempat belajar mandiri seputar web, desain, dan irisannya."
         url={`${Astro.site}tags/${tag.id}/${page.currentPage === 1 ? "" : page.currentPage}`}
     />
@@ -114,13 +114,11 @@ const { Content } = await render(tag);
     </div>
 
     <ul id="blog-list" class="col-start-2 flex flex-col gap-4 px-4">
-        {
-            page.data.map((datum) => (
-                <li>
-                    <DefaultCard article={datum.article} />
-                </li>
-            ))
-        }
+        {page.data.map((datum) => (
+            <li>
+                <DefaultCard article={datum.article} />
+            </li>
+        ))}
     </ul>
 
     <div class="col-start-2">
