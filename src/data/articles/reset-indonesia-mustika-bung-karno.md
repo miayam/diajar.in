@@ -9,9 +9,9 @@ thread: reset-indonesia
 draft: false
 ---
 
-_Ononan_ adalah masakan khas Desa Tenganan Pegringsingan, Karangasem, Bali, yang terdiri dari 10 dedaunan liar yang dimasak dengan bumbu dasar _base genep_ (15 rempah yang diaduk jadi satu). _Ononan_ adalah 1 dari ribuan resep tradisional Indonesia yang diwariskan secara turun-temurun.
+_Ononan_ adalah masakan khas Desa Tenganan Pegringsingan, Karangasem, Bali, yang terdiri dari 10 dedaunan liar yang dimasak dengan bumbu dasar _base genep_ (15 rempah yang diaduk jadi satu). _Ononan_ adalah 1 dari ribuan masakan tradisional Indonesia yang diwariskan secara turun-temurun.
 
-Pada akhir kekuasaannya, Bung Karno meminta Kementerian Pertanian untuk menerbitkan buku resep masakan berjudul _Mustika Rasa_. Buku ini terdiri dari 1.600 resep dari berbagai penjuru negeri. Tidak semuanya masakan asli, ada pengaruh dari India, Cina, dan Eropa. Penerbitan buku ini dipicu oleh meluasnya gejala kelaparan pada masa itu.
+Resep _Ononan_ berhasil didokumentasikan bersama ribuan resep lainnya dalam sebuah buku berjudul _Mustika Rasa_. Pada akhir kekuasaannya, Bung Karno meminta Kementerian Pertanian menghimpun 1.600 resep masakan dari berbagai penjuru negeri untuk dijadikan ensiklopedia kekayaan rasa Indonesia. Penerbitan buku ini dipicu oleh meluasnya gejala kelaparan yang melanda Indonesia pada tahun 1960-an.
 
 Lewat buku _Mustika Rasa_, Bung Karno ingin menunjukkan keragaman pangan Indonesia. Bagi beliau, "lebih baik makan gaplek tapi independen, daripada makan _beef steak_ tapi diperbudak." Keragaman resep masakan mencerminkan keragaman bahan bakunya.
 
