@@ -1,0 +1,33 @@
+---
+featuredImage: /src/media/1920px-Rinjani_Caldera.jpg
+title: 'Reset Indonesia: Di antara Mangrove dan Karang'
+publishDate: 2026-09-14T09:13:00
+author: admin
+tags: []
+thread: reset-indonesia
+draft: false
+---
+
+Kawasan pantai dan pesisir Indonesia ditopang oleh hutan bakau, padang lamun, dan terumbu karang yang saling bergantung satu sama lain.
+
+Indonesia adalah episentrum Segitiga Terumbu Karang (_The Coral Triangle_). Ekosistem terumbu karang di Indonesia merupakan rumah bagi 76% spesies koral dan 37% spesies ikan karang dunia. Terdapat pula 2.500 jenis ikan, 2.500 jenis kerang, dan 1.500 jenis udang tersebar di kawasan. Ikan-ikan besar seperti tuna, manta, hiu, dan hiu paus memangsa hewan laut yang hidup di terumbu karang. Terumbu karang menyediakan bahan makanan melimpah serta tempat berlindung bagi hewan laut.
+
+Akhir-akhir ini, krisis iklim membuat suhu laut naik yang membuat terumbu karang terancam rusak. Namun, kerusakan yang disebabkan manusia mungkin lebih besar: bom laut, jala pukat harimau, penambangan pasir, dan penangkapan ikan secara berlebihan.
+
+Rusaknya terumbu karang juga dipicu oleh rusaknya hutan bakau.
+
+Indonesia memiliki hutan bakau terluas di dunia, mencakup 20% luas hutan bakau dunia.
+
+Hutan bakau adalah ekosistem yang produktif. 75% ikan komersial menetas, tumbuh, dan berkembang di situ.
+
+Hutan bakau melindungi dua sisi kawasan pesisir. Di darat, mencegah abrasi. Di laut, mencegah pelumpuran dan pencemaran air.
+
+Hutan bakau juga erat dengan peradaban manusia. Di berbagai belahan dunia, terdapat beragam tradisi yang berkaitan dengan hutan bakau.
+
+Dulu, pesisir Pulau Jawa pada abad ke-19 masih dipenuhi hutan bakau. Kini, hutan bakau di pulau Jawa sudah hampir punah. Sumatra dan Kalimantan juga mengalami nasib yang sama.
+
+Indonesia masih punya hutan bakau cukup luas di Papua—hampir separuh luas hutan bakau di Indonesia. Namun, hutan bakau di sana juga terancam punah.
+
+Reboisasi hutan bakau seharusnya lebih diprioritaskan sebab ia mampu menyerap 50 kali karbon lebih banyak daripada hutan di daratan.
+
+Di antara hutan bakau dan terumbu karang, Indonesia punya padang lamun terluas dan tertinggi di dunia. Ekosistem hutan bakau, padang lamun, dan terumbu karang sangat penting dalam membentuk jati diri Indonesia sebagai negara kepulauan dan bahari.
