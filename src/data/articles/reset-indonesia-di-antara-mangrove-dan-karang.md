@@ -5,7 +5,7 @@ publishDate: 2026-09-14T09:13:00
 author: admin
 tags: []
 thread: reset-indonesia
-draft: false
+draft: true
 ---
 
 Kawasan pantai dan pesisir Indonesia ditopang oleh hutan bakau, padang lamun, dan terumbu karang yang saling bergantung satu sama lain.
