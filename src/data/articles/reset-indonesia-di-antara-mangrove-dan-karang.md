@@ -25,6 +25,6 @@ Hutan bakau erat kaitannya dengan peradaban manusia. Di berbagai belahan dunia, 
 
 Dulu, pesisir Pulau Jawa pada abad ke-19 masih dipenuhi hutan bakau. Kini, hutan bakau di pulau Jawa sudah hampir punah. Sumatra dan Kalimantan juga mengalami nasib yang sama. Beruntung Indonesia masih punya hutan bakau cukup luas di Papua—hampir separuh luas hutan bakau di Indonesia. Namun, hutan bakau di sana juga terancam punah.
 
-Reboisasi hutan bakau seharusnya lebih diprioritaskan sebab ia mampu menyerap 50 kali karbon lebih banyak daripada hutan di daratan.
+Reboisasi hutan bakau seharusnya lebih diprioritaskan sebab ia mampu menyerap 50 kali lebih banyak karbon daripada hutan di daratan.
 
 Di antara hutan bakau dan terumbu karang, Indonesia punya padang lamun terluas dan tertinggi di dunia. Ekosistem hutan bakau, padang lamun, dan terumbu karang sangat penting dalam membentuk jati diri Indonesia sebagai negara kepulauan dan bahari.
