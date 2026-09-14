@@ -3,7 +3,8 @@ featuredImage: /src/media/1920px-Rinjani_Caldera.jpg
 title: 'Reset Indonesia: Di antara Mangrove dan Karang'
 publishDate: 2026-09-14T09:13:00
 author: admin
-tags: []
+tags:
+  - gagasan
 thread: reset-indonesia
 draft: false
 ---
