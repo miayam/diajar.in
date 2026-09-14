@@ -10,6 +10,8 @@ draft: true
 
 Kawasan pantai dan pesisir Indonesia ditopang oleh hutan bakau, padang lamun, dan terumbu karang yang saling bergantung satu sama lain.
 
+![Heather Dine. - NOAA Photo Library: sanc0209](/src/media/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpeg "Padang Lamun")
+
 Indonesia adalah episentrum Segitiga Terumbu Karang (_The Coral Triangle_). Ekosistem terumbu karang di Indonesia merupakan rumah bagi 76% spesies koral dan 37% spesies ikan karang dunia. Terdapat pula 2.500 jenis ikan, 2.500 jenis kerang, dan 1.500 jenis udang tersebar di kawasan. Ikan-ikan besar seperti tuna, manta, hiu, dan hiu paus memangsa hewan laut yang hidup di terumbu karang. Terumbu karang menyediakan bahan makanan melimpah serta tempat berlindung bagi hewan laut.
 
 Akhir-akhir ini, krisis iklim membuat suhu laut naik yang membuat terumbu karang terancam rusak. Namun, kerusakan yang disebabkan manusia mungkin lebih besar: bom laut, jala pukat harimau, penambangan pasir, dan penangkapan ikan secara berlebihan.
