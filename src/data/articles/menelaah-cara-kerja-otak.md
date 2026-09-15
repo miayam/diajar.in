@@ -1,17 +1,18 @@
 ---
-title: "Menelaah Cara Kerja Otak"
+featuredImage: ../../media/peter-olexa.jpg
+title: Menelaah Cara Kerja Otak
 publishDate: 2026-01-20
-author: "admin"
-tags: ['gagasan']
+author: admin
+tags:
+  - gagasan
 thread: belajar-cara-belajar
 draft: false
-featuredImage: "../../media/peter-olexa.jpg"
 caption: Photo by <a href="https://unsplash.com/@deeezyfree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Olexa</a> on <a href="https://unsplash.com/photos/purple-and-blue-smoke-illustration-mxIGWk111u0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 ![Tom and Jerry](../../media/tom-and-jerry.png)
 
-Seperti biasa adegan dimulai dengan Tom mengejar Jerry. Jerry pun berhasil kabur ke lubangnya. Tom termenung sejenak dan *ting!* lampu menyala di atas kepalanya ketika siasat licik terbesit di benaknya. Begitulah gambaran cara kerja otak di kartun *Tom & Jerry*. Agak absurd, namun ilustrasi tersebut tidak sepenuhnya keliru.
+Seperti biasa adegan dimulai dengan Tom mengejar Jerry. Jerry pun berhasil kabur ke lubangnya. Tom termenung sejenak dan _ting!_ lampu menyala di atas kepalanya ketika siasat licik terbesit di benaknya. Begitulah gambaran cara kerja otak di kartun _Tom & Jerry_. Agak absurd, namun ilustrasi tersebut tidak sepenuhnya keliru.
 
 Otak manusia terdiri dari milyaran sel yang disebut neuron. Neuron ini mengalirkan muatan listrik ke neuron lainnya. Untaian yang terbentuk dari aliran listrik tersebut menghasilkan pikiran kita.
 
@@ -27,6 +28,6 @@ Repetisi (mengulang pelajaran) ibarat menambah voltase pada rangkaian listrik. S
 
 Semua perumpamaan di atas adalah penyederhanaan konsep untuk membantu proses belajar. Menurut Prof. Barbara Oakley, metafora adalah salah satu cara belajar yang efektif.
 
-Intinya, otak kita *teh* sebenarnya canggih, tapi cara belajar kita masih primitif. Di artikel yang lain, kita akan *ngeroso* (mendalami) lebih *jero* (dalam) supaya trik dan tip yang dijabarkan meresap ke sumsum tulang.
+Intinya, otak kita _teh_ sebenarnya canggih, tapi cara belajar kita masih primitif. Di artikel yang lain, kita akan _ngeroso_ (mendalami) lebih _jero_ (dalam) supaya trik dan tip yang dijabarkan meresap ke sumsum tulang.
 
-Ingat, [ilmu dan informasi itu dua hal yang berbeda](/articles/mukadimah?thread=belajar-cara-belajar#ilmu-dan-informasi-itu-dua-hal-yang-berbeda).
+Ingat, [ilmu dan informasi itu dua hal yang berbeda](/articles/mukadimah#ilmu-dan-informasi-itu-dua-hal-yang-berbeda).
