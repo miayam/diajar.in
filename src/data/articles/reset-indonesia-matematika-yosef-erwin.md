@@ -17,7 +17,7 @@ Petugas lapangan hanya menaksir pohon-pohon komersial seperti kopi, kakao, jeruk
 
 Selain potensi agribisnis yang hilang, pengeboran panas bumi juga berdampak pada kerusakan hutan. Tidak hanya itu, keragaman hayati yang kaya di Wae Sano juga ikut terancam.
 
-Proyek 10 Bali Baru di Labuan Bajo tak hanya mengancam hutan sekitar Desa Wae Sano. Sebuah kawasan wisata eksklusif dibangun di hutan Golomori dan Bowosie yang merupakan sumber mata air yang penting bagi masyarakat.
+Proyek _10 Bali Baru_ di Labuan Bajo tak hanya mengancam hutan sekitar Desa Wae Sano. Sebuah kawasan wisata eksklusif dibangun di hutan Golomori dan Bowosie yang merupakan sumber mata air yang penting bagi masyarakat.
 
 Ribuan kilometer dari Desa Wae Sano, petani di Desa Wadas, Jawa Tengah, juga mengalami nasib yang sama. Mereka bersengketa dengan pemerintah yang hendak menggusur tanah mereka untuk pertambangan batu andesit. Ini terkait pembangunan Waduk Bener—salah satu Proyek Strategis Nasional.
 
