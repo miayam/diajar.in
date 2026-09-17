@@ -4,15 +4,13 @@ backend:
   skip_ci: true
 
 media_folder: /src/media
-public_folder: /media
+public_folder: ../../media
 
 collections:
   - name: articles
     label: Articles
     identifier_field: title
     folder: src/data/articles
-    media_folder: ../../media
-    public_folder: ../../media
     create: true
     fields:
       - {
