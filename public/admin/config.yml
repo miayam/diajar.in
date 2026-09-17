@@ -4,13 +4,14 @@ backend:
   skip_ci: true
 
 media_folder: /src/media
-public_folder: /public
 
 collections:
   - name: articles
     label: Articles
     identifier_field: title
     folder: src/data/articles
+    media_folder: ../../media
+    public_folder: ../../media
     create: true
     fields:
       - {
@@ -121,6 +122,8 @@ collections:
     label: Threads
     folder: src/data/threads
     identifier_field: name
+    media_folder: ../../media
+    public_folder: ../../media
     create: true
     fields:
       - { label: Name, name: name, widget: string, required: true }
