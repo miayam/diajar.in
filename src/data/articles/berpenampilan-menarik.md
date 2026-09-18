@@ -13,7 +13,7 @@ Jagalah penampilan Anda supaya ketika ada barang yang hilang Anda tidak langsung
 
 Jangan terlalu menarik sampai gadis-gadis remaja melirik.
 
-Berjalanlah di muka bumi dengan biasa sebab paras yang biasa punya keuntungan tersendiri.
+Berjalanlah di muka bumi dengan biasa sebab paras yang biasa punya daya tarik tersendiri.
 
 Jadilah pria tampan dan berani menurut ukuran Anda sendiri.
 
