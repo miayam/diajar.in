@@ -9,7 +9,7 @@ thread: tiba-tiba-kata-kata
 draft: false
 ---
 
-Jagalah penampilan Anda agar ketika ada barang yang hilang bukan Anda orang pertama yang dicurigai.
+Jagalah penampilan Anda agar ketika ada barang yang hilang Anda tidak dicurigai.
 
 Jangan terlalu menarik sampai gadis-gadis remaja melirik.
 
