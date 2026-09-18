@@ -9,9 +9,9 @@ thread: tiba-tiba-kata-kata
 draft: false
 ---
 
-Jagalah penampilan Anda agar ketika ada barang yang hilang pandangan mata orang tidak tertuju pada Anda.
+Jagalah penampilan Anda agar ketika ada barang yang hilang bukan Anda orang pertama yang dicurigai.
 
-Jangan berdandan terlalu menawan sampai-sampai gadis remaja melirik Anda atau Anda merasa mereka melirik Anda. 
+Jangan berpenampilan terlalu menarik sampai-sampai gadis remaja melirik.
 
 Berjalanlah di muka bumi dengan biasa sebab paras yang biasa saja punya keuntungan tersendiri.
 
