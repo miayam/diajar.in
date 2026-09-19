@@ -11,7 +11,7 @@ draft: false
 
 Jagalah penampilan Anda supaya ketika ada barang yang hilang Anda tidak langsung dicurigai.
 
-Jangan terlalu menarik sampai gadis-gadis remaja melirik.
+Jangan berpenampilan terlalu menarik sampai gadis-gadis remaja melirik.
 
 Berjalanlah di muka bumi dengan biasa sebab paras yang biasa punya daya tarik tersendiri.
 
