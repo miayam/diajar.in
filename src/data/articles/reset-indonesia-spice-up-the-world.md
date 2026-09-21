@@ -27,7 +27,7 @@ Minyak astiri yang paling dicari adalah minyak cengkih dan pala, namun Indonesia
 
 Rempah hanya salah satu tulang punggung ekonomi maritim Indonesia. Sektor perikanan tangkap, budi daya laut, wisata bahari, serta transportasi laut masih belum dimanfaatkan secara optimal. Potensi ekonomi maritim Indonesia diperkirakan mencapai Rp4.875 triliun.
 
-Dengan ribuan pulau yang tersebar dari Sabang sampai Merauke, seharusnya perdagangan antar pulau sudah bisa menghidupi banyak orang—apa lagi ditambah dengan ekspor. Buruknya transportasi laut di Indonesia jadi penghambat kemajuan ekonomi maritim.
+Dengan ribuan pulau yang tersebar dari Sabang sampai Merauke, seharusnya perdagangan antar pulau sudah bisa menghidupi banyak orang—apa lagi ditambah dengan ekspor. Namun, buruknya transportasi laut di Indonesia jadi penghambat pertukaran komoditas sehingga ekonomi lokal sulit berkembang.
 
 Untuk menopang ekonomi maritim, riset-riset tentang transportasi bahari perlu diperluas. Industri kapal dan pesawat Indonesia tidak boleh mati.
 
