@@ -13,9 +13,7 @@ Barus tercatat dalam _Geographike Hyphegesis_ karya Claudius Ptolemy sebagai kot
 
 ![Geographike Hyphegesis](../../media/geographia.jpg "Geographike Hyphegesis")
 
-Demak sudah dikenal sejak zaman Majapahit.
-
-Marco Polo (1254-1324) pernah singgah di sana dan menyebut Jawa sebagai produsen lada, pala, lengkuas, cengkih, dan tanaman obat lainnya. 
+Demak sudah dikenal sejak zaman Majapahit. Marco Polo (1254-1324) pernah singgah di sana dan menyebut Jawa sebagai produsen lada, pala, lengkuas, cengkih, dan tanaman obat lainnya. 
 
 Ibnu Batutah (1304-1369) belum pernah ke Jawa, hanya sempat singgah di Lhokseumawe dalam perjalanannya ke Tiongkok, namun catatan perjalanannya menggambarkan kemakmuran Jawa yang hijau dan berbunga di mana penduduknya lalu lalang membawa koin emas. Banyak pedagang Muslim yang sezaman dengannya berkunjung ke Demak. Jadi, tidak mengherankan bila Demak jadi pusat penyebaran Islam di Jawa.
 
