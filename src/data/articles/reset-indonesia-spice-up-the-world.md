@@ -35,8 +35,6 @@ Untuk menopang ekonomi maritim, riset-riset tentang transportasi bahari perlu di
 
 Pada masa Perang Dingin, Rusia membuat prototipe kendaraan baru hasil perkawinan antara kapal perang dan pesawat tempur yang disebut _GEV_ (_Ground Effect Vehicles_). Mereka menamainya _Ekranoplan_. Wahana ini hanya melayang beberapa meter dari permukaan laut, namun melaju lebih cepat dari kapal mana pun. Perkembangan teknologi ini diilhami oleh burung-burung yang terbang rendah memanfaatkan efek bantalan udara di permukaan laut yang membuat mereka melaju cepat tanpa memerlukan tenaga besar. Efek bantalan udara itulah yang membuat _GEV_ mampu menghemat bahan bakar.
 
-{{< youtube id="yVdH_dYlVB8" width="560" height="315" >}}
-
 Perkembangan wahana ini dihentikan setelah Perang Dingin berakhir. Kini, Amerika Serikat mengambil tongkat estafet dari Rusia. Pada 2023, _DARPA_ meminta anak perusahaan _Boeing_ untuk merakit _GEV_ seukuran _Ekranoplan_.
 
 Indonesia tidak perlu wahana-wahana raksasa seperti itu. Kita bisa belajar dari Singapura dan Cina yang telah mengembangkan _mini-ekranoplan_ untuk memperlancar hubungan antar pulau dan memperkuat ekonomi maritim.
