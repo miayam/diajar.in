@@ -17,7 +17,7 @@ Pelabuhan Demak sudah dikenal sejak zaman Majapahit. Marco Polo (1254-1324) pern
 
 Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia. Pemerintah bahkan meminta _UNESCO_ untuk mengakui jalur perdagangan rempah sebagai warisan dunia.
 
-![Owa](../../media/OIP-1.jpeg "Owa")
+![Cengkih](../../media/Syzygium_aromaticum_on_tree.jpg "Cengkih")
 
 Meski daya tarik rempah tidak semasif dulu, rempah masih menjadi komoditas penting. Kebutuhan akan rempah tidak pernah sirna. Selain dipakai untuk bumbu masakan, rempah adalah bahan dasar obat, kosmetik, dan minyak astiri.
 
