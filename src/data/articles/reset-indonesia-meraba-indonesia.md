@@ -15,4 +15,4 @@ Perjalanan ini bernama Ekspedisi Katulistiwa.
 
 Tujuan dari perjalanan ke 40 kepulauan Indonesia ini untuk mengenal kekayaan bahari dan adat istiadat Indonesia.
 
-Perjalanan keliling Indonesia menggunakan motor terinspirasi Marcopolo, Ibnu Battutah, Wallace, McCandless, dan Ernesto Che Guevara.
+Perjalanan keliling Indonesia menggunakan motor terinspirasi Marcopolo, Ibnu Batutah, Wallace, McCandless, dan Ernesto Che Guevara.
