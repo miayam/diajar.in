@@ -19,11 +19,9 @@ Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lalu. Pe
 
 ![Cengkih](../../media/Syzygium_aromaticum_on_tree.jpg "Cengkih")
 
-Meski daya tarik rempah tidak semasif dulu, rempah masih menjadi komoditas penting. Kebutuhan akan rempah tidak pernah sirna. Selain dipakai untuk bumbu masakan, rempah adalah bahan dasar obat, kosmetik, dan minyak astiri.
+Meski daya tarik rempah tidak semasif dulu, rempah masih menjadi komoditas penting. Kebutuhan akan rempah tidak pernah sirna. Selain dipakai untuk bumbu masakan, rempah adalah bahan dasar obat-obatan, kosmetik, dan minyak astiri. Minyak astiri atau minyak esensial punya nilai ekonomi yang bagus di pasaran. Menurut Dewan Astiri Indonesia, terdapat 400-500 jenis tanaman rempah yang bisa tumbuh di negeri ini. 
 
-Minyak astiri atau minyak esensial punya nilai ekonomi yang bagus di pasaran. Menurut Dewan Astiri Indonesia, terdapat 400-500 jenis tanaman rempah yang bisa tumbuh di negeri ini. Indonesia adalah pemasok minyak astiri terbesar di dunia—mengusai 70% pangsa pasar dunia. 
-
-Minyak astiri yang paling dicari adalah minyak cengkih dan pala, namun Indonesia belum mampu memenuhi permintaan pasar sebab kerusakan lingkungan dan kemunduran sektor pertanian membuat produksi rempah menyusut. Jika produksi rempah menyusut, potensi ekonomi akan hilang dan kemiskinan semakin meradang. Menurut data Badan Pusat Statistik (BPS) tahun 2022, tingkat kemiskinan di wilayah pesisir seperti Barus dan Demak mencapai 13%, melebihi rata-rata nasional.
+Indonesia adalah pemasok minyak astiri terbesar di dunia—mengusai 70% pangsa pasar dunia, namun belum mampu memenuhi permintaan pasar sebab kerusakan lingkungan dan kemunduran sektor pertanian membuat produksi rempah menyusut. Jika produksi rempah menyusut, potensi ekonomi akan hilang dan kemiskinan semakin meradang. Menurut data Badan Pusat Statistik (BPS) tahun 2022, tingkat kemiskinan di wilayah pesisir seperti Barus dan Demak mencapai 13%, melebihi rata-rata nasional.
 
 Rempah hanya salah satu tulang punggung ekonomi maritim Indonesia. Sektor perikanan tangkap, budi daya laut, wisata bahari, serta transportasi laut masih belum dimanfaatkan secara optimal. Potensi ekonomi maritim Indonesia diperkirakan mencapai Rp4.875 triliun.
 
