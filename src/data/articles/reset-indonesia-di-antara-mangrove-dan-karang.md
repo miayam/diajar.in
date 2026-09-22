@@ -11,7 +11,7 @@ draft: false
 
 Kawasan pantai dan pesisir Indonesia ditopang oleh hutan bakau, padang lamun, dan terumbu karang yang saling bergantung satu sama lain.
 
-![Padang Lamun](https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original "Padang Lamun")
+![Padang Lamun](../../media/Sanc0209_-_Flickr_-_NOAA_Photo_Library-1.jpeg "Padang Lamun")
 
 Indonesia adalah episentrum Segitiga Terumbu Karang (_The Coral Triangle_) yang merupakan rumah bagi 76% spesies koral dan 37% spesies ikan karang dunia. Terdapat  2.500 jenis ikan, 2.500 jenis kerang, dan 1.500 jenis udang tersebar di kawasan. Ikan-ikan besar seperti tuna, manta, hiu, dan hiu paus memangsa hewan laut yang hidup di terumbu karang. Terumbu karang menyediakan bahan makanan melimpah serta tempat berlindung bagi banyak hewan laut.
 
@@ -29,7 +29,7 @@ Hutan bakau melindungi dua sisi kawasan pesisir. Di darat, mencegah abrasi. Di l
 
 Hutan bakau erat kaitannya dengan peradaban manusia. Di berbagai belahan dunia, terdapat beragam tradisi yang mengultuskan hutan bakau. 
 
-Dulu, pesisir Pulau Jawa pada abad ke-19 masih dipenuhi hutan bakau. Kini, hutan bakau di pulau Jawa sudah hampir punah. Sumatra dan Kalimantan juga mengalami nasib yang sama. Beruntung Indonesia masih punya hutan bakau cukup luas di Papua—hampir separuh luas hutan bakau di Indonesia. Namun, hutan bakau di sana juga terancam punah.
+Dulu, pesisir Pulau Jawa pada abad ke-19 masih dipenuhi hutan bakau. Kini, hutan bakau di pulau Jawa sudah hampir punah. Sumatra dan Kalimantan juga mengalami nasib yang sama. Beruntung Indonesia masih punya hutan bakau cukup luas di Papua—47% luas hutan bakau di Indonesia. Namun, hutan bakau di sana juga terancam punah.
 
 Reboisasi hutan bakau seharusnya lebih diprioritaskan sebab ia mampu menyerap 50 kali lebih banyak karbon daripada hutan di daratan.
 
