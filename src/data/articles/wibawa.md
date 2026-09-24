@@ -13,8 +13,10 @@ Pria tampan yang menyadari ketampanannya lebih menjengkelkan daripada pria jelek
 
 Pria bertampang pas-pasan harus menggambil jalan tengah. Di ekstrem kanan, membanggakan diri. Di ekstrem kiri, menipu diri.
 
-Kanjeng nabi adalah pria tampan yang punya wibawa dan ketampanannya tidak membuat beliau jumawa.
+Kanjeng nabi adalah pria tampan yang berwibawa dan ketampanannya tidak membuat beliau jumawa.
 
-Jadilah pria tampan dan berani menurut ukuran Anda sendiri. Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup menjadi legitimasi ketampanan Anda.
+Jadilah pria tampan dan berani menurut ukuran Anda sendiri. 
 
-Jangan pilih Anies!
+Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
+
+Jangan pilih Anies! Pilih yang sudah terpilih!
