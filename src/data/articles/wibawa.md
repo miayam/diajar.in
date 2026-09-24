@@ -19,4 +19,4 @@ Jadilah pria tampan dan berani menurut ukuran Anda sendiri.
 
 Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
 
-Jangan pilih Anies! Pilih yang sudah terpilih!
+Jangan pilih Anies!
