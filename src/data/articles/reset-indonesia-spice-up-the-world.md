@@ -21,7 +21,7 @@ Ibnu Batutah (1304-1369) belum pernah ke Jawa, hanya sempat singgah di Lhokseuma
 
 Selain pedagang Arab, orang-orang Persia, Tiongkok, India, dan Eropa juga ramai-ramai berkunjung ke Demak. Keragaman etnis ini menjadikan Demak kota pelabuhan kosmopolitan yang multikultural dan multireligius.
 
-Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lalu. Pemerintah bahkan meminta _UNESCO_ untuk mengakui jalur perdagangan rempah sebagai warisan dunia.
+Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lalu. Saking bangganya, pemerintah meminta _UNESCO_ mengakui jalur perdagangan rempah sebagai warisan dunia.
 
 ![Cengkih](../../media/Syzygium_aromaticum_on_tree.jpg "Cengkih")
 
