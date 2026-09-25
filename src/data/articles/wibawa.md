@@ -15,4 +15,8 @@ Pria bertampang pas-pasan harus menggambil jalan tengah. Di ekstrem kanan, memba
 
 Kanjeng nabi adalah pria tampan yang berwibawa dan ketampanannya tidak membuat beliau jumawa.
 
+Jadilah pria tampan dan berani menurut ukuran Anda sendiri. Jangan jadikan selera mayoritas menjadi tolak ukur untuk mengukur diri. Mayoritas mereka mengidolakan laki-laki gemulai yang diimpor dari Negeri Ginseng.
+
 Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
+
+Ketampanan harus didemokratisasi seluas mungkin.
