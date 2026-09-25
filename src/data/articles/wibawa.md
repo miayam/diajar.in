@@ -17,7 +17,7 @@ Kanjeng Nabi adalah pria tampan yang berwibawa, namun ketampanannya tidak membua
 
 Jangan jadikan selera mayoritas tolak ukur untuk menilai diri. Mayoritas gadis remaja mengidolakan laki-laki gemulai dari Negeri Ginseng.
 
-Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
+Jika orang tua di rumah memanggil Anda _Si Kasep_, itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
 
 Ketampanan di era proklamasi harus didemokratisasi di era reformasi.
 
