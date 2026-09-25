@@ -15,7 +15,7 @@ Pria bertampang pas-pasan harus menggambil jalan tengah. Di ekstrem kanan, memba
 
 Kanjeng Nabi adalah pria tampan yang berwibawa, namun ketampanannya tidak membuat beliau jumawa.
 
-Jangan menjadikan selera mayoritas tolak ukur untuk menilai diri. Mayoritas gadis remaja mengidolakan laki-laki gemulai dari Negeri Ginseng.
+Jangan jadikan selera mayoritas tolak ukur untuk menilai diri. Mayoritas gadis remaja mengidolakan laki-laki gemulai dari Negeri Ginseng.
 
 Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
 
