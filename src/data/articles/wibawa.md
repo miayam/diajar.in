@@ -21,4 +21,4 @@ Jika orang tua di rumah memanggil Anda "Si Kasep", itu sudah lebih dari cukup ja
 
 Ketampanan di era proklamasi harus didemokratisasi di era reformasi.
 
-_Ngomong naon sih maneh?_
+_Ah! Ngomong naon sih maneh?_
