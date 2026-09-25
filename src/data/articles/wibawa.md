@@ -13,7 +13,7 @@ Pria tampan yang menyadari ketampanannya lebih menjengkelkan daripada pria jelek
 
 Pria bertampang pas-pasan harus menggambil jalan tengah. Di ekstrem kanan, membanggakan diri. Di ekstrem kiri, menipu diri.
 
-Kanjeng nabi adalah pria tampan yang berwibawa dan ketampanannya tidak membuat beliau jumawa.
+Kanjeng Nabi adalah pria tampan yang berwibawa dan ketampanannya tidak membuat beliau jumawa.
 
 Jangan jadikan selera mayoritas menjadi tolak ukur untuk mengukur diri. Mayoritas mereka mengidolakan laki-laki gemulai yang diimpor dari Negeri Ginseng.
 
