@@ -17,7 +17,8 @@ const { url, title, text } = Astro.props;
         class="twitter"
         data-title={title}
         data-via="@___miayam___"
-        data-text={text}></button>
+        data-text={text}
+    ></button>
     <button class="facebook" data-title={title}></button>
     <button class="email" data-title={title}></button>
 </div>
@@ -42,4 +43,8 @@ const { url, title, text } = Astro.props;
     }
 
     init();
+
+    document.addEventListener("astro:after-swap", () => {
+        init();
+    });
 </script>

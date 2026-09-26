@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { markdown } from "@astropub/md";
 interface Props {
-    src: {
+    src?: {
         src: string;
         width: number;
         height: number;
@@ -18,33 +18,27 @@ const { src, alt, caption, title } = Astro.props;
 ---
 
 <div class="h-80 w-full relative">
-    <p
-        class="py-2 px-4 w-full max-w-3/4 md:w-auto md:max-w-3/4 wrap-break-word text-center bg-gray-900 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-60 font-bold text-lg md:text-3xl"
-    >
+    <p class="py-2 px-4 w-full max-w-3/4 md:w-auto md:max-w-3/4 wrap-break-word text-center bg-gray-900 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-60 font-bold text-lg md:text-3xl">
         💡 {title}
     </p>
     <figure class="flex h-full w-full bg-gray-900">
-        {
-            src ? (
-                <Image
-                    width={1200}
-                    height={320}
-                    decoding="async"
-                    loading="eager"
-                    layout="constrained"
-                    src={src}
-                    alt={alt}
-                    class="object-cover w-full"
-                />
-            ) : null
-        }
+        {src ? (
+            <Image
+                width={1200}
+                height={320}
+                decoding="async"
+                loading="eager"
+                layout="constrained"
+                src={src}
+                alt={alt}
+                class="object-cover w-full"
+            />
+        ) : null}
 
-        {
-            caption ? (
-                <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
-                    {markdown(caption || "")}
-                </figcaption>
-            ) : null
-        }
+        {caption ? (
+            <figcaption class="absolute bg-gray-900 px-3 py-1 text-white bottom-4 right-4 text-xs">
+                {markdown(caption || "")}
+            </figcaption>
+        ) : null}
     </figure>
 </div>
