@@ -15,7 +15,7 @@ Pria bertampang pas-pasan harus menggambil jalan tengah. Di ekstrem kanan, memba
 
 Kanjeng Nabi adalah pria tampan yang berwibawa, namun ketampanannya tidak membuat beliau jumawa.
 
-Jangan jadikan selera mayoritas tolak ukur ketampanan Anda.
+Jangan biarkan selera pasar jadi tolak ukur Anda.
 
 Jika orang tua di rumah memanggil Anda _Si Kasep_, itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
 
