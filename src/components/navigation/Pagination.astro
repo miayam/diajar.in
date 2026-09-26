@@ -3,7 +3,9 @@ interface Props {
     currentPage: number;
     lastPage: number;
     urlPattern: string; // e.g., "/articles" or "/tags/javascript"
-    maxVisible?: number; // Maximum items to show (default: 7)
+    maxVisible?: number; // Maximum items to show on desktop (default: 7)
+    mobileMaxVisible?: number; // Maximum items to show on mobile (default: 3)
+    mobileBreakpoint?: number; // px width below which "mobile" applies (default: 640)
     className?: string;
 }
 
@@ -12,6 +14,8 @@ const {
     lastPage,
     urlPattern,
     maxVisible = 7,
+    mobileMaxVisible = 3,
+    mobileBreakpoint = 640,
     className,
 } = Astro.props;
 ---
@@ -23,55 +27,53 @@ const {
     data-last={lastPage}
     data-url-pattern={urlPattern}
     data-max-visible={maxVisible}
+    data-mobile-max-visible={mobileMaxVisible}
+    data-mobile-breakpoint={mobileBreakpoint}
     aria-label="Pagination"
 >
     <!-- Previous button -->
-    {
-        currentPage > 1 ? (
-            <a
-                href={
-                    currentPage === 2
-                        ? `${urlPattern}/`
-                        : `${urlPattern}/${currentPage - 1}`
-                }
-                class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
-                aria-label="Previous page"
-            >
-                <span class="icon-chevron-left text-lg" />
-            </a>
-        ) : (
-            <button
-                disabled
-                aria-label="Previous"
-                class="px-3 py-2 h-10 w-10 flex items-center justify-center  rounded border border-gray-200 text-gray-400 cursor-not-allowed"
-            >
-                <span class="icon-chevron-left text-lg" />
-            </button>
-        )
-    }
+    {currentPage > 1 ? (
+        <a
+            href={
+                currentPage === 2
+                    ? `${urlPattern}/`
+                    : `${urlPattern}/${currentPage - 1}`
+            }
+            class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
+            aria-label="Previous page"
+        >
+            <span class="icon-chevron-left text-lg" />
+        </a>
+    ) : (
+        <button
+            disabled
+            aria-label="Previous"
+            class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded border border-gray-200 text-gray-400 cursor-not-allowed"
+        >
+            <span class="icon-chevron-left text-lg" />
+        </button>
+    )}
 
     <!-- Page numbers will be inserted here by JS -->
     <div id="pageNumbers" class="flex items-center gap-2"></div>
 
     <!-- Next button -->
-    {
-        currentPage < lastPage ? (
-            <a
-                href={`${urlPattern}/${currentPage + 1}`}
-                class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
-                aria-label="Next page"
-            >
-                <span class="icon-chevron-right text-lg" />
-            </a>
-        ) : (
-            <button
-                disabled
-                class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded border border-gray-200 text-gray-400 cursor-not-allowed"
-            >
-                <span class="icon-chevron-right text-lg" />
-            </button>
-        )
-    }
+    {currentPage < lastPage ? (
+        <a
+            href={`${urlPattern}/${currentPage + 1}`}
+            class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded bg-gray-900 text-white transition-colors"
+            aria-label="Next page"
+        >
+            <span class="icon-chevron-right text-lg" />
+        </a>
+    ) : (
+        <button
+            disabled
+            class="px-3 py-2 h-10 w-10 flex items-center justify-center rounded border border-gray-200 text-gray-400 cursor-not-allowed"
+        >
+            <span class="icon-chevron-right text-lg" />
+        </button>
+    )}
 </nav>
 
 <script>
@@ -83,7 +85,9 @@ const {
         private currentPage: number;
         private lastPage: number;
         private urlPattern: string;
-        private maxVisible: number;
+        private desktopMaxVisible: number;
+        private mobileMaxVisible: number;
+        private mediaQuery: MediaQueryList;
 
         constructor(container: HTMLElement) {
             this.container = container;
@@ -92,14 +96,38 @@ const {
             this.currentPage = parseInt(container.dataset.current || "1");
             this.lastPage = parseInt(container.dataset.last || "1");
             this.urlPattern = container.dataset.urlPattern || "";
-            this.maxVisible = parseInt(container.dataset.maxVisible || "7");
+            this.desktopMaxVisible = parseInt(
+                container.dataset.maxVisible || "7",
+            );
+            this.mobileMaxVisible = parseInt(
+                container.dataset.mobileMaxVisible || "3",
+            );
+
+            const breakpoint = parseInt(
+                container.dataset.mobileBreakpoint || "640",
+            );
+            this.mediaQuery = window.matchMedia(
+                `(max-width: ${breakpoint - 1}px)`,
+            );
 
             this.init();
+        }
+
+        private get maxVisible(): number {
+            return this.mediaQuery.matches
+                ? this.mobileMaxVisible
+                : this.desktopMaxVisible;
         }
 
         private init(): void {
             this.renderPageNumbers();
             this.setupFeedLinks();
+
+            // Re-render when crossing the mobile/desktop breakpoint
+            this.mediaQuery.addEventListener("change", () => {
+                this.renderPageNumbers();
+                this.setupFeedLinks();
+            });
         }
 
         private getPageUrl(page: number | ""): string {
@@ -137,20 +165,22 @@ const {
         }
 
         private calculatePages(): (number | "ellipsis")[] {
-            if (this.lastPage <= this.maxVisible) {
+            const maxVisible = this.maxVisible;
+
+            if (this.lastPage <= maxVisible) {
                 // Show all pages if total is less than max
                 return Array.from({ length: this.lastPage }, (_, i) => i + 1);
             }
 
             const pages: (number | "ellipsis")[] = [];
-            const sidePages = Math.floor((this.maxVisible - 3) / 2); // -3 for first, last, and one ellipsis
+            const sidePages = Math.floor((maxVisible - 3) / 2); // -3 for first, last, and one ellipsis
 
             // Always show first page
             pages.push(1);
 
             if (this.currentPage <= sidePages + 2) {
                 // Near start
-                for (let i = 2; i <= this.maxVisible - 2; i++) {
+                for (let i = 2; i <= maxVisible - 2; i++) {
                     pages.push(i);
                 }
                 pages.push("ellipsis");
@@ -158,7 +188,7 @@ const {
                 // Near end
                 pages.push("ellipsis");
                 for (
-                    let i = this.lastPage - this.maxVisible + 3;
+                    let i = this.lastPage - maxVisible + 3;
                     i < this.lastPage;
                     i++
                 ) {

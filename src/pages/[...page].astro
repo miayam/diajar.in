@@ -87,13 +87,11 @@ const { page } = Astro.props;
     />
 
     <ul id="blog-list" class="col-start-2 flex flex-col gap-4 px-4">
-        {
-            page.data.map((datum) => (
-                <li>
-                    <DefaultCard article={datum.article} />
-                </li>
-            ))
-        }
+        {page.data.map((datum) => (
+            <li>
+                <DefaultCard article={datum.article} />
+            </li>
+        ))}
     </ul>
 
     <Pagination
@@ -102,5 +100,6 @@ const { page } = Astro.props;
         urlPattern=""
         maxVisible={7}
         className="col-start-2"
+        mobileMaxVisible={4}
     />
 </Default>
