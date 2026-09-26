@@ -11,7 +11,7 @@ draft: false
 
 Program lumbung pangan (_food-estate_) adalah proyek gagal 3 presiden, namun masih saja digaungkan pemerintah.
 
-Proyek ini berlandaskan pada dogma gigantisme yang mengganggap ekonomi skala besar (_economies of scale_) adalah satu-satunya cara untuk mengatasi krisis pangan—padahal tidak selalu demikian. Ekonomi skala kecil (_economies of scope_) justru terbukti lebih efisien dan berkelanjutan (_sustainable_).
+Proyek ini berlandaskan pada dogma gigantisme yang mengganggap ekonomi skala besar (_economies of scale_) satu-satunya cara untuk mengatasi krisis pangan—padahal tidak selalu demikian. Ekonomi skala kecil (_economies of scope_) justru terbukti lebih efisien dan berkelanjutan (_sustainable_).
 
 Menurut Vandana Shiva, aktivis kedaulatan pangan India, 80% pangan dunia dipasok oleh pertanian keluarga yang hanya memanfaatkan 25% lahan. Sebaliknya, pertanian skala industri memakai 75% lahan untuk memproduksi 20% pangan. Ingat [_Prinsip Pareto_](https://id.wikipedia.org/wiki/Prinsip_Pareto)?
 
