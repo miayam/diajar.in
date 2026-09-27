@@ -13,7 +13,7 @@ Mengerjakan apa yang Anda suka dan meninggalkan apa yang tidak terdengar masuk a
 
 Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami sains dan matematika. Beliau lebih senang mempelajari bahasa dan sejarah.
 
-Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika sebagai ahli bahasa di angkatan laut Amerika.
+Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika. Di sana, beliau menjadi ahli bahasa di Angkatan Laut Amerika.
 
 Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai operator radio yang membutuhkan kecakapan di bidang elektronika.
 
