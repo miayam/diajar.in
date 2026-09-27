@@ -9,11 +9,11 @@ thread: reset-indonesia
 draft: false
 ---
 
-Air keran yang bisa langsung diminum adalah tolak ukur kemajuan bangsa. Bagaimana bisa air bersih dari hulu berubah menjadi kotor di muara sampai tidak bisa diminum? Jika ditelisik, air keran yang tidak bisa diminum ternyata merambat ke isu politik, ekonomi, kebudayaan, dan pendidikan
+Air keran yang bisa langsung diminum adalah tolak ukur kemajuan bangsa. Bagaimana bisa air bersih dari hulu berubah menjadi kotor di muara sampai tidak bisa diminum? Jika ditelisik, air keran yang tidak bisa diminum ternyata merambat ke isu ekonomi, politik, kebudayaan, dan pendidikan
 
 ### Ekonomi
 
-Pabrik-pabrik berdiri berderetan di daerah aliran sungai. Mereka membuang limbah pabrik ke sungai. Tidak heran sumber air yang dipakai PDAM jadi tercemar.
+Pabrik-pabrik berdiri berderetan di daerah aliran sungai. Mereka membuang limbahnya ke sungai. Tidak mengherankan bila sumber air yang dipakai PDAM jadi tercemar.
 
 ### Politik
 
