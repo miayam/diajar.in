@@ -27,7 +27,7 @@ Selain ekonomi, dampak sosialnya juga signifikan. Koperasi Keling Kumang mampu m
 
 Koperasi Keling Kumang adalah contoh gerakan akar rumput yang berhasil tanpa bantuan pemerintah, donor asing, maupun investasi dari luar.
 
-Sebelum Koperasi Keling Kumang, sudah ada banyak koperasi berdiri di Kalimantan Barat
+Sebelum Koperasi Keling Kumang, sudah ada banyak koperasi berdiri di Kalimantan Barat.
 
 Kalimantan Barat adalah episentrum perkembangan _Credit Union_ di Indonesia—koperasi simpan pinjam yang dibangun di atas solidaritas dan kepercayaan komunitas. Gagasan ini dipelopori oleh persekutuan Gereja Katolik tahun 1970-an.
 
