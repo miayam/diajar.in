@@ -11,7 +11,7 @@ draft: false
 
 Mengerjakan apa yang Anda suka dan meninggalkan apa yang tidak memang terdengar masuk akal.
 
-Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami sains dan matematika. Beliau lebih senang mempelajari bahasa dan sejarah.
+Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami sains dan matematika. Beliau lebih senang mempelajari sejarah dan bahasa.
 
 Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika. Di sana, beliau menjadi ahli bahasa di Angkatan Laut Amerika.
 
