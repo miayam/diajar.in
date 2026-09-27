@@ -15,7 +15,7 @@ PDB (Produk Domestik Bruto) dipakai mayoritas negara di dunia untuk mengukur per
 
 Di tingkat dunia, Finlandia dan Bhutan sering disebut sebagai negara paling bahagia. Mereka berbeda 180 derajat: yang satu sangat kaya, yang satu lagi amat miskin.
 
-Bhutan bahkan punya ukuran sendiri: _GNH_ (_Gross National Hapiness_). Kebahagiaan jadi prioritas pembangunan yang termaktub dalam konstitusi. Bhutan mungkin tidak punya kemewahan negara-negara maju, tapi mereka satu-satunya negara dengan cakupan hutan sampai 70% luas wilayah. Mereka bukan hanya _carbon-neutral_, tapi _carbon-negative_. Mereka hidup makmur dengan cara mereka sendiri meski PDB-nya di bawah Indonesia.
+Bhutan bahkan punya ukuran sendiri: _GNH_ (_Gross National Hapiness_). Kebahagiaan jadi prioritas pembangunan yang termaktub dalam konstitusi. Bhutan mungkin tidak punya kemewahan negara-negara maju, tapi mereka satu-satunya negara dengan cakupan hutan 70% luas wilayah. Mereka bukan hanya _carbon-neutral_, tapi _carbon-negative_. Mereka hidup makmur dengan cara mereka sendiri meski PDB-nya di bawah Indonesia.
 
 _GNH_ mengilhami Indeks Kebahagiaan versi Gallup Poll—sebuah lembaga sensus internasional—yang diterbitkan tiap tahun. Finlandia selalu jadi nomor satu selama tujuh tahun berturut-turut. Negara ini punya corak ekonomi kapitalis dengan sentuhan sosial di mana pemerintah berperan aktif menjamin kesejahteraan warganya melalui pembiayaan yang diperoleh dari pungutan pajak yang tinggi—kesehatan, pendidikan, jaminan sosial, tunjangan pensiunan dan pengangguran ditanggung oleh negara. Finlandia tidak sungkan memungut pajak tinggi karena mayoritas warganya sejahtera.
 
