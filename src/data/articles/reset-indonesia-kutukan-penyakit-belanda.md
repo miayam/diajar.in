@@ -11,7 +11,7 @@ draft: false
 
 Majalah _The Economist_ menggunakan istilah _The Dutch Desease_ untuk menggambarkan keadaan negara yang mencurahkan segala daya dan upaya untuk sektor tertentu dan mengabaikan yang lain. Pada tahun 1959, Belanda mempertaruhkan segalanya untuk cadangan gas alam yang baru ditemukan. Hasilnya? Gas alam nilai ekonominya anjlok, sementara sektor lain terbengkalai.
 
-Indonesia bukannya belajar dari kesalahan mantan penjajahnya, malah ikut-ikutan. Di masa Orde Baru, Indonesia sempat jadi salah satu pemasok minyak mentah terbesar di dunia. Kini, Indonesia malah jadi salah satu konsumen minyak mentah terbesar di dunia. Di era reformasi, Indonesia mabuk kepayang dengan sawit dan batu bara. Setelah sadar, hutan di Sumatra dan Kalimatan sudah terlanjur habis dibabat.  
+Indonesia bukannya belajar dari kesalahan mantan penjajahnya, malah ikut-ikutan. Di masa Orde Baru, Indonesia sempat jadi salah satu pemasok minyak mentah terbesar di dunia. Kini, Indonesia malah jadi salah satu konsumen minyak mentah terbesar di dunia. Di era reformasi, Indonesia mabuk kepayang dengan sawit dan batu bara. Setelah sadar dari mabuknya, hutan di Sumatra dan Kalimatan sudah terlanjur habis dibabat.  
 
 Sekarang, nikel menjadi primadona karena jadi bahan baku pembuatan baterai mobil listrik. Lantas, bagaimana respon Indonesia? Tentu saja Indonesia selalu _up-to-date_ dengan tren dan berbondong-bondong mengeruk cadangan nikel yang akan habis dalam 10 tahun.
 
