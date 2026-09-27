@@ -19,7 +19,7 @@ Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai ope
 
 Beliau tersadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
 
-Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak bisa membaca arah jarum jam harus berkutat dengan matematika yang beliau benci sejak kecil.
+Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak mengerti bagaimana jarum jam memberi tahu waktu harus berkutat dengan matematika yang beliau benci sejak kecil.
 
 Berkat dedikasinya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
