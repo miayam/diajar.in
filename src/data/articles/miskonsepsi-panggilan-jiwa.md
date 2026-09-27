@@ -11,7 +11,7 @@ draft: false
 
 Mengerjakan apa yang Anda suka dan meninggalkan apa yang tidak memang terdengar masuk akal.
 
-Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami  matematika. Beliau lebih senang mempelajari bahasa.
+Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami  matematika. Beliau lebih senang mempelajari sejarah dan bahasa.
 
 Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika. Di sana, beliau menjadi penutur bahasa Rusia di Angkatan Laut Amerika.
 
@@ -23,6 +23,6 @@ Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tid
 
 Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
-Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa yang menuntut pemahaman matematika tingkat lanjut.
+Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa daripada memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa yang menuntut beliau menguasai matematika.
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
