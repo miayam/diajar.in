@@ -17,12 +17,12 @@ Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilih
 
 Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai operator radio yang membutuhkan kecakapan di bidang elektronika.
 
-Beliau sadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
+Dari situ, beliau sadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
 
-Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak mengerti bagaimana jarum jam memberi tahu waktu harus berkutat dengan matematika yang beliau benci sejak kecil.
+Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak punya latar belakang teknik harus berkutat dengan matematika yang beliau benci sejak kecil. Mau tidak mau, beliau harus memulai semuanya dari nol.
 
 Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
-Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa yang menuntut penguasaan matematika secara mendalam.
+Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa yang menuntut pemahaman matematika.
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
