@@ -17,7 +17,7 @@ Pabrik-pabrik berdiri berderetan di daerah aliran sungai. Mereka membuang limbah
 
 ### Politik
 
-Miliarder di Indonesia hampir semuanya punya perusahaan air kemasan. Biaya pemilu yang mahal membuat politikus mencari sponsor. Jika sponsornya miliarder yang punya kepentingan dengan air, maka bisa ditebak kebijakan macam apa yang akan dibuat.
+Miliarder di Indonesia hampir semuanya memiliki perusahaan air minum kemasan. Biaya pemilu yang mahal membuat politikus mencari sponsor. Jika sponsornya miliarder yang punya kepentingan dengan air, maka bisa ditebak kebijakan macam apa yang akan dibuat.
 
 ### Kebudayaan
 
