@@ -26,5 +26,3 @@ Berkat dedikasinya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenja
 Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa komputer.
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
-
-Hidup Jokowi!
