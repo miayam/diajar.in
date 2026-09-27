@@ -11,18 +11,18 @@ draft: false
 
 Mengerjakan apa yang Anda suka dan meninggalkan apa yang tidak memang terdengar masuk akal.
 
-Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami sains dan matematika. Beliau lebih senang mempelajari sejarah dan bahasa.
+Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami  matematika. Beliau lebih senang mempelajari bahasa.
 
-Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika. Di sana, beliau menjadi ahli bahasa di Angkatan Laut Amerika.
+Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika. Di sana, beliau menjadi penutur bahasa Rusia di Angkatan Laut Amerika.
 
 Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai operator radio yang membutuhkan kecakapan di bidang elektronika.
 
-Beliau tersadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
+Beliau sadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
 
 Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak mengerti bagaimana jarum jam memberi tahu waktu harus berkutat dengan matematika yang beliau benci sejak kecil.
 
-Berkat ketekunannya, beliau berhasil lulus dan melanjbeliauutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
+Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
-Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa yang menuntut pemahaman matematika tingkat lanjut.
+Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa yang menuntut penguasaan matematika secara mendalam.
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
