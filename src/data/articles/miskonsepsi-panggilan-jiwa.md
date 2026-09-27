@@ -9,7 +9,7 @@ thread: belajar-cara-belajar
 draft: false
 ---
 
-Mengerjakan apa yang Anda suka dan meninggalkan apa yang tidak terdengar masuk akal.
+Mengerjakan apa yang Anda suka dan meninggalkan apa yang tidak memang terdengar masuk akal.
 
 Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami sains dan matematika. Beliau lebih senang mempelajari bahasa dan sejarah.
 
