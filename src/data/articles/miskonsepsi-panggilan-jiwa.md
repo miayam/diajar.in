@@ -21,7 +21,7 @@ Beliau tersadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dal
 
 Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak mengerti bagaimana jarum jam memberi tahu waktu harus berkutat dengan matematika yang beliau benci sejak kecil.
 
-Berkat dedikasinya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
+Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
 Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa dan kesulitan memahami matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik rekayasa komputer.
 
