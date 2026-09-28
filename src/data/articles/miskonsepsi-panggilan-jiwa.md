@@ -17,7 +17,7 @@ Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilih
 
 Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai operator radio yang membutuhkan kecakapan di bidang elektronika—_sesuatu yang menakutkan baginya_.
 
-Dari situ, beliau sadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
+Dari situ, beliau sadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit pilihan dalam hidup.
 
 Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tidak punya latar belakang teknik harus berkutat dengan matematika yang beliau benci sejak kecil. Mau tidak mau, beliau harus memulai semuanya dari nol.
 
