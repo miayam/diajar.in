@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Ini kisah Farid Gaban dan Ahmad Yunus menyelusuri 4 penjuru mata angin Nusantara. Dari Sabang sampai Merauke. Dari Miangas sampai Pulau Rote. 
+Ini kisah Farid Gaban dan Ahmad Yunus menelusuri 4 penjuru mata angin Nusantara. Dari Sabang sampai Merauke. Dari Miangas sampai Pulau Rote. 
 
 Perjalanan ini bernama Ekspedisi Katulistiwa.
 
