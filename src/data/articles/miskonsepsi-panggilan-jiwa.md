@@ -15,7 +15,7 @@ Di masa kanak-kanak, Profesor Barbara Oakley kesulitan memahami  matematika. Bel
 
 Seperti kebanyakan orang, beliau hanya fokus dengan apa yang disuka sampai pilihan hidupnya membawanya ke Antartika. Di sana, beliau menjadi penutur bahasa Rusia di Angkatan Darat Amerika.
 
-Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai operator radio yang membutuhkan kecakapan di bidang elektronika.
+Alih-alih menghindari apa yang tidak disuka, beliau malah ditugaskan sebagai operator radio yang membutuhkan kecakapan di bidang elektronika—_sesuatu yang menakutkan menurutnya_.
 
 Dari situ, beliau sadar bahwa mengikuti panggilan jiwa hanya menawarkan sedikit opsi dalam hidup.
 
@@ -23,8 +23,10 @@ Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tid
 
 Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
-Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna tata bahasa asing daripada rumus matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang keteknikan yang erat kaitannya dengan matematika. Saat ini beliau menduduki posisi guru besar di Universitas Oakland dan Universitas McMaster.
+Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna tata bahasa asing daripada rumus matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang keteknikan yang erat kaitannya dengan matematika. 
+
+Saat ini beliau menduduki posisi guru besar di Universitas Oakland dan Universitas McMaster.
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
 
-Kunjungi situs pribadinya di https://barbaraoakley.com.
+Anda bisa kunjungi situs pribadinya di https://barbaraoakley.com.
