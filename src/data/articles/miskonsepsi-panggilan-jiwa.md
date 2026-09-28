@@ -27,4 +27,4 @@ Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang l
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
 
-Kunjungi situs pribadinya di https://barbaraoakley.com. Salam super!
+Kunjungi situs pribadinya di https://barbaraoakley.com.
