@@ -23,7 +23,7 @@ Akhirnya, di usia 26 tahun, beliau memutuskan untuk kuliah lagi. Beliau yang tid
 
 Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenjang lebih tinggi sampai mendapat gelar doktor.
 
-Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna pelajaran bahasa daripada konsep matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang keteknikan yang erat kaitannya dengan matematika. Saat ini beliau menduduki posisi guru besar di Universitas Oakland dan Universitas McMaster.
+Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna tata bahasa asing daripada rumus matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang keteknikan yang erat kaitannya dengan matematika. Saat ini beliau menduduki posisi guru besar di Universitas Oakland dan Universitas McMaster.
 
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
 
