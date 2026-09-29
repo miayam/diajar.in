@@ -30,4 +30,4 @@ Semua perumpamaan di atas adalah penyederhanaan konsep untuk membantu proses bel
 
 Intinya, otak kita _teh_ sebenarnya canggih, tapi cara belajar kita masih primitif. Di artikel yang lain, kita akan _ngeroso_ (mendalami) lebih _jero_ (dalam) supaya trik dan tip yang dijabarkan meresap ke sumsum tulang.
 
-Ingat, [ilmu dan informasi itu dua hal yang berbeda](/articles/mukadimah#ilmu-dan-informasi-itu-dua-hal-yang-berbeda).
+Ingat, [ilmu dan informasi itu dua hal yang berbeda](/articles/mukadimah/#ilmu-dan-informasi-itu-dua-hal-yang-berbeda).
