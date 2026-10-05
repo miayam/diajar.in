@@ -9,9 +9,9 @@ thread: reset-indonesia
 draft: false
 ---
 
-Zamrisyaf adalah pegiat energi terbarukan lulusan SMK. Di usia 20 tahun, beliau berhasil membangun pembangkit listrik tenaga air di desanya di Kabupaten Agam. Berkat pencapaiannya, beliau diangkat menjadi pegawai PLN sampai pensiun di tahun 2014. Belum puas dengan itu, beliau mendambakan sumber energi terbarukan yang lebih efisien dan bisa didapatkan secara cuma-cuma. 
+Zamrisyaf adalah pegiat energi terbarukan lulusan SMK. Di usia 20 tahun, beliau berhasil membangun pembangkit listrik tenaga air di desanya di Kabupaten Agam. Berkat pencapaiannya, beliau diangkat sebagai pegawai PLN sampai pensiun di tahun 2014. Belum puas dengan itu, beliau mendambakan sumber energi terbarukan yang lebih efisien dan bisa didapatkan secara cuma-cuma. 
 
-Di perjalannya ke Mentawai, ia tertegun dengan kekuatan ombak yang mendera perahunya. Dari situ, terbesit di benaknya untuk memanfaatkan gelombang laut untuk memanen listrik. Tidak seperti matahari yang kadang tertutup awan, ombak selalu mendera pantai setiap saat tanpa henti. Ini bukan gagasan baru. Pada tahun 1976, Jepang berhasil membangkitkan listrik menggunakan metode _OWC_ (_Oscillating Water Column_): mereka membiarkan kolom-kolom terombang-ambing di laut. Ketika muka air laut turun, kolom menghisap udara dan memutar turbin. Metode Zamrisyaf berbeda: beliau menggunakan pendulum yang ditautkan pada turbin listrik. Setiap kali pendulum berayun, turbin akan berputar. Semakin keras ombak mengguncang, semakin kencang turbin berputar.
+Di perjalannya ke Mentawai, ia tertegun dengan kekuatan ombak yang mendera perahunya. Dari situ, terbesit di benaknya untuk memanfaatkan gelombang laut untuk memanen listrik. Tidak seperti matahari yang kadang tertutup awan, ombak selalu mendera pantai setiap saat tanpa henti. Ini bukan gagasan baru. Pada tahun 1976, Jepang berhasil membangkitkan listrik menggunakan metode _OWC_ (_Oscillating Water Column_): mereka membiarkan kolom-kolom terombang-ambing di laut. Ketika muka air laut turun, kolom menghisap udara dan memutar turbin. Metode Zamrisyaf berbeda: beliau menggunakan pendulum yang ditautkan pada turbin listrik. Setiap kali pendulum berayun, turbin akan berputar. Semakin keras ombak menerpa, semakin kencang turbin berputar.
 
 Berkat dedikasinya selama 10 tahun lebih, akhirnya beliau berhasil membuat prototipe impiannya yang mampu menghasilkan daya 2000 watt. Penemuan beliau yang terjangkau ini bisa dipasang di perahu nelayan untuk menyalakan pendingin agar hasil tangkapan tidak cepat busuk.
 
@@ -19,7 +19,7 @@ Coba bayangkan bila penemuan Zamrisyaf diterapkan? Dengan kekuatan ombak Samuder
 
 Masyarakat kita masih bergantung pada jaringan kabel terpadu yang mengalirkan listrik dari berbagai sumber yang mayoritas dihasilkan oleh batu bara dan minyak bumi. Selain membutuhkan biaya perawatan yang besar, listrik yang dialirkan juga kurang efisien dan belum mampu menjangkau seluruh pulau di Indonesia. Seberapa sering PLN memadamkan listrik?
 
-Karena itulah swasembada energi jadi ambisi pemerintahan Prabowo. Mereka memimpikan Indonesia menjadi negara _carbon-neutral_: emisi karbon yang dilepas manusia sebanding dengan karbon yang diserap alam. Untuk mewujudkannya, dibutuhkan migrasi 70% bahan bakar fosil ke sumber energi terbarukan.
+Karena itulah swasembada energi jadi ambisi pemerintahan Prabowo. Mereka memimpikan Indonesia menjadi negara _carbon-neutral_: emisi karbon yang dilepas manusia sebanding dengan karbon yang diserap bumi. Untuk mewujudkannya, dibutuhkan migrasi 70% bahan bakar fosil ke sumber energi terbarukan.
 
 Sebenarnya ada banyak sumber energi terbarukan yang bisa jadi alternatif: ada biomassa dari limbah pertanian, biogas dari kotoran ternak, dan mikrohidro dari aliran sungai. Penemuan Zamrisyaf memang belum bisa diterapkan di daerah selain pesisir, namun setiap daerah seharusnya mampu membangun pembangkitnya sendiri dengan memanfaatkan sumber daya yang tersedia tanpa perlu bergantung pada pusat. Dengan begitu, beban ekonomi dari pembangkit listrik skala besar bisa direduksi secara signifikan. _Desa Mandiri Energi_ bukan hanya sekadar slogan, tapi bisa diwujudkan.
 
