@@ -16,5 +16,3 @@ Jangan berpenampilan terlalu menarik sampai-sampai gadis remaja melirik.
 Berjalanlah di muka bumi dengan biasa sebab paras yang biasa punya daya tarik tersendiri.
 
 Jadilah pria tampan dan berani menurut ukuran Anda sendiri.
-
-Hidup Jokowi!
