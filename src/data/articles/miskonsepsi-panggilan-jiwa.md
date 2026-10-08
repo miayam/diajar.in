@@ -25,8 +25,6 @@ Berkat ketekunannya, beliau berhasil lulus dan melanjutkan pendidikannya ke jenj
 
 Profesor Barbara Oakley membuktikan bahwa otak kita itu elastis. Beliau memang lebih mudah mencerna tata bahasa asing daripada rumus matematika, namun bukan berarti beliau tidak bisa menjadi ahli di bidang teknik yang erat kaitannya dengan matematika. 
 
-Saat ini beliau menduduki posisi guru besar di Universitas Oakland dan Universitas McMaster.
-
 Jangan membatasi diri Anda dengan mengandalkan panggilan jiwa. Luaskan pandangan Anda dengan mempelajari berbagai macam hal yang berguna dalam hidup.
 
 Anda bisa kunjungi situs pribadinya di https://barbaraoakley.com.
