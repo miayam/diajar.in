@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Zamrisyaf adalah pegiat energi terbarukan lulusan SMK. Di usia 20 tahun, beliau berhasil membangun pembangkit listrik tenaga air di desanya di Kabupaten Agam. Berkat pencapaiannya, beliau diangkat sebagai pegawai PLN sampai pensiun di tahun 2014. Belum puas dengan itu, beliau mendambakan sumber energi terbarukan yang lebih efisien dan bisa diperoleh secara cuma-cuma. 
+Zamrisyaf adalah pegiat energi terbarukan lulusan SMK. Di usia 20 tahun, beliau berhasil membangun pembangkit listrik tenaga air di desanya di Kabupaten Agam. Berkat pencapaiannya, beliau diangkat menjadi pegawai PLN sampai pensiun di tahun 2014. Belum puas dengan itu, beliau mendambakan sumber energi terbarukan yang lebih efisien dan bisa diperoleh secara cuma-cuma. 
 
 Suatu hari, dalam perjalanannya ke Mentawai, ia tertegun dengan kekuatan ombak yang mendera perahu. Dari situ, terbesit di benaknya untuk memanfaatkan gelombang laut untuk memanen listrik. Tidak seperti matahari yang kadang tertutup awan, ombak selalu mendera pantai setiap saat tanpa henti. Ini bukan gagasan baru. Pada tahun 1976, Jepang berhasil membangkitkan listrik menggunakan metode _OWC_ (_Oscillating Water Column_): mereka membiarkan kolom-kolom terombang-ambing di laut. Ketika muka air laut turun, kolom menghisap udara dan memutar turbin. Metode Zamrisyaf berbeda: beliau menggunakan pendulum yang ditautkan pada turbin listrik. Setiap kali pendulum berayun, turbin akan berputar. Semakin keras ombak mengguncang, semakin kencang turbin berputar.
 
