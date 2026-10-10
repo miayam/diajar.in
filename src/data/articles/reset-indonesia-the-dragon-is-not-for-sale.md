@@ -5,7 +5,7 @@ publishDate: 2026-10-10T08:00:00
 author: admin
 tags:
   - gagasan
-thread: belajar-cara-belajar
+thread: reset-indonesia
 draft: false
 ---
 
