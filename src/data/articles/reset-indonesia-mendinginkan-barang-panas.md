@@ -27,7 +27,9 @@ Sumber energi dari minyak kelapa sawit bisa jadi alternatif, namun jika skalanya
 
 Ada pula bendungan raksasa yang menghimpun debit air sungai untuk membangkitkan listrik. Jika ditelisik lebih lanjut, bendungan membutuhkan lahan luas untuk menunjang ukurannya yang besar. Struktur bendungan yang memakan tempat itu kadang menyerempet tanah warga atau situs budaya di sekitar sungai. Oleh karena itu, banyak aktivis lingkungan mengecam pembangunan bendungan sampai-sampai Bank Dunia enggan membiayai proyek tersebut.
 
-Meski dengan kelimpahan sumber energi skala kecil di pedesaan, dogma gigantisme masih ditelan mentah-mentah oleh pemerintah. Bagi mereka, pembangkit listrik itu harus besar dan terpusat. Sebagai solusi jangka pendek, akhirnya pemerintah menyasar geotermal. Indonesia adalah negeri vulkanik dengan cadangan panas bumi terbesar di dunia. Geotermal dianggap lebih ramah lingkungan karena tidak menghasilkan gas rumah kaca, namun kenyataan pahit di lapangan tidak disiarkan pemerintah.
+Meski dengan kelimpahan sumber energi skala kecil di pedesaan, dogma gigantisme masih ditelan mentah-mentah oleh pemerintah. Bagi mereka, pembangkit listrik itu harus besar dan terpusat. 
+
+Sebagai solusi, pemerintah mengambil jalan pintas dengan menyasar geotermal. Indonesia adalah negeri vulkanik dengan cadangan panas bumi terbesar di dunia. Geotermal dianggap lebih ramah lingkungan karena tidak menghasilkan gas rumah kaca, namun kenyataan pahit di lapangan tidak disiarkan pemerintah.
 
 Terdapat permasalahan serius yang timbul dari proyek geotermal. Pertama, cadangan panas bumi umumnya berada di hutan lindung dan pemukiman warga. Kedua, teknologi _fracking_ yang dipakai dalam pengeboran melibatkan senyawa kimia yang disuntikan bersama jutaan kubik air untuk melepaskan uap dari dalam tanah. Senyawa kimia tersebut berbahaya bagi manusia. Di samping itu, penyuntikan air ke dalam tanah dapat memicu gempa mikro, longsor, dan perubahan siklus hidrologi.
 
