@@ -17,6 +17,8 @@ Ada pula Patung Palindo dari zaman megalitikum yang berdiri di Lembah Bada, Tama
 
 Tidak jauh dari sana, di Taman Nasional Togean, kita bisa menemukan pemukiman Suku Bajo yang jadi inspirasi film _Avatar: The Way of Water_.
 
+![Suku Bajo](../../media/Untitled.webp "Suku Bajo")
+
 Di perairan, Indonesia memiliki 7 taman nasional yang menyajikan pemandangan bawah laut yang eksotis.
 
 Taman nasional bukan sekadar tempat pelestarian alam, ia juga sarana edukasi dan pariwisata yang merupakan industri yang penting bagi Indonesia. Pariwisata menyerap 10% angkatan kerja dunia—dinukil dari data _World Travel and Tourisme_ tahun 2019. Dengan potensi sebesar itu, ekowisata menjadi harta karun Indonesia yang wajib dimaksimalkan pemerintah.
