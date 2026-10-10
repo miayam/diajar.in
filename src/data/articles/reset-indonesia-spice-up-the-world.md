@@ -9,9 +9,9 @@ thread: reset-indonesia
 draft: false
 ---
 
-Barus tercatat dalam _Geographike Hyphegesis_ karya Claudius Ptolemy sebagai kota pelabuhan penting di jalur perdagangan rempah dunia. Tidak hanya memasok kapur barus, Barus juga menjajakan berbagai rempah yang didatangkan dari penjuru Nusantara. Rempah-rempah adalah komoditas mahal yang diperjualbelikan sejak dulu kala—jauh sebelum kolonial Eropa mengincarnya.
+Barus tercatat dalam _Geographike Hyphegesis_ karya Claudius Ptolemy sebagai kota pelabuhan penting di jalur perdagangan rempah dunia. Tidak hanya memasok kapur barus, Barus juga menjajakan berbagai rempah yang didatangkan dari penjuru Nusantara. Rempah adalah komoditas mahal yang diperjualbelikan sejak dulu kala—jauh sebelum kolonial Eropa mengincarnya.
 
-Jalur perdagangan rempah ini menghubungkan kota-kota pelabuhan seperti Barus, Ternate, dan Demak.
+Jalur perdagangan ini menghubungkan kota-kota pelabuhan seperti Barus, Ternate, dan Demak.
 
 ![Geographike Hyphegesis](../../media/geographia.jpg "Geographike Hyphegesis")
 
@@ -21,7 +21,7 @@ Ibnu Batutah (1304-1369) belum pernah ke Jawa, hanya sempat singgah di Lhokseuma
 
 Selain pedagang Arab, orang-orang Persia, Tiongkok, India, dan Eropa juga ramai-ramai berkunjung ke Demak. Keragaman etnis ini menjadikan Demak kota pelabuhan kosmopolitan yang multikultural dan multireligius.
 
-Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lalu. Saking bangganya, pemerintah meminta _UNESCO_ mengakui jalur perdagangan rempah sebagai warisan dunia.
+Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lampau. Saking bangganya, pemerintah meminta _UNESCO_ mengakui jalur perdagangan rempah sebagai warisan dunia.
 
 ![Cengkih](../../media/Syzygium_aromaticum_on_tree.jpg "Cengkih")
 
