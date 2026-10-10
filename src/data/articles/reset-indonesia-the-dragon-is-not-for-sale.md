@@ -15,6 +15,8 @@ Di Taman Nasional Alas Purwo, Banyuwangi, kita bisa menikmati keindahan burung m
 
 Ada pula Patung Palindo dari zaman megalitikum yang berdiri di Lembah Bada, Taman Nasional Lore Lindu, Sulawesi Tengah.
 
+![Palindo](../../media/Lembah_Bada_Poso.jpeg "Palindo")
+
 Tidak jauh dari sana, di Taman Nasional Togean, kita bisa menemukan pemukiman Suku Bajo yang jadi inspirasi film _Avatar: The Way of Water_.
 
 ![Suku Bajo](../../media/Untitled.webp "Suku Bajo")
