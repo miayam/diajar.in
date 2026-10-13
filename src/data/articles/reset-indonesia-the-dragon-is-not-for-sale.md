@@ -29,7 +29,7 @@ Taman nasional bukan sekadar tempat pelestarian alam, ia juga sarana edukasi dan
 
 Meningkatnya minat pada ekowisata didorong oleh sejumlah faktor:
 
-- Generasi Z dan milenial mencari pengalaman otentik yang hanya bisa mereka temukan di alam.
+- Generasi Z dan milenial mencari pengalaman autentik yang hanya bisa mereka temukan di alam.
 - Perkembangan teknologi informasi memungkinan pelancong berbagi destinasi-destinasi yang belum dikenal banyak orang—sering disebut juga _hidden gem_.
 
 Ekowisata dianggap lebih berkelanjutan karena membangkitkan kesadaran akan masalah lingkungan, menggenjot ekonomi, serta memperkenalkan budaya dan kearifan lokal.
