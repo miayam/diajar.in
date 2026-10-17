@@ -38,7 +38,7 @@ Pemerintah bukannya abai dengan potensi ekowisata yang Indonesia miliki. Belakan
 
 Yang pemerintah tiru sebenarnya bukan Bali, tapi Nusa Dua Bali yang merupakan kawasan wisata elit. Daya tarik Bali yang sesungguhnya adalah alam dan budayanya yang eksotis, bukan hotel-hotel estetis.
 
-Tidak bisa dipungkiri, Bali memang sudah kehilangan jati dirinya. Menurut laporan _Transnational Institute_ tahun 2018, Bali sudah kehilangan 25% lahan pertanian dalam 25 tahun terakhir, sementara populasi dan industri masing-masing naik 60% dan 330%. Turisme telah melenceng menjadi isu agraria, sosial, dan budaya.
+Tidak bisa dipungkiri, Bali memang sudah kehilangan jati dirinya. Menurut laporan _Transnational Institute_ tahun 2018, Bali sudah kehilangan 25% lahan pertanian dalam 25 tahun terakhir, sementara populasi dan industri masing-masing naik 60% dan 330%. Turisme telah melenceng menjadi isu agraria, sosial, dan kebudayaan.
 
 Hingga saat ini, pariwisata menopang 80% ekonomi Bali. Ketergantungan pada satu sektor membuat ekonomi Bali menjadi rapuh—kerapuhan itu nampak ketika wabah COVID-19 melumpuhkan hampir semua sumber pendapatan warga. Bali adalah korban dari kesuksesannya sendiri.
 
