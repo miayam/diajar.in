@@ -17,7 +17,7 @@ Untuk air minum, 30% keluarga masih bergantung pada air minum kemasan. Selebihny
 
 Ketergantungan pada air minum kemasan semakin tinggi akibat menyusutnya cadangan air tanah dan pencemaran lingkungan. Alih-alih menjadi solusi, air minum kemasan justru memperparah keadaan dengan limbah plastik yang dihasilkannya. Sekitar 200.000 ton/tahun plastik hanyut di sungai dan dibawa ke laut.
 
-Ketersedian air bersih dan sarana sanitasi yang layak seharusnya jadi prioritas utama pemerintah. Ambisi Indonesia menjadi negara maju harus disandarkan pada ukuran yang lebih sederhana: akses air bersih untuk semua warga. Itulah yang diprioritaskan negara-negara maju di Skandinavia yang air kerannya bisa langsung diminum. 
+Ketersedian air bersih dan sarana sanitasi yang layak seharusnya jadi prioritas utama pemerintah. Ambisi Indonesia menjadi negara maju harus disandarkan pada ukuran yang lebih sederhana: akses air bersih untuk semua warga. Itulah yang dilakukan negara-negara maju di Skandinavia yang air kerannya bisa langsung diminum. 
 
 Jika Skandinavia terlalu jauh, Indonesia bisa menengok Singapura yang menempati posisi pertama _Enviromental Performance Index_ (_EPI_) yang dirilis Universitas Yale. Indonesia ada di peringkat ke-128 dari 180 negara yang disurvei.
 
