@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Taman nasional adalah etalase keragaman ekosistem di Indonesia: dari gunung bersalju di Lorentz (Papua), danau musiman di Sentarum (Kalimantan), padang rawa lahan basah di Wasur (Papua), hutan tropis Bukit Barisan (Sumatra), sampai ekosistem terumbu karang di Wakatobi (Sulawesi). Masing-masing punya keunikan sejarah, alam, budaya, serta flora dan fauna.
+Taman nasional adalah etalase keragaman ekosistem di Indonesia: dari gunung bersalju di Lorentz (Papua), danau musiman di Sentarum (Kalimantan), padang rawa lahan basah di Wasur (Papua), hutan tropis Bukit Barisan (Sumatra), hingga ekosistem terumbu karang di Wakatobi (Sulawesi). Masing-masing punya keunikan sejarah, alam, budaya, serta flora dan fauna.
 
 Di Taman Nasional Alas Purwo, Banyuwangi, kita bisa menikmati keindahan burung merak yang jadi objek penelitian film dokumenter _Life in Colour_ karya David Attenborough. Warna pada burung merak tidak hanya elok, tapi juga menampakkan cara mereka berkomunikasi.
 
@@ -46,4 +46,4 @@ Lantas, apakah Flores dan Toba akan menjadi korban selanjutnya?
 
 Turisme tidak harus mewah dan elitis. Ekowisata skala kecil berbasis komunitas dapat menyuguhkan sensasi dan kepuasan yang sama—atau bahkan lebih. Selain memakmurkan warga lokal, model wisata seperti ini lebih asli dan lestari.
 
-Jadi, wisata alam macam apa yang diharapkan dari hotel mewah? Bukankah lebih asyik berkemah di tengah hutan menikmati keindahan alam sambil mendengarkan cerita rakyat? "Mencintai tanah air Indonesia dapat ditumbuhkan dengan mengenal Indonesia bersama rakyatnya dari dekat," kata Soe Hok Gie.
+Jadi, wisata alam macam apa yang diharapkan dari hotel mewah? Bukankah lebih asyik berkemah di tengah hutan sambil mendengarkan cerita rakyat? "Mencintai tanah air Indonesia dapat ditumbuhkan dengan mengenal Indonesia bersama rakyatnya dari dekat," kata Soe Hok Gie.
