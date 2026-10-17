@@ -19,6 +19,6 @@ Pola getir ini ada kaitannya dengan agenda global. IMF dan Bank Dunia sama-sama 
 
 Demokrasi (yang lebih banyak maslahatnya) dan liberalisme (yang lebih banyak mudaratnya) sering disandingkan, padahal keduanya tidak saling berkaitan. Di era Soeharto, pemerintahan otoriter militeristik berhasil dikawinkan dengan ekonomi liberal yang ramah investasi asing. Jadi, tidak harus demokratis untuk menganut liberalisme dan tidak harus komunis untuk menganut sosialisme. 
 
-Banyak yang bilang kalau Indonesia di zaman Soeharto adalah proyek percontohan liberalisme gaya baru—\_neoliberalisme\_. Setelah Soekarno lengser, investasi asing mulai berdatangan. Konglomerasi dan kronisme semakin menjamur.
+Banyak yang bilang kalau Indonesia di zaman Soeharto adalah proyek percontohan liberalisme gaya baru—_neoliberalisme_. Setelah Soekarno lengser, investasi asing mulai berdatangan. Konglomerasi dan kronisme semakin menjamur.
 
 Indonesia harus mengubah haluan pembangunan sebelum terjerembab lagi seperti di tahun 1998.
