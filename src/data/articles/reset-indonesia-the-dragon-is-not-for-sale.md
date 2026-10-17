@@ -23,7 +23,7 @@ Tidak jauh dari sana, di Taman Nasional Togean, kita bisa menemukan pemukiman Su
 
 ![Suku Bajo](../../media/bajo.jpeg "Suku Bajo")
 
-Di perairan, Indonesia memiliki 7 taman nasional yang menyajikan pemandangan bawah laut yang eksotis.
+Di perairan, Indonesia memiliki 7 taman nasional yang menyajikan pemandangan bawah laut yang eksotik.
 
 Taman nasional bukan sekadar tempat pelestarian alam, ia juga sarana edukasi dan pariwisata yang merupakan industri yang penting bagi Indonesia. Pariwisata menyerap 10% angkatan kerja dunia—dinukil dari data _World Travel and Tourisme_ tahun 2019. Dengan potensi sebesar itu, ekowisata menjadi aset berharga yang wajib dioptimalkan pemerintah.
 
@@ -36,7 +36,7 @@ Ekowisata dianggap lebih berkelanjutan karena membangkitkan kesadaran akan masal
 
 Pemerintah bukannya abai dengan potensi ekowisata yang Indonesia miliki. Belakangan, mereka mempromosikan proyek _10 Bali Baru_ yang memadukan keasrian taman nasional dengan fasilitas premium yang dibangun untuk para turis. Memang terkesan menjanjikan, namun problematik. Di film dokumenter _The Dragon is Not for Sale_, tim Ekspedisi Indonesia Baru menceritakan dampak pengembangan wisata _10 Bali Baru_ di Labuan Bajo, Flores.
 
-Yang pemerintah tiru sebenarnya bukan Bali, tapi Nusa Dua Bali yang merupakan kawasan wisata elit. Daya tarik Bali yang sesungguhnya adalah alam dan budayanya yang eksotis, bukan hotel-hotel estetis.
+Yang pemerintah tiru sebenarnya bukan Bali, tapi Nusa Dua Bali yang merupakan kawasan wisata elit. Daya tarik Bali yang sesungguhnya adalah alam dan budayanya yang eksotik, bukan hotel-hotel estetik.
 
 Tidak bisa dipungkiri, Bali memang sudah kehilangan jati dirinya. Menurut laporan _Transnational Institute_ tahun 2018, Bali sudah kehilangan 25% lahan pertanian dalam 25 tahun terakhir, sementara populasi dan industri masing-masing naik 60% dan 330%. Turisme telah melenceng menjadi isu agraria, sosial, dan kebudayaan.
 
