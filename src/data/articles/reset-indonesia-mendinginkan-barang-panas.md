@@ -25,7 +25,7 @@ Sebenarnya ada banyak sumber energi terbarukan yang bisa jadi alternatif: ada bi
 
 Sumber energi dari minyak kelapa sawit bisa jadi alternatif, namun jika skalanya besar akan membuat tangki mesin bersaing dengan perut manusia. Selain boros air, tanaman industri ini menginvasi jutaan hektare hutan dengan segala keragaman hayatinya.
 
-Ada pula bendungan raksasa yang menghimpun debit air sungai untuk membangkitkan listrik. Jika ditelisik lebih lanjut, bendungan membutuhkan lahan luas untuk menunjang ukurannya yang besar. Struktur bendungan yang memakan tempat itu kadang menyerempet tanah warga atau situs budaya di sekitar sungai. Oleh karena itu, banyak aktivis lingkungan mengecam pembangunan bendungan sampai-sampai Bank Dunia enggan membiayai proyek tersebut.
+Ada pula bendungan raksasa yang menghimpun debit air sungai untuk membangkitkan listrik. Jika ditelisik lebih lanjut, bendungan membutuhkan lahan luas untuk menunjang ukurannya yang besar. Struktur bendungan yang memakan tempat itu kadang menyerempet tanah warga atau situs budaya di sekitar sungai. Oleh sebab itu, banyak aktivis lingkungan mengecam pembangunan bendungan sampai-sampai Bank Dunia enggan membiayai proyek tersebut.
 
 Meski dengan kelimpahan sumber energi skala kecil di pedesaan, dogma gigantisme masih ditelan mentah-mentah oleh pemerintah. Bagi mereka, pembangkit listrik itu harus besar dan terpusat. 
 
