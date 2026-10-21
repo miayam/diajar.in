@@ -29,7 +29,7 @@ Indonesia adalah rumah bagi 720 jenis mamalia, 35 jenis primata, 270 jenis amfib
 
 Keragaman hayati Indonesia bukan hanya berkah bagi bangsa Indonesia, tapi juga bagi dunia. Ini adalah "modal alami" (_natural capital_) kita sebagai sebuah bangsa.
 
-Meski dengan keragaman hayati yang melimpah, penyeragaman pangan semakin digalakkan pemerintah meski sejak dulu masyarakat Indonesia menggantungkan hidup dari sumber daya alam di sekitarnya.
+Meski dengan keragaman hayati yang melimpah, penyeragaman pangan semakin digalakkan pemerintah, padahal sejak dulu masyarakat Indonesia menggantungkan hidup dari sumber daya alam di sekitarnya.
 
 Pelestarian sumber daya alam baik di darat maupun di laut menjamin masyarakat mendapatkan hak dasar atas air bersih dan udara segar. Selain itu, alam yang lestari adalah modal utama pengembangan ekowisata yang berpotensi menggenjot ekonomi lokal.
 
