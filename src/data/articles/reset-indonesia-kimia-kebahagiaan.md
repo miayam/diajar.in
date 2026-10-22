@@ -9,7 +9,11 @@ thread: reset-indonesia
 draft: false
 ---
 
-Kesepuhan Ciptagelar masih memegang erat adat istiadatnya. Kehidupan mereka sederhana, namun jauh dari kemiskinan. Di saat pemerintah ramai-ramai menggaungkan swasembada beras, mereka sudah melakukannya sejak lama. Tidak ada jual-beli beras. Mereka punya sistem ketahanan pangan sendiri. Setiap panen, sepersepuluhnya disimpan di lumbung untuk persediaan jangka panjang. Hutan dan tanah milik bersama sehingga pemanfaatannya bisa diatur sedemikian rupa sesuai kebutuhan. Mereka memilih hidup harmonis dengan alam ketimbang berusaha mencapai kemakmuran semata. Mereka punya ukuran dan aturan sendiri. Ibarat komik Asterix, mereka seperti Galia di tengah wilayah kekuasan Romawi.
+Kesepuhan Ciptagelar masih memegang erat adat istiadatnya. Kehidupan mereka sederhana, namun jauh dari kemiskinan. Di saat pemerintah ramai-ramai menggaungkan swasembada beras, mereka sudah melakukannya sejak lama. 
+
+Tidak ada jual-beli beras. Mereka punya sistem ketahanan pangan sendiri. Setiap panen, sepersepuluhnya disimpan di lumbung untuk persediaan jangka panjang. Hutan dan tanah milik bersama sehingga pemanfaatannya bisa diatur sedemikian rupa sesuai kebutuhan. 
+
+Mereka memilih hidup harmonis dengan alam ketimbang berusaha mencapai kemakmuran semata. Mereka punya ukuran dan aturan sendiri. Ibarat komik Asterix, mereka seperti Galia di tengah wilayah kekuasan Romawi.
 
 PDB (Produk Domestik Bruto) dipakai mayoritas negara di dunia untuk mengukur pertumbuhan ekonomi, padahal pertumbuhan ekonomi tidak menggambarkan kemakmuran yang sesungguhnya. Kemakmuran seharusnya menciptakan kebahagiaan dan kebahagiaan tidak bisa diukur dengan harta benda semata. Ada faktor-faktor lain yang tidak dicakup PDB seperti rasa aman, ikatan komunal, kelestarian alam dan budaya, kepercayaan masyarakat kepada pemerintah, dan keadilan sosial. Jika dirangkum, faktor-faktor itu bisa disebut juga _kebahagiaan_.
 
