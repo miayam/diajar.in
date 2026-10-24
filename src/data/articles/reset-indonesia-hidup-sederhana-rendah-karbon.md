@@ -21,7 +21,7 @@ Pada 1865, William Stanley Jevons menulis buku berjudul _The Coal Question_. Dal
 
 Kini, teknologi kita jauh lebih canggih, murah, dan efisien, namun dahaga manusia akan energi masih belum reda. Ambil contoh Amerika Serikat—porsi pemakaian energi untuk perkakas rumah tangga meningkat 35% dibanding dua dekade terakhir, sementara rumah-rumah baru menguras 20% lebih banyak energi. Tidak mengherankan bila Amerika Serikat tercatat sebagai salah satu penyumbang emisi karbon terbesar di bumi.
 
-Bagaimana dengan Indonesia? Konsumsi energi per orang di Indonesia masih tergolong rendah, bahkan salah satu yang terendah di ASEAN. Cukup melegakan, namun jangan bangga dulu sebab ada kesenjangan besar antara pemakaian energi di pedesaan dan perkotaan.
+Bagaimana dengan Indonesia? Konsumsi energi per orang di Indonesia masih tergolong rendah, bahkan salah satu yang terendah di ASEAN. Memang cukup melegakan, namun jangan bangga dulu sebab ada kesenjangan besar antara pemakaian energi di pedesaan dan perkotaan.
 
 Di perkotaan, konsumsi bensin dan solar terlampau tinggi meski pendapatan per kapitanya rendah. Pabrik-pabrik sebenarnya mampu memproduksi mobil murah hemat energi, namun konsumsi bensin dan solar justru melambung tinggi. Bagaimana bisa begitu? Jawabannya: semakin murah suatu barang, semakin tinggi daya beli masyarakat. 
 
