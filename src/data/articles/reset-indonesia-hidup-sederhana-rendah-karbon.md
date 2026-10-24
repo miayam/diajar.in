@@ -29,7 +29,7 @@ Dalam 10 tahun terakhir saja, jumlah mobil pribadi melonjak dari 4 juta menjadi 
 
 Lantas, apakah mengganti bahan bakar fosil dengan sumber energi terbarukan dapat menyelesaikan masalah? Sayangnya, _The Jevons Paradox_ berlaku pada semua jenis energi.
 
-Mari kita telisik mobil listrik. Meski dipromosikan dengan embel-embel ramah lingkungan, mobil listrik ternyata memilik jejak karbon yang sangat tinggi. Untuk membuat baterainya saja, diperlukan nikel dalam jumlah besar. Pengolahan nikel membutuhkan mesin-mesin berukuran raksasa yang hanya bisa beroperasi dengan daya listrik. Listrik tersebut dialirkan melalui pembangkit tenaga uap hasil pembakaran batu bara yang emisi karbonnya sangat tinggi.
+Mari kita telisik mobil listrik. Meski dengan embel-embel ramah lingkungan, mobil listrik ternyata memilik jejak karbon yang sangat tinggi. Untuk membuat baterainya saja, diperlukan nikel dalam jumlah besar. Pengolahan nikel membutuhkan mesin-mesin berukuran raksasa yang hanya bisa beroperasi dengan daya listrik. Listrik tersebut dialirkan melalui pembangkit tenaga uap hasil pembakaran batu bara yang emisi karbonnya sangat tinggi.
 
 Itu baru baterainya. Belum lagi komponen dan suku cadang lain yang proses manufakturnya sama-sama tidak ramah lingkungan dan boros energi.
 
