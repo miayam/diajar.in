@@ -19,7 +19,7 @@ Dalam 20 tahun terakhir, para aktivis lingkungan mengampanyekan sumber energi te
 
 Pada 1865, William Stanley Jevons menulis buku berjudul _The Coal Question_. Dalam bukunya, beliau berpendapat bahwa meningkatnya penggunaan batu bara di era Revolusi Industri disebabkan oleh mesin-mesin yang semakin canggih. Mesin-mesin tersebut lebih murah dan efisien sehingga membuat permintaan pasar meningkat. Alih-alih meningkatkan produksi, mesin-mesin tersebut malah lebih banyak menguras cadangan energi.
 
-Kini, teknologi kita jauh lebih canggih, murah, dan efisien, namun dahaga manusia akan energi masih belum kunjung reda. Ambil contoh Amerika Serikat—porsi pemakaian energi untuk perkakas rumah tangga meningkat 35% dibanding dua dekade terakhir, sementara rumah-rumah baru menguras 20% lebih banyak energi. Tidak mengherankan bila Amerika Serikat tercatat sebagai salah satu penyumbang emisi karbon terbesar di bumi.
+Kini, teknologi kita jauh lebih canggih, murah, dan efisien, namun dahaga manusia akan energi masih belum reda. Ambil contoh Amerika Serikat—porsi pemakaian energi untuk perkakas rumah tangga meningkat 35% dibanding dua dekade terakhir, sementara rumah-rumah baru menguras 20% lebih banyak energi. Tidak mengherankan bila Amerika Serikat tercatat sebagai salah satu penyumbang emisi karbon terbesar di bumi.
 
 Bagaimana dengan Indonesia? Konsumsi energi per orang di Indonesia masih tergolong rendah, bahkan salah satu yang terendah di ASEAN. Cukup melegakan, namun jangan bangga dulu sebab ada kesenjangan besar antara pemakaian energi di pedesaan dan perkotaan.
 
