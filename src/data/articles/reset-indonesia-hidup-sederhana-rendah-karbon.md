@@ -19,7 +19,7 @@ Dalam 20 tahun terakhir, para aktivis lingkungan mengampanyekan sumber energi te
 
 Pada 1865, William Stanley Jevons menulis buku berjudul _The Coal Question_. Dalam bukunya, beliau berpendapat bahwa meningkatnya penggunaan batu bara di era Revolusi Industri disebabkan oleh mesin-mesin yang semakin canggih. Mesin-mesin tersebut lebih murah dan efisien sehingga membuat permintaan pasar meningkat. Alih-alih meningkatkan produksi, mesin-mesin tersebut malah lebih banyak menguras cadangan energi.
 
-Kini, teknologi kita jauh lebih canggih, murah, dan efisien, namun dahaga manusia akan energi masih belum reda. Ambil contoh Amerika Serikat—porsi pemakaian energi untuk perkakas rumah tangga meningkat 35% dibanding dua dekade terakhir, sementara rumah-rumah baru menguras 20% lebih banyak energi. Tidak mengherankan bila Amerika Serikat tercatat sebagai salah satu penyumbang emisi karbon terbesar di bumi.
+Kini, teknologi kita jauh lebih canggih, murah, dan efisien, namun dahaga manusia akan energi masih belum reda. Ambil contoh Amerika Serikat. Porsi pemakaian energi untuk perkakas rumah tangga di Amerika Serikat meningkat 35% dibanding dua dekade terakhir, sementara rumah-rumah baru menguras 20% lebih banyak energi. Tidak mengherankan bila Amerika Serikat tercatat sebagai salah satu penyumbang emisi karbon terbesar di bumi.
 
 Bagaimana dengan Indonesia? Konsumsi energi per orang di Indonesia masih tergolong rendah, bahkan salah satu yang terendah di ASEAN. Memang cukup melegakan, namun jangan bangga dulu sebab ada kesenjangan besar antara pemakaian energi di pedesaan dan perkotaan.
 
@@ -37,4 +37,4 @@ Dampak _The Jevons Paradox_ memang sudah tak terelakan lagi, namun kita masih bi
 
 Di belahan dunia lain, orang-orang sudah memulai gerakan _live-with-less_: membangun rumah berukuran standar yang berisi barang-barang keperluan saja—karena pembelian satu barang dapat mendatangkan barang-barang lain ke rumah. Intinya, menahan diri untuk memiliki sesuatu meskipun kita mampu.
 
-Hidup sederhana bisa dimulai dari hal-hal kecil. Kita tidak harus menjadi Mahatma Gandhi yang memakai selendang hasil tenunan sendiri. Cukup mengurangi konsumsi dan menjalani hidup bagaikan pengelana yang menetap sebentar kemudian beranjak pergi.
+Hidup sederhana bisa dimulai dari hal-hal kecil. Kita tidak harus meniru Mahatma Gandhi yang memakai selendang hasil tenunan sendiri. Cukup mengurangi konsumsi dan menjalani hidup bagaikan pengelana yang menetap sebentar kemudian beranjak pergi.
