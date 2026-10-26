@@ -31,7 +31,7 @@ Indonesia adalah pemasok minyak astiri terbesar di dunia, namun belum mampu meme
 
 Rempah hanya salah satu tulang punggung ekonomi maritim Indonesia. Sektor perikanan tangkap, budi daya laut, wisata bahari, serta transportasi laut masih belum dimanfaatkan secara optimal. Potensi ekonomi maritim Indonesia diperkirakan mencapai Rp4.875 triliun.
 
-Dengan ribuan pulau yang tersebar dari Sabang sampai Merauke, seharusnya perdagangan antar pulau sudah bisa menghidupi banyak orang—apa lagi ditambah dengan ekspor. Namun, buruknya transportasi laut di Indonesia menghambat pertukaran komoditas sehingga ekonomi lokal sulit berkembang.
+Dengan ribuan pulau yang tersebar dari Sabang sampai Merauke, seharusnya perdagangan antarpulau sudah bisa menghidupi banyak orang—apa lagi ditambah dengan ekspor. Namun, buruknya transportasi laut di Indonesia menghambat pertukaran komoditas sehingga ekonomi lokal sulit berkembang.
 
 Untuk menopang ekonomi maritim, riset-riset tentang transportasi bahari perlu diperluas. Industri kapal dan pesawat Indonesia tidak boleh mati.
 
@@ -39,4 +39,4 @@ Pada masa Perang Dingin, Rusia membuat prototipe kendaraan baru hasil perkawinan
 
 Perkembangan wahana ini dihentikan setelah Perang Dingin berakhir. Kini, Amerika Serikat mengambil tongkat estafet dari Rusia. Pada 2023, _DARPA_ meminta anak perusahaan _Boeing_ untuk merakit _GEV_ seukuran _Ekranoplan_.
 
-Indonesia tidak perlu wahana-wahana raksasa seperti itu. Kita bisa belajar dari Singapura dan Cina yang telah mengembangkan _mini-ekranoplan_ untuk memperlancar hubungan antar pulau dan memperkuat ekonomi maritim.
+Indonesia tidak perlu wahana-wahana raksasa seperti itu. Kita bisa belajar dari Singapura dan Cina yang telah mengembangkan _mini-ekranoplan_ untuk memperlancar hubungan antarpulau dan memperkuat ekonomi maritim.
