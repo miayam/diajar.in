@@ -23,7 +23,7 @@ Kini, teknologi kita jauh lebih canggih, murah, dan efisien, namun dahaga manusi
 
 Bagaimana dengan Indonesia? Konsumsi energi per orang di Indonesia masih tergolong rendah, bahkan salah satu yang terendah di ASEAN. Memang cukup melegakan, namun jangan bangga dulu sebab ada kesenjangan besar antara pemakaian energi di pedesaan dan perkotaan.
 
-Di perkotaan, konsumsi bensin dan solar terlampau tinggi meski pendapatan per kapitanya rendah. Pabrik-pabrik sebenarnya mampu memproduksi mobil murah hemat energi, namun konsumsi bensin dan solar justru melambung tinggi. Bagaimana bisa begitu? Jawabannya: semakin murah suatu barang, semakin tinggi daya beli masyarakat. 
+Di perkotaan, konsumsi bensin dan solar terlampau tinggi meski pendapatan per kapitanya rendah. Pabrik-pabrik sebenarnya mampu memproduksi mobil murah hemat energi, namun konsumsi bensin dan solar justru melambung tinggi. Bagaimana bisa? Jawabannya: semakin murah suatu barang, semakin tinggi daya beli masyarakat. 
 
 Dalam 10 tahun terakhir saja, jumlah mobil pribadi melonjak dari 4 juta menjadi 11 juta. Alhasil, percepatan jumlah kendaraan pribadi di jalan membuat subsidi BMM terus membengkak. Tidak hanya itu, rumah-rumah kita juga dijejali barang-barang elektronik yang daya listriknya diperoleh dari bahan bakar fosil.
 
