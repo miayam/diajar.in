@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Sektor pertanian dan perikanan menyerap 35% tenaga kerja Indonesia, namun 2 sektor tersebut kontribusinya pada PDB sangat kecil, menyusut dari 40% di masa Orde Baru menjadi 13% di era reformasi. Ketergantungan Indonesia pada beras impor adalah indikator menurunnya sektor pertanian.
+Sektor pertanian dan perikanan menyerap 35% tenaga kerja Indonesia, namun 2 sektor tersebut kontribusinya pada PDB sangat kecil, menyusut dari 40% di masa Orde Baru menjadi 13% di era Reformasi. Ketergantungan Indonesia pada beras impor adalah indikator menurunnya sektor pertanian.
 
 Sektor pertanian di negara-negara maju seperti Jepang, Finlandia, Denmark, dan Korea Selatan hanya menyumbang kurang dari 5% PDB, namun industri manufakturnya sangat maju. Berbeda dengan Indonesia yang mengabaikan sektor pertanian sementara industri manufakturnya tidak maju-maju.
 
