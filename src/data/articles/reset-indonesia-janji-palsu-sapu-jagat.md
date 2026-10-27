@@ -11,7 +11,7 @@ draft: false
 
 Banjir di Demak adalah contoh dari investasi asing tak bermutu yang merusak alam.
 
-Investasi asing mulai berdatangan setelah perpindahan dari Orde Lama ke Orde Baru di tahun 1966. Di masa jabatan Presiden Jokowi, investasi asing berdatangan tak terbendung melaui PSN (Proyek Strategis Nasional).
+Investasi asing mulai berdatangan setelah perpindahan kekuasaan dari Orde Lama ke Orde Baru pada tahun 1966. Di masa jabatan Presiden Jokowi, investasi asing berdatangan tak terbendung melaui PSN (Proyek Strategis Nasional).
 
 Untuk menarik investasi asing lebih banyak, pemerintah menerbitkan UU Cipta Kerja untuk melonggarkan regulasi. Para buruh kehilangan kepastian kerja. Yang paling miris, pekerja kontrak bisa tidak diangkat menjadi karyawan tetap tanpa batas waktu. Pesangon boleh tidak dibayar bila perusahaan tidak mampu.
 
