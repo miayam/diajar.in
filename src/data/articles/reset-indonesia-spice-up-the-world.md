@@ -21,7 +21,7 @@ Ibnu Batutah (1304-1369) belum pernah ke Jawa, hanya sempat singgah di Lhokseuma
 
 Selain pedagang Arab, orang-orang Persia, Tiongkok, India, dan Eropa juga ramai-ramai berkunjung ke Demak. Keragaman etnis ini menjadikan Demak kota pelabuhan kosmopolitan yang multikultural dan multireligius.
 
-Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lampau. Saking bangganya, pemerintah meminta _UNESCO_ mengakui jalur perdagangan rempah sebagai warisan dunia.
+Barus dan Demak adalah saksi kejayaan ekonomi maritim Indonesia di masa lampau. Saking bangganya, pemerintah meminta UNESCO mengakui jalur perdagangan rempah sebagai warisan dunia.
 
 ![Cengkih](../../media/Syzygium_aromaticum_on_tree.jpg "Cengkih")
 
@@ -35,8 +35,8 @@ Dengan ribuan pulau yang tersebar dari Sabang sampai Merauke, seharusnya perdaga
 
 Untuk menopang ekonomi maritim, riset-riset tentang transportasi bahari perlu diperluas. Industri kapal dan pesawat Indonesia tidak boleh mati.
 
-Pada masa Perang Dingin, Rusia membuat prototipe kendaraan baru hasil perkawinan antara kapal perang dan pesawat tempur yang disebut _GEV_ (_Ground Effect Vehicles_). Mereka menamainya _Ekranoplan_. Wahana ini hanya melayang beberapa meter dari permukaan laut, namun melaju lebih cepat dari kapal mana pun. Perkembangan teknologi ini diilhami oleh burung-burung yang terbang rendah memanfaatkan efek bantalan udara di permukaan laut yang membuat mereka melaju cepat tanpa memerlukan tenaga besar. Efek bantalan udara itulah yang membuat _GEV_ mampu menghemat bahan bakar.
+Pada masa Perang Dingin, Rusia membuat prototipe kendaraan baru hasil perkawinan antara kapal perang dan pesawat tempur yang disebut GEV (_Ground Effect Vehicles_). Mereka menamainya _Ekranoplan_. Wahana ini hanya melayang beberapa meter dari permukaan laut, namun melaju lebih cepat dari kapal mana pun. Perkembangan teknologi ini diilhami oleh burung-burung yang terbang rendah memanfaatkan efek bantalan udara di permukaan laut yang membuat mereka melaju cepat tanpa memerlukan tenaga besar. Efek bantalan udara itulah yang membuat GEV mampu menghemat bahan bakar.
 
-Perkembangan wahana ini dihentikan setelah Perang Dingin berakhir. Kini, Amerika Serikat mengambil tongkat estafet dari Rusia. Pada 2023, _DARPA_ meminta anak perusahaan _Boeing_ untuk merakit _GEV_ seukuran _Ekranoplan_.
+Perkembangan wahana ini dihentikan setelah Perang Dingin berakhir. Kini, Amerika Serikat mengambil tongkat estafet dari Rusia. Pada 2023, _DARPA_ meminta anak perusahaan _Boeing_ untuk merakit GEV seukuran _Ekranoplan_.
 
 Indonesia tidak perlu wahana-wahana raksasa seperti itu. Kita bisa belajar dari Singapura dan Cina yang telah mengembangkan _mini-ekranoplan_ untuk memperlancar hubungan antarpulau dan memperkuat ekonomi maritim.
