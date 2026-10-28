@@ -19,7 +19,7 @@ Koperasi memang usaha swasta, namun dimiliki oleh rakyat, bukan pejabat. Setiap 
 
 Apa perbedaan antara koperasi dan korporasi? Di koperasi, manusia mengendalikan modal, sementara di korporasi, modal mengendalikan manusia. Satu anggota di koperasi punya satu hak suara berapa pun besar iurannya. Sementara di korporasi, pemegang saham mayoritas punya hak suara lebih besar—semakin besar modal, semakin berkuasa. Tujuan utama koperasi adalah menyejahterakan anggota, sementara korporasi memaksimalkan profit. Di koperasi, keuntungan dibagi berdasarkan partisipasi, sementara di korporasi dibagi berdasarkan proporsi.
 
-Aliansi Koperasi Internasional (_ICA_) secara rutin merilis daftar 300 koperasi terbaik dunia yang jika digabung omzetnya melampaui PDB Spanyol. Tidak ada satu pun koperasi di Indonesia yang masuk dalam daftar itu.
+Aliansi Koperasi Internasional (ICA) secara rutin merilis daftar 300 koperasi terbaik dunia yang jika digabung omzetnya melampaui PDB Spanyol. Tidak ada satu pun koperasi di Indonesia yang masuk dalam daftar itu.
 
 Berikut fakta-fakta menarik seputar 300 koperasi terbaik dunia:
 
