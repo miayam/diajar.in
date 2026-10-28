@@ -19,4 +19,4 @@ Jangan biarkan selera pasar menjadi tolak ukur Anda.
 
 Jika orang tua di rumah memanggil Anda _Si Kasep_, itu sudah lebih dari cukup jadi legitimasi ketampanan Anda.
 
-Ketampanan di era proklamasi harus didemokratisasi di era reformasi.
+Ketampanan di era Proklamasi harus didemokratisasi di era Reformasi.
