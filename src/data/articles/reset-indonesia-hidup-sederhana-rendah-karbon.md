@@ -25,7 +25,7 @@ Bagaimana dengan Indonesia? Konsumsi energi per orang di Indonesia masih tergolo
 
 Di perkotaan, konsumsi bensin dan solar terlampau tinggi meski pendapatan per kapitanya rendah. Pabrik-pabrik sebenarnya mampu memproduksi mobil murah hemat energi, namun konsumsi bensin dan solar justru melambung tinggi. Bagaimana bisa? Jawabannya: semakin murah suatu barang, semakin tinggi daya beli masyarakat. 
 
-Dalam 10 tahun terakhir saja, jumlah mobil pribadi melonjak dari 4 juta menjadi 11 juta. Alhasil, percepatan jumlah kendaraan pribadi di jalan membuat subsidi BMM terus membengkak. Tidak hanya itu, rumah-rumah kita juga dijejali barang-barang elektronik yang daya listriknya diperoleh dari bahan bakar fosil.
+Dalam 10 tahun terakhir saja, jumlah mobil pribadi melonjak dari 4 juta menjadi 11 juta. Alhasil, percepatan jumlah kendaraan pribadi di jalan membuat subsidi BBM terus membengkak. Tidak hanya itu, rumah-rumah kita juga dijejali barang-barang elektronik yang daya listriknya diperoleh dari bahan bakar fosil.
 
 Lantas, apakah mengganti bahan bakar fosil dengan sumber energi terbarukan dapat menyelesaikan masalah? Sayangnya, _The Jevons Paradox_ berlaku pada semua jenis energi.
 
