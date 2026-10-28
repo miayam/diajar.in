@@ -27,7 +27,7 @@ Indonesia memiliki hutan tropis terluas ketiga di dunia.
 
 Indonesia adalah rumah bagi 720 jenis mamalia, 35 jenis primata, 270 jenis amfibi, dan 1.800 jenis burung.
 
-Keragaman hayati Indonesia bukan hanya berkah bagi bangsa Indonesia, tapi juga bagi dunia. Ini adalah "modal alami" (_natural capital_) kita sebagai sebuah bangsa.
+Keragaman hayati Indonesia bukan hanya berkah bagi bangsa Indonesia, tapi juga bagi dunia. Ini adalah modal alami (_natural capital_) kita sebagai sebuah bangsa.
 
 Masyarakat Indonesia menggantungkan hidup dari sumber daya alam di sekitarnya. Meski dengan keragaman hayati yang melimpah, penyeragaman pangan malah semakin digalakkan pemerintah. 
 
