@@ -19,7 +19,7 @@ Ketergantungan pada air minum kemasan semakin tinggi akibat menyusutnya cadangan
 
 Ketersedian air bersih dan sarana sanitasi yang layak seharusnya jadi prioritas utama pemerintah. Ambisi Indonesia menjadi negara maju harus disandarkan pada ukuran yang lebih sederhana: akses air bersih untuk semua warga. Itulah yang dilakukan negara-negara maju di Skandinavia yang air kerannya bisa langsung diminum. 
 
-Jika Skandinavia terlalu jauh, Indonesia bisa menengok Singapura yang menempati posisi pertama _Enviromental Performance Index_ (_EPI_) yang dirilis Universitas Yale. Indonesia ada di peringkat ke-128 dari 180 negara yang disurvei.
+Jika Skandinavia terlalu jauh, Indonesia bisa menengok Singapura yang menempati posisi pertama _Enviromental Performance Index_ (EPI) yang dirilis Universitas Yale. Indonesia ada di peringkat ke-128 dari 180 negara yang disurvei.
 
 Membangun instalasi pengolahan air dan jaringan pipa belum cukup untuk menyelesaikan masalah. Pemerintah juga harus melestarikan hutan-hutan yang jadi sumber air bersih masyarakat setempat. Ironisnya, hutan Bowosie yang sumber mata airnya melimpah digunduli untuk dijadikan objek wisata. Dengan begini, potensi krisis air di Labuan Bajo sudah tak terelakan lagi.
 
