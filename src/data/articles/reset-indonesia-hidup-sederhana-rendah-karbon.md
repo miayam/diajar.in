@@ -35,6 +35,6 @@ Itu baru baterainya. Belum lagi komponen dan suku cadang lain yang proses manufa
 
 Dampak _The Jevons Paradox_ memang sudah tak terelakan lagi, namun kita masih bisa mengatasinya lewat kebijakan publik. Pemerintah bisa membatasi peredaran barang elektronik dan memberlakukan peraturan yang memaksa masyarakat beralih ke transportasi publik. Selain pembatasan, gaya hidup hemat energi juga perlu disiarkan kepada masyarakat. Di kalangan aktivis lingkungan, ada konsep _reduce_, _reuse_, dan _recycle_: mengurangi pemakaian barang, menggunakannya secara berluang, dan mendaur ulangnya bila sudah tidak dipakai. Intinya, hidup sederhana dan sewajarnya saja.
 
-Di belahan dunia lain, orang-orang sudah memulai gerakan _live-with-less_: membangun rumah berukuran standar yang berisi barang-barang keperluan saja—karena pembelian satu barang dapat mendatangkan barang-barang lain ke rumah. Intinya, menahan diri untuk memiliki sesuatu meskipun kita mampu.
+Di belahan dunia lain, orang-orang sudah memulai gerakan _live-with-less_: membangun rumah berukuran standar yang berisi barang-barang keperluan saja sebab pembelian satu barang dapat mendatangkan barang-barang lain ke rumah. Intinya, menahan diri untuk memiliki sesuatu meskipun kita mampu.
 
 Hidup sederhana bisa dimulai dari hal-hal kecil. Kita tidak harus meniru Mahatma Gandhi yang memakai selendang hasil tenunan sendiri. Cukup mengurangi konsumsi dan menjalani hidup bagaikan pengelana yang menetap sebentar kemudian beranjak pergi.
