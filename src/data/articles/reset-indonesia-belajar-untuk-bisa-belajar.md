@@ -17,7 +17,9 @@ Apa yang dilakukan Jumilah di terasnya adalah manifestasi model pendidikan ala P
 
 Kurikulum yang disusun pemerintah terkadang disalahgunakan untuk melanggengkan penindasan.
 
-Jumilah juga mengingatkan kita pada Guru Kobayashi dalam buku _Totto-Chan: Gadis Cilik di Jendela_. Sama seperti Jumilah, Guru Kobayashi menunjukkan bahwa pendidikan berkualitas bisa diselenggarakan di mana pun—bahkan di bekas gerbong kereta sekali pun. Pendidikan bukan tentang fasilitas mutakhir, melainkan tentang cara berpikir. Kemampuan berpikir kritis adalah momok bagi penguasa zalim.
+Jumilah juga mengingatkan kita pada Guru Kobayashi dalam buku _Totto-Chan: Gadis Cilik di Jendela_. Sama seperti Jumilah, Guru Kobayashi menunjukkan bahwa pendidikan berkualitas bisa diselenggarakan di mana pun—bahkan di bekas gerbong kereta sekali pun. Pendidikan bukan tentang fasilitas mutakhir, melainkan tentang cara berpikir. 
+
+Kemampuan berpikir kritis adalah momok bagi penguasa zalim.
 
 Menurut Fraire, pengajaran berbasis dialog untuk mencari solusi atas problematika yang berasal dari pengalaman sehari-hari dapat memupuk hubungan setara antara guru dan murid. Dengan belajar langsung dari lingkungan sekitar, anak-anak akan tumbuh dengan tekad kuat untuk menyangkal segala bentuk penindasan yang diwariskan secara turun-temurun. Inilah arti dari pendidikan yang sesungguhnya: memanusiakan manusia.
 
