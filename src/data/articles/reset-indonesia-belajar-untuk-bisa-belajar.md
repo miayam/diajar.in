@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Jumilah menyulap teras rumahnya menjadi sekolah. Beliau adalah pembantu rumah tangga asal Lombok, Nusa Tenggara Barat. Meski tidak memiliki latar belakang pendidikan tinggi, minatnya pada dunia pendidikan amat besar. Di terasnya, anak-anak dari tingkat SD sampai SMA berkumpul untuk belajar bersama. Tidak hanya melalui buku, mereka juga belajar dari pengalaman langsung orang-orang di sekitar mereka. Proses belajar-mengajar menititikberatkan pada pemecahan masalah yang dilakukan bersama.
+Jumilah menyulap teras rumahnya menjadi sekolah. Beliau adalah pembantu rumah tangga asal Lombok, Nusa Tenggara Barat. Meski tidak memiliki latar belakang pendidikan tinggi, minatnya pada dunia pendidikan amat besar. Di terasnya, anak-anak dari tingkat SD sampai SMA berkumpul untuk belajar bersama. Tidak hanya melalui buku, mereka juga belajar dari pengalaman langsung orang-orang di sekitar mereka. Proses belajar-mengajar menititikberatkan pada pemecahan masalah yang dilakukan bersama-sama.
 
 Tanpa disadari, Jumilah telah menerapkan _Kurikulum Merdeka_ dan _deep learning_ yang belakangan dipromosikan pemerintahan Jokowi dan Probowo. Selain membimbing dan mengajar, orang tua di sana juga belajar dari anak-anak mereka seperti Jumilah yang dulu diajari anaknya baca tulis. Model pendidikan seperti ini menghapus sekat-sekat yang diciptakan kurikulum yang acap kali menyulitkan guru dan murid karena sering digonta-ganti.
 
