@@ -9,4 +9,4 @@ thread: tiba-tiba-kata-kata
 draft: false
 ---
 
-Nabi Yusuf lari menjauh dari istri raja ketika diajak berzina. Saya malah mendatangi zina sambil berlindung kepada Allah.
+Nabi Yusuf lari menjauh dari istri raja ketika diajak berzina. Saya malah mendatangi zina sambil memohon pertolongan Allah.
