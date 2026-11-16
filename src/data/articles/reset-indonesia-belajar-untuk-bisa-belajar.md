@@ -9,9 +9,11 @@ thread: reset-indonesia
 draft: false
 ---
 
-Jumilah menyulap teras rumahnya menjadi sekolah. Beliau adalah pembantu rumah tangga asal Lombok, Nusa Tenggara Barat. Meski tidak memiliki latar belakang pendidikan tinggi, minatnya pada dunia pendidikan amat besar. Di terasnya, anak-anak dari tingkat SD sampai SMA berkumpul untuk belajar bersama. Tidak hanya melalui buku, mereka juga belajar dari pengalaman langsung orang-orang di sekitar mereka. Proses belajar-mengajar menititikberatkan pada pemecahan masalah yang dilakukan bersama-sama.
+Jumilah menyulap teras rumahnya menjadi sekolah. Beliau adalah pembantu rumah tangga asal Lombok, Nusa Tenggara Barat. Meski tidak memiliki latar belakang pendidikan tinggi, minatnya pada dunia pendidikan amat besar. 
 
-Tanpa disadari, Jumilah telah menerapkan _Kurikulum Merdeka_ dan _deep learning_ yang belakangan dipromosikan pemerintahan Jokowi dan Probowo. Selain membimbing dan mengajar, orang tua di sana juga belajar dari anak-anak mereka seperti Jumilah yang dulu diajari anaknya baca tulis. Model pendidikan seperti ini menghapus sekat-sekat yang diciptakan kurikulum yang acap kali menyulitkan guru dan murid karena sering digonta-ganti.
+Di terasnya, anak-anak dari tingkat SD sampai SMA berkumpul untuk belajar bersama. Tidak hanya melalui buku, mereka juga belajar dari pengalaman langsung orang-orang di sekitar mereka. Proses belajar-mengajar menititikberatkan pada pemecahan masalah yang dilakukan bersama-sama.
+
+Tanpa disadari, Jumilah telah menerapkan _Kurikulum Merdeka_ dan _deep learning_ yang belakangan dipromosikan pemerintahan Jokowi dan Probowo. Selain membimbing dan mengajar, orang tua di sana juga belajar dari anak-anak mereka seperti Jumilah yang dulu diajari anaknya baca tulis. Model pendidikan seperti ini menghapus sekat-sekat yang diciptakan kurikulum yang acap kali menyulitkan guru dan murid karena sering digonta-ganti dan hanya berorientasi pada nilai.
 
 Apa yang dilakukan Jumilah di terasnya adalah manifestasi model pendidikan ala Paulo Freire. Pada tahun 1960-an, Paulo Freire berhasil membebaskan buruh tani di Brasil dari buta huruf. Pengalamannya tersebut ditulis dalam sebuah buku berjudul _Pendidikan Kaum Tertindas_.
 
