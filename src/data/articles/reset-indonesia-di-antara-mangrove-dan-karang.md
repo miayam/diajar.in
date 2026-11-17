@@ -19,7 +19,7 @@ Indonesia adalah episentrum Segitiga Terumbu Karang (_The Coral Triangle_) yang 
 
 ![Barakuda](../../media/barakuda.jpeg "Barakuda")
 
-Dewasa ini, perubahan iklim mengancam kelestarian terumbu karang. Namun, kerusakan yang disebabkan manusia mungkin lebih mengkhawatirkan: bom laut, jala pukat harimau, penambangan pasir, dan penangkapan ikan secara berlebihan. Selain itu, kerusakan terumbu karang juga bisa dipicu oleh rusaknya hutan bakau.
+Dewasa ini, perubahan iklim mengancam kelestarian terumbu karang. Namun, kerusakan yang disebabkan manusia mungkin lebih mengkhawatirkan: bom laut, jala pukat harimau, penambangan pasir, dan penangkapan ikan secara berlebihan. Selain itu, kerusakan hutan bakau juga dapat memicu kerusakan terumbu karang.
 
 Indonesia memiliki hutan bakau terluas di dunia—mencakup 20% luas hutan bakau dunia.
 
