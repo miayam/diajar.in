@@ -9,7 +9,7 @@ thread: reset-indonesia
 draft: false
 ---
 
-Warga Pulau Papagaran harus mengambil air dari Labuan Bajo yang terpisah oleh laut. Setiap warga merogoh kocek Rp800.000 per bulan hanya untuk air bersih—jauh lebih mahal dari biaya tagihan air di London dan New York. Sumber air di sana sangat minim. Mereka harus mengantri di belakang truk yang mengangkut air bersih dari kapal laut. Fenomena ini sangat tidak khas Flores.
+Warga Pulau Papagaran harus mengambil air dari Labuan Bajo yang terpisah oleh laut. Setiap warga merogoh kocek Rp800.000 per bulan hanya untuk air bersih—jauh lebih mahal dari biaya tagihan air di London dan New York. Sumber air di sana sangat minim. Mereka harus mengantre di belakang truk yang mengangkut air bersih dari kapal laut. Fenomena ini sangat tidak khas Flores.
 
 Menurut Persatuan Perusahaan Air Minum Seluruh Indonesia (Perpamsi), layanan air bersih lewat pipa baru mencakup 20% keluarga Indonesia.
 
