@@ -29,7 +29,7 @@ Hutan bakau melindungi dua sisi kawasan pesisir. Di darat, mencegah abrasi. Di l
 
 Hutan bakau erat kaitannya dengan peradaban manusia. Di berbagai belahan dunia, terdapat beragam tradisi yang mengultuskan hutan bakau. 
 
-Dulu, pesisir Pulau Jawa pada abad ke-19 masih dipenuhi hutan bakau. Kini, hutan bakau di pulau Jawa sudah hampir punah. Sumatra dan Kalimantan juga mengalami nasib yang sama. Beruntung Indonesia masih punya hutan bakau cukup luas di Papua—47% luas hutan bakau di Indonesia. Namun, hutan bakau di sana juga terancam punah.
+Dulu, pesisir Pulau Jawa pada abad ke-19 masih dipenuhi hutan bakau. Kini, hutan bakau di pulau Jawa sudah hampir punah. Sumatra dan Kalimantan juga mengalami nasib yang sama. Beruntung Indonesia masih punya 47% cakupan hutan bakau di Papua, namun hutan bakau di sana juga terancam punah.
 
 Reboisasi hutan bakau seharusnya lebih diprioritaskan sebab ia mampu menyerap 50 kali lebih banyak karbon daripada hutan di daratan.
 
