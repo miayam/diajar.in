@@ -9,19 +9,19 @@ thread: belajar-cara-belajar
 draft: true
 ---
 
-Sebenarnya kita tidak perlu merujuk  jurnal ilmiah untuk mengetahui bagaimana cara otak mencerna informasi.
+Sebenarnya kita tidak perlu merujuk jurnal ilmiah untuk mengetahui bagaimana cara otak mencerna informasi.
 
-Lihat  saja fenomena di sekitar kita:
+Cermati saja fenomena di sekitar kita:
 
-- Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena diperdengarkan terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
+- Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena mendengarnya terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
 - ODGJ yang hafal naskah proklamasi. Bagaimana bisa?
-- Seorang dungu yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri
+- Seorang pandir yang tahu semua skuad Manchester United, namun sulit menghafal nama-nama menteri
 - Bocah  balita melafalkan  nama 25  nabi dengan mendendangkan nada lagu _Balonku_
 - Warna pada pelangi yang disingkat _mejikuhibiniu_
 - Dan banyak lagi
 
-Kita sebenarnya sudah tahu kalau otak kita lebih senang memakai informasi yang sudah ada daripada harus mengolah kembali informasi dari awal.
+Kita sebenarnya sudah tahu kalau otak kita lebih senang mendaur ulang informasi yang sudah ada daripada harus mengolah kembali informasi dari awal.
 
-Iformasi yang melibatkan emosi sangat sulit dilupakan.
+Informasi yang melibatkan emosi sangat sulit dilupakan.
 
 Gambar bergerak.
