@@ -33,6 +33,6 @@ Di Sumbawa, masyarakat setempat membuat ramuan obat _melala_ yang racikannya diw
 
 Di Riau, ada _Matba'at Al Riauwiyah_—manuskrip Arab berbahasa Melayu—yang berisi daftar tanaman obat. Manuskrip ini ditulis di abad ke-14 dan menjadi rujukan pengobatan tradisional Kerajaan Melayu Riau Lingga yang kekuasaannya meliputi Sumatra dan Malaysia.
 
-Di era kemerdekaan, orang pertama yang serius menaruh perhatian pada tanaman obat adalah RM Santoso Soerjokoesumo. Beliau merintis Kebun Koleksi Tanaman Obat di Tawangmangu, Jawa Tengah. Sebagian khazanahnya masih bisa ditemukan di Kebun Wisata Ilmiah Tanaman Obat Bogor, Jawa Barat.
+Di era kemerdekaan, orang pertama yang serius menaruh perhatian pada tanaman obat adalah R.M. Santoso Soerjokoesumo. Beliau merintis Kebun Koleksi Tanaman Obat di Tawangmangu, Jawa Tengah. Sebagian khazanahnya masih bisa ditemukan di Kebun Wisata Ilmiah Tanaman Obat Bogor, Jawa Barat.
 
 Alam Indonesia adalah gudang ilmu pengetahuan—komoditas penting di masa depan.
