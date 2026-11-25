@@ -31,11 +31,11 @@ Jadi, selain tidur nyenyak, kita juga harus mengulang kembali apa yang dipelajar
 
 Beri jeda waktu 1 atau 2 hari di setiap sesi untuk mendapatkan siklus belajar-tidur yang optimal. Ini memungkinkan akar-akar _dendrit_ menjalar dan merekatkan informasi di memori. Seperti mendirikan tembok, kita harus membiarkan semennya kering dulu sebelum menumpuk balok baru di atasnya. Inilah yang disebut _space repetition_.
 
-Gunakan [_Anki_](https://apps.ankiweb.net/) untuk menjadwalkan repetisi secara otomatis.
+Gunakan _[Anki](https://apps.ankiweb.net/)_ untuk menjadwalkan repetisi secara otomatis.
 
 Nah, belajar sudah, tidur nyenyak juga sudah, tapi kenapa ada orang yang bisa mendapat nilai bagus dengan sistem kebut semalam? Sementara itu,  ada orang  yang belajar mati-matian, tapi mendapat nilai kurang memuaskan? Kok, bisa begitu? Salah siapa? Salah bunda mengandung?
 
-Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur setelah tujuannya tercapai—_mendapat nilai A_—,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya mendarah daging sampai terbawa mimpi.
+Begini kawan, karena sistem pendidikan hanya ditentukan nilai, aspek lain seperti usaha dan niat  tidak diperhitungkan. Boleh jadi, orang pintar bisa mencerna informasi dengan cepat, tapi informasi itu luntur setelah tujuannya tercapai—_mendapat nilai A_,  sedangkan orang dengan nilai C mendapat _insight_ baru dan ilmunya mendarah daging sampai terbawa mimpi.
 
 Kesenjangan itu adalah keniscayaan. Tidak perlu iri dan dengki. Yang bisa kita lakukan adalah memaksimalkan potensi diri. Seperti _mamang-mamang_ yang terlihat menawan karena berdandan rapi, orang biasa juga bisa berprestasi secara akademik dengan cara belajar efektif.
 
@@ -45,4 +45,4 @@ Demikian. Semoga bermanfaat. Mari kita rangkum:
 - Akar neuron tumbuh subur ketika kita tidur
 - Informasi yang ingin kita simpan di memori jangka panjang akan terkikis bila tidak ada repetisi (mengulang pelajaran)
 - Berikan jeda istirahat selama repetisi
-- Gunakan [_Anki_](https://apps.ankiweb.net/) agar jadwal repetisi berjalan otomatis
+- Gunakan _[Anki](https://apps.ankiweb.net/)_ agar jadwal repetisi berjalan otomatis
