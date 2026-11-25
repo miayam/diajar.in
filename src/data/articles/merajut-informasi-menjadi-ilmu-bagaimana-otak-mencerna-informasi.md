@@ -13,7 +13,7 @@ Sebenarnya kita tidak perlu merujuk jurnal ilmiah untuk mengetahui bagaimana car
 
 Cermati saja fenomena di sekitar kita:
 
-- Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena mendengarnya terus-menerus ketika SD. Sampai hari ini, beliau masih umat Kristiani yang taat
+- Ada seorang kawan beragama Kristen yang hafal surat _al-Fatihah_ karena mendengarnya terus-menerus ketika SD
 - ODGJ yang hafal naskah proklamasi. Bagaimana bisa?
 - Seorang pandir yang tahu skuad Manchester United, namun sulit menghafal nama-nama menteri
 - Bocah  balita melafalkan  nama 25  nabi sambil mendendangkannya dengan nada lagu _Balonku_
