@@ -30,7 +30,7 @@ Berikut fakta-fakta menarik seputar 300 koperasi terbaik dunia:
 - Koperasi memainkan peran penting di Korea Selatan. Tidak hanya di sektor pertanian, model usaha koperasi juga ditemukan di sektor pendidikan
 - Dalam urusan etika produksi, Fronterra—koperasi asal Selandia Baru—paling menonjol di antara yang lain. Mereka menganggap anggotanya orang-orang baik yang melakukan hal-hal baik. Fronterra menguasai 35% pangsa pasar susu dunia
 - Denmark menyumbang 8 koperasi. Di sana, sekitar 90% pangsa pasar produk pertanian, peternakan, dan perikanan dikuasai oleh koperasi
-- Koperasi kesehatan terbesar di dunia ada di Brasil, diwakili oleh Sistema Unimed yang beranggotakan 135.000 dokter dan perawat
+- Koperasi kesehatan terbesar di dunia ada di Brasil, diwakili oleh _Sistema Unimed_ yang beranggotakan 135.000 dokter dan perawat
 - Menurut lembaga survei, Brasil adalah negara dengan budaya koperasi terbaik di dunia
 - Di pedalaman Amerika Serikat, koperasi-koperasi energi bersaing dengan perusahaan-perusahaan besar
 
